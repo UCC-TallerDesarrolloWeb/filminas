@@ -9,6 +9,7 @@ slideNumber: true
 
 ---
 ## Notas
+![Img1](images/indice/eje1.png)
 ![Img2](images/indice/eje2.png)
 ![Img3](images/indice/eje3.png)
 ![Img4](images/indice/eje4.png)
