@@ -1,117 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>reveal-md</title>
-    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
-  </head>
+<!doctype html>
+<html lang="es">
 
-  <body>
-    <ul>
-      <li>
-        <a href="00_Practica.html" title="Para comenzar">
-            Para comenzar (00_Practica.html)
-        </a>
-      </li>
-      <li>
-        <a href="00_Teorico.html" title="Para comenzar">
-            Para comenzar (00_Teorico.html)
-        </a>
-      </li>
-      <li>
-        <a href="Proyecto.html" title="Proyecto">
-            Proyecto (Proyecto.html)
-        </a>
-      </li>
-      <li>
-        <a href="pruebaImagenes.html" title="Para comenzar">
-            Para comenzar (pruebaImagenes.html)
-        </a>
-      </li>
-      <li>
-        <a href="U1_git_avanzado.html" title="Git">
-            Git (U1_git_avanzado.html)
-        </a>
-      </li>
-      <li>
-        <a href="U1_git.html" title="Git">
-            Git (U1_git.html)
-        </a>
-      </li>
-      <li>
-        <a href="U1_herramientas.html" title="Herramientas de Desarrollo">
-            Herramientas de Desarrollo (U1_herramientas.html)
-        </a>
-      </li>
-      <li>
-        <a href="U3_diseñoInterfazUsuario.html" title="Diseño de Interface de Usuario">
-            Diseño de Interface de Usuario (U3_diseñoInterfazUsuario.html)
-        </a>
-      </li>
-      <li>
-        <a href="U3_prototipado.html" title="Prototipado y Proceso de Diseño">
-            Prototipado y Proceso de Diseño (U3_prototipado.html)
-        </a>
-      </li>
-      <li>
-        <a href="U4_aplicacionesWeb.html" title="Aplicaciones Web">
-            Aplicaciones Web (U4_aplicacionesWeb.html)
-        </a>
-      </li>
-      <li>
-        <a href="U4_CSS_avanzado.html" title="CSS">
-            CSS (U4_CSS_avanzado.html)
-        </a>
-      </li>
-      <li>
-        <a href="U4_CSS.html" title="CSS">
-            CSS (U4_CSS.html)
-        </a>
-      </li>
-      <li>
-        <a href="U4_historiaWeb.html" title="Desarrollo Web">
-            Desarrollo Web (U4_historiaWeb.html)
-        </a>
-      </li>
-      <li>
-        <a href="U4_HTML_avanzado.html" title="HTML">
-            HTML (U4_HTML_avanzado.html)
-        </a>
-      </li>
-      <li>
-        <a href="U4_HTML.html" title="HTML">
-            HTML (U4_HTML.html)
-        </a>
-      </li>
-      <li>
-        <a href="U5_frameworks.html" title="javaScript">
-            javaScript (U5_frameworks.html)
-        </a>
-      </li>
-      <li>
-        <a href="U5_javaScript1.html" title="javaScript">
-            javaScript (U5_javaScript1.html)
-        </a>
-      </li>
-      <li>
-        <a href="U5_javaScript2.html" title="javaScript">
-            javaScript (U5_javaScript2.html)
-        </a>
-      </li>
-      <li>
-        <a href="U5_javaScript3.html" title="javaScript">
-            javaScript (U5_javaScript3.html)
-        </a>
-      </li>
-      <li>
-        <a href="U5_orientacionEventos.html" title="Orientación a Eventos">
-            Orientación a Eventos (U5_orientacionEventos.html)
-        </a>
-      </li>
-    </ul>
+<head>
+    <meta charset="utf-8">
 
-    <p>
-      Last update: 2025-07-31T14:10:14.299Z
-    </p>
-  </body>
+    <title> Taller de Desarrollo Web </title>
+    <meta name="author" content="Agus Edme Aliciardi | Ricardo Martin Marcucci">
+    <link rel="icon" type="images/code.ico" href="favicon.svg" />
+    <!--link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme"-->
+</head>
+<style>
+    body {
+        background: #222;
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        font-size: 28px;
+        font-weight: normal;
+        color: #fff;
+        margin: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    h2 {
+        margin: 0 0 20px 0;
+        color: #fff;
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-shadow: none;
+        word-wrap: break-word;
+        font-size: 1.6em;
+    }
+
+    a {
+        color: #42affa;
+        text-decoration: none;
+        -webkit-transition: color 0.15s ease;
+        -moz-transition: color 0.15s ease;
+        transition: color 0.15s ease;
+    }
+
+    a:hover {
+        color: #8dcffc;
+        text-shadow: none;
+        border: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 320px auto;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+        padding: 10px;
+        vertical-align: middle;
+    }
+</style>
+<body>
+
+<h2>Taller de Desarrollo Web</h2>
+<br>
+<div class="grid-container">
+    <div class="grid-item">
+    </div>
+    <div class="grid-item">
+        <a href="00_Teorico.html"> Presentación de la Materia (teórico)</a> <br>
+        <a href="00_Practica.html"> Presentación de la Materia (práctico)</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje1.png" />
+    </div>
+    <div class="grid-item">
+        Unidad I: <br>
+        <a href="U1_herramientas.html"> Introducción y Herramientas de Desarrollo </a> <br>
+        <a href="U1_git.html">Git</a> <br>
+        <a href="U1_git_avanzado.html">Git (parte 2)</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje2.png" />
+    </div>
+    <div class="grid-item">
+        Unidad II: <br>
+        <a href="U4_aplicacionesWeb.html">Funcionamiento del Navegador y Herramientas de Desarrollo</a> <br>
+        <a href="U4_historiaWeb.html">Breve historia de la Web</a> <br>
+        <a href="U4_HTML.html">HTML5</a> <br>
+        <a href="U4_HTML_avanzado.html">HTML5 (Parte 2)</a> <br>
+        <a href="U4_CSS.html">CSS3</a> <br>
+        <a href="U4_CSS_avanzado.html">CSS3 (Parte 2)</a>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje1.png" />
+    </div>
+    <div class="grid-item">
+        Unidad II: <br>
+        <a href="U2_herramientas.html">Fundamentos de HTML5 y CSS3</a> <br>
+        <a  href="U2_git.html">Git</a> <br>
+        <a  href="U2_git_avanzado.html">Git (parte 2)</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje3.png" />
+    </div>
+    <div class="grid-item">
+        Unidad III: <br>
+        <a href="U3_diseñoInterfazUsuario.html">JavaScript y ES6+</a> <br>
+        <a href="U3_prototipado.html">Prototipado</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje5.png" />
+    </div>
+    <div class="grid-item">
+        Unidad V: <br>
+        <a href="U5_orientacionEventos.html">Frameworks y Preprocesadores CSS</a> <br>
+        <a href="U5_javaScript1.html">Introducción a JavaScript</a> <br>
+        <a href="U5_javaScript2.html">JavaScript (Parte 2)</a> <br>
+        <a href="U5_javaScript3.html">JavaScript (Parte 3)</a> <br>
+        <a href="U5_canvas.html">Canvas</a> <br>
+        <a href="U5_canvas_animacion.html">Animación en Canvas</a> <br>
+        <a href="U5_frameworks.html">Frameworks</a> <br>
+        <a href="juegosHTML.html">Clase Especial: HTML + JS altamente interactivo</a><br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje6.png" />
+    </div>
+    <div class="grid-item">
+        Unidad VI: <br>
+        <a href="U6_aplicacionesMoviles.html">Frameworks de JavaScript: React, Vue y Angular</a> <br>
+        <a href="U6_responsive.html">Diseño Responsive</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje6.png" />
+    </div>
+    <div class="grid-item">
+        Unidad VII: <br>
+        <a href="U6_aplicacionesMoviles.html">Backend y APIs</a> <br>
+        <a href="U6_responsive.html">Diseño Responsive</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje6.png" />
+    </div>
+    <div class="grid-item">
+        Unidad VIII: <br>
+        <a href="U6_aplicacionesMoviles.html">Buenas prácticas en los desarrollos web</a> <br>
+        <a href="U6_responsive.html">Diseño Responsive</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/proyecto.png" />
+    </div>
+    <div class="grid-item">
+        Proyecto Web: <br>
+        <a href="Proyecto.html">Requisitos del proyecto Web</a>
+    </div>
+</div>
+
+</body>
 </html>
