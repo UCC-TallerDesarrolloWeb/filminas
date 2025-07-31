@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:UCC-LabCompu2/filminas.git"
+    "url": "git@github.com:UCC-TallerDesarrolloWeb/filminas.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/UCC-LabCompu2/filminas/issues"
+    "url": "https://github.com/UCC-TallerDesarrolloWeb/filminas/issues"
   },
-  "homepage": "https://ucc-labcompu2.github.io/filminas/",
+  "homepage": "https://ucc-tallerdesarrolloweb.github.io/filminas/",
   "dependencies": {
     "gh-pages": "^6.1.1",
     "reveal-md": "^6.1.2"

@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/UCC-LabCompu2/filminas.svg?branch=master)](https://travis-ci.org/UCC-LabCompu2/filminas)
-
 Filminas de la materia Taller de Desarrollo Web
 ====================================================
 
-Se pueden ver online en https://ucc-labcompu2.github.io/filminas/
+Se pueden ver online en https://UCC-TallerDesarrolloWeb/filminas/
 
 
 Steps:
