@@ -95,7 +95,7 @@ FINAL:
 ## Regularidad
 * Asistencia del 70% en Clases Teórico-Prácticas (en el repositorio **ejercicios2025-Apellido** tener realizados los ejercicio de clase)
 * Proyecto primera y segunda etapa aprobados (nota mínima de 4)
-* Promedio de los 7 parcialitos >= 4
+* Promedio de los 8 parcialitos >= 4
 
 ---
 ## Promoción
