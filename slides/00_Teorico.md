@@ -31,7 +31,7 @@ agustina.aliciardi@ucc.edu.ar
 
 ### David Azulay
 <!--TODO: PONER EL EMAIL AQUÍ-->
-[]@ucc.edu.ar
+deividazulay@gmail.com
 
 ---
 ## UNIDADES
