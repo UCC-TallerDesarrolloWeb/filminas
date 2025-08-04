@@ -104,7 +104,8 @@ Created by <i class="fab fa-telegram"></i>
 ## Ejercicio: Instalar Git
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WEUliO01zL4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
----
+----
+
 ### Instalar git en Mac
 Ingresar a [https://git-scm.com/download/mac](https://git-scm.com/download/mac) para leer los pasos
 1. Abrir el **BASH** o consola y escribir el comando para instalar **BREW** (gestor de paquetes)
@@ -117,7 +118,8 @@ Ingresar a [https://git-scm.com/download/mac](https://git-scm.com/download/mac) 
    brew install git
 ```
 
----
+----
+
 ### Instalar git en Linux
 Ingresar a [https://git-scm.com/download/linux](https://git-scm.com/download/linux) para leer los pasos
 1. Abrir el **BASH** o consola y escribir
@@ -462,7 +464,7 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
 ## Ejercicio: GitHub Classroom
 * Crear un repositorio para los ejercicios de la materia, empleando el código base de los ejercicios (servira para avanzar con html, css, js más adelante).
 
-[Link Classroom 2024](https://classroom.github.com/a/xxcqvYYq)
+[Link Classroom 2025](https://classroom.github.com/classrooms/223468915-tallerdesarrolloweb-ucc)
 
 <!--Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFkEgE8TjqSJbV8)-->
 
