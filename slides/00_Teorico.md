@@ -90,6 +90,22 @@ deividazulay@gmail.com
         <td>5</td>
         <td>Frameworks y Preprocesadores CSS</td>
     </tr>
+</tbody>
+</table>
+
+---
+
+## Calendario
+
+<table>
+<thead>
+    <tr>
+        <th>Clase</th>
+        <th>Unidad</th>
+        <th>Tema</th>
+    </tr>
+</thead>
+<tbody>
     <tr>
         <td>11 y 12</td>
         <td>6</td>
