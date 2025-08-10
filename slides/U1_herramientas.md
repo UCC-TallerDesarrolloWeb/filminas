@@ -159,6 +159,7 @@ Uno de los entornos más comunes de uso de los intérpretes es en los navegadore
 <!-- .slide: data-background="images/herramientas/IDES.png" -->
 ## IDE's
 Ejemplos de IDE's para desarrollo Web:
+* [Cursor (The AI Code Editor)](https://cursor.com/)
 * [JetBrains Web Storm](https://www.jetbrains.com/es-es/webstorm/download/#section=windows)
 * [Microsoft Visual Studio Code](https://code.visualstudio.com/)
 * [Sublime Text](https://www.sublimetext.com/)
@@ -343,6 +344,57 @@ x = -x;
 [más ejemplos](http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered%3E)
 
 ---
+
+### Ejercicio: JsDoc
+1. Asegúrate de tener [nodeJs](https://nodejs.org/es/) instalado. Para eso puedes ejecutar en el cmd:
+```shell
+node --version
+```
+2. Instala la dependencia [jsdoc](https://www.npmjs.com/package/jsdoc)
+```shell
+npm install -g jsdoc
+```
+
+----
+
+### Ejercicio: JsDoc
+3. Crea un archivo .js básico con algunas funciones. Ejemplo:
+```js
+/**
+ * Calcula el área de un rectángulo.
+ * @param {number} ancho - El ancho del rectángulo
+ * @param {number} alto - El alto del rectángulo
+ * @returns {number} El área del rectángulo
+ */
+function calcularArea(ancho, alto) {
+  return ancho * alto;
+}
+
+/**
+ * @param {string} nombre - Nombre del usuario
+ * @param {number} [edad] - Edad del usuario (opcional)
+ * @param {Object} opciones - Opciones de configuración
+ * @param {boolean} opciones.activo - Estado del usuario
+ * @param {string} opciones.rol - Rol del usuario
+ */
+function crearUsuario(nombre, edad, opciones) {
+  // Implementación
+}
+```
+
+----
+
+4. En la terminal ejecutar:
+```shell
+jsdoc ejemplo-doc.js
+```
+
+5. Verificar el contenido de la carpeta **out**
+
+
+* Recomendación: Si empleas **VSC** es recomendable tener la extensión **Better Comments** para visualizar los comentarios con el highlight adecuado.
+
+---
 ![Comenario de Gatito](images/herramientas/coment_code.jpg)
 
 ---
@@ -375,6 +427,22 @@ Un buen BTS no solo organiza errores, también ayuda a establecer prioridades, g
 
 ---
 ![Strip](images/herramientas/Strip-Depart-en-weekend-650-finalenglish.jpg)
+
+---
+
+### Ejercicio: Jira 1
+1. Ingresar a la página de [Jira](https://www.atlassian.com/es/software/jira)
+2. Click en "Ingresar"
+3. Colocar el email y password
+4. Crear un espacio de trabajo/proyecto
+
+----
+
+### Ejercicio: Jira 2
+1.  Crea **Story** por cada tarea que se desea desarrollar: Título, descripción
+2. Asignale un **responsable**
+3. Coloca **tags** relacionados
+4. Asegurate de que la tarea esté en la columna correspondiente
 
 ---
 ## Prueba de Desempeño o Performance
