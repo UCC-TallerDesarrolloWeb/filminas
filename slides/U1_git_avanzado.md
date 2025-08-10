@@ -311,7 +311,8 @@ texto.
 * Agregar info de contacto en una tabla
 * Agregar [emoji](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
----
+----
+
 ## Ejercicio Readme.md
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NlmsWZmC_IQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -328,9 +329,87 @@ con datos que no se desea versionar (instaladores, diagramas, etc).
 * Incluir el nombre de la carpeta que se desea ignorar
 * Subir los cambios al repositorio remoto
 
----
+----
+
 ## Ejercicio: .gitignore
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1yGiz06KKRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+### Configuraciones de Github
+Las configuraciones comunes y recomendadas en proyectos de GitHub están pensadas para:
+- Garantizar calidad de código
+- Evitar errores comunes
+- Estandarizar el trabajo en equipo
+- Automatizar procesos de CI/CD
+
+---
+
+### Configuraciones de Github
+- Bloquear push directo a **main/master**. Permitir merge solo via Pull Requests (PR).
+- Requerir revisión de PRs de al menos 1 aprobador antes mergear.
+- Requerir que los PR pasen los tests (CI)
+- Verificar que el proyecto esté correctamente linteado
+- Evitar force-push en ramas protegidas.
+- Requerir branches actualizados antes de mergear (evita conflictos inesperados).
+
+----
+
+### Ejercicio: Configuración de GitHub
+<!-- .slide: style="font-size: 0.80em" -->
+1. Presionar **Setting** en el repositorio que se desae configurar.
+2. En la sección **Rules** click en **New Ruleset** y seleccionar **New Branch Ruleset**
+3. Colocar un **Rule Name**, como "Block Main"
+4. Checkear la opción **Require a pull request before merging**. Seleccionar cantidad de approvals necesarios: "1". 
+5. Seleccionar sub-opciones necesarias como:
+    - Dismiss stale pull request approvals when new commits are pushed
+    - Require approval of the most recent reviewable push
+    - Require status checks to pass
+
+----
+
+### Ejercicio: GitHubActions con Conventional Commits
+1. Crear un archivo **.github/workflows/validate-commits.yml**
+2. En el archivo escribir:
+```yml
+name: Check Conventional Commits
+
+on:
+  push:
+     branches:
+        - "**"
+
+jobs:
+  lint-commits:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Lint commits with commitlint
+        uses: wagoid/commitlint-github-action@v5
+        with:
+          configFile: ./commitlint.config.js
+  
+  lint-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: npm run lint
+```
 
 ---
 #### Sigo sin enter como funcionan las ramas con los comandos...

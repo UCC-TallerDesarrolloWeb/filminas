@@ -419,8 +419,3 @@ Agrege comentarios a la página web de tablas.
 ---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-
----
-## Para realizar pruebas...
-[![JSfiddle](images/html/JSfiddle.png)](https://jsfiddle.net/)
-

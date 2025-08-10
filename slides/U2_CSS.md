@@ -73,10 +73,6 @@ Hojas de Estilo en Cascada (CSS) es un lenguaje de estilo de hojas usado para de
 CSS permite la separación del contenido del documento de la presentación del documento (disposición, colores, fuentes, etcétera).
 
 ---
-## Capas del Diseño Web
-![Capas](images/html/capas.png)
-
----
 ## CCS3: Cascading Style Sheets
 Estilos visual del documento.
 * Selectores

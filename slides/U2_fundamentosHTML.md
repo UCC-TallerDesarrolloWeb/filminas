@@ -1,5 +1,5 @@
 ---
-title: Aplicaciones Web
+title: Fundamentos de HTML+CSS
 theme: league
 slideNumber: true
 ---
@@ -50,6 +50,11 @@ Created by <i class="fab fa-telegram"></i>
 * Características de HTML
 </div>
 </div>
+
+---
+
+## Capas del Diseño Web
+![Capas](images/html/capas.png)
 
 ---
 ## Estructura de Aplicaciones Webs
@@ -103,6 +108,7 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 
 ---
 ## Procesamiento Web Dinámica
+<!-- .slide: style="font-size: 0.9em" -->
 
 ![Web Dinamica](images/fundamentosHTML/procesamiento_webDinamica.png)
 
