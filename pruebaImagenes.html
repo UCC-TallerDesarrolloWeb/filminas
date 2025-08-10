@@ -86,7 +86,7 @@
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides/"],"static":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -105,10 +105,7 @@
       const mermaidOptions = extend({ startOnLoad: false }, {});
       mermaid.startOnLoad = false;
       mermaid.initialize(mermaidOptions);
-      const cb = function (event) {
-        mermaid.init(mermaidOptions, '.stack.present > .present pre code.mermaid');
-        mermaid.init(mermaidOptions, '.slides > .present:not(.stack) pre code.mermaid');
-      }
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
       Reveal.addEventListener('ready', cb);
       Reveal.addEventListener('slidetransitionend', cb);
     </script>

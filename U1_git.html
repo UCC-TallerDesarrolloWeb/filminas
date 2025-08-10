@@ -285,7 +285,62 @@ git commit -m "Se agrego un elemento a la pagina"
 ![Git Commit](images/herramientas/git_commit.png)
 
 ---
+
 ![Commit significativo](images/herramientas/mensaje_significativo.jpg)
+
+---
+
+### Conventional commits
+
+Es una convención en el formato de los mensajes de los commits.
+Esta convención define una serie de reglas que hacen muy sencillo tanto la legibilidad del histórico del repositorio como el poder tener herramientas que automaticen procesos basándose en el historial de commits.
+
+[Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+----
+
+### Conventional commits
+
+Posee la siguiente estructura:
+
+```bash
+<tipo>(ámbito opcional): <descripción>
+```
+
+Ejemplo:
+
+```bash
+fix(PDEC-2146): resize modal
+```
+
+----
+
+### Conventional commits: Tipo
+
+<!-- .slide: style="font-size: 0.65em" -->
+
+Los tipos más comunes:
+
+- **feat:** cuando se añade una nueva funcionalidad.
+- **fix:** cuando se arregla un error.
+- **chore:** tareas rutinarias que no sean específicas de una feature o un error como por ejemplo añadir contenido al fichero .gitignore o instalar una dependencia.
+- **test:** si añadimos o arreglamos tests.
+- **docs:** cuando solo se modifica documentación.
+- **build:** cuando el cambio afecta al compilado del proyecto.
+- **ci:** el cambio afecta a ficheros de configuración y scripts relacionados con la integración continua.
+- **style:** cambios de legibilidad o formateo de código que no afecta a funcionalidad.
+- **refactor:** cambio de código que no corrige errores ni añade funcionalidad, pero mejora el código.
+- **perf:** usado para mejoras de rendimiento.
+- **revert:** si el commit revierte un commit anterior. Debería indicarse el hash del commit que se revierte.
+
+----
+
+### Conventional commits: Ventajas
+
+- Conseguimos un acuerdo en el formato de los commits con todo el equipo de desarrollo tanto interno como externo
+- Armonía en el histórico del repositorio
+- Generación automática de CHANGELOG
+- Versionado automático del proyecto
 
 ---
 ## git push
@@ -492,12 +547,134 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
 ![Fire](images/herramientas/Fire-commit-push.jpg)
 
 ---
-## Cursos de Git
-* [TAU - Source Control for Test Automation with Git](https://testautomationu.applitools.com/git-tutorial/) 
-* [Learn Git Branching](https://learngitbranching.js.org/)
-* [Codecademy](https://www.codecademy.com/learn/learn-git)
-* [Digital House](https://www.digitalhouse.com/ar)
-* [Dev-talles](https://cursos.devtalles.com/courses/git-github-control-versiones)
+## Git Brach
+Branch significa **rama**. 
+Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre generalmente para resolver problemas o crear nuevas funcionalidades. 
+
+Las **branch** permiten que nuestro proyecto pueda tener diversos estados y que los desarrolladores sean capaces de pasar de uno a otro de una manera ágil.
+
+El **branching** permite el desarrollo en paralelo sin interferencia entre las diferentes ramas. 
+
+---
+## Git Brach
+Cuando se crea un repositorio, por defecto se emplea la rama principal **master** (en local) o **main** (en remoto). 
+
+Podemos verificar esto entrando a nuestro repositorio (ejercicio1), y escribiendo:
+```
+git branch
+```
+
+---
+![Branches](images/herramientas/branches.png)
+
+---
+## Branching
+* Master/main: Contiene una versión estable y funcional del código.
+* Se pueden crear ramas para desarollar nuevas funcionalidades **feature**
+* En equipos de trabajo, Se puede crear una rama para cada desarrollar o **developer**
+* Se pueden crear ramas para trabajar en soluciones a los defectos o errores encontrados, **hotfix**
+
+---
+## Comandos de Branch
+* branch
+* checkout
+* merge
+* push
+
+---
+## git branch
+Permite visualizar en que rama se está trabajando
+````
+git branch
+````
+ó, Permite crear una rama nueva
+````
+git branch nombre_rama
+````
+
+---
+## git checkout
+Permite movernos de una rama a otra
+````
+git checkout nueva_rama
+````
+
+---
+## git merge
+A medida que crees ramas y cambies el estado del las carpetas o archivos tu proyecto empezará a divergir de una rama a otra. 
+Llegará el momento en el que te interese fusionar ramas para poder incorporar el trabajo realizado a la rama master. 
+
+Parados en la rama **master**:
+````
+git merge nueva_rama
+````
+
+---
+## Ejercicio: Github Branchs
+Empleando el repositorio ejercicio 1:
+* Visualizar en que rama estamos trabajando
+* Cree una nueva rama (develop)
+* Vea el listado de todas las branchs
+* Cambie de rama
+* Realice algún cambio en el código y commit al repositorio local
+* Visualice en Github los commits de las branchs
+* Merge de la nueva rama con Master
+* Borrar una branch
+
+---
+## Ejercicio: Github Branchs
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2KXSZtjzgkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+## Fork
+Alguna vez te pasó que en **GitHub** encontraste un código que te era de utilidad? 
+
+Quizás encontraste un código de un juego y te dijiste: "Quiero hacer mi propia versión"?
+
+O un proyecto que era interesante y querias hacer tus propias pruebas? 
+
+Esto se soluciona con un **fork**!!!
+
+---
+## Fork
+Hacerle **fork** a un repositorio significa copiarlo. Así podemos modificar el código sin afectar al proyecto original.
+
+Se utiliza para proponer cambios en el proyecto de otra persona u organización ó para utilizar el proyecto de otra 
+persona como punto de partida para nuevas ideas.
+
+---
+## Fork: Ejemplo
+Si quisieras investigar como hacer filminas con tecnología markdown, podrías emplear este [repositorio](https://github.com/UCC-LabCompu2/filminas)
+![fork](images/herramientas/fork.png)
+
+---
+#### Hice un cambio muy bueno en el repositorio, y quisiera que el autor original del código incorpore ese cambio?!?
+Esto se soluciona con un **pull request**
+
+---
+## Pull Request
+Un pull request es una petición que el propietario de un fork de un repositorio hace al propietario del repositorio 
+original para que este último incorpore los commits que están en el fork.
+
+También se denomina pull request a una solicitud que se realiza de una branch a otra para mergearse (generalmente 
+después de un code review y si no se tienen permisos de merge a master).
+
+<!--http://aprendegit.com/que-es-un-pull-request/-->
+---
+## Code Review
+Todo buen PR, requiere code review, es decir, que otro dev revise el código que desarrollamos, previo a mergear la rama.
+
+Ayuda a detectar errores en el código (lógicos, ortografía, funcionalidad), previo a su pase a producción. 
+
+El revisor puede aprobar el código y mergearlo, o solicitar al dev que realice correcciones. Todo push que se realice, se agregará al PR mientras este esté abierto.
+
+---
+## Code Review
+![Code Review](images/herramientas/wtf_perSecond.png)
+
+---
+## Code Review
+![Code Review](images/herramientas/codereview_friendly.jpg)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
@@ -554,7 +731,7 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides/"],"static":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -573,10 +750,7 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
       const mermaidOptions = extend({ startOnLoad: false }, {});
       mermaid.startOnLoad = false;
       mermaid.initialize(mermaidOptions);
-      const cb = function (event) {
-        mermaid.init(mermaidOptions, '.stack.present > .present pre code.mermaid');
-        mermaid.init(mermaidOptions, '.slides > .present:not(.stack) pre code.mermaid');
-      }
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
       Reveal.addEventListener('ready', cb);
       Reveal.addEventListener('slidetransitionend', cb);
     </script>

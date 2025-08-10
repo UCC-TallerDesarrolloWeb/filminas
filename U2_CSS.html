@@ -89,10 +89,6 @@ Hojas de Estilo en Cascada (CSS) es un lenguaje de estilo de hojas usado para de
 CSS permite la separación del contenido del documento de la presentación del documento (disposición, colores, fuentes, etcétera).
 
 ---
-## Capas del Diseño Web
-![Capas](images/html/capas.png)
-
----
 ## CCS3: Cascading Style Sheets
 Estilos visual del documento.
 * Selectores
@@ -535,7 +531,7 @@ Buenas Prácticas:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides/"],"static":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -554,10 +550,7 @@ Buenas Prácticas:
       const mermaidOptions = extend({ startOnLoad: false }, {});
       mermaid.startOnLoad = false;
       mermaid.initialize(mermaidOptions);
-      const cb = function (event) {
-        mermaid.init(mermaidOptions, '.stack.present > .present pre code.mermaid');
-        mermaid.init(mermaidOptions, '.slides > .present:not(.stack) pre code.mermaid');
-      }
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
       Reveal.addEventListener('ready', cb);
       Reveal.addEventListener('slidetransitionend', cb);
     </script>
