@@ -320,7 +320,7 @@ Prettier es compatible con múltiples frameworks de JavaScript (Angular, React, 
 3. En el menú de la izquierda presionar la rueda e ir a **Settings**
 4. Buscar **formatter**
 5. Seleccionar **ESLint**
-6. Se recomienda seleccionar **Format on save**
+6. Se recomienda checkear **Format on save**
 
 ---
 ![CommitStrip](images/herramientas/CommitStrip-IDE.jpg)
@@ -571,6 +571,21 @@ Estas pruebas ayudan a:
 ![Response Graph](images/herramientas/response_time_graph.png)
 
 ---
+
+### Otras herramientas de pruebas...
+Una herramienta de prueba sumamente sencilla de usar el **Axe**, que permite encontrar defectos
+relacionados con accesibilidad.
+
+---
+
+### Otras herramienta de pruebas...
+Empleando **Lighthouse** se pueden encontrar errores de:
+- Performance
+- Accesibilidad
+- Buenas Prácticas
+- SEO (Search Engine Optimization)
+
+---
 ## Integración Continua
 Es una práctica del desarrollo de software en la que los cambios de código se integran frecuentemente en un repositorio 
 compartido y luego se verifican automáticamente mediante pruebas, builds u otros procesos.
@@ -626,6 +641,10 @@ Es una plataforma de análisis de código estático de código abierto que ayuda
 - **Integración con herramientas:** Se integra con IDEs, sistemas de construcción y plataformas CI/CD. 
 - **Informes y paneles de control:** Genera informes detallados sobre la calidad del código y permite la creación de paneles personalizados. 
 - **Mejora continua:** Permite a los equipos de desarrollo mejorar continuamente la calidad de su código con retroalimentación en tiempo real. 
+
+---
+
+![SonarQube](images/herramientas/SonarQube.png)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
