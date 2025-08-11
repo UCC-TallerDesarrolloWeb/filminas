@@ -660,8 +660,6 @@ El revisor puede aprobar el código y mergearlo, o solicitar al dev que realice 
 ## Code Review
 ![Code Review](images/herramientas/codereview_friendly.jpg)
 
-<!--dsdsfds-->
-
 ---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
