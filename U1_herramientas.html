@@ -248,6 +248,97 @@ No existe un IDE perfecto. El mejor será el que se adapte a tu flujo de trabajo
    * Prettier
 
 ---
+
+### Linter
+Es un analizador de código estático, es una herramienta de software que verifica y analiza el código fuente de un programa en busca de posibles errores, problemas de estilo y faltas de las convenciones de codificación.
+
+Su propósito es mejorar la calidad y legibilidad del código.
+
+En **JavaScript** la herramienta más empleada es **ESLint**
+
+----
+
+### ESLint: características
+<!-- .slide: style="font-size: 0.75em" -->
+- **Análisis estático de código:** Busca de errores, problemas de estilo, inconsistencias y patrones sospechosos. Mejora la calidad y la mantenibilidad del software.
+- **Reglas configurables** según las necesidades del proyecto y las preferencias del equipo de desarrollo. Proporciona reglas predefinidas y permite crear reglas personalizadas.
+- **Integración flexible** con diferentes CI y diversos IDEs.
+- **Mensajes de error y advertencias descriptivos** que ayudan a los desarrolladores a comprender y solucionar los problemas de código de manera eficiente. 
+- **Configuración basada en archivos**, el **.eslintrc.js** ó **eslint.config.js**, esto permite mantener configuraciones diferentes para proyectos individuales y compartir configuraciones entre equipos de desarrollo.
+- **Compatibilidad con plugins y extensiones**, lo que amplía su funcionalidad y permite agregar reglas adicionales.
+
+----
+
+### ESLint: Reglas
+<!-- .slide: style="font-size: 0.80em" -->
+- *no-unused-vars*: Detecta variables declaradas pero no utilizadas en el código.
+- *no-undef*: Detecta el uso de variables no declaradas.
+- *no-console*: Advierte sobre el uso de sentencias console.log()
+- *no-extra-semi*: Detecta puntos y comas innecesarios en el código.
+- *eqeqeq*: Exige el uso de operadores de igualdad estricta (=== y !==) en lugar de igualdad débil (== y !=).
+- *camelcase*: Requiere el uso de convenciones de nomenclatura en estilo camelCase para variables y propiedades.
+- *semi*: Exige el uso de punto y coma al final de las declaraciones.
+- *quotes*: Establece el uso consistente de comillas simples o dobles para delimitar cadenas de texto.
+- *indent*: Establece la regla de indentación para el código.
+- *comma-dangle*: Establece si se debe permitir o exigir una coma final en listas y objetos.
+
+---
+
+### Ejercicio: ESLint
+1. Crear una carpeta para un proyecto de código nuevo
+2. Crear un archivo **.eslintrc**
+3. En el archivo configurar las siguientes reglas:
+```js
+{
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-undef": "error",
+    "no-console": "warn",
+    "no-extra-semi": "error",
+    "eqeqeq": ["error", "always"],
+    "camelcase": ["warn", { "properties": "always" }],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "comma-dangle": ["error", "only-multiline"]
+  }
+}
+```
+
+----
+
+### Ejercicio: ESLint
+4. Crear un archivo js de ejemplo como el siguiente
+```js
+function hola() {
+  nombre='Agus'
+  console.log('Hola'+nombre)
+}
+```
+5. Guardar. ¿Qué ocurrio con el archivo? ¿Algo cambió?
+
+---
+
+### Prettier
+Es un formateador de código, que permite que todo el equipo de desarrollo cumpla con los estándares de codificación definidos sin necesidad de acciones manuales.s
+
+Prettier es compatible con múltiples frameworks de JavaScript (Angular, React, Vue y Svelte) y también funciona con TypeScript.
+
+---
+
+### Prettier: Configuración
+1. Instalar la extensión **Prettier** en el VSC.
+2. En el archivo de configuración del **.eslintrc**
+```json
+"extends": ["plugin:prettier/recommended"],
+"plugins": ["prettier"],
+```
+3. En el menú de la izquierda presionar la rueda e ir a **Settings**
+4. Buscar **formatter**
+5. Seleccionar **ESLint**
+6. Se recomienda seleccionar **Format on save**
+
+---
 ![CommitStrip](images/herramientas/CommitStrip-IDE.jpg)
 
 ---
@@ -536,6 +627,21 @@ compartido y luego se verifican automáticamente mediante pruebas, builds u otro
 
 ---
 [![ci-build](images/herramientas/ci-build.jpg)](https://en.wikipedia.org/wiki/Build_light_indicator)
+
+---
+
+### SonarQube 
+Es una plataforma de análisis de código estático de código abierto que ayuda a los desarrolladores a identificar y corregir problemas de calidad y seguridad en su código. Se integra con herramientas de desarrollo y pipelines.
+
+---
+
+### SonarQube: Beneficios
+<!-- .slide: style="font-size: 0.80em" -->
+- **Análisis de calidad de código:** Detecta errores, vulnerabilidades, code smells, duplicaciones, cobertura de pruebas y complejidad. 
+- **Seguridad del código:** Identifica vulnerabilidades de seguridad en el código. 
+- **Integración con herramientas:** Se integra con IDEs, sistemas de construcción y plataformas CI/CD. 
+- **Informes y paneles de control:** Genera informes detallados sobre la calidad del código y permite la creación de paneles personalizados. 
+- **Mejora continua:** Permite a los equipos de desarrollo mejorar continuamente la calidad de su código con retroalimentación en tiempo real. 
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
