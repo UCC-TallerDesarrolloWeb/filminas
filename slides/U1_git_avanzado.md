@@ -366,8 +366,7 @@ Las configuraciones comunes y recomendadas en proyectos de GitHub están pensada
     - Require approval of the most recent reviewable push
     - Require status checks to pass
 
-----
-
+<!-->
 ### Ejercicio: GitHubActions con Conventional Commits
 1. Crear un archivo **.github/workflows/validate-commits.yml**
 2. En el archivo escribir:
@@ -410,6 +409,7 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 ```
+-->
 
 ---
 #### Sigo sin enter como funcionan las ramas con los comandos...
