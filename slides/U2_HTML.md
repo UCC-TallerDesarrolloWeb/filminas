@@ -115,6 +115,18 @@ Repositorio base para realizar todos los ejercicios que veremos en clase:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k3nX5AdX54s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+
+### Etiquetas anidadas
+<!-- .slide: style="font-size: 0.80em" -->
+Significa que una etiqueta está dentro de otra. Por ejemplo, **strong** y **em** están anidadas dentro de **p**. A su vez, **em** esta anidada dentro de **strong**.
+
+![Etiquetas anidadas](images/html/anidar-etiquetas-1.jpg)
+
+Generalmente la última etiqueta en abrirse es la primera en cerrarse.
+
+Los errores típicos son: olvidarse de cerrar etiquetas y cerrar etiquetas en un orden inadecuado (lo que puede generar demoras al renderizar una página).
+
+---
 ## Etiquetas Semántica
 Etiquetas que dan un significado a las partes del documento, indican qué contenido engloban y cuál es su relación con el conjunto de elementos del documento HTML.
 
@@ -158,7 +170,11 @@ Etiquetas que dan un significado a las partes del documento, indican qué conten
     <h1>NOMBRE DE LA PAGINA</h1>
 </header>
 ````
-Los titulos van desde **h1** hasta **h6**
+Los titulos van desde **h1** hasta **h6**.
+
+**h1** -> Título de mayor importancia. Sólo puede haber 1 por página.
+
+**h6** -> Título de menor importancia.
 
 ---
 ## [Tipos de Texto](https://www.w3schools.com/html/html_formatting.asp)
@@ -184,7 +200,7 @@ Ozono= O<sub>3</sub>
 Empleando  el  template  “ej_noticia”,  incluir  en  la  página  3  secciones mediante  etiquetas semánticas: 
 * En el **header** incluir una imagen y un título(la imagen debe ser descargada de internet e incluida en la carpeta 
 ‘Ejercicios-HTML/imagenes’)
-* En  **section**,  separar  el texto en párrafos.  Debe  incluir  la  utilización  de  estilos  
+* En  **main**,  separar  el texto en párrafos.  Debe  incluir  la  utilización  de  estilos  
 (negrita, itálica y subrayado).
 * El **footer** debe contener el autor de la página
 

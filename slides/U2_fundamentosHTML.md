@@ -59,7 +59,7 @@ Created by <i class="fab fa-telegram"></i>
 ----
 
 ### Capas de una página Web
-
+<!-- .slide: style="font-size: 0.90em" -->
 - **HTML**: Define los elementos que la componen (títulos, párrafos, tablas, formularios, imágenes, etc.) y organiza la información de manera jerárquica.
 - **CSS**: Se encarga de la presentación visual. Permite dar estilo a los elementos HTML, definiendo colores, tipografías, márgenes, tamaños, posiciones y animaciones visuales.
 - **JavaScript**: Comportamiento e interactividad. La página puede reaccionar a las acciones del usuario (clics, desplazamientos, entradas de texto) y comunicarse dinámicamente con servidores para actualizar contenido sin recargar la página (AJAX, fetch, APIs).
@@ -109,9 +109,9 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 ![Web Estatica](images/fundamentosHTML/procesamiento_webEstatica.png)
 
 <small> 
-1. El navegador Web solicita la página estática. <br>
-2. El servidor localiza la página. <br>
-3. El servidor Web envía la página al navegador solicitante.
+<p class="fragment"> 1. El navegador Web solicita la página estática. </p>
+<p class="fragment"> 2. El servidor localiza la página. </p>
+<p class="fragment"> 3. El servidor Web envía la página al navegador solicitante. </p>
 </small>
 
 ---

@@ -255,7 +255,7 @@ Debe tener en cuenta:
 
 ## Ejercicio: Sketch
 
-RECUERDA en el repositorio Proyecto2024-Apellido1-Apellido2 crear una carpeta con el nombre "Sketch" y subir una o varias fotos
+RECUERDA en el repositorio Proyecto2025-Apellido1-Apellido2 crear una carpeta con el nombre "Sketch" y subir una o varias fotos
 de tu diseño hecho prolijamente a mano.
 
 (No es necesario hacer esto ahora! pero mantén tu sketch a mano para evitar re-trabajar)
@@ -408,24 +408,6 @@ Es parte del proceso de verificación y validación de los sistemas software.
 
 ---
 
-<!-- ---
-## Ejercicio: Evaluacion de Interfaz
-Intercambie su diseño de interfaz con otro grupo:
-* ¿Qué opciones tiene este sistema que no estén disponibles en el propio?
-* ¿Es deseable introducir en un futuro rediseño del sistema estas características?
-* ¿Qué ventajas y desventajas presenta el otro sistema con respecto al propio?
-
-Presente un documento al otro equipo con el análisis realizado. -->
-
-<!--
-## Ejercicio: Rediseño
-Realice un rediseño del sistema teniendo en cuenta el documento de sugerencias recibido.
-
-Si son pocas modificaciones, puede marcarlas con un color diferente sobre los sketches.
-En caso de ser varias modificaciones, se sugiere dibujar el sketch nuevamente.
-
--->
-
 ## Información en un wireframe
 
 <!-- .slide: style="font-size: 0.90em" -->
@@ -484,14 +466,6 @@ Emplee algún programa para confeccionar Wireframes y generar un wireflow.
 - No mostrar ejemplos o brindar información teórica
 - Texto que indique cuál es la finalidad de la página
 - No especificar mensajes de error
-
----
-
-## Ejercicio: Evaluación de la Interfaz
-
-Si un valiente se anima, que comparta su pantalla con su diseño, y entre todos le damos un feedback de como mejorarlo.
-
-(Paso: El usuario evalúa la interfaz)
 
 ---
 

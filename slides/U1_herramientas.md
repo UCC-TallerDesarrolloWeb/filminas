@@ -486,6 +486,13 @@ jsdoc ejemplo-doc.js
 * Recomendación: Si empleas **VSC** es recomendable tener la extensión **Better Comments** para visualizar los comentarios con el highlight adecuado.
 
 ---
+
+Si durante la ejecución de JsDoc tienes algún problema, puede que tu terminal no posea 
+los permisos necesarios. Para habilitar los permisos:
+```shell
+```
+
+---
 ![Comenario de Gatito](images/herramientas/coment_code.jpg)
 
 ---
