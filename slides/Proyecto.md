@@ -71,8 +71,11 @@ Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física 
 * Lienzo canvas para realizar algún dibujo
 
 ---
+
+<!-->
 ## Github Classroom: Proyecto Integrador
 [Primer Parcial 2024](https://classroom.github.com/a/WNgx1bBa)
+<-->
 
 ---
 ### Requisitos del Primer Parcial
@@ -121,7 +124,7 @@ Tener en cuenta
 ### Requisitos del Primer Parcial
 #### Sobre el repositorio
 <!-- .slide: style="font-size: 0.60em" -->
-- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2024-ApellidoAlumno1-ApellidoAlumno2" (en gitHub Classroom)
+- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2025-ApellidoAlumno1-ApellidoAlumno2" (en gitHub Classroom)
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
 - [ ] En el **readme.md** se debe emplear [Markdown](U2_git_avanzado.html#/13) y aplicar negrita, titulo de orden 1, 2 y 3, link, items, tabla, index a cada sección (2024)
 - [ ] El código debe estar en **gitHubPages** (emplear gh-pages o configurar github para que se tome a la main como la [página a visualizar](Proyecto.html#/24))

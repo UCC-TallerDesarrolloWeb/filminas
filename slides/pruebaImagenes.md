@@ -17,4 +17,5 @@ slideNumber: true
 ![Img6](images/indice/eje6.png)
 ![Img7](images/indice/eje7.png)
 ![Proyecto](images/indice/proyecto.png)
+![fono](images/herramientas/servidoresGIT.png)
 
