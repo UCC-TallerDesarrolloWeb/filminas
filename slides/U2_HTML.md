@@ -101,7 +101,7 @@ comandos más empleados.
 ## Github Classroom
 Repositorio base para realizar todos los ejercicios que veremos en clase:
 
-[Github Classroom 2025](https://classroom.github.com/a/wepNC5oj)
+[Github Classroom 2025](https://classroom.github.com/a/AJOJ1SC2)
 
 ---
 ## Ejercicio: Primer HTML
