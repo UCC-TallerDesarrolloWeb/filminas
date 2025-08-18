@@ -90,6 +90,19 @@ Created by <i class="fab fa-telegram"></i>
 <small class="fragment">6 git commit -a -m</small>
 
 ---
+
+### ¿A donde va el código cuando hago PUSH?
+
+El código se sube al repositorio del cual fue clonado. Si no recuerdas la URL puedes ejecutar:
+```shell
+git remote -v
+```
+Y si la url es incorrecta y deseo cambiarla:
+```shell
+git remote set-url origin NUEVA-URL
+```
+
+---
 ## git reset
 Revierte el efecto de un git add, es decir, elimina el archivo del área de staging (index), pero NO borra los cambios del archivo.
 ```
