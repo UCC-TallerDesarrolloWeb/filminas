@@ -457,50 +457,138 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 * No debe haber errores en el javaScript.
 * Las funciones javaScript deben estar comentadas adecuadamente.
 
-<!--
-Ejercicios nuevos (a redactar completos):
-1. Crear una pequeña "BD"
-2. Empleando Js Renderiza los elementos de manera dinámica al cargar la página
-const productos=[
-{
-"nombre": "Par de focos redondos",
-"description": "Par de focos de 25cm x 25cm para hacer entrenamiento.",
-"categoria": "Entrenamiento",
-"marca": "Gran Marc",
-"talle:" ["s/talle"],
-"precio": 15000, 
-"imagen": "train/focos.png"
-},
-{
-"nombre: "Dobok Dan",
-"description": "Dobok habilitado para compentencias en torneos internacionales",
-"categoria": "Ropa",
-"marca": "Sasung",
-"talle": ["4","5","6","7","8"],
-"precio": 115000,
-"imagen": "clothes/dobok-dan.png"
-}
-];
+---
 
-Ejercicio: Filter
-1. Empleando de base el ejercicio anterior emplea filter y permite al usuario:
+### [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
+
+Representa el contenido de texto que se desea renderizar en un elemento.
+
+Ejemplo de uso:
+```js
+document.getElementById("saludo").innerText = `Bienvenido/a ${usuario}!!!`
+```
+
+---
+
+### [innerHtml](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
+
+Permite reemplazar el contenido de un nodo con la cadena que se asigne:
+
+Ejemplo de uso:
+```js
+const tarjeta = `<div class="card">Juego 1: Adivinanzas</div>`;
+document.getElementById("principal").innerHtml = tarjeta;
+```
+
+---
+
+### Ejercicio: Renderizado Dinámico
+
+1. Cree una "Base de Datos" de los productos que desea vender definiendo los elementos:
+````js
+const productos=[
+    {
+        "nombre": "Par de focos redondos",
+        "description": "Par de focos de 25cm x 25cm para hacer entrenamiento.",
+        "categoria": "Entrenamiento",
+        "marca": "Gran Marc",
+        "talle:" ["s/talle"],
+        "precio": 15000, 
+        "imagen": "train/focos.png"
+    },
+    {
+        "nombre: "Dobok Dan",
+        "description": "Dobok habilitado para compentencias en torneos internacionales",
+        "categoria": "Ropa",
+        "marca": "Sasung",
+        "talle": ["4","5","6","7","8"],
+        "precio": 115000,
+        "imagen": "clothes/dobok-dan.png"
+    }
+];
+````
+
+----
+
+### Ejercicio: Renderizado Dinámico
+
+2. Escriba una función Js que se llame cuando la página se carga. Esta función debe
+crear una tarjeta `<div>` por cada elemento. Esta tarjeta deberá mostrar la información del producto: nombre, precio y la imagen. (**innerHTML**)
+
+---
+
+### Ejercicio: Uso de LocalStorage
+1. Empleando de base el ejercicio anterior, agregar un botón "Ver Detalle" que redireccione a una nueva página donde puede verse TODO el detalle del producto: nombre, descripción, categoría, marca, talle, precio, imagen. (**localStorage**)
+
+---
+
+### [Arrays](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+Es una estructura de datos que permite almacenar una colección ordenada de elementos. Estos elementos pueden ser de diferentes tipos (números, cadenas, objetos, etc.) y se acceden a través de un índice, que es un número entero que indica su posición en la lista.
+
+```js
+let frutas = ["manzana", "banana", "naranja"];
+let numeros = new Array(1, 2, 3, 4, 5);
+```
+
+---
+
+### Arrays: Métodos
+Existen MUCHOS métodos de arrays. Los más usados:
+- filter
+- find
+- flat
+- forEach
+- length
+- pop
+- push
+- slice
+
+---
+
+### Array: Push
+Agrega un elemento al final del array.
+```js
+let frutas = ["manzana", "banana", "naranja"];
+frutas.push("arandano");
+console.log(["manzana", "banana", "naranja", "arandano"])
+```
+
+---
+
+### Array: Splice
+Permite añadir o remover elementos de un array.
+```js
+let frutas = ["manzana", "banana", "naranja"];
+frutas.splice(2,1); //a partir del elemento 2, borra 1 elemento
+console.log(["manzana", "banana"])
+```
+
+---
+
+### Ejercicio: Filter
+1. Empleando de base el ejercicio anterior agregue en el html:
+    - Un input de tipo texto que permita realizar búsqueda de palabras.
+    - Un `<select>` con `<option>` para filtrar por marca.
+    - Un `<select>` con `<option>` para filtrar por categoría de Producto.
+    - Un `<input type="range">` para filtrar por rango de precio.
+
+----
+
+### Ejercicio: Filter
+
+2. Emplea **filter** y permite al usuario:
    - Filtrar por categoría de productos
    - Filtrar por marca
    - Filtrar por rango de precio
    - Filtrar por palabra
-Ejercicio: Agregar, Editar, Modificar el carrito
-1. Crear un array para almacenar los productos que el usuario decida agregar al carrito de compras.
-El mismo debe almacenarse en el "localStorage" para tener persistencia.
+
+---
+
+### Ejercicio: Agregar, Editar, Modificar el carrito
+1. Empleando de base el ejercicio anterior, agregue en el HTML un botón que permita **Agregar productos al carrito**.
+2. En el Js crear un array para almacenar los productos que el usuario decida agregar al carrito de compras. El mismo debe almacenarse en el "localStorage" para tener persistencia.
 2. Agregar un botón que le permita al usuario eliminar el producto del carrito.
 3. Agregar un botón que le permita al usuario vaciar el carrito.
-
-Agregar diapos que expliquen:
-- innerText
-- innerHtml
-- manipulación de arrays (push, pop, split, etc)
-- fetch
-- (ejercicio con API de pokemon)
--->
 
 ---
 ## Bibliografia xD
