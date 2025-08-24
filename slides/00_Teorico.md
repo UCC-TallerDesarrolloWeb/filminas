@@ -25,12 +25,7 @@ Created by
 ### Ing. Agustina Edmé Aliciardi
 agustina.aliciardi@ucc.edu.ar
 
-### Ing. Nicolás Rodriguez
-<!--TODO: PONER EL EMAIL AQUÍ-->
-[]@ucc.edu.ar
-
 ### David Azulay
-<!--TODO: PONER EL EMAIL AQUÍ-->
 deividazulay@gmail.com
 
 ---
@@ -163,3 +158,14 @@ FINAL:
 ![Notas](images/presentacion/notasFacultad.png)
 
 <small>Tener en cuenta que un 55%=4, 70%=6, 80%=7.5, 90%=9</small>
+
+---
+
+### Sobre las diapositivas...
+- Algunas se pueden recorren en vertical ⬇️ (para profundizar en un tema) 
+o en horizontal ➡️ (para ir al tema siguiente)
+- Con [ESC] puedes ver todas las diapositivas
+- Con [Ctrol + P] puedes imprimirlas en **PDF**
+- Están desarrolladas con [Reveal.js](https://revealjs.com/)
+- Se escriben empleando **Markdown**
+- Se convierten a **HTML** y se suben al servidor empleando un pipeline de **Integración Continua** con **GitHub Actions**
