@@ -83,6 +83,35 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 
 ---
+### Y los estilos?
+Con el HTML 3.2 se daba formato en HTML con los elementos específicos para ello: <b>, <font>... y sus respectivos
+atributos face="arial,helvetica,sans-serif", size="3", align="center"...
+
+Implementarlo requería mucho tiempo, actualizarlo era molesto y no resultaba productivo.
+
+---
+### CSS
+Con la llegada del HTML 4 se quitaron los estilos, pero se crearon las hojas de estilo en cascada, Cascading Style Sheet o CSS.
+
+La primera versión data del 17 de diciembre de 1996, cuando salio HTML 3.2
+
+---
+### CSS 2
+Aparece el 12 de mayo de 1998. Se trataba de una versión con demasiadas novedades, y los navegadores no pudieron adaptarse bien.
+
+El W3C volvió a retrabajarlo, y entre 2004-2006, lanzó la versión level 2 revisión 1, que se conoce como CSS 2.1.
+La versión 2.1 de las CSS fue publicada como Recommendation el 7 de junio de 2011.
+
+---
+### CSS 3
+Los primeros borradores aparecieron en 1999. El W3C publicó varios "módulos" independientes los unos de los otros.
+
+Esto resulta bastante práctico para los navegadores, que pueden así implementar las novedades progresivamente.
+
+---
+![CSS3 Historia](images/html/CSS3_historia.png)
+
+---
 ## CCS: Cascading Style Sheets
 Hojas de Estilo en Cascada (CSS) es un lenguaje de estilo de hojas usado para describir la presentación de las páginas web escrito en HTML o XML.
 
@@ -125,7 +154,8 @@ comandos más empleados.
 <h1 style="color: red; font-type: helvetica; font-size: 2em">
 ````
 
----
+----
+
 ## Estilo en Línea: Desventajas
 * Difícil de mantener
 * Solución poco elegante
@@ -134,7 +164,7 @@ comandos más empleados.
 
 ---
 ## Hoja de Estilo Incrustada
-* Se incorpora en &lt;head&gt;
+* Se incorpora en `<head>`
 *  Se describe:
 ````html
 <style>
@@ -151,6 +181,14 @@ font-weight: bold;
 margin-left: 15px;
 }
 ````
+
+----
+
+## Hoja de Estilo Incrustada: Desventajas
+- Aplicar el mismo estilo en todas las páginas es complicado
+- Código no reutilizable en otros sitios
+
+
 ---
 ## Hoja de Estilo Externa o Enlazada
 * En el &lt;head&gt; se emplea un link a un archivo externo
@@ -163,30 +201,6 @@ margin-left: 15px;
 * Se separa la estructura del estilo
 * Fácil de mantener
 * Permite compartir estilos similares en todas las páginas
-
----
-## Propiedades tipográficas
-<!-- .slide: style="font-size: 0.80em" -->
-* **font-family:** se define tipografía por orden de prioridad
-* **font-size:** Se define tamaño
-* **font-style:** italic, normal
-* **font-weight:** bold, normal, ultrabold, o números 100,200,300
-* **color:** nombre, hexadecimal, rgb
-* **letter-spacing:** interletrado
-* **world-spacing:** espacio entre palabras
-* **line-height:** tamaño del renglon (altura de línea)
-* **text-align:** right, left, center
-* **text-decoration:** underline, line-through, none
-* **text-indent:** sangría
-* **text-transform:** uppercase, lowercase
-
----
-## Colores
-* Por nombre: <h1 style="color: red>
-
-* Hexadecimal: <h1 style="color: #CA98E3>
-
-* RGB: <h1 style="color: rgb(205, 92, 92)>
 
 ---
 ##  ¿Como Escribir un Estilo? 
@@ -209,6 +223,33 @@ Ej. #nombreUsuario {color: #ff00cc;}
 .nombreClass {nombreEstilo: valor;}
 Ej. .myStl {background-color: rgb(234,55,76);}
 ````
+
+
+---
+## Propiedades tipográficas
+<!-- .slide: style="font-size: 0.80em" -->
+* **font-family:** se define tipografía por orden de prioridad
+* **font-size:** Se define tamaño
+* **font-style:** italic, normal
+* **font-weight:** bold, normal, ultrabold, o números 100,200,300
+* **color:** nombre, hexadecimal, rgb
+* **letter-spacing:** interletrado
+* **world-spacing:** espacio entre palabras
+* **line-height:** tamaño del renglon (altura de línea)
+* **text-align:** right, left, center
+* **text-decoration:** underline, line-through, none
+* **text-indent:** sangría
+* **text-transform:** uppercase, lowercase
+
+---
+## Colores
+* Por nombre: `<h1 style="color: red">`
+
+* Hexadecimal: `<h1 style="color: #CA98E3">`
+
+* RGB: `<h1 style="color: rgb(205, 92, 92)">`
+
+* RGBA: `<h1 style="color: rgba(205, 92, 92, 0.23)">`
 
 ---
 ## Ejercicio: Propiedades tipográficas
@@ -312,10 +353,6 @@ Al hipervinculo de la página de ej_columnas, empleando Pseudo clases modifique:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LUuAI1UFd30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
-## Modelo de Cajas
-![Padding y Margin](images/html/pading_margin.gif)
-
----
 ##  Alto y Ancho 
 ````css
 div{
@@ -354,8 +391,12 @@ Las unidades absolutas disponibles son:
 * **pt:** puntos, la doceava parte de una pica
 
 ---
+## Modelo de Cajas
+![Padding y Margin](images/html/pading_margin.gif)
+
+---
 ##  Margin & Padding 
-<!-- .slide: style="font-size: 0.70em" -->
+<!-- .slide: style="font-size: 0.60em" -->
 1. Establecerlos por separado
 ````css
 div{margin-top: 15px;
@@ -457,18 +498,6 @@ Se puede agregar comentarios de una ó multiples líneas.
 comentario CSS de varias
 lineas */
 ````
-
----
-## CCS3
-Buenas Prácticas:
-* Comprobar el diseño en varios navegadores
-* Depuración (Ej. firebug)
-* Comentar el código
-* Identar y hacer el código fácil de leer
-* Usar sistema común de nombrado
-* Evitar tamaños absolutos en fuentes o elementos
-* Utilizar notación de colores en hexadecimal
-* Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
 
 ---
 # Bibliografía xD
