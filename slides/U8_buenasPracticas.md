@@ -42,5 +42,10 @@ Created by <i class="fab fa-telegram"></i>
 ## Buenas Prácticas en el Desarrollo Web
 
 ---
+## Consejos
+Algunos consejos de 
+[Google WebMasters](http://www.google.es/webmasters/learn/)
+
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)

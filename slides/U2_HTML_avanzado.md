@@ -53,6 +53,157 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
+----
+
+### ¿Qué etiquetas recuerdan de la clase anterior?
+<!-- .slide: style="font-size: 0.85em" -->
+
+<div class="grid-container2">
+<div class="grid-item">
+<ul>
+<li class="fragment">DOCTYPE</li>
+<li class="fragment">html</li>
+<li class="fragment">head</li>
+<li class="fragment">body</li>
+<li class="fragment">title</li>
+<li class="fragment">meta</li>
+<li class="fragment">header</li>
+<li class="fragment">nav</li>
+<li class="fragment">main</li>
+<li class="fragment">aricle</li>
+<li class="fragment">section</li>
+<li class="fragment">aside</li>
+<li class="fragment">footer</li>
+<li class="fragment">div</li>
+<li class="fragment">h1-h6</li>
+<li class="fragment">p</li>
+</div>
+<div class="grid-item">
+<li class="fragment">strong</li>
+<li class="fragment">em</li>
+<li class="fragment">u</li>
+<li class="fragment">sub</li>
+<li class="fragment">sup</li>
+<li class="fragment">ol</li>
+<li class="fragment">ul</li>
+<li class="fragment">li</li>
+<li class="fragment">a</li>
+<li class="fragment">img</li>
+<li class="fragment">form</li>
+<li class="fragment">input</li>
+<li class="fragment">select</li>
+<li class="fragment">option</li>
+<li class="fragment">textarea</li>
+<li class="fragment">button</li>
+</ul>
+</div></div>
+
+----
+
+### ¿Qué atributos recuerdan de la clase anterior?
+<!-- .slide: style="font-size: 0.85em" -->
+
+<div class="grid-container2">
+<div class="grid-item">
+<ul>
+<li class="fragment">content</li>
+<li class="fragment">name</li>
+<li class="fragment">charset</li>
+<li class="fragment">lang</li>
+<li class="fragment">src</li>
+<li class="fragment">href</li>
+<li class="fragment">target</li>
+<li class="fragment">colspan</li>
+<li class="fragment">rowspan</li>
+<li class="fragment">id</li>
+<li class="fragment">type</li>
+</div>
+<div class="grid-item">
+<li class="fragment">placeholder</li>
+<li class="fragment">size</li>
+<li class="fragment">maxlength</li>
+<li class="fragment">min</li>
+<li class="fragment">max</li>
+<li class="fragment">value</li>
+<li class="fragment">step</li>
+<li class="fragment">checked</li>
+</ul>
+</div></div>
+
+---
+
+### Más sobre formularios...
+* datalist
+* optgroup
+
+---
+
+### [Datalist](https://www.w3schools.com/tags/tag_datalist.asp)
+Permite mostrar opciones pre-definidas en un input, o dejar que el usuario complete con cualquier valor deseado:
+````html
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+````
+
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+---
+
+### [optgroup](https://www.w3schools.com/tags/tag_optgroup.asp)
+Permite agrupar opciones de un **select** según categorías:
+````html
+<select  name="materias" id="materias">
+  <option value="" disabled selected>Seleccione una materia</option>
+  <optgroup label="Comunes">
+    <option value="mat1">Análisis Matemático</option>
+    <option value="fis1">Física 1</option>
+  </optgroup>
+  <optgroup label="Ing. Informática">
+    <option value="web">Taller de Desarrollo Web</option>
+    <option value="arqSoft">Arquitectura de Software</option>
+  </optgroup>
+</select>
+````
+
+<select  name="materias" id="materias">
+  <option value="" disabled selected>Seleccione una materia</option>
+  <optgroup label="Comunes">
+    <option value="mat1">Análisis Matemático</option>
+    <option value="fis1">Física 1</option>
+  </optgroup>
+  <optgroup label="Ing. Informática">
+    <option value="web">Taller de Desarrollo Web</option>
+    <option value="arqSoft">Arquitectura de Software</option>
+  </optgroup>
+</select>
+
+---
+
+### [Progress](https://www.w3schools.com/tags/tag_progress.asp) & [Meter](https://www.w3schools.com/tags/tag_meter.asp)
+- **progress:** Representa el progreso de una tarea en curso (descarga, carga, renderizado, etc.). Se le puede agregar: value, max.
+- **meter:** Representa un valor dentro de un rango conocido (ej: nivel de batería, puntuación, temperatura, calificación). Se le puede configurar: value, min, max, low, high, optimun.
+
+````html
+<progress id="file" value="32" max="100"> 32% </progress>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+````
+
+<progress id="file" value="32" max="100"> 32% </progress>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+
 ---
 
 ## Accesibilidad
@@ -173,39 +324,40 @@ HTML5 permite incluir audio y video de forma nativa sin incluir pluing de tercer
 Para los navegadores que no soporten esta tecnología, se pueden incluir textos que indiquen que es incompatible.
     
 ---
-## Video
+
+## [Video](https://www.w3schools.com/tags/tag_video.asp)
 Permite añadir archivos de video a la página.
+Si quieres permitir varios formatos (el navegador prueba en orden hasta encontrar uno que soporte)
 ````html
-<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
+<video controls>
+    <source src="forrest_gump.mp4" type="video/mp4">
+    <source src="forrest_gump.ogg" type="video/ogg">
+    <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
     Tu navegador no implementa el elemento <code>video</code>.
 </video>
 ````
-<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
-    Tu navegador no implementa el elemento <code>video</code>.
-</video>
-
-[Más info](https://www.w3schools.com/html/html5_video.asp)
+- **Formatos**: mp4, webm, ogg.
+- **Track**: subtítulos o descripciones en video/audio.
 
 ---
+
 ### Video
-<!-- .slide: style="font-size: 0.80em" -->
 ````html
-<video width="320" height="240" autoplay muted>
-  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video> 
+<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
+    Tu navegador no implementa el elemento <code>video</code>.
+    <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+</video>
 ````
-<video width="320" height="240" autoplay muted>
+
+<video width="320" height="240" autoplay muted controls>
   <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video> 
 
 Atributos: controls (play, pause, volumen), width, height, autoplay, muted
 
-Formatos: mp4, webm, ogg.
-
 ---
-## Audio
+## [Audio](https://lenguajehtml.com/p/html/multimedia/etiquetas-html-de-audio)
 Permite añadir archivos de audio a la página.
 ````html
 <audio src="/test/audio.ogg" controls autoplay>
@@ -216,11 +368,20 @@ Permite añadir archivos de audio a la página.
     Tu navegador no implementa el elemento audio.</p>
 </audio>
 
-Atributos: src, preload (auto, metadata, none), mediagroup, autoplay, loop, muted, controls
+- **Atributos:** src, preload (auto, metadata, none), mediagroup, autoplay, loop, muted, controls
+- **Formato:** mp3, ogg, aac, opus, flac, wav
 
-Formato: mp3, ogg, aac, opus, flac, wav
+---
 
-[Más info](https://lenguajehtml.com/p/html/multimedia/etiquetas-html-de-audio)
+### iframe
+Permite incrustar otro documento html dentro del actual.
+````html
+<iframe src="https://ucc-tallerdesarrolloweb.github.io/filminas/index.html" title="Taller de Desarrollo Web">
+</iframe>
+````
+
+<iframe src="https://ucc-tallerdesarrolloweb.github.io/filminas/index.html" title="Taller de Desarrollo Web">
+</iframe>
 
 ---
 ## Ejercicio 7: Multimedia
@@ -242,9 +403,41 @@ Pero recuerda que GIT no está optimizado para subir VIDEOS o imágenes muy pesa
 Usa Git sabiamente pequeño padawan.
 
 ---
-## Consejos
-Algunos consejos de 
-[Google WebMasters](http://www.google.es/webmasters/learn/)
+
+### Figure & Figcaption
+Sirve para agrupar una foto con un pie de página:
+```html
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+```
+
+---
+
+### Small
+Sirve para escribir textos más pequeños:
+```html
+<p><small>This is some smaller text.</small></p>
+```
+
+---
+
+### br
+Salto de línea:
+```html
+<p>To force<br> line breaks<br> in a text,<br> use the br<br> element.</p>
+```
+
+---
+
+### hr
+separador temático entre secciones de texto.
+```html
+<hr>
+```
+
+<hr>
 
 ---
 ## Verifica tu Web

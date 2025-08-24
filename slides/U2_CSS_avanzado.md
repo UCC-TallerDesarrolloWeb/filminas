@@ -57,14 +57,14 @@ Created by <i class="fab fa-telegram"></i>
 <!-- .slide: style="font-size: 0.70em" -->
 La propiedad compuesta background permite definir simultáneamente todas las propiedades relacionadas con el fondo de 
 cualquier elemento: 
-* backgroud-color: color de fondo
-* background-image: imagen de fondo
-* background-position: posición
-* background-size: tamaño de la imagen de fondo (cover, auto, contain, inherit, etc)
-* background-repeat: si la imagen se repite o no (repeat, repeat-y, repeat-x)
-* background-attachment: si la imagen es fija o tiene scroll con el resto de la página
-* background-origin: desde donde la imagen debe empezar a mostrarse (content-box, padding-box, border-box)
-* background-clip: hasta donde debe extenderse el fondo dentro de un elemento. (content-box, padding-box, border-box)
+* **backgroud-color:** color de fondo
+* **background-image:** imagen de fondo
+* **background-position:** posición
+* **background-size:** tamaño de la imagen de fondo (cover, auto, contain, inherit, etc)
+* **background-repeat:** si la imagen se repite o no (repeat, repeat-y, repeat-x)
+* **background-attachment:** si la imagen es fija o tiene scroll con el resto de la página
+* **background-origin:** desde donde la imagen debe empezar a mostrarse (content-box, padding-box, border-box)
+* **background-clip:** hasta donde debe extenderse el fondo dentro de un elemento. (content-box, padding-box, border-box)
 
 ---
 ## Background: Ejemplo
@@ -112,15 +112,17 @@ Como posicionar elementos dentro de la pagina.
 
 [W3School](https://www.w3schools.com/cssref/pr_class_position.asp)
 
-Ejemplos: [Learns Layout](http://learnlayout.com/position.html)
+Leamos juntos el ejemplo: [Learns Layout](http://learnlayout.com/position.html)
 
----
+----
+
 ## Position: static;
 Los elementos posicionados con "Static" no son afectados por las propiedades top, bottom, left y right.
 
 Por defecto, todos los elementos HTML son Static.
 
----
+----
+
 ## Position: relative
 El elemento es posicionado relativo respecto a su posición normal.
 Los valores top, left, right, bottom lo mueven respecto a su posición original
@@ -128,7 +130,8 @@ Permite que un elemento se desplace respecto a lo que hubiera sido su posición 
 el resto de elementos continúan en su posición ignorando al que se desplaza, 
 lo que puede crear superposiciones; el espacio libre que deja el elemento queda libre.
 
----
+----
+
 ## Position: fixed
 El elemento "fixed" es posicionado respecto al area visible.
 Los valores top, left, right, bottom lo mueven respecto a su posición original
@@ -137,7 +140,8 @@ elemento contenedor posicionado ó respecto a la esquina superior izquierda de l
 visualización; el resto de elementos actúan como si el desplazado no existiera, por lo que su 
 espacio será ocupado por otros elementos; puede crear superposiciones.
 
----
+----
+
 ## position: absolute
 <!-- .slide: style="font-size: 0.90em" -->
 Los elementos con position: absolute; son posicionados mediante top, left... 
@@ -149,9 +153,15 @@ elemento contenedor posicionado ó respecto a la esquina superior de la ventana 
 elemento se mantendrá en la ventana de visualización o viewport, siempre en una misma posición aunque 
 el usuario se desplace por la web haciendo scroll.
 
----
+----
+
 ## position: inherit;
 Se heredan las características del elemento padre.
+
+---
+
+### Ejercicio: Position
+Empleando el CV trabajado anteriormente, colocar un position fixed al div principal con el nombre y carrera.
 
 ---
 ## superposición con z-index
@@ -181,114 +191,6 @@ Pruebe
 ---
 ## Ejercicio: 2 Columnas
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4BEX3s6ucDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-## CSS
-¿Por qué una Web no funciona igual en diferentes navegadores?
-<ul>
-<li style="list-style-image: url('images/html/chrome.png');">
-<b>Google Chrome</b>
-Utiliza para interpretar JavaScript un motor <b>V8</b>, y para el renderizado antes <b>WebKit</b> y ahora <b>Blink</b>.
-
-<li style="list-style-image: url('images/html/firefox.png');">
-<b>Firefox</b>
-Empleaba <b>JagerMonkey</b> y ahora <b>SpiderMonkey</b> para JavaScript y para el renderizado <b>Gecko</b>.
-
-<li style="list-style-image: url('images/html/explorer.png');">
-<b>Internet Explorer & Edge</b>
-Empleaba <b>Chakra</b>, posteriormente <b>ChakraCore</b> para JavaScript e inicialmente <b>Trident</b> para renderizado, luego <b>EdgeHTML</b>.
-</ul>
-
----
-![Prueba Navegadores](images/html/prueba_navegadores.jpg)
-
----
-## Transitions
-Es una forma de animar los cambios de las propiedades CSS, para que no surtan efecto de manera instantánea.
-````css
-transition: <propiedad> <duracion> <funcion-tiempo> <retraso>;
-````
-La sintaxis puede ser también separada:
-````css
-a {
-    transition-property: text-decoration;
-    transition-duration: 0.8s;
-    transition-timing-function: linear;
-    transition-delay: 0.2s;
-}
-````
-
----
-## Transitions
-<!-- .slide: style="font-size: 0.80em" -->
-* **transition-poperty**: propiedad a la que se le va a aplicar el efecto de transición. Puede ser cualquier propiedad de CSS: width, height, color, border, etc.
-* **transition-duration**: duración del efecto. Puede ser en segundos (s) o milisegundos (ms).
-* **trasition-timing-function**: define la curva de velocidad a la que se produce el efecto. Puede ser: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier, initial, inherit
-* **transition-delay**: retraso en el comienzo de la transición. Puede ser en segundos (s) o milisegundos (ms).
-
----
-## Transitions
-
-Por ejemplo:
-````css
-a {
-    text-decoration: none;
-    color: blue;
-}
-a:hover {
-    color: red;
-}
-a {
-    transition: color 0.8s linear 0.2s;
-}
-````
-
-
----
-## Transitions
-````css
-div {
-   width: 100px;
-   height: 100px;
-   background: red;
-   -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-   transition: width 2s;
-}
-   
-div:hover {
-   width: 300px;
-}
-````
-
-<div class="divTran"></div>
-
----
-## Transitions 2
-<!-- .slide: style="font-size: 0.90em" -->
-````css
-div {
-   width: 100px;
-   height: 100px;
-   background: red;
-   -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-   transition: width 2s, height 2s, transform 2s;
-}
-   
-div:hover {
-   width: 200px;
-   height: 200px;
-   -webkit-transform: rotate(180deg); /* Safari */
-   transform: rotate(180deg);
-}
-````
-
-<div class="divTran2"></div>
-
----
-## Ejercicio de Transitions
-Emplea el template **ej_columna** y aplica un estilo de transición de color al **a** que contiene el enlace a la página de leyes.
-
-Se debe realizar un cambio de color lineal en 1seg.
 
 ---
 ## Grid
@@ -411,6 +313,21 @@ El espacio entre cada columna/fila se denomina gap.
 ![Grid Gap](images/css/grid_gaps.png)
 
 ---
+
+### Ejercicio: Grid
+- Crea un archivo: **productos.html**
+- Puedes usar estilos incrustados u hoja de estilos enlazada
+- Debes crear un contenedor **main** y dentro tarjetas **div**
+- Cada tarjeta debe contener una imagen y un título
+- Las imágenes pueden obtenerse de **Ejercicios-JavaScript**
+
+----
+
+### Ejercicio: Grid
+
+![Listado de Productos](images/css/ejercicio-grid.png)
+
+---
 ## Grid: Complejo
 ![Grid Complejo](images/css/grid_complex.png)
 
@@ -456,6 +373,29 @@ El espacio entre cada columna/fila se denomina gap.
 ````
 
 ---
+
+### Ejercicio: grid-areas
+
+- Emplea **grid-container** en el body
+- Agrega etiquetas semánticas para: cabecera de la página, links de navegación, menú lateral, principal y pie de página.
+- cree las clases **itemN** con el grid-area de cada una.
+- Las clases de cabecera, links y footer deben ocupar 4 "columnas imaginarias"
+- La clase de aside debe ocupar 1, y la clase de main debe ocupar 3
+
+----
+
+### Ejercicio: grid-area
+
+![grid-area](images/css/grid-container.png)
+
+---
+
+### Ejercicio: Mejora
+Empleando las etiquetas html vistas en clase agrega:
+
+![Filtros](images/css/filtros.png)
+
+---
 ## Grid
 Puedes acceder a más documentación en:
 
@@ -464,6 +404,113 @@ Puedes acceder a más documentación en:
 [DesarrolloWeb.com](https://desarrolloweb.com/articulos/que-es-css-grid-layout.html)
 
 [LenguajeCSS](https://lenguajecss.com/p/css/propiedades/grid-css)
+
+---
+## Transitions
+Es una forma de animar los cambios de las propiedades CSS, para que no surtan efecto de manera instantánea.
+````css
+transition: <propiedad> <duracion> <funcion-tiempo> <retraso>;
+````
+La sintaxis puede ser también separada:
+````css
+a {
+    transition-property: text-decoration;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+}
+````
+
+---
+## Transitions
+<!-- .slide: style="font-size: 0.80em" -->
+* **transition-poperty**: propiedad a la que se le va a aplicar el efecto de transición. Puede ser cualquier propiedad de CSS: width, height, color, border, etc.
+* **transition-duration**: duración del efecto. Puede ser en segundos (s) o milisegundos (ms).
+* **trasition-timing-function**: define la curva de velocidad a la que se produce el efecto. Puede ser: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier, initial, inherit
+* **transition-delay**: retraso en el comienzo de la transición. Puede ser en segundos (s) o milisegundos (ms).
+
+---
+## Transitions
+
+Por ejemplo:
+````css
+a {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.8s linear 0.2s;
+}
+a:hover {
+    color: red;
+}
+````
+
+---
+## Transitions
+````css
+div {
+   width: 100px;
+   height: 100px;
+   background: red;
+   -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+   transition: width 2s;
+}
+   
+div:hover {
+   width: 300px;
+}
+````
+
+<div class="divTran"></div>
+
+---
+## Transitions 2
+<!-- .slide: style="font-size: 0.90em" -->
+````css
+div {
+   width: 100px;
+   height: 100px;
+   background: red;
+   -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+   transition: width 2s, height 2s, transform 2s;
+}
+   
+div:hover {
+   width: 200px;
+   height: 200px;
+   -webkit-transform: rotate(180deg); /* Safari */
+   transform: rotate(180deg);
+}
+````
+
+<div class="divTran2"></div>
+
+---
+## Ejercicio de Transitions
+- Agregar 2 botones "Catálogo" y "Carrito de Compras" en la sección **nav**
+- Agregar los estilos para que se visualice de la siguiente manera: (el cambio de color de fondo y de padding no debe ser abrupto)
+
+![Botones](images/css/botones.png)
+
+---
+
+### Variables
+
+Para reutilizar los colores de manera más sencilla:
+```css
+:root {
+        --color-primario: rgb(120, 11, 11);
+        --color-secundario: rgb(35, 11, 120);
+        --color-texto: white;
+      }
+
+a {background-color: var(--color-primario);}
+```
+
+---
+
+### CSS: Refactorización
+
+- Reutilice los colores empleando **VAR**
 
 ---
 ##  CSS: Recomendación 
@@ -497,6 +544,41 @@ http://westciv.com/tools/shadows/
 }
 ````
 [Learn Layout](http://learnlayout.com/media-queries.html)
+
+
+---
+## CSS
+<!-- .slide: style="font-size: 0.90em" -->
+¿Por qué una Web no funciona igual en diferentes navegadores?
+<ul>
+<li style="list-style-image: url('images/html/chrome.png');">
+<b>Google Chrome</b>
+Utiliza para interpretar JavaScript un motor <b>V8</b>, y para el renderizado antes <b>WebKit</b> y ahora <b>Blink</b>.
+
+<li style="list-style-image: url('images/html/firefox.png');">
+<b>Firefox</b>
+Empleaba <b>JagerMonkey</b> y ahora <b>SpiderMonkey</b> para JavaScript y para el renderizado <b>Gecko</b>.
+
+<li style="list-style-image: url('images/html/explorer.png');">
+<b>Internet Explorer & Edge</b>
+Empleaba <b>Chakra</b>, posteriormente <b>ChakraCore</b> para JavaScript e inicialmente <b>Trident</b> para renderizado, luego <b>EdgeHTML</b>.
+</ul>
+
+---
+
+![Prueba Navegadores](images/html/prueba_navegadores.jpg)
+
+---
+## CCS3
+Buenas Prácticas:
+* Comprobar el diseño en varios navegadores
+* Depuración (Ej. firebug)
+* Comentar el código
+* Identar y hacer el código fácil de leer
+* Usar sistema común de nombrado
+* Evitar tamaños absolutos en fuentes o elementos
+* Utilizar notación de colores en hexadecimal
+* Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?

@@ -53,4 +53,6 @@ La página debe tener:
 
 [github.com/UCC-TallerDesarrolloWeb![campus](images/presentacion/github2025.png)](https://github.com/UCC-TallerDesarrolloWeb)
 
-
+---
+## ¿Dudas, Preguntas, Comentarios?
+![DUDAS](images/pregunta.gif)

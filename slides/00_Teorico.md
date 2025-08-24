@@ -169,3 +169,7 @@ o en horizontal ➡️ (para ir al tema siguiente)
 - Están desarrolladas con [Reveal.js](https://revealjs.com/)
 - Se escriben empleando **Markdown**
 - Se convierten a **HTML** y se suben al servidor empleando un pipeline de **Integración Continua** con **GitHub Actions**
+
+---
+## ¿Dudas, Preguntas, Comentarios?
+![DUDAS](images/pregunta.gif)
