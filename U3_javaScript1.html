@@ -90,19 +90,6 @@ Created by <i class="fab fa-telegram"></i>
 [Curso: Introduction to JavaScript](https://testautomationu.applitools.com/javascript-tutorial/)
 
 ---
-## JavaScript
-Es un lenguaje de scripting multiplataforma y orientado a eventos y objetos.
-Se usa principalmente del lado del cliente implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas.
-
-También hay versiones de JavaScript más avanzadas de lado del servidor, como [Node.js](https://nodejs.org/es/), que te permiten agregar más funcionalidad a un sitio web.
-
----
-## Características
-* Orientado a Eventos y Objetos
-* Lenguaje Interpretado
-* Tipado dinámico (una variable puede tomar valores de distinto tipo)
-
----
 ## Incluir JavaScript
 * En el mismo documento, agregando ```<script></script>```
 * En un archivo externo
@@ -174,31 +161,46 @@ let sumar = function(parametro1, parametro2){
    let res = parametro1 + parametro2;
    return res;
 }
-console.log(miFuncionSuma(2,3));
+console.log(sumar(2,3));
 ````
 
 ---
 ## Funciones Flecha
 * Es una función **anónima**
 * No necesita de la palabra reservada **function**
-* No es necesario emplear return
 * Sintaxis simplificada, que permite optimizar el código.
 ````javascript
-let suma = (parametro1, parametro2) => { parametro1 + parametro2 }
+let suma = (parametro1, parametro2) => {
+  return parametro1 + parametro2;
+};
+console.log(suma(2, 3));
 ````
 
 ---
 ## Funciones Flecha
 * Si la función tiene solo un parámetro, pueden omitirse los paréntesis
-* Si el cuerpo de la función es una sola línea, pueden omitirse las llaves
+* Si el cuerpo de la función es una sola línea, pueden omitirse las llaves y el return
 ````javascript
 let saludo = nombre =>  'Hola ' + nombre + '!!!' ;
 ````
+
+---
+## Funciones Flecha
+
 * Si la función no lleva parámetros, los parentesis vacios son obligatorios.
-* Si la función necesita de un objeto, debe emplearse un paréntesis
+* Si la función necesita de un objeto o si no lleva parámetros, debe emplearse un paréntesis
 ````javascript
-let obj = () =>  ({nombre: 'Agus', edad: 34}) ;
+let obj = () =>  ({nombre: 'Agus', edad: 37}) ;
 ````
+
+---
+
+| Tipo de función      | Sintaxis | Ejemplo | Notas |
+|----------------------|----------|---------|-------|
+| **Declarada**        | `function nombre(params) { ... }` | ```function sumar(a, b) { return a + b; } console.log(sumar(2, 3)); // 5 ``` | Tiene nombre propio, se "eleva" (hoisting). |
+| **Anónima**          | `let nombre = function(params) { ... }` | ```let sumar = function(a, b) { return a + b; }; console.log(sumar(2, 3)); // 5 ``` | No tiene nombre propio, se guarda en una variable. |
+| **Flecha (arrow)**   | `let nombre = (params) => expr` | ```let sumar = (a, b) => a + b; console.log(sumar(2, 3)); // 5 ``` | Sintaxis simplificada. No tiene su propio `this`. Puede omitir `return`, llaves o paréntesis en casos simples. |
+
 
 ---
 ## Funciones Predefinidas
@@ -375,28 +377,29 @@ Escribir funciones JavaScript para que, al escribir un número en cualquiera de 
 ## Ejemplo Conversion de Unidades
 <script>
 let convertirUnidades = (unidad, valor) => {
+    const form = document.lasUnidades;
     if(isNaN(valor)){
         alert("Se ingreso un valor invalido en " + unidad);
-        document.lasUnidades.yarda.value = "";
-        document.lasUnidades.metro.value = "";
-        document.lasUnidades.pulgada.value = "";
-        document.lasUnidades.pie.value = "";
+        form.yarda.value = "";
+        form.metro.value = "";
+        form.pulgada.value = "";
+        form.pie.value = "";
     } else if (unidad == "metro") {
-        document.lasUnidades.pulgada.value = valor * 39.3701;
-        document.lasUnidades.pie.value = valor * 3.28084;
-        document.lasUnidades.yarda.value = valor * 1.09361;
+        form.pulgada.value = valor * 39.3701;
+        form.pie.value = valor * 3.28084;
+        form.yarda.value = valor * 1.09361;
     } else if (unidad == "pulgada") {
-        document.lasUnidades.metro.value = valor * 0.0254;
-        document.lasUnidades.pie.value = valor * 0.08333;
-        document.lasUnidades.yarda.value = valor * 0.027778;
+        form.metro.value = valor * 0.0254;
+        form.pie.value = valor * 0.08333;
+        form.yarda.value = valor * 0.027778;
     } else if (unidad == "pie") {
-        document.lasUnidades.metro.value = valor * 0.3048;
-        document.lasUnidades.pulgada.value = valor * 12;
-        document.lasUnidades.yarda.value = valor * 0.333333;
+        form.metro.value = valor * 0.3048;
+        form.pulgada.value = valor * 12;
+        form.yarda.value = valor * 0.333333;
     } else if (unidad == "yarda") {
-        document.lasUnidades.metro.value = valor * 0.9144;
-        document.lasUnidades.pulgada.value = valor * 36;
-        document.lasUnidades.pie.value = valor * 3;
+        form.metro.value = valor * 0.9144;
+        form.pulgada.value = valor * 36;
+        form.pie.value = valor * 3;
     }
 }
 </script>
@@ -416,28 +419,29 @@ yarda=<input style="font-size: 22px" type="text" name="yarda" onchange="cambioUn
 ## Ejemplo Conversion de Unidades
 ````javascript
 function cambioUnidades(valor, unidad) {
+    const form = document.lasUnidades;
     if(isNaN(valor)){
         alert("Se ingreso un valor invalido en " + unidad);
-        document.lasUnidades.yarda.value = "";
-        document.lasUnidades.metro.value = "";
-        document.lasUnidades.pulgada.value = "";
-        document.lasUnidades.pie.value = "";
+        form.yarda.value = "";
+        form.metro.value = "";
+        form.pulgada.value = "";
+        form.pie.value = "";
     } else if (unidad == "metro") {
-        document.lasUnidades.pulgada.value = valor * 39.3701;
-        document.lasUnidades.pie.value = valor * 3.28084;
-        document.lasUnidades.yarda.value = valor * 1.09361;
+        form.pulgada.value = valor * 39.3701;
+        form.pie.value = valor * 3.28084;
+        form.yarda.value = valor * 1.09361;
     } else if (unidad == "pulgada") {
-        document.lasUnidades.metro.value = valor * 0.0254;
-        document.lasUnidades.pie.value = valor * 0.08333;
-        document.lasUnidades.yarda.value = valor * 0.027778;
+        form.metro.value = valor * 0.0254;
+        form.pie.value = valor * 0.08333;
+        form.yarda.value = valor * 0.027778;
     } else if (unidad == "pie") {
-        document.lasUnidades.metro.value = valor * 0.3048;
-        document.lasUnidades.pulgada.value = valor * 12;
-        document.lasUnidades.yarda.value = valor * 0.333333;
+        form.metro.value = valor * 0.3048;
+        form.pulgada.value = valor * 12;
+        form.yarda.value = valor * 0.333333;
     } else if (unidad == "yarda") {
-        document.lasUnidades.metro.value = valor * 0.9144;
-        document.lasUnidades.pulgada.value = valor * 36;
-        document.lasUnidades.pie.value = valor * 3;
+        form.metro.value = valor * 0.9144;
+        form.pulgada.value = valor * 36;
+        form.pie.value = valor * 3;
     }
 }
 ````

@@ -136,9 +136,10 @@ convertirUnidades = (id,valor) => {
 ````
 
 ---
-## Podemos modificar CSS mediante Javascript?
-<p class="fragment"> SI </p>
-<p class="fragment"> Ahora veremos un ejemplo... </p>
+## Modificar CSS mediante Javascript
+- Modificar una única propiedad CSS de un elemento.
+- Manipular el atributo class del elemento.
+- Técnicas avanzadas, como inyección de nodos style o el reemplazo de toda una hoja de estilos externa por otra
 
 ---
 ### Ejemplo Mostrar/Ocultar Div
@@ -161,6 +162,7 @@ Aca hay valores de Distancia! O mas radios, o algo xD
 
 ---
 ## HTML: Displayed
+<small>Esto es solo un ejemplo. Las propiedades CSS deben ir en hoja de estilo separada.</small>
 ````html
 <div style="text-align: left; display: inline-block; margin: auto;">
     <input type="radio" name="velocidad" value="Vinicial" onclick="seMuestra(this.value)">Velocidad Inicial
@@ -204,6 +206,17 @@ Escribir una función JavaScript para mostrar u ocultar el div celeste.
 ### Ejercicio: Mostrar/Ocultar div
 Escribir una función JavaScript para mostrar u ocultar el div celeste.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mP-S_eqCPYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+### Ejercicio: Mostrar/Ocultar Dialog
+- En **productos.html** coloque un botón de "Ver detalle de Producto"
+- Al presionar el botón se debe visualizar un **dialog**.
+- El dialog debe tener un botón para cerrar.
+
+---
+### Ejercicio: Mostrar/Ocultar Dialog
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kyU9drm5ke0?si=uaO_liVIUr4IdK8C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 ## Ejercicio: Operaciones Matemáticas
@@ -365,115 +378,6 @@ Modificar el HTML para quitar los inputs de los resultados. Emplear span, p o di
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2eiHH0qGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
-### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
-<!-- .slide: style="font-size: 0.70em" -->
-![Primer Web](images/html/primerWeb.png)
-* Crear una función JavaScript que sea ejecutada cuando el botón sea presionado. 
-La función debe concatenar la URL de la segunda web con los valores ingresados por el usuario, separados por ‘#’ y dirigirse a la segunda web.
-
-![Segunda Web](images/html/segundaWeb.png)
-* Crear una función JavaScript que se ejecute cuando la segunda web sea cargada. 
-Debe tomar el valor de la URL y dividirla cada vez que ‘#’ sea encontrado. Debe emplear estos valores y cargarlos en el input.
-
----
-### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UANWAIdMQEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-## [JS: LocalStorage](https://developer.mozilla.org/es/docs/Web/API/Web_Storage_API)
-<!-- .slide: style="font-size: 0.90em" -->
-La API de almacenamiento web permite almacenar información de tipo clave/valor.
-* **sessionStorage**: mantiene el almacenamiento mientras dure la sesión de la página (mientras el navegador esté abierto, 
-incluyendo recargas de página y restablecimientos).
-* **localStorage**: el almacenamiento persiste incluso cuando el navegador se cierre y se reabra.
-
-Al invocar uno de éstos, se creará una instancia del objeto Storage, a través del cual los datos pueden ser creados, recuperados y eliminados. 
-
----
-## JS: LocalStorage
-<!-- .slide: style="font-size: 0.90em" -->
-* **Storage**: Permite crear, recuperar y eliminar datos de un dominio y tipo de almacenamiento (sesión o local) específicos.
-* **Window**: Las propiedades **Window.sessionStorage** y **Window.localStorage** proveen acceso a la sesión actual 
-del dominio y a objetos Storage locales. Ofrece un manejador de evento Window.onstorage que se dispara cuando un área 
-de la memoria cambia (por ejemplo, cuando se almacena un nuevo elemento).
-* **StorageEvent**: El evento se dispara en el objeto Window de un documento cuando un área de la memoria cambia. 
-
----
-## JS: Ejemplo LocalStorage
-HTML
-````javascript
-<body onload="tomarDatos()">
-Esto es una prueba del local storage. <br>
-Ingrese su nombre <input type="text" id="NombreUsuarioInput" onchange="guardarNombre(this.value)">
-<p>Su nombre es <span id="aCompletar"></span></p>
-</body>
-````
-
-JavaScript
-````javascript
-let tomarDatos = () => {
-    let nombre = localStorage.getItem("NombreDelUsuario");
-    document.getElementById("NombreUsuarioInput").value = nombre;
-    document.getElementById("aCompletar").innerHTML = nombre;
-}
-
-let guardarNombre = (nombreUsu) => {
-    localStorage.setItem("NombreDelUsuario", nombreUsu);
-}
-````
-
----
-### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb empleando LocalStorage
-<!-- .slide: style="font-size: 0.70em" -->
-![Primer Web](images/html/primerWeb.png)
-* Crear una función JavaScript que sea ejecutada cuando el botón sea presionado. 
-La función debe guardar en el local storage los valores ingresados por el usuario y dirigirse a la segunda web.
-
-![Segunda Web](images/html/segundaWeb.png)
-* Crear una función JavaScript que se ejecute cuando la segunda web sea cargada. 
-Debe tomar los valores guardados en el localStorage.
-
----
-### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb empleando LocalStorage
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6wnp6uaEfjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-## Métodos para Strings
-````javascript
-var nombreMateria = 'LabCompu2';
-nombreMateria.length;
-nombreMateria[0]; //Devuelve L, primera letra
-nombreMateria[nombreMateria.length-1]; //Devuelve 2, última letra
-nombreMateria.indexOf('Compu2'); //Encuentra una subcadena dentro de una cadena y la extrae, da como resultado 3
-nombreMateria.indexOf('pepe'); //Resultado -1, subcadena no encontrada
-nombreMateria.slice(0,3); //Esto devuelve Lab
-nombreMateria.slice(3); //Esto devuelve Compu2
-nombreMateria.toLowerCase(); //Conversión a minúsculas
-nombreMateria.toUpperCase(); //Conversión a Mayusculas
-nombreMateria.replace('Lab','Laboratorio');
-````
-
----
-## Métodos para Strings
-````javascript
-var saludo1 = 'Hola';
-var saludo2 = 'Mundo!';
-var texto = saludo1 + saludo2;
-var nombreMat = "Laboratorio de Computacion 2";
-nombreMat.split('a'); //Se crea el siguiente array: ['L','bor','torio de Comput','cion 2'];
-````
-
----
-## Podemos Comenzar con el Segundo Parcial!
-<!-- .slide: style="font-size: 0.75em" -->
-Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
-* Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
-* Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
-* Una función que realice un dibujo sobre un canvas.
-* No debe haber errores en el javaScript.
-* Las funciones javaScript deben estar comentadas adecuadamente.
-
----
 
 ### [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
 
@@ -531,10 +435,106 @@ const productos=[
 2. Escriba una función Js que se llame cuando la página se carga. Esta función debe
 crear una tarjeta `<div>` por cada elemento. Esta tarjeta deberá mostrar la información del producto: nombre, precio y la imagen. (**innerHTML**)
 
+----
+
+### Ejercicio: Renderizado Dinámico
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Po1d5hYju4A?si=4p0heUAX8DKSOnHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ---
 
-### Ejercicio: Uso de LocalStorage
-1. Empleando de base el ejercicio anterior, agregar un botón "Ver Detalle" que redireccione a una nueva página donde puede verse TODO el detalle del producto: nombre, descripción, categoría, marca, talle, precio, imagen. (**localStorage**)
+### Ejercicio: Renderizado Dinámico del Dialog
+
+2.1. Modificar las funciones desarrolladas previamente para que el contenido del **dialog** varíe
+dinámicamente acorde al producto que seleccionó el usuario.
+
+----
+
+### Ejercicio: Renderizado Dinámico del Dialog
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mjkwLfIH71A?si=ndJnbbOi-Wna868P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+## [JS: LocalStorage](https://developer.mozilla.org/es/docs/Web/API/Web_Storage_API)
+<!-- .slide: style="font-size: 0.90em" -->
+La API de almacenamiento web permite almacenar información de tipo clave/valor.
+* **sessionStorage**: mantiene el almacenamiento mientras dure la sesión de la página (mientras el navegador esté abierto, 
+incluyendo recargas de página y restablecimientos).
+* **localStorage**: el almacenamiento persiste incluso cuando el navegador se cierre y se reabra.
+
+Al invocar uno de éstos, se creará una instancia del objeto Storage, a través del cual los datos pueden ser creados, recuperados y eliminados. 
+
+---
+## JS: LocalStorage
+<!-- .slide: style="font-size: 0.90em" -->
+* **Storage**: Permite crear, recuperar y eliminar datos de un dominio y tipo de almacenamiento (sesión o local) específicos.
+* **Window**: Las propiedades **Window.sessionStorage** y **Window.localStorage** proveen acceso a la sesión actual 
+del dominio y a objetos Storage locales. Ofrece un manejador de evento Window.onstorage que se dispara cuando un área 
+de la memoria cambia (por ejemplo, cuando se almacena un nuevo elemento).
+* **StorageEvent**: El evento se dispara en el objeto Window de un documento cuando un área de la memoria cambia. 
+
+---
+## JS: Ejemplo LocalStorage
+HTML
+````javascript
+<body onload="tomarDatos()">
+Esto es una prueba del local storage. <br>
+Ingrese su nombre <input type="text" id="NombreUsuarioInput" onchange="guardarNombre(this.value)">
+<p>Su nombre es <span id="aCompletar"></span></p>
+</body>
+````
+
+JavaScript
+````javascript
+let tomarDatos = () => {
+    let nombre = localStorage.getItem("NombreDelUsuario");
+    document.getElementById("NombreUsuarioInput").value = nombre;
+    document.getElementById("aCompletar").innerHTML = nombre;
+}
+
+let guardarNombre = (nombreUsu) => {
+    localStorage.setItem("NombreDelUsuario", nombreUsu);
+}
+````
+
+---
+### Ejercicio: Carrito de Compras con localstorage
+
+1. Agregar un botón "Agregar al carrito" en cada tarjeta de producto que permita agregar el producto
+a un array. (guardar este array en un localstorage)
+2. Agregar una página **carrito.html** que tenga el mismo header, nav, footer y variar el main para visualizar un listado de productos.
+
+---
+### Ejercicio: Carrito de Compras con localstorage
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3W8B_nHYPAM?si=B7c6kJk_ds9eFv_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+## Métodos para Strings
+````javascript
+var nombreMateria = 'LabCompu2';
+nombreMateria.length;
+nombreMateria[0]; //Devuelve L, primera letra
+nombreMateria[nombreMateria.length-1]; //Devuelve 2, última letra
+nombreMateria.indexOf('Compu2'); //Encuentra una subcadena dentro de una cadena y la extrae, da como resultado 3
+nombreMateria.indexOf('pepe'); //Resultado -1, subcadena no encontrada
+nombreMateria.slice(0,3); //Esto devuelve Lab
+nombreMateria.slice(3); //Esto devuelve Compu2
+nombreMateria.toLowerCase(); //Conversión a minúsculas
+nombreMateria.toUpperCase(); //Conversión a Mayusculas
+nombreMateria.replace('Lab','Laboratorio');
+````
+
+---
+## Métodos para Strings
+````javascript
+var saludo1 = 'Hola';
+var saludo2 = 'Mundo!';
+var texto = saludo1 + saludo2;
+var nombreMat = "Laboratorio de Computacion 2";
+nombreMat.split('a'); //Se crea el siguiente array: ['L','bor','torio de Comput','cion 2'];
+````
 
 ---
 
@@ -558,6 +558,7 @@ Existen MUCHOS métodos de arrays. Los más usados:
 - pop
 - push
 - slice
+- splice
 
 ---
 
@@ -581,6 +582,19 @@ console.log(["manzana", "banana"])
 
 ---
 
+### Ejercicio: Mejoras en el carrito
+
+1. Crear un botón para "Vaciar el Carrito" (usar localstorage.removeItem)
+2. Agregar en cada producto un botón para "Eliminar el producto" (usar array.splice)
+
+---
+
+### Ejercicio: Mejoras en el carrito
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ln7tgVrHuSw?si=vksPGWWNMja1L7UD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ### Ejercicio: Filter
 1. Empleando de base el ejercicio anterior agregue en el html:
     - Un input de tipo texto que permita realizar búsqueda de palabras.
@@ -597,14 +611,6 @@ console.log(["manzana", "banana"])
    - Filtrar por marca
    - Filtrar por rango de precio
    - Filtrar por palabra
-
----
-
-### Ejercicio: Agregar, Editar, Modificar el carrito
-1. Empleando de base el ejercicio anterior, agregue en el HTML un botón que permita **Agregar productos al carrito**.
-2. En el Js crear un array para almacenar los productos que el usuario decida agregar al carrito de compras. El mismo debe almacenarse en el "localStorage" para tener persistencia.
-2. Agregar un botón que le permita al usuario eliminar el producto del carrito.
-3. Agregar un botón que le permita al usuario vaciar el carrito.
 
 ---
 ## Bibliografia xD
