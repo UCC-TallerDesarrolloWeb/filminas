@@ -42,28 +42,30 @@ Created by <i class="fab fa-telegram"></i>
 * [Imágenes](Proyecto.html#/14)
 * [CSS](Proyecto.html#/15)
 * [Accesibilidad](Proyecto.html#/16)
-* [Correcciones](Proyecto.html#/17)
+* [JavaScript](Proyecto.html#/17)
+* [Documentación](Proyecto.html#/19)
+* [Tetsing](Proyecto.html#/20)
+* [Correcciones](Proyecto.html#/21)
+* [¿Cómo comenzar?](Proyecto.html#/25)
 
 </div>
 <div class="grid-item">
 
 ### Requisitos del Segundo Parcial
-* [Proyecto General](Proyecto.html#/26)
-* [Funcionalidad JavaScript](Proyecto.html#/27)
-* [Documentación](Proyecto.html#/29)
-* [Correcciones](Proyecto.html#/30)
+* [React](Proyecto.html#/30)
+* [Proyecto General](Proyecto.html#/33)
+* [Correcciones](Proyecto.html#/34)
 
 ### Requisitos del Final
-* [Proyecto General](Proyecto.html#/33)
-* [Animación](Proyecto.html#/34)
+* [Proyecto General](Proyecto.html#/37)
 
 </div>
 </div>
 
 ---
-## [PROYECTO](https://ucc-labcompu2-historico.github.io/)
+## PROYECTO
     
-Relizar un proyecto Web de cualquier temática, que cumpla con los requisitos.</span>
+Relizar un proyecto Web de cualquier temática, que cumpla con los requisitos.
 * User Interface (HTML5 y CSS3)
 * Funcionalidad (Javascript)
 * Campos para realizar algún cálculo
@@ -71,10 +73,8 @@ Relizar un proyecto Web de cualquier temática, que cumpla con los requisitos.</
 
 ---
 
-<!-->
 ## Github Classroom: Proyecto Integrador
-[Primer Parcial 2024](https://classroom.github.com/a/WNgx1bBa)
-<-->
+[Primer Parcial 2025](https://classroom.github.com/a/OGkZvRfV)
 
 ---
 ### Requisitos del Primer Parcial
@@ -108,10 +108,10 @@ Tener en cuenta
 
 ---
 ### Requisitos del Primer Parcial
-#### Sobre el [Wireframe/Mockup](U3_prototipado.html#/26)
+#### Sobre el [Wireframe/Mockup](U2_prototipado.html#/26)
 <!-- .slide: style="font-size: 0.80em" -->
-- [ ] Dibujado con algún programa como: Figma, AdobeXD, Draw.io en Drive, Pencil Project, Mockups, NinjaMock, o similares.
-- [ ] TMensajes de error para el usuario
+- [ ] Dibujado con algún programa como: Figma, AdobeXD, Canvas, Draw.io en Drive, Pencil Project, Mockups, NinjaMock, o similares.
+- [ ] Diseño de Mensajes de error para el usuario
 - [ ] Versión Desktop y Mobile
 - [ ] Guardado en formato PNG, JPG ó PDF
 - [ ] Dentro de una carpeta llamada "Wireframe" ó "Mockup"
@@ -127,7 +127,6 @@ Tener en cuenta
 - [ ] En caso de haber múltiples branchs, NO debe haber diferencias entre **main/master** y **gh-pages** (verificar de realizar el Merge).
 - [ ] Publicar la Web empleando [GitHubPages](Proyecto.html#/24)
 - [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store o node_modules, en todo caso emplear **.gitignore**)
-- [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
 
 ---
 ### Requisitos del Primer Parcial
@@ -135,17 +134,18 @@ Tener en cuenta
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] NO está permitido descargar un TEMPLATE (diseño 100% desde cero)
 - [ ] La página principal debe llamarse index
-- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups)
+- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups). En un segunda etapa, al emplear react, carpetas: components, pages, styles.
 - [ ] Identar correctamente el código (en Webstorm con Ctrol+A se selecciona todo el código y con Ctrl+Alt+L ó menú *Code* > *Reformat Code*)
 - [ ] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] Se debe emplear [favicon](U2_CSS.html#/34)
 - [ ] Emplear alguna fuente de [google fonts](U2_CSS.html#/35) o subir al proyecto alguna fuente externa (aunque sea para un título)
 - [ ] Debe haber navegación entre todas las páginas
 - [ ] No debe haber errores de ortografía en el contenido visual
+- [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
 
 ---
 ### Requisitos del Primer Parcial
-#### Sobre el HTML
+#### Sobre el HTML (1)
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] Todas las etiquetas deben estar en minúscula
 - [ ] Poner comillas a todos los atributos
@@ -157,7 +157,7 @@ Tener en cuenta
 
 ---
 ### Requisitos del Primer Parcial
-#### Sobre el HTML
+#### Sobre el HTML (2)
 <!-- .slide: style="font-size: 0.80em" -->
 - [ ] Debe contener al menos 3 [elementos](U2_HTML_avanzado.html#/5) de tipo ```<input>``` o ```<select>``` o ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio o seleccionar opciones o llamar a una función.
 - [ ] Emplear el atributo [**placeholder**](U2_HTML_avanzado.html#/19) (mínimamente en 1 input)
@@ -167,12 +167,12 @@ Tener en cuenta
 ---
 
 ### Requisitos del Primer Parcial
-#### Sobre el HTML (2)
+#### Sobre el HTML (3)
 
 <!-- .slide: style="font-size: 0.70em" -->
 
 - [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
-- [ ] La [anidación de etiquetas](U4_HTML_avanzado.html#/31) HTML debe ser correcta.
+- [ ] La [anidación de etiquetas](U2_HTML.html#/11) HTML debe ser correcta.
 - [ ] No utilizar etiquetas deprecadas.
 
 ![TAG Deprecadas](images/proyecto/deprecated_tag.png)
@@ -209,38 +209,52 @@ Tener en cuenta
 - [ ] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
 - [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
 
-
 ---
 ### Requisitos del Segundo Parcial
-#### Sobre la funcionalidad JavaScript
+#### Sobre la funcionalidad JavaScript (1)
 <!-- .slide: style="font-size: 0.75em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
-* Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert o dialog, y que blanquee el contenido del campo.
-* Una función que calcule/muestre algo en base a los valores ingresados por el usuario en los inputs.
-* Los inputs no deberían permitir ingresar números extremadamente grandes
-NOTA: Prueba el funcionamiento de la página con diferentes valores. Qué pasa si presiono calcular sin ingresar nada? Y si ingreso solo algunos campos? Y si ingreso todo cero? Y si ingreso letras? Y si ingreso números negativos?
+- [ ] Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert o dialog, y que blanquee el contenido del campo.
+- [ ] Una función que calcule/muestre algo en base a los valores ingresados por el usuario en los inputs.
+- [ ] El código Js debe estar en un archivo externo
+- [ ] Se debe emplear var, let o const según corresponda para mayor eficiencia
 
 ---
 ### Requisitos del Segundo Parcial
-#### Sobre la funcionalidad JavaScript
-- [ ] El código Js debe estar en un archivo externo
-- [ ] Se debe emplear var, let o const según corresponda para mayor eficiencia
+#### Sobre la funcionalidad JavaScript (2)
 - [ ] No deben existir funciones innecesarias que no se llamen en ninguna sección del código
 - [ ] Las funciones deben estar escritas cómo **función flecha**
+- [ ] No debe haber errores JavaScript presentes (F12 > Consola)
+- [ ] El funcionamiento de la página debe ser consistente.
 
 ---
 ### Requisitos del Segundo Parcial
 #### Sobre la documentación
 - [ ] **TODAS** las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
 ````javascript
-   /**
-   * Descripción de que hace la función
-   * @method Nombre de la función
-   * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
-   * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
-   * @return Valor que retorna
-   */
+/**
+ * Descripción de que hace la función
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
 ````
+
+---
+
+### Testing 
+<!-- .slide: style="font-size: 0.90em" -->
+Es sumamente IMPORTANTE probar el funcionamiento de la página con diferentes valores. 
+- ¿Qué pasa si presiono calcular sin ingresar nada?
+- ¿Y si ingreso solo algunos campos? 
+- ¿Y si ingreso todo cero?
+- ¿Y si ingreso letras?
+- ¿Y si ingreso números negativos?
+- ¿Si vacío el carrito de compras?
+- ¿Si recargo la página?
+
+Prueba todas las situaciones posibles, no te quedes solo con el **happy path**.
 
 ---
 ### Requisitos del Primer Parcial
@@ -257,12 +271,13 @@ NOTA: Prueba el funcionamiento de la página con diferentes valores. Qué pasa s
 ---
 ### Requisitos del Primer Parcial
 #### Sobre las Correcciones
-| Items a Evaluar | %   |
-|-----------------|-----|
+| Items a Evaluar    | %   |
+|--------------------|-----|
 | Prototipo en papel | 7%  |
-| Prototipo Mockup | 8%  |
-| HTML+CSS+Js | 85% |
-Por cada corrección o defecto en el HTML+CSS se descontará un 6% del 85%.
+| Prototipo Mockup   | 8%  |
+| HTML+CSS+Js        | 85% |
+
+Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 
 ---
 #### Como quiere sentirse la Profe al corregir el proyecto
@@ -284,37 +299,83 @@ Por cada corrección o defecto en el HTML+CSS se descontará un 6% del 85%.
 ### Proyecto: Configuración de Github Pages
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aChzT06VBok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!--
 ---
 
 # Proyecto
 ### Requisitos del Segundo Parcial
 
 ---
+
+### Requisitos del Segundo Parcial
+#### Sobre React (1)
+- [ ] Se debe emplear **Vite** para instalar **React**
+- [ ] Se debe emplear **Hooks**, useState, useEffect, useContext, useNavigate
+- [ ] Se debe emplear **react-router-dom** para el enrutamiento a otras páginas
+- [ ] Se debe emplear **outlet** para que un componente principal renderice componentes de rutas hijas.
+- [ ] La estructura del proyecto (carpetas) debe ser el correcto: components, pages, styles
+- [ ] Los **imports** deben ser usando con **alias**
+
+---
+
+### Requisitos del Segundo Parcial
+#### Sobre React (2)
+- [ ] Validaciones en tiempo real con onChange + mensajes de error accesibles.
+- [ ] Crear al menos un componente genérico (ej: Button, Card, Input) y reutilizarlo en varias páginas.
+- [ ] Guardar algún dato en localStorage (ej: preferencias de tema o un carrito de compras).
+
+---
+
+#### Sobre React (3)
+- [ ] En caso de tener backend, emplear **fetch**
+- [ ] En caso de no contar con un servicio que nos provea la información necesaria, la misma debe ser leída en formato tipo Json local y renderizar listas dinámicas. Ejemplo:
+````javascript
+const activities = [
+  {
+    nombre: "taekwondo",
+    descripcion: "Arte marcial coreana",
+    horarios: [
+      { dia: 2, "hora-inicio": "18:30", "hora-fin": "20:00" },
+      { dia: 4, "hora-inicio": "18:30", "hora-fin": "20:00" }
+    ]
+  },
+  {
+    nombre: "zumba",
+    descripcion: "ritmos latinos",
+    horarios: [
+      { dia: 1, "hora-inicio": "19:30", "hora-fin": "20:30" },
+      { dia: 3, "hora-inicio": "19:30", "hora-fin": "20:30" }
+    ]
+  }
+];
+````
+
+---
 ### Requisitos del Segundo Parcial
 #### Sobre el proyecto general
 - [ ] Todas las correcciones y mejoras (sugerencias) solicitadas durante el primer parcial deben estar corregidas.
 - [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
-- [ ] No debe haber errores JavaScript presentes (F12 > Consola)
-- [ ] El funcionamiento de la página debe ser consistente.
+
 
 ---
 ### Requisitos del Segundo Parcial
 #### Sobre las Correcciones
 - [ ] Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
 - [ ] Las notas serán de la siguiente manera: (Por ejemplo 55% 4; 59% 5; 67% 6; 75% 7; 82% 8; 89% 9; 97% 10)
+- Las sugerencias sobre el HTML, CSS y Js realizadas en el anterior parcial dejen ser corregidas.
 
 ---
 ### Requisitos del Segundo Parcial
 #### Sobre las Correcciones
-| Items a Evaluar        | %   |
-|------------------------|-----|
-| Canvas                 | 26% |
-| Gráfico Representativo | 10% |
-| Cálculo del Ejercicio  | 40% |
-| Errores Js             | 7%  |
-| HTML+CSS corregido     | 10% |
-| Comentar Js            | 7%  |
+
+| Items a Evaluar | % |
+|-----------------|---|
+| Estructura del Proyecto | 10% |
+| Navegación con react-router-dom | 15% |
+| Uso correcto de Hooks | 20% |
+| Renderizado dinámico de datos | 25% |
+| Validaciones y mensajes de error | 10% |
+| Consistencia del diseño y uso de estilos | 10% |
+| Código limpio y sin errores en consola | 10% |
 
 ---
 
@@ -329,7 +390,4 @@ Por cada corrección o defecto en el HTML+CSS se descontará un 6% del 85%.
 - [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] No debe haber errores JavaScript presentes (F12 > Consola)
 - [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar, si hay nuevos inputs de html deben contener su label, etc)
-
----
-### Requisitos del Final
-- [ ] 
+- [ ] Incluir al menos 5 tests con Jest + React Testing Library (ejemplo: que un botón renderice un texto esperado).
