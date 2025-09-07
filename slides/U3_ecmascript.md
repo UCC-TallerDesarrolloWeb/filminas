@@ -1,15 +1,22 @@
 ---
-title: Orientación a Eventos
+title: JavaScript y ES6+
 theme: league
 slideNumber: true
 ---
 
-# Orientación a Eventos
+# JavaScript y ES6+
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
 <style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
 .grid-item {
     border: 3px solid rgba(121, 177, 217, 0.8);
     padding: 20px;
@@ -18,38 +25,59 @@ Created by <i class="fab fa-telegram"></i>
 </style>
 <!-- .slide: style="font-size: 0.70em" -->
 ## Temario
+<div class="grid-container2">
 <div class="grid-item">
 
+* JavaScript
+* Características
 * Programación dirigida por eventos
 * Lenguajes
 
 ### Eventos
 * Definición
 * Tipos de eventos
-* Mouse
+    * Mouse
     * Teclado
     * Navegador
     * Formularios
+
+</div>
+<div class="grid-item">
+
 * Event Handler
 * Event Listeners
 * Objeto del evento
+* EcmaScript
+* Jerarquía de Objetos
 
-</div>
+</div></div>
 
 ---
-## Libros:
-![Book](images/book.png)
-Material de consulta:
-“Programación con lenguajes de guión en páginas web (UF1305)”
-de Carlos Ollero Sánchez
+
+## JavaScript
+
+Es un lenguaje de scripting **multiplataforma** y orientado a eventos y objetos.
+
+Es **multiplataforma** porque su código puede ejecutarse en diversos entornos:
+- **Navegadores web:** Para el front-end.
+- **Servidores:** Para el back-end usando [Node.js](https://nodejs.org/es/)
+- **Aplicaciones móviles:** Usando frameworks como React Native o NativeScript.
+
+---
+
+## Características
+* Orientado a Eventos y Objetos
+* Lenguaje Interpretado
+* Tipado dinámico (una variable puede tomar valores de distinto tipo)
+* Eficiente (reduce el tiempo y costo de desarrollo para las diversas plataformas)
+* Flexible (permite crear amplia variedad de aplicaciones)
+* Amplio Ecosistema (cuenta con una gran cantidad de librerías y Frameworks)
 
 ---
 ## Programación Dirigida por eventos
 Paradigma de programación en el que la estructura y la ejecución de los programas van determinados por los 
 sucesos que ocurran en el sistema, definidos por el usuario o por el propio sistema.
 
----
-## Programación Dirigida por eventos
 El código no se ejecutará en un flujo lineal, sino, de forma asíncrona, según vayan ocurriendo los **eventos**. 
 
 ---
@@ -81,6 +109,7 @@ Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un e
   * Especificación DOM (Document Object Model)
 
 ---
+
 ## Eventos de Mouse
 <!-- .slide: style="font-size: 0.90em" -->
 * **onClick**: Cuando el usuario hace clic con el mouse o el dedo en cualquier elemento HTML.
@@ -90,7 +119,8 @@ Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un e
 * **onMousemove**: Si el usuario mueve el mouse.
 * **onMousedown, onMouseup**: Si el usuario presiona o suelta el mouse.
 
----
+----
+
 ### Ejemplo de Evento de Mouse
 ````html
 <input type="button" value="Mostrar Cartel" onclick="alert('Hola Mundo!!!');" />
@@ -124,7 +154,7 @@ una ventana/pestaña diferente.
 * **Abort**: Al detenerse la carga de una imagen, de la página o irse de la pagina.
 
 ---
-## Eventos de Formularios
+## Eventos de Formularios 
 <!-- .slide: style="font-size: 0.90em" -->
 * **Submit**: El evento ocurre cuando se envía un formulario.
 * **Focusin, Focusout**: El evento ocurre cuando el puntero se mueve a un elemento o a uno de los elementos secundarios del elemento.
