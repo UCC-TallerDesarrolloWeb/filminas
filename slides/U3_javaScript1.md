@@ -179,12 +179,48 @@ let obj = () =>  ({nombre: 'Agus', edad: 37}) ;
 
 ---
 
-| Tipo de función      | Sintaxis | Ejemplo | Notas |
-|----------------------|----------|---------|-------|
-| **Declarada**        | `function nombre(params) { ... }` | ```function sumar(a, b) { return a + b; } console.log(sumar(2, 3)); // 5 ``` | Tiene nombre propio, se "eleva" (hoisting). |
-| **Anónima**          | `let nombre = function(params) { ... }` | ```let sumar = function(a, b) { return a + b; }; console.log(sumar(2, 3)); // 5 ``` | No tiene nombre propio, se guarda en una variable. |
-| **Flecha (arrow)**   | `let nombre = (params) => expr` | ```let sumar = (a, b) => a + b; console.log(sumar(2, 3)); // 5 ``` | Sintaxis simplificada. No tiene su propio `this`. Puede omitir `return`, llaves o paréntesis en casos simples. |
-
+<table>
+  <thead>
+    <tr>
+      <th>Tipo de función</th>
+      <th>Sintaxis</th>
+      <th>Ejemplo</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Declarada</strong></td>
+      <td><code>function nombre(params) { ... }</code></td>
+      <td>
+        <pre><code>function sumar(a, b) { return a + b; } 
+console.log(sumar(2, 3)); // 5
+</code></pre>
+      </td>
+      <td>Tiene nombre propio, se "eleva" (hoisting).</td>
+    </tr>
+    <tr>
+      <td><strong>Anónima</strong></td>
+      <td><code>let nombre = function(params) { ... }</code></td>
+      <td>
+        <pre><code>let sumar = function(a, b) { return a + b; }; 
+console.log(sumar(2, 3)); // 5
+</code></pre>
+      </td>
+      <td>No tiene nombre propio, se guarda en una variable.</td>
+    </tr>
+    <tr>
+      <td><strong>Flecha (arrow)</strong></td>
+      <td><code>let nombre = (params) =&gt; expr</code></td>
+      <td>
+        <pre><code>let sumar = (a, b) =&gt; a + b; 
+console.log(sumar(2, 3)); // 5
+</code></pre>
+      </td>
+      <td>Sintaxis simplificada. No tiene su propio <code>this</code>. Puede omitir <code>return</code>, llaves o paréntesis en casos simples.</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 ## Funciones Predefinidas
