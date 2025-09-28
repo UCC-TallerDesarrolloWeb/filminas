@@ -74,7 +74,7 @@ Con ellos, los desarrolladores pueden enfocarse más en la funcionalidad y menos
 ---
 
 ### Ventajas y desventajas de los frameworks CSS
-
+<!-- .slide: style="font-size: 0.80em" -->
 Ventajas:
 - Aceleran el desarrollo inicial.
 - Aseguran consistencia visual.
@@ -101,7 +101,7 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 
 ---
 
-### TailwindCSS
+### [TailwindCSS](https://tailwindcss.com/)
 Está basado en clases utilitarias, permite aplicar estilos directamente en el HTML de forma modular y altamente personalizable, lo que fomenta un flujo de trabajo ágil y flexible.
 
 ---
@@ -116,6 +116,7 @@ Para afrontar este desafío surgieron herramientas que **optimizan** y **acelera
 ---
 
 ### Ventajas y desventajas de los preprocesadores
+<!-- .slide: style="font-size: 0.80em" -->
 Ventajas:
 - CSS más organizado y mantenible.
 - Reutilización de estilos (mixins, funciones).
@@ -130,13 +131,106 @@ Desventajas:
 
 ### Preprocesadores CSS
 
-Los preprocesadores CSS como SASS y LESS extienden las capacidades nativas de CSS, añadiendo características propias de lenguajes de programación, tales como:
+<!-- .slide: style="font-size: 0.80em" -->
+Los preprocesadores CSS como [SASS](https://sass-lang.com/) y [LESS](https://lesscss.org/) extienden las capacidades nativas de CSS, añadiendo características propias de lenguajes de programación, tales como:
 - Variables para colores, fuentes o medidas.
 - Anidamiento de reglas para mejorar la legibilidad.
 - Mixins y funciones para reutilizar bloques de estilo.
 - Herencia y modularización que permiten mantener el código más limpio y organizado.
 
 Estos archivos se escriben en sintaxis SASS o LESS y luego se compilan a CSS estándar para ser interpretados por los navegadores.
+
+---
+
+## ¿Qué es Sass?
+
+Sass (**Syntactically Awesome Stylesheets**) es un **preprocesador CSS** que extiende el lenguaje con:
+- Variables
+- Anidación
+- Mixins y funciones
+- Módulos reutilizables (`@use` / `@forward`)
+
+Al final, **Sass se compila en CSS estándar** que entiende cualquier navegador.
+
+---
+
+### Variables
+
+Permiten **almacenar valores** (colores, tamaños, tipografías) para reutilizarlos.
+
+```scss
+$color-principal: #3498db;
+$padding-base: 16px;
+
+body {
+  background: $color-principal;
+  padding: $padding-base;
+}
+```
+
+---
+
+### Mixins
+
+Un mixin agrupa reglas CSS reutilizables.
+
+Se pueden parametrizar para mayor flexibilidad.
+
+```scss
+@mixin boton($color, $radius: 4px) {
+  background: $color;
+  border-radius: $radius;
+  padding: 8px 12px;
+  color: white;
+}
+```
+
+---
+
+### Include
+
+Para usar un mixin, se lo invoca con @include.
+```scss
+.btn-primario {
+  @include boton(#3498db, 8px);
+}
+
+.btn-secundario {
+  @include boton(#2ecc71);
+}
+```
+
+Evita duplicar código y mejora la mantenibilidad.
+
+---
+
+### Módulos con @use
+
+Sass recomienda organizar el código en módulos.
+
+@use importa un archivo Sass y le asigna un namespace.
+
+```scss
+// _variables.scss
+$color-fondo: #f4f4f4;
+
+// estilos.scss
+@use 'variables';
+
+body {
+  background: variables.$color-fondo;
+}
+```
+
+@use reemplaza a @import (deprecado) y evita conflictos de nombres.
+
+---
+
+### Ejercicio
+1. Instala [NodeJs](https://nodejs.org/en) o asegurate de tenerlo instalado `node --version` y `npm --version`
+2. Instala sass `npm install -g sass` y verica `sass --version`
+3. Crea un archivo **styles.scss**
+4. Ejecuta **sass --watch styles.scss styles.css** en la consola del proyecto
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
