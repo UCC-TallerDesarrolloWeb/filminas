@@ -145,6 +145,22 @@ Una vez renderizada la página, comienza la interacción con el usuario:
 
 ---
 
+### Ejercicio: Análisis de DNS, TCP/TLS, Solicitud/Respuesa
+
+1. Abrí las DevTools → Network en Chrome/Firefox.
+2. Ingresá a una página (ej: https://www.wikipedia.org/).
+3. Observá:
+   - DNS Lookup: cuánto tarda en resolver el dominio.
+   - Initial connection (TCP/TLS): tiempo del handshake.
+   - Request/Response: ver las cabeceras HTTP.
+4. Compará tiempos con otra web (ej: https://github.com/).
+
+----
+
+![Timing](images/navegador/navegador-tiempos.png)
+
+---
+
 ### Eventos clave del ciclo de vida
 
 - **DOMContentLoaded:** el DOM está construido (sin esperar imágenes o estilos).
