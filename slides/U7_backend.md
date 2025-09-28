@@ -37,6 +37,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
+<!--Agregar PWA-->
 ---
 ## Backend y APIs
 
