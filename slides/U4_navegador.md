@@ -169,9 +169,103 @@ Son un conjunto de herramientas para desarrolladores web que están integradas d
 
 ---
 
-## [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+## [Chrome Dev Tools](https://developer.chrome.com/docs/devtools?hl=es-419)
 
 Es un conjunto de herramientas incorporadas en el navegador que permiten editar páginas en tiempo real, diagnosticar problemas y optimizar el desarrollo web.
+
+--
+
+## Temas complementarios en el ciclo de vida
+
+Además de las etapas principales del renderizado, existen factores clave que afectan:
+- **Performance** (caché, CDN, ruta crítica).
+- **Interacción y eventos** (eventos globales, animaciones).
+- **Accesibilidad (A11y)** para todos los usuarios.
+- **Seguridad** frente a ataques y vulnerabilidades.
+
+Estos temas completan la visión del ciclo de vida de una página web en un entorno real.
+
+---
+
+### Caché del navegador y CDN
+
+El navegador no descarga los recursos cada vez que visitas un sitio, sino que los almacena en caché (archivos temporales en disco o memoria).
+- Objetivo: reducir tiempos de carga y tráfico de red.
+- Mecanismos de control:
+  - **Cache-Control:** define cuánto tiempo un recurso puede permanecer en caché.
+  - **ETag:** identificador único que permite validar si un recurso cambió.
+  - **Last-Modified:** fecha de la última modificación del recurso.
+
+----
+
+### CDN
+
+Los CDN (Content Delivery Network) son redes distribuidas de servidores que almacenan copias de recursos estáticos en distintas regiones del mundo. El navegador descarga los archivos desde el nodo más cercano, reduciendo latencia y mejorando la disponibilidad.
+
+----
+
+### Critical Rendering Path
+
+Es la **ruta crítica de renderizado** que el navegador sigue desde recibir el HTML hasta mostrar el primer píxel en pantalla.
+
+- Se consideran críticos los recursos que bloquean la renderización inicial, como CSS o scripts bloqueantes.
+- Optimizar el CRP implica:
+  - Inyectar CSS crítico en línea (para el contenido visible sin scroll).
+  - Cargar scripts con defer o async.
+  - Usar lazy loading para imágenes y videos fuera de pantalla.
+
+Mientras más corto sea este camino, más rápida será la percepción de carga para el usuario.
+
+---
+
+### Eventos del navegador
+
+Los navegadores exponen múltiples **eventos globales** que permiten reaccionar a cambios en la ventana o documento:
+- **visibilitychange:** detecta si la pestaña se oculta o vuelve a primer plano.
+- **resize:** se dispara cuando la ventana cambia de tamaño.
+- **scroll:** ocurre al desplazarse dentro de la página.
+- **beforeunload:** permite advertir al usuario antes de abandonar la página.
+
+Además, existe la API **requestAnimationFrame**, pensada para animaciones fluidas porque sincroniza las actualizaciones con la tasa de refresco de la pantalla.
+
+---
+
+### Accesibilidad (A11y)
+
+La accesibilidad busca que cualquier persona, incluidas aquellas con discapacidades, pueda usar un sitio web.
+
+- Ejemplo: un lector de pantalla convierte el DOM en voz.
+
+Buenas prácticas:
+- Incluir atributos alt en imágenes.
+- Usar etiquetas semánticas (`<header>, <nav>, <main>`).
+- Roles y atributos aria-* para describir la función de los elementos.
+- Contraste suficiente en colores y tamaños de fuente legibles.
+
+Los navegadores interpretan estas señales para brindar accesibilidad mediante tecnologías asistivas.
+
+---
+
+### Ejercicios: Axe
+1. Instala el plugin de [Axe](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=es-419) en Chrome.
+2. Ejecuta las validaciones de accesibilidad en alguna página (Ejemplo: https://tienda.claro.com.ar/)
+
+---
+
+### Ejercicios: Lighthouse
+1. Instala el plugin de [Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es) en Chrome.
+2. Ejecuta las validaciones en **Desktop** de performance, accesibilidad, best practices y SEO en alguna página (Ejemplo: https://tienda.claro.com.ar/)
+3. Ejecuta las validaciones en **Mobile** de performance, accesibilidad, best practices y SEO en alguna página (Ejemplo: https://tienda.claro.com.ar/)
+
+---
+
+### Seguridad en el ciclo de vida de la página
+
+Durante la carga y ejecución de un sitio, intervienen varios mecanismos de seguridad:
+- **Same-Origin Policy (SOP):** impide que scripts de un origen accedan a recursos de otro origen sin permiso.
+- **CORS (Cross-Origin Resource Sharing):** mecanismo que permite compartir recursos entre orígenes de forma controlada.
+- **Content Security Policy (CSP):** cabecera que limita qué scripts, estilos o recursos pueden cargarse, reduciendo riesgos de XSS (Cross-Site Scripting).
+- **Mixed content:** cuando una página HTTPS carga recursos HTTP inseguros. Esto degrada la seguridad y los navegadores lo bloquean o advierten.
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?

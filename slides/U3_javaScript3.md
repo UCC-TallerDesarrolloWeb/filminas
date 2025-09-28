@@ -43,7 +43,6 @@ Created by <i class="fab fa-telegram"></i>
 - [Ejercicio: Formateo de Precio](U5_javaScript3.html#/11)
 - [Ejercicio: Total y Cantidad](U5_javaScript3.html#/12)
 
-
 </div>
 </div>
 
