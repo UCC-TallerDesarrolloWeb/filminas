@@ -189,7 +189,7 @@ Son un conjunto de herramientas para desarrolladores web que están integradas d
 
 Es un conjunto de herramientas incorporadas en el navegador que permiten editar páginas en tiempo real, diagnosticar problemas y optimizar el desarrollo web.
 
---
+---
 
 ## Temas complementarios en el ciclo de vida
 

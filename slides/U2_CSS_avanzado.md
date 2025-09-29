@@ -600,5 +600,198 @@ Buenas Prácticas:
 * Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
 
 ---
+
+## Diseño Responsivo
+![Diseño Responsive](images/css/responsive-viewport.png)
+
+---
+
+## Diseño Responsivo
+Diseño web adaptable, donde la apariencia de las páginas web se adapta al dispositivo que se esté utilizando para visualizarla.
+
+![Dispositivos](images/css/img-dispositius.png)
+
+---
+## Diseño Responsivo
+Se trata de redimensionar y colocar los elementos de la web de forma que se adapten al ancho de cada dispositivo permitiendo una correcta visualización y una mejor experiencia de usuario.
+    
+Se caracteriza porque los layouts (contenidos) e imágenes son fluidos y se usa código media-queries de CSS3.
+
+---
+## Diseño Responsivo
+![Diseño Responsivo](images/css/disenio_responsivo.png)
+
+---
+## [Media Query](https://developer.mozilla.org/es/docs/CSS/Media_queries)
+Fue introducido en CSS3. Estas construcciones del lenguaje CSS permiten definir estilos condicionales, aplicables 
+únicamente en determinadas situaciones.
+
+<small>
+- Si la pantalla del usuario tiene estas características, entonces aplica estos estilos
+- Si se imprime el documento en la impresora, aplica estos estilos.
+- Si la pantalla del dispositivo tiene estas dimensiones y además está situado en posición horizontal (landscape), entonces aplica este CSS. 
+</small>
+    
+````css
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) and (orientation: landscape) { ... }
+
+````
+
+---
+## [Media Query](https://desarrolloweb.com/articulos/css-media-queries.html)
+Formas de Aplicación:
+* Media Query por etiqueta LINK
+* Media Query mediante @media
+
+---
+## Media Query por Etiqueta Link
+Se debe agregar un atributo media de la etiqueta *Link*, que permite enlazar el HTML con el CSS.
+````css
+<link rel="stylesheet" media="print" href="estilo-imprimir.css" >
+<link rel="stylesheet" media="(min-width:1200px)" href="estilo-pantallas-grandes.css">
+````
+<small>
+1. Estos estilos aplican solo cuando la página se está mostrando para la impresión. <br>
+2. Estos estilos aplican cuando la página tenga una anchura mínima de 1200px
+</small>
+
+---
+### Media Query mediante @media
+Es el más empleado. En la definición de los estilos se emplea @media con la condición/es que deben cumplirse.
+````css
+@media (min-width: 500px) {
+    h1{
+        margin: 1%;
+    }
+    .estiloresponsive{
+        float: right;
+        padding-left: 15px; 
+    }
+}
+````
+Cuando la sentencia entre paréntesis se evalúe como verdadera, se aplicarán todos los estilos definidos entre llaves. 
+
+---
+### Operadores lógicos para Media Query
+<!-- .slide: style="font-size: 0.80em" -->
+* **and:** las dos condiciones deben cumplirse para que se evalúe como verdadera.
+* **not**: es una negación de una condición. Cuando esa condición no se cumpla se aplicarán las media queries.
+* **only**: se aplican las reglas solo en el caso que se cumpla cierta circunstancia.
+* **or**: no existe como tal, pero puedes poner varias condiciones separadas por comas y cuando se cumpla cualquiera de 
+ellas, se aplicarán los estilos de las media queries. 
+````css
+//Ejemplo and
+@media (max-width: 600px) and (orientation: landscape) {
+    h1{
+        color: red;
+    }
+}
+````
+
+---
+### [Media Types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries)
+Describen la categoría general de un dispositivo. 
+* **all:** Apto para todos los dispositivos.
+* **print:** Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de impresión. 
+* **screen:** Destinado principalmente a las pantallas.
+* **speech:** Destinado a sintetizadores de voz. 
+<small>
+Fueron deprecados los Medios: tty, tv, projection, handheld, braille, embossed y aural
+</small>
+
+---
+### Media Types
+````css
+@media print {
+    /* … */
+}
+
+@media screen, print {
+    /* … */
+}
+
+````
+
+---
+### Media Queries
+![Sintaxis de Rango](images/css/sintaxis_rango.jpg)
+
+
+---
+## HTML5: Viewport
+![Ejemplo Viewport](images/css/viewport2.jpg)
+
+---
+## [HTML5: Viewport](https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag)
+Es el área de la ventana en donde el contenido web está visible. Generalmente no es del mismo tamaño que la página 
+renderizada, en donde se brindan barras de desplazamiento para que el usuario pueda acceder a todo el contenido.
+
+---
+## HTML5: Viewport
+Dispositivos con pantallas angostas muestran la página en una ventana virtual o viewport, que es usualmente más ancho 
+que la pantalla y la comprimen de manera que pueda verse completa. El usuario podrá recorrerla y hacer zoom para ver 
+diferentes áreas de la página. Por ejemplo, si una pantalla móvil tiene un ancho 640px, las páginas pueden ser procesadas 
+con un viewport de 980px, y después comprimidas para que entren en 640px.
+
+---
+## HTML5: Viewport
+![ejemplo viewport](images/css/viewport.png)
+
+---
+## HTML5: Viewport
+Esto se hace porque muchas páginas no están optimizadas para dispositivos móviles y se ven mal cuando son procesadas a un 
+ancho de viewport pequeño. El viewport virtual es una forma de resolver el problema de sitios no optimizados para móviles, 
+logrando que se vean mejor.
+
+---
+## HTML5: Viewport
+<!-- .slide: style="font-size: 0.80em" -->
+La etiqueta viewport permite definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.
+Sino por defecto una web tiene siempre 980px de ancho.
+
+Se le puede configurar
+* **width:** Ancho virtual (emulado) de la pantalla
+* **Height:** altura virtual de la pantalla
+* **initial-scale:** zoom que va tener como inicio (min 0.1)
+* **minimum-scale:** zoom mínima permitido
+* **maximum-scale:** zoom máximo permitido
+* **user-scalable:** si se permite o no al usuario hacer zoom.
+
+````css
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+````
+
+---
+## HTML5: Viewport
+Prueba como se ve la página Ejercicios-CSS/ej_cv.html con F12 SIN la etiqueta de viewport... Luego agregale la etiqueta y mira que pasa
+````css
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+````
+
+---
+## Ejercicio: Responsive
+Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizarse:
+* Se deben mostrar 3 columnas las imagenes si la pantalla si la pantalla tiene un mínimo de 601px
+* Se debe mostrar 1 columna si la pantalla tiene como máximo 600px
+* Las imagenes deben ocupar el 100% de su columna
+
+---
+## Ejercicio: Responsive
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nLImEsvaP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+## Diseño Responsivo: Características
+* Los layouts o imagenes son fluidos y se adaptan a cada pantalla.
+* Permite reducir el tiempo de desarrollo.
+* Evita los contenidos duplicados.
+* Permite compartir los contenidos de una forma más rápida y natural.
+
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
