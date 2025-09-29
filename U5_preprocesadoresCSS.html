@@ -226,9 +226,42 @@ body {
 
 ---
 
+### Uso del símbolo &
+El símbolo **&** se usa para hacer referencia al selector padre dentro de una regla anidada. Esto es útil cuando quieres aplicar estilos específicos a elementos que son descendientes directos del selector padre.
+
+```scss
+.button {
+  background-color: blue;
+  &:hover {
+    background-color: red;
+  }
+}
+```
+
+---
+
+### Listas en Sass
+Las listas en Sass son una secuencia ordenada de valores, como números, colores o cadenas de texto. Los valores se pueden separar por comas o no. El uso de comillas para los valores es solo necesario cuando se usan caracteres especiales.
+
+```scss
+$colores: red, green, blue, yellow; // Valores separados con comas
+$colores: red green blue yellow; // Valores separados sin comas
+$colores: 'red' 'green' 'blue' 'yellow'; // Valores con comillas
+```
+
+Puedes acceder a los elementos individuales de una lista utilizando índices, comenzando desde 1.
+```scss
+$primer-color: nth($colores, 1); // red
+$segundo-color: nth($colores, 2); // green
+```
+
+<!--https://www.eniun.com/tutorial-sass/-->
+
+---
+
 ### Ejercicio
 1. Instala [NodeJs](https://nodejs.org/en) o asegurate de tenerlo instalado `node --version` y `npm --version`
-2. Instala sass `npm install -g sass` y verica `sass --version`
+2. Instala sass `npm install -g sass` y verifica `sass --version`
 3. Crea un archivo **styles.scss**
 4. Ejecuta **sass --watch styles.scss styles.css** en la consola del proyecto
 
