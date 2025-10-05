@@ -229,6 +229,50 @@ Elaborar el siguiente Perfil (tipo linkedin) empleando clases de bootstrap.
 
 ![Perfil](images/sass/perfil2.png)
 
+----
+
+### Ejercicio: Componente Perfil
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cOlcjzI9xHk?si=93KpB4lAPM31WPJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+----
+
+### Ejercicio: Componente Perfil
+#### Componentes de Bootstrap usados
+<!-- .slide: style="font-size: 0.80em" -->
+- **card / card-img-top / card-body / card-title / card-text:**
+Estructura y estilos del componente Card (imagen arriba, cuerpo con título y texto).
+- **btn btn-primary:** Botón con la variante de color primario del tema.
+- **list-group / list-group-flush:**
+Lista estilizada; flush elimina bordes/redondeos externos para que “pegue” con la card.
+- **list-group-item / list-group-item-action:** Ítems de lista; la variante action da estados hover/active cuando el ítem es clickeable .
+- **badge + bg-danger:** Insignia pequeña (contador “+99”) con fondo rojo del tema.
+
+----
+
+### Ejercicio: Componente Perfil
+### Utilidades (Utilities) de Bootstrap
+
+<!-- .slide: style="font-size: 0.50em" -->
+Layout y flex
+- **d-flex** display: flex.
+- **justify-content-center** centra horizontalmente.
+- **gap-2** espacio entre hijos en contenedores flex.
+- **align-items-center** centra verticalmente ítems en flex.
+
+Espaciado
+- **my-5** margen vertical grande (arriba y abajo).
+- **p-X** padding.
+
+Tipografía y alineación
+- **text-center** centra el contenido de la card.
+
+Bordes y forma
+- **rounded-circle:** hace circular la imagen de perfil (avatar).
+
+Posicionamiento
+- **position-relative** convierte el contenedor en contexto de posicionamiento (sirve si luego querés posicionar algo absolute dentro). Acá se usa junto con .profile (custom) para “superponer” el avatar sobre la imagen de portada.
+
 ---
 
 ### Ejercicio: Youtube
