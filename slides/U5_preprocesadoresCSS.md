@@ -85,6 +85,144 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 
 ---
 
+### Ejercicio: Componente para selección de vuelos
+<!--Ejercicio tomado de https://www.youtube.com/watch?v=7sDWDVODy8c-->
+Elaborar el siguiente componente para la selección de vuelos empleando clases de bootstrap.
+
+![Selector de Vuelos](images/sass/selector-vuelos.png)
+
+----
+
+### Ejercicio: Componente para selección de vuelos
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YeWg5_vBBRE?si=jKvzmVu1LjmvMx-D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+----
+
+### Ejercicio: Componente para selección de vuelos
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gLcHn837_S4?si=1RGjAdgEIk9-BreZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+----
+
+### Ejercicio: Componente para selección de vuelos
+<!-- .slide: style="font-size: 0.70em" -->
+#### Componentes (Dropdowns y Botones)
+- **dropdown:** Contenedor que define un menú desplegable.
+- **dropdown-toggle:** Estilo y comportamiento para el botón que abre/cierra el dropdown.
+- **dropdown-menu:** Contenedor del menú que se despliega.
+- **btn:** Clase base para botones.
+- **btn-primary:** Variante de botón con color primario.
+- **btn-outline-secondary:** Botón con borde y texto “secondary” (fondo transparente).
+- **btn-outline-light:** Botón contorneado en tono “light”.
+- **btn-outline-primary:** Botón contorneado en tono “primary”.
+
+#### Atributos Bootstrap
+- **data-bs-toggle="dropdown"** habilita el comportamiento del menú;
+- **data-bs-auto-close="outside"** evita que se cierre al hacer clic dentro del menú.
+
+----
+
+### Ejercicio: Componente para selección de vuelos
+<!-- .slide: style="font-size: 0.70em" -->
+#### Grid / Layout
+- **row:** Fila del sistema de grilla.
+- **col:** Columna flexible (toma el ancho disponible equitativamente).
+- **border-end:** Borde en el lado “end” (derecho en LTR) del elemento, útil para separar columnas.
+
+#### Utilidades de espaciado y alineación
+- **p-4:** Padding en todos los lados (4).
+- **py-3:** Padding vertical (y) tamaño 3.
+- **gap-2:** Espacio entre ítems en contenedores flex/grid (gap = 2).
+- **d-flex:** Convierte el elemento en contenedor flex.
+- **justify-content-end:** Alinea contenido al final del eje principal (derecha por defecto).
+- **justify-content-between:** Distribuye los elementos con espacio entre ellos.
+- **align-items-center:** Centra verticalmente (eje cruzado) los ítems en un contenedor flex.
+
+----
+
+### Ejercicio: Componente para selección de vuelos
+<!-- .slide: style="font-size: 0.80em" -->
+#### Tipografía / color / forma
+- **fw-bold:** Texto en negrita.
+- **text-center:** Texto centrado.
+- **text-secondary:** Color de texto con el color “secondary” del tema.
+- **rounded-circle:** Bordes completamente redondeados (círculo), típico para botones/avatares.
+
+### Ejercicio: Clases propias
+- **calendar-container:** Clase propia (la usás en tu CSS para ancho/alto de botones).
+- **calendar-grid:** Clase propia.
+- **material-symbols-outlined:** Propia de Google Fonts/Material Symbols.
+
+---
+
+### Ejercicio: Timeline
+<!--Ejercicio tomado de https://www.youtube.com/watch?v=7sDWDVODy8c-->
+Elaborar el siguiente timeline (similar a Jira) empleando clases de bootstrap.
+
+![Timeline](images/sass/timeline.png)
+
+----
+
+### Ejercicio: Timeline
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7G3kyOIOxGg?si=2ulSrJemV5bRfluO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+----
+
+### Ejercicio: Timeline
+<!-- .slide: style="font-size: 0.80em" -->
+#### Disposición (Grid / Layout)
+- **container:** contenedor centrado con anchos máximos responsivos; crea el “lienzo” del timeline.
+- **row:** fila del sistema de grilla. Agrupa columnas y gestiona gutters.
+- **col / col-X (1-12):** columnas con fracciones fijas.
+
+#### Espaciado y tamaño
+- **mt-X:** margen superior grande al bloque principal.
+- **p-X py-X:** padding general y vertical para airear los bloques.
+
+#### Tipografía
+- **fw-bold:** negrita.
+- **fs-X:** tamaños de fuente semánticos.
+- **text-center:** centra texto.
+- **opacity-X:** baja opacidad del texto.
+
+----
+
+### Ejercicio: Timeline
+<!-- .slide: style="font-size: 0.70em" -->
+####  Colores / fondos / estados
+- **bg-black + text-white:** cabecera con alto contraste.
+- **bg-secondary + text-white:** “tarjetas” de ítems de timeline.
+- **text-info, text-warning, text-danger:** estado visual para textos.
+
+#### Bordes y formas
+- **border:** borde por defecto).
+- **border-light:** borde claro.
+- **rounded-X:** radios suaves.
+- **rounded-circle:** hace los avatares circulares.
+
+#### Flexbox y alineación
+- **d-flex:** activa flexbox.
+- **align-items-center:** centra verticalmente elementos dentro del contenedor flex.
+- **gap-X:** separación uniforme entre elementos.
+
+---
+
+### Ejercicio: Componente Perfil
+<!--Ejercicio tomado de https://www.youtube.com/watch?v=7sDWDVODy8c-->
+Elaborar el siguiente Perfil (tipo linkedin) empleando clases de bootstrap.
+
+![Perfil](images/sass/perfil2.png)
+
+---
+
+### Ejercicio: Youtube
+<!--Ejercicio tomado de https://www.youtube.com/watch?v=7sDWDVODy8c-->
+Elaborar la siguiente pantalla similar a youtube empleando clases de bootstrap.
+
+![Perfil](images/sass/youtube.png)
+
+---
+
 ### [TailwindCSS](https://tailwindcss.com/)
 Está basado en clases utilitarias, permite aplicar estilos directamente en el HTML de forma modular y altamente personalizable, lo que fomenta un flujo de trabajo ágil y flexible.
 
