@@ -4,7 +4,7 @@ theme: league
 slideNumber: true
 ---
 
-# Frameworks
+# Frameworks de JavaScript
 Created by <i class="fab fa-telegram"></i> 
 [edme88]("https://t.me/edme88")
 
@@ -31,11 +31,21 @@ Created by <i class="fab fa-telegram"></i>
 ### Framworks
 * Definición
 * Funcionalidad
+* Ejemplos de Frameworks
 
 </div>
 <div class="grid-item">
 
-* Ejemplos de Framwroks
+* Angular
+  * Características
+  * Ventajas
+  * Desventajas
+* React
+  * Ventajas
+  * Desventajas
+* VueJs
+  * Ventajas
+  * Desventajas
 
 </div>
 </div>
@@ -53,7 +63,14 @@ Entre los frameworks más usados para desarrollo web encontramos:
 * Angular
 * VueJs
 * React
-Nota: (React es una librería que suele considerarse como un framework)
+
+<small><strong>React</strong> es una librería, pero suele considerarse un framework por su ecosistema y modo de uso.</small>
+
+<small>Nota: Los frameworks establecen una estructura general del proyecto, mientras que las librerías se usan para resolver tareas específicas dentro de esa estructura.</small>
+
+---
+
+![Js Frameworks](images/react/js-frameworks.webp)
 
 ---
 ### [Angular](https://docs.angular.lat/)
@@ -99,6 +116,7 @@ como para paneles de control o grandes plataformas web.
 
 ---
 ### React: Ventajas
+<!-- .slide: style="font-size: 0.90em" -->
 * **DOM virtual:** Genera el DOM de forma dinámica, primero aplica los cambios en un DOM Virtual y luego al DOM real.
 * **Isomorfismo:** El código se ejecuta en servidor y cliente, reduciendo así la carga de trabajo.
 * **Componentes:** Permitirá ahorrar en tiempo de desarrollo, crear aplicaciones más escalables y fáciles de mantener.
@@ -114,7 +132,11 @@ como para paneles de control o grandes plataformas web.
 
 ---
 ### [VueJS](https://vuejs.org/)
-Es es un framework Js para desarrollo frontend lanzado en el 2014.
+Es es un framework Js para desarrollo frontend lanzado en 2014 por Evan You.
+
+Su objetivo es facilitar la creación de interfaces de usuario interactivas y aplicaciones web de una sola página (SPA) de manera simple y flexible.
+
+Vue combina ideas de React (componentes, virtual DOM) y Angular (enlace de datos bidireccional y directivas), ofreciendo un equilibrio entre potencia y facilidad de uso.
 
 ---
 ### Vue: Ventajas
@@ -131,47 +153,103 @@ Es es un framework Js para desarrollo frontend lanzado en el 2014.
 
 ---
 
-### React 
+# REACT
 
-Es una librería de JavaScript para construir interfaces de usuario.
-
-Fue creada por Facebook.
-
-Su gran ventaja es que permite crear componentes reutilizables.
-
-[https://react.dev/](https://react.dev/)
+<section data-background-image="images/react/background.png">
 
 ---
 
-### create-react-app
+### ¿Cómo crear una app de react?
 
-Es una herramienta de React para crear un proyecto listo para usar sin configurar nada.
+Durante años se empleo: 
+```bash
+create-react-app
+```
+
+Fue la forma oficial y más fácil de crear proyectos React sin tener que configurar manualmente herramientas como **Webpack**, **Babel** o **ESLint**.
 
 Genera toda la estructura básica (archivos, carpetas, configuraciones, scripts, etc.).
 
-Ahorra tiempo configurando Webpack, Babel, ESLint, etc.
+----
+
+### ¿Por que ya no se usa CRA?
+
+<table>
+  <thead>
+    <tr>
+      <th>Limitación de CRA</th>
+      <th>Explicación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🚀 Lento en desarrollo</td>
+      <td>Usa Webpack, que recompila todo el proyecto cada vez.</td>
+    </tr>
+    <tr>
+      <td>⏱️ Arranque más lento</td>
+      <td>Tarda varios segundos en iniciar el servidor.</td>
+    </tr>
+    <tr>
+      <td>🔁 Recarga menos eficiente</td>
+      <td>Hot reload más lento comparado con Vite.</td>
+    </tr>
+    <tr>
+      <td>⚙️ Difícil de personalizar</td>
+      <td>Para cambiar configuraciones de Webpack o Babel hay que "ejectar" (npm run eject) y ensucia el proyecto.</td>
+    </tr>
+    <tr>
+      <td>📦 Ya no se mantiene activamente</td>
+      <td>Meta (Facebook) dejó de actualizarlo con la misma frecuencia.</td>
+    </tr>
+    <tr>
+      <td>🧱 No soporta las nuevas features de React tan rápido</td>
+      <td>Vite y Next se adaptan más rápido a los nuevos features (como React 19).</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-### Proyecto: Crear la app base frontend
-
-1. Ejecutar en comando 
-```bash
-npm create-react-app@latest frontend
-```
-2. Ir al directorio del proyecto `cd frontend`
-3. Ejecutar el proyecto con `npm start`
-4. Ingresar a localhost:3000
-
----
-
-### Vite
+### [Vite](https://es.vite.dev/guide/)
 
 Es una herramienta de desarrollo de Frontend que busca proporcionar una experiencia de desarrollo más rápida y eficiente para proyectos web modernos. 
 
 Su objetivo principal es acelerar el proceso de construcción y compilación de aplicaciones web, ofreciendo tiempos de arranque, compilación y recarga muy breves.
 
-[https://es.vite.dev/guide/](https://es.vite.dev/guide/)
+----
+
+<table>
+  <thead>
+    <tr>
+      <th>Ventaja de Vite</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>⚡ Arranca en milisegundos</td>
+      <td>No recompila todo, solo el módulo que cambió.</td>
+    </tr>
+    <tr>
+      <td>🔥 Hot Module Replacement (HMR) instantáneo</td>
+      <td>Cambios visibles casi al instante.</td>
+    </tr>
+    <tr>
+      <td>🧩 Plantillas integradas</td>
+      <td>Soporta React, Vue, Svelte, Vanilla, etc.</td>
+    </tr>
+    <tr>
+      <td>📁 Configuración clara y mínima</td>
+      <td>Todo en vite.config.js.</td>
+    </tr>
+    <tr>
+      <td>🌍 Optimizado para ES Modules</td>
+      <td>Más moderno y ligero.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ---
 

@@ -27,3 +27,4 @@ slideNumber: true
 ![fondo](images/interfazUsuario/sketch-fondo.jpg)
 ![fondo](images/interfazUsuario/prototipado-de-paginas-web.jpg)
 ![fondo](images/Eventos/Lenguajes.png)
+![fondo](images/react/background.png)
