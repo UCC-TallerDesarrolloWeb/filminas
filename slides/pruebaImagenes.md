@@ -28,3 +28,8 @@ slideNumber: true
 ![fondo](images/interfazUsuario/prototipado-de-paginas-web.jpg)
 ![fondo](images/Eventos/Lenguajes.png)
 ![fondo](images/react/background.png)
+![fondo](images/sass/logo.png)
+![fondo](images/sass/portfolio-1.jpg)
+![fondo](images/sass/portfolio-2.jpg)
+![fondo](images/sass/portfolio-3.jpg)
+![fondo](images/sass/portfolio-4.jpg)
