@@ -395,7 +395,7 @@ Si bien no es obligatorio emplear [nodeJs](https://nodejs.org/en), cómo posteri
 ----
 
 ### Ejercicio: Instalar Node.Js
-
+<!-- .slide: style="font-size: 0.80em" -->
 1. Ingresar a https://nodejs.org/en
 2. Descargar e instalar Node 22.20.0 o superior (si trabajas en múltiples proyectos que requieren diferentes versiones de Node te recomiendo emplear [nvm](https://github.com/coreybutler/nvm-windows/releases))
 3. En una terminal verificar que la instalación se realizó correctamente
@@ -403,6 +403,12 @@ Si bien no es obligatorio emplear [nodeJs](https://nodejs.org/en), cómo posteri
 node -v
 npm -v
 npx -v
+```
+
+Si tienen problemas de permisos, asegurarse de usar una terminal con permisos de administrador, y levantar las restricciones:
+```bash
+Set-ExecutionPolicy Unrestricted
+S
 ```
 
 ----
@@ -434,7 +440,7 @@ npm install -g sass
 
 ### npx
 
-Son las siglas de **Node Package eXecutor*.
+Son las siglas de **Node Package eXecutor**.
 Es una herramienta que viene con npm.
 Sirve para ejecutar paquetes que no tenemos instalados globalmente.
 
