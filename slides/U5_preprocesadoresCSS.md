@@ -66,7 +66,7 @@ Ventajas:
 - Amplia comunidad y documentación.
 
 Desventajas:
-- Código extra (estilos que no siempre se usan → CSS bloat).
+- Código extra (estilos que no siempre se usan:** CSS bloat).
 - Sitios que lucen demasiado similares si no se personalizan.
 - Curva de aprendizaje (en especial en Tailwind).
 
@@ -265,10 +265,76 @@ Elaborar la siguiente pantalla similar a youtube empleando clases de bootstrap.
 
 ![Perfil](images/sass/youtube.png)
 
+----
+
+### Ejercicio: Youtube
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4QkRKllU-aM?si=zfo-4w8MbqJ6vw2y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<small>Error: Cambiar **test-light** por **text-light** y cambiar **transition: scale 0.1s ease;** por **transition: transform 0.1s ease;**</small>
+
+----
+
+### Ejercicio: Youtube
+<!-- .slide: style="font-size: 0.70em" -->
+#### Container y layout
+- **container:** contenedor centrado con márgenes automáticos y padding horizontal.
+- **d-flex:** convierte el contenedor en flexbox (hijos en línea).
+- **gap-1:** agrega un pequeño espacio entre las tarjetas.
+- **my-5:** margen vertical grande (arriba y abajo).
+
+#### Componente: Card
+- **card:** clase base del componente (aplica borde, padding y sombra ligera).
+- **card-img-top:** imagen superior de la card (por encima del cuerpo).
+- **card-body:** contenedor del contenido textual.
+- **card-title:** estilos para títulos dentro de una card.
+- **text-bg-dark:** variante que combina texto blanco y fondo oscuro.
+- **text-white:** asegura color blanco del texto.
+- **border-0:** elimina el borde visible.
+
+----
+
+### Ejercicio: Youtube
+<!-- .slide: style="font-size: 0.90em" -->
+#### Tipografía y color
+- **text-light:** texto gris claro.
+- **text-decoration-none:** elimina subrayado de los enlaces.
+- **opacity-50:** aplica 50 % de opacidad al texto (más tenue).
+- **fw-bold:** texto en negrita.
+- **fs-6:** tamaño de fuente base (≈16px).
+
+#### Grid System
+- **row:** fila de la grilla.
+- **col-2, col-6, col-10:** columnas fijas (dividen la fila en 12 partes).
+Se usan para separar el avatar (2 columnas) y el texto (10 columnas), y para dividir botones.
+
+----
+
+### Ejercicio: Youtube
+<!-- .slide: style="font-size: 0.80em" -->
+#### Flex y alineación
+- **d-block:** convierte el enlace del botón en elemento bloque (ocupa todo el ancho).
+- **w-100:** ancho completo del contenedor padre.
+
+#### Botones
+- **btn:** clase base del componente botón.
+- **text-secondary:** texto gris (sin fondo de color).
+
+#### Imagen y forma
+- **rounded-circle:** redondea al 100 % (imagen circular, avatar).
+
+#### Otras utilidades
+- **overflow-hidden:** oculta contenido que se salga del contenedor (usado para animar las “action-buttons”).
+- **p-1, p-2:** padding interno (espaciado dentro de los botones y filas).
+
 ---
 
 ### [TailwindCSS](https://tailwindcss.com/)
 Está basado en clases utilitarias, permite aplicar estilos directamente en el HTML de forma modular y altamente personalizable, lo que fomenta un flujo de trabajo ágil y flexible.
+
+---
+
+
 
 ---
 
@@ -320,7 +386,70 @@ Al final, **Sass se compila en CSS estándar** que entiende cualquier navegador.
 
 ---
 
-### Variables
+### ¿Qué necesito para ejecutar SASS?
+Si bien no es obligatorio emplear [nodeJs](https://nodejs.org/en), cómo posteriormente realizaremos proyectos con frameworks de JavaScript (react), si es recomendable instalarlo.
+
+#### ¿Y si no quiero instalar nodeJs ahora?
+- Puedes utilizar [Dart](https://github.com/sass/dart-sass/releases) el compilar de Sass "standalone"
+- Puedes usar un compilador de escritorio:
+  - [Koala](http://koala-app.com/)
+  - [Prepros](https://prepros.io/)
+  - [Scout-App](https://scout-app.io/)
+
+----
+
+### Ejercicio: Instalar Node.Js
+
+1. Ingresar a https://nodejs.org/en
+2. Descargar e instalar Node 22.20.0 o superior (si trabajas en múltiples proyectos que requieren diferentes versiones de Node te recomiendo emplear [nvm](https://github.com/coreybutler/nvm-windows/releases))
+3. En una terminal verificar que la instalación se realizó correctamente
+```bash
+node -v
+npm -v
+npx -v
+```
+
+----
+
+### Node.js 
+
+Es un entorno de ejecución de JavaScript que permite ejecutar código JS fuera del navegador (por ejemplo, en la terminal o en un servidor).
+Lo usamos porque muchas herramientas modernas de desarrollo frontend están escritas en JavaScript y necesitan un entorno para ejecutarse. 
+
+----
+
+### npm 
+
+Son las siglas de **Node Package Manager**.
+Es el sistema que usamos para instalar y gestionar librerías o herramientas escritas en JavaScript.
+Se instala automáticamente cuando instalás Node.js.
+
+Pensalo como un "App Store" para desarrolladores JavaScript.
+
+Por ejemplo, si quisieras instalar Sass:
+
+```bash
+npm install -g sass
+```
+
+<small>Eso la instala globalmente en tu sistema (queda disponible para todos los proyectos).</small>
+
+----
+
+### npx
+
+Son las siglas de **Node Package eXecutor*.
+Es una herramienta que viene con npm.
+Sirve para ejecutar paquetes que no tenemos instalados globalmente.
+
+Ejemplo, si NO ejecute **npm install -g sass** y quiero usarlo puedo hacer:
+```bash
+npx sass estilos.scss estilos.css
+```
+
+---
+
+### SASS: Variables
 
 Permiten **almacenar valores** (colores, tamaños, tipografías) para reutilizarlos.
 
@@ -336,7 +465,7 @@ body {
 
 ---
 
-### Mixins
+### SASS: Mixins
 
 Un mixin agrupa reglas CSS reutilizables.
 
@@ -353,7 +482,7 @@ Se pueden parametrizar para mayor flexibilidad.
 
 ---
 
-### Include
+### SASS: Include
 
 Para usar un mixin, se lo invoca con @include.
 ```scss
@@ -370,7 +499,7 @@ Evita duplicar código y mejora la mantenibilidad.
 
 ---
 
-### Módulos con @use
+### SASS: Módulos con @use
 
 Sass recomienda organizar el código en módulos.
 
@@ -392,7 +521,7 @@ body {
 
 ---
 
-### Uso del símbolo &
+### SASS: Uso del símbolo &
 El símbolo **&** se usa para hacer referencia al selector padre dentro de una regla anidada. Esto es útil cuando quieres aplicar estilos específicos a elementos que son descendientes directos del selector padre.
 
 ```scss
@@ -406,8 +535,9 @@ El símbolo **&** se usa para hacer referencia al selector padre dentro de una r
 
 ---
 
-### Listas en Sass
-Las listas en Sass son una secuencia ordenada de valores, como números, colores o cadenas de texto. Los valores se pueden separar por comas o no. El uso de comillas para los valores es solo necesario cuando se usan caracteres especiales.
+### SASS: Listas
+<!-- .slide: style="font-size: 0.90em" -->
+Son una secuencia ordenada de valores, como números, colores o cadenas de texto. Los valores se pueden separar por comas o no. El uso de comillas para los valores es solo necesario cuando se usan caracteres especiales.
 
 ```scss
 $colores: red, green, blue, yellow; // Valores separados con comas
@@ -425,11 +555,72 @@ $segundo-color: nth($colores, 2); // green
 
 ---
 
-### Ejercicio
-1. Instala [NodeJs](https://nodejs.org/en) o asegurate de tenerlo instalado `node --version` y `npm --version`
-2. Instala sass `npm install -g sass` y verifica `sass --version`
-3. Crea un archivo **styles.scss**
-4. Ejecuta **sass --watch styles.scss styles.css** en la consola del proyecto
+### Instalación
+
+1. Instala sass `npm install -g sass` y verifica `sass --version`
+2. En el VSC instala el plugin necesario **Sass**(.sass only)
+
+---
+
+### Ejercicio: Sass básico
+1. Crea un archivo **styles.scss**
+2. Ejecuta **sass --watch styles.scss styles.css** en la consola del proyecto para transpilar el **scss** a **css**
+3. Crea una variable para almacenar colores y usalo en algún elemento
+4. Agrega estilos por (descendientes) anidación
+5. Crea un nuevo archivo de **sass** para que los estilos anidados estén separados. Crea otro archivo para las variables.
+6. Crea un mixin que reciba un color para el fondo y un color para las letras. Reutilizalo en diferentes elementos html.
+
+----
+
+### Ejercicio: Sass básico
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lr5bF2bgXcU?si=IITVLcMJt7ZrsTUF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!--Ejemplo tomado de: https://www.youtube.com/watch?v=BtiiM3jeb_c-->
+
+---
+
+### Ejercicio: Diseño de Interiores
+
+![Diseño de Interiores](images/sass/black.webp)
+
+----
+
+### Ejercicio: Diseño de Interiores
+1. Creamos un **index.html** con su header, nav, section, footer
+2. Creamos una carpeta **scss** con el archivo **styles.scss** dentro
+3. Ejecutamos `sass --watch scss/styles.scss css/styles.css`
+4. Agregamos los estilos para desktop
+5. Creamos un archivo **_mobile.scss** y agregamos los estilos mobile
+
+----
+
+### Ejercicio: Diseño de Interiores
+Recursos:
+
+<img src="images/sass/logo.png" width=100>
+<img src="images/sass/portfolio-1.jpg" width=200>
+<img src="images/sass/portfolio-2.jpg" width=200>
+<img src="images/sass/portfolio-3.jpg" width=200>
+<img src="images/sass/portfolio-4.jpg" width=200>
+
+----
+
+### Ejercicio: Diseño de Interiores
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xq6UDznaar4?si=dMB8Mt03z6VzuYZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+----
+
+### Ejercicio: Diseño de Interiores
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NrkVUcpD0zc?si=vhNAhUehEZoRfuaz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+----
+
+### Ejercicio: Diseño de Interiores
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y5qrZwuJmOU?si=RyR3Z8oe3P1u-YEb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
