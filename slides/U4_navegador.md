@@ -192,7 +192,7 @@ Es un conjunto de herramientas incorporadas en el navegador que permiten editar 
 ---
 
 ## Temas complementarios en el ciclo de vida
-
+<!-- .slide: style="font-size: 0.80em" -->
 Además de las etapas principales del renderizado, existen factores clave que afectan:
 - **Performance** (caché, CDN, ruta crítica).
 - **Interacción y eventos** (eventos globales, animaciones).
@@ -221,7 +221,7 @@ Los CDN (Content Delivery Network) son redes distribuidas de servidores que alma
 ----
 
 ### Critical Rendering Path
-
+<!-- .slide: style="font-size: 0.70em" -->
 Es la **ruta crítica de renderizado** que el navegador sigue desde recibir el HTML hasta mostrar el primer píxel en pantalla.
 
 - Se consideran críticos los recursos que bloquean la renderización inicial, como CSS o scripts bloqueantes.
@@ -235,7 +235,7 @@ Mientras más corto sea este camino, más rápida será la percepción de carga 
 ---
 
 ### Eventos del navegador
-
+<!-- .slide: style="font-size: 0.70em" -->
 Los navegadores exponen múltiples **eventos globales** que permiten reaccionar a cambios en la ventana o documento:
 - **visibilitychange:** detecta si la pestaña se oculta o vuelve a primer plano.
 - **resize:** se dispara cuando la ventana cambia de tamaño.
@@ -247,7 +247,7 @@ Además, existe la API **requestAnimationFrame**, pensada para animaciones fluid
 ---
 
 ### Accesibilidad (A11y)
-
+<!-- .slide: style="font-size: 0.70em" -->
 La accesibilidad busca que cualquier persona, incluidas aquellas con discapacidades, pueda usar un sitio web.
 
 - Ejemplo: un lector de pantalla convierte el DOM en voz.
@@ -276,7 +276,7 @@ Los navegadores interpretan estas señales para brindar accesibilidad mediante t
 ---
 
 ### Seguridad en el ciclo de vida de la página
-
+<!-- .slide: style="font-size: 0.70em" -->
 Durante la carga y ejecución de un sitio, intervienen varios mecanismos de seguridad:
 - **Same-Origin Policy (SOP):** impide que scripts de un origen accedan a recursos de otro origen sin permiso.
 - **CORS (Cross-Origin Resource Sharing):** mecanismo que permite compartir recursos entre orígenes de forma controlada.
