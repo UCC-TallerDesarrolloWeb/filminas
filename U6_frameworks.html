@@ -136,7 +136,7 @@ como para paneles de control o grandes plataformas web.
 * **DOM virtual:** Genera el DOM de forma dinámica, primero aplica los cambios en un DOM Virtual y luego al DOM real.
 * **Isomorfismo:** El código se ejecuta en servidor y cliente, reduciendo así la carga de trabajo.
 * **Componentes:** Permitirá ahorrar en tiempo de desarrollo, crear aplicaciones más escalables y fáciles de mantener.
-* **Flujo de datos unidireccional:** La información e propagan desde los componentes superiores a los inferiores.
+* **Flujo de datos unidireccional:** La información se propaga desde los componentes superiores a los inferiores.
 * **Amplia comunidad**
 * **Multiplataforma:** Llevar la aplicación a **React Native** es sencillo.
 * **Aprendizaje:** Curva de aprendizaje reducida.
@@ -159,7 +159,7 @@ Vue combina ideas de React (componentes, virtual DOM) y Angular (enlace de datos
 * Fácil de aprender y utilizar.
 * Liviano y flexible
 * Sigue los estándares de HTML+CSS+Js
-* Es un framework progresivo que permite migrar facilmente proyectose existentes
+* Es un framework progresivo que permite migrar fácilmente proyectose existentes
 
 ---
 ### Vue: Desventajas
@@ -189,7 +189,7 @@ Genera toda la estructura básica (archivos, carpetas, configuraciones, scripts,
 ----
 
 ### ¿Por que ya no se usa CRA?
-
+<!-- .slide: style="font-size: 0.70em" -->
 <table>
   <thead>
     <tr>
@@ -234,6 +234,8 @@ Es una herramienta de desarrollo de Frontend que busca proporcionar una experien
 Su objetivo principal es acelerar el proceso de construcción y compilación de aplicaciones web, ofreciendo tiempos de arranque, compilación y recarga muy breves.
 
 ----
+
+<!-- .slide: style="font-size: 0.90em" -->
 
 <table>
   <thead>
@@ -285,6 +287,29 @@ npm create vite@latest
 
 ---
 
+### Estructura de carpetas
+<!-- .slide: style="font-size: 0.90em" -->
+- **node_modules:** Contiene todas las dependencias que instala npm (React, Vite, ESLint, etc).
+- **public:** Archivos estáticos que no pasan por el bundler de Vite. (imágenes globales, favicon, logo)
+- **src:** Código fuente de React.
+  - **assets:** Carpeta para imágenes, íconos o archivos CSS adicionales que sí pasan por el empaquetador.
+  - **App.jsx:** Componente principal de React donde se agregan elementos y lógica.
+  - **main.jsx:** Crea el root de React y monta App dentro del index.html.
+- **.gitignore:** Indica qué carpetas o archivos no deben subirse al repositorio, como node_modules o .env
+
+----
+
+### Estructura de carpetas
+<!-- .slide: style="font-size: 0.90em" -->
+- **eslint.config.js:** Configuración de herramienta que analiza el código para detectar errores o malas prácticas.
+- **index.html:** HTML base del proyecto. Se usa como plantilla para inyectar los bundles de JS y CSS.
+- **package.json:** Archivo donde se define nombre del proyecto, dependencias y scripts que se pueden ejecutar.
+- **package-lock.json:** Registra las versiones exactas de cada dependencia instalada.
+- **README.md:** Archivo de documentación inicial.
+- **vite.config.js:** Configuración del bundler Vite (alias, puertos, plugins).
+
+---
+
 ### Instalación de React Usando Vite
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7SjTALRxnjA?si=LnK2mq4n9fEUPqFa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -330,7 +355,16 @@ function Counter() {
 
 2. Al presionar **Ingresar**, si el usuario y password es 'admin', mostrar por consola "Login OK", sino "Login Incorrecto".
 
----
+----
+
+### React 1: Crear un Login Básico
+
+3. Hacer una versión básica con **css** tradicional
+4. A la altura del package ejecutar `npm install sass --save-dev`
+5. Crear una carpeta de **styles** dentro de **src**
+6. Adaptar el estilo al uso de **SASS**
+
+----
 
 ### React 1: Crear un Login Básico
 
@@ -405,13 +439,13 @@ const diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viern
 
 ```
 
----
+----
 
 ### React 2: Redirección de Rutas (parte 1)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j46p0NoWjZY?si=jpK0yCt8NHRbmC0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
----
+----
 
 ### React 2: Redirección de Rutas (parte 2)
 
@@ -421,7 +455,7 @@ const diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viern
 
 ### Outlet
 
-Permitiendo que los componentes de una ruta principal rendericen los componentes de sus rutas hijas. 
+Permite que los componentes de una ruta principal rendericen los componentes de sus rutas hijas. 
 Esto facilita la creación de estructuras de navegación complejas en aplicaciones React, donde una ruta principal puede compartir un diseño común y luego renderizar contenido diferente según la ruta secundaria activa. 
 
 ---
@@ -584,12 +618,23 @@ Las imágenes pueden colocarse en:
 2. Dentro de **assets** crea una carpeta de home y guarda 2 imágenes
 3. En la **Home** reemplaza el texto por una estructura de 4 cards, cada una con una imágen y el título de la actividad.
 
----
+----
+
+<img src="images/react/taekwondo.jpg" width=200>
+<img src="images/react/yoga.webp" width=200>
+<img src="images/react/zumba.jpg" width=200>
+<img src="images/react/funcional.jpg" width=200>
+
+----
 
 ### React: Imágenes
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_FJLuPxzPCA?si=swYehpLSH1LI6lla" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+---
+
+### ¿Cómo re-armarías el carrito de compras usando Vite-React?
 
 <!-- 
 - fetch
