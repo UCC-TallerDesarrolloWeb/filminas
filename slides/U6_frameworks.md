@@ -28,7 +28,7 @@ Created by <i class="fab fa-telegram"></i>
 <div class="grid-container2">
 <div class="grid-item">
 
-### Framworks
+### Frameworks
 * Definición
 * Funcionalidad
 * Ejemplos de Frameworks
@@ -150,6 +150,65 @@ Vue combina ideas de React (componentes, virtual DOM) y Angular (enlace de datos
 * Mucha documentación útil esta en chino (por ser ampliamente usado por Alibaba y Xiaomi).
 * Complejidad de la reactividad
 * Exceso de flexibilidad
+
+---
+
+### SPA
+
+Son las siglas de **Single Page Application** o Aplicación de una sola página.
+
+Es una aplicación web que carga una única página HTML y luego actualiza su contenido dinámicamente usando JavaScript (por ejemplo, con React, Vue o Angular).
+
+----
+
+### SPA: Características
+
+- Carga una sola vez los archivos principales (HTML, JS, CSS).
+- Actualiza el contenido sin recargar toda la página.
+- Usa un enrutador del lado del cliente (react-router-dom).
+
+----
+
+### SPA: Ventajas y Desventajas
+
+**Ventajas**
+- Navegación rápida y fluida.
+- Excelente experiencia de usuario.
+- Reutilización de componentes.
+
+**Desventajas**
+- Peor SEO si no se usa prerendering o SSR (Server-Side Rendering).
+- Mayor tiempo de carga inicial.
+
+---
+
+### PWA
+
+Son las siglas de **Progressive Web App** o "Aplicación Web Progresiva".
+
+Es una aplicación web que se comporta como una app móvil o de escritorio.
+Puede instalarse, funcionar sin conexión (offline) y enviar notificaciones.
+
+----
+
+### PWA: Características
+
+- Funciona offline mediante Service Workers.
+- Incluye un archivo **manifest.json** con ícono y configuración de instalación.
+- Debe servirse por HTTPS.
+
+----
+
+### PWA: Ventajas y Desventajas
+
+**Ventajas**
+- Funciona sin conexión (modo offline).
+- Se puede instalar en el dispositivo.
+- Rápida y optimizada para móviles.
+
+**Desventajas**
+- Configuración más compleja (service worker + manifest).
+- Acceso limitado a algunas APIs del sistema.
 
 ---
 
@@ -297,6 +356,71 @@ npm create vite@latest
 ### Instalación de React Usando Vite
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7SjTALRxnjA?si=LnK2mq4n9fEUPqFa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+### JSX
+
+JSX es una sintaxis que permite escribir código similar a HTML dentro de JavaScript, usada en React para definir interfaces de usuario.
+
+Durante la compilación, se transforma en código JavaScript que crea los elementos de la interfaz.
+
+Sirve para:
+- Describir la UI como función del estado.
+- Crear componentes de forma legible y modular.
+- Insertar expresiones de JavaScript dentro del marcado usando {}.
+
+---
+
+### Atributos que cambian de nombre
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>En HTML</th>
+      <th>En JSX</th>
+      <th>Por qué</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>class</td>
+      <td>className</td>
+      <td><code>class</code> es una palabra reservada en JS (define clases).</td>
+    </tr>
+    <tr>
+      <td>for</td>
+      <td>htmlFor</td>
+      <td><code>for</code> también es palabra reservada; React usa camelCase.</td>
+    </tr>
+    <tr>
+      <td>tabindex</td>
+      <td>tabIndex</td>
+      <td>JSX usa camelCase para todos los atributos.</td>
+    </tr>
+    <tr>
+      <td>onclick</td>
+      <td>onClick</td>
+      <td>Los eventos se escriben en camelCase y reciben funciones, no strings.</td>
+    </tr>
+    <tr>
+      <td>onchange</td>
+      <td>onChange</td>
+      <td>Lo mismo, siempre en camelCase.</td>
+    </tr>
+    <tr>
+      <td>maxlength</td>
+      <td>maxLength</td>
+      <td>JSX convierte todo a camelCase.</td>
+    </tr>
+    <tr>
+      <td>readonly</td>
+      <td>readOnly</td>
+      <td>Igual que arriba.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ---
 
@@ -614,7 +738,6 @@ Las imágenes pueden colocarse en:
 ### React: Imágenes
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_FJLuPxzPCA?si=swYehpLSH1LI6lla" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ---
 
