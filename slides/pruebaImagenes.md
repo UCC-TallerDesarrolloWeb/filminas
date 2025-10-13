@@ -33,3 +33,7 @@ slideNumber: true
 ![fondo](images/sass/portfolio-2.jpg)
 ![fondo](images/sass/portfolio-3.jpg)
 ![fondo](images/sass/portfolio-4.jpg)
+![Taekwondo](images/react/taekwondo.jpg)
+![Zumba](images/react/zumba.jpg)
+![Funcional](images/react/funcional.jpg)
+![Yoga](images/react/yoga.webp)
