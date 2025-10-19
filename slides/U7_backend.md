@@ -228,6 +228,20 @@ export default PostList;
 
 ---
 
+### [Async y Await](https://lenguajejs.com/asincronia/async-await/que-es/)
+<!-- .slide: style="font-size: 0.90em" -->
+Cuando una tarea tarda un tiempo, JavaScript no se queda esperando.
+Sigue ejecutando el resto del código y, cuando la tarea termina, notifica el resultado.
+
+**async/await** permiten trabajar con código asíncrono de forma más legible.
+
+- **async:** Se usa para declarar una función como asíncrona, la cual automáticamente devuelve una promesa. 
+- **await:** pausa la ejecución de la función async hasta que la promesa se resuelve
+
+Es una alternativa del uso de **.then()**.
+
+---
+
 ### Mock Backend
 "Mockear" el backend es una técnica de prueba que consiste en simular las respuestas del servidor (backend) para poder desarrollar y probar otras partes de la aplicación (como el frontend) de forma aislada y sin depender del servidor real. 
 
