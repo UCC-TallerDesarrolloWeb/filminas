@@ -674,7 +674,7 @@ En los proyectos de react se recomienda emplear la siguiente estructura:
 3. Modifique los imports y verifique que la página funciona correctamente.
 4. Modifique **vite.config.js** para mejorar los imports usando **alias**
 
----
+----
 
 ### Ejercicio Estructura del Proyecto
 
@@ -684,6 +684,7 @@ En los proyectos de react se recomienda emplear la siguiente estructura:
 
 ### React: Imágenes
 
+<!-- .slide: style="font-size: 0.70em" -->
 Las imágenes pueden colocarse en:
 - **src/assets**
 - **public**
@@ -759,10 +760,14 @@ Las imágenes pueden colocarse en:
 
 ### ¿Cómo re-armarías el carrito de compras usando Vite-React?
 
-<!-- 
-- fetch
-- (ejercicio con API de pokemon)
--->
+----
+
+### Carrito
+1. Crear un **Store.jsx** en */pages* que contenga .map para iterar y generar las cards
+2. Colocar los datos en **src/data** para separar datos de lógica.
+3. Agregar un componente para la ventana con detalle del producto.
+4. Crear función **formatPrice** en **src/utils**
+5. Modificar la tienda para que el boton de agregar al carrito solo esté disponible cuando el usuario inicio sesión.
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
