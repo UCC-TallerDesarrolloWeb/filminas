@@ -288,6 +288,8 @@ Para los siguientes ejercicios vamos a usar la [pokeApi](https://pokeapi.co/)
 
 ![Poke API](images/api/pokeapi.png)
 
+Puedes ver APIS gratuitas en: https://publicapis.dev/
+
 ---
 
 ### [Postman](https://www.postman.com/downloads/)

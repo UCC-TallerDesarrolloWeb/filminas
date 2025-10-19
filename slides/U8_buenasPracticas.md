@@ -39,9 +39,139 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 
 ---
-## Buenas Prácticas en el Desarrollo Web
+<!--https://onenine.com/es/website-development-best-practices-2/-->
+### Buenas prácticas en desarrollo web
+
+1. Diseño Web Adaptable
+2. Optimización de rendimiento
+3. Accesibilidad (A11y)
+4. SEO
+5. Seguridad
+6. Arquitectura modular & componentes
+7. Control de versiones & CI/CD
+8. Estrategia de contenido & Arquitectura de la información
+9. Mejora progresiva
+10. Monitorización & análisis
 
 ---
+
+### 1. Diseño Web Adaptable
+- Enfocarse en el desarrollo movil primero
+- Emplear unidades relativas (%, rem, vw/vh) y contenidos fluídos 
+- Probar en dispositivos reales
+- Verificar que el sitio sea responsivo
+
+---
+
+## 2. Optimización de rendimiento
+
+- Minimizar archivos **CSS, JS e imágenes**.  
+- Usar **lazy loading** para recursos pesados.  
+- Implementar **caché** (HTTP, CDN, Service Workers).  
+- Optimizar consultas a base de datos.  
+- Analizar con herramientas:
+  - **Lighthouse**
+  - **PageSpeed Insights**
+  - **Web Vitals**
+
+---
+
+## 3. Accesibilidad (A11y)
+
+- Diseñar para **todos los usuarios**, incluyendo personas con discapacidad.  
+- Usar etiquetas **semánticas HTML** correctamente.  
+- Incluir **textos alternativos** (`alt`) en imágenes.  
+- Asegurar **contraste de color** adecuado.  
+- Permitir navegación con **teclado y lectores de pantalla**.
+
+----
+
+## Herramientas de accesibilidad
+
+- **Lighthouse Accessibility Audit**  
+- **axe DevTools**  
+- **WAVE Evaluation Tool**  
+- **Chrome DevTools → Accessibility panel**
+
+---
+
+### 4. Search Engine Optimization (SEO)
+- Emplea palabras claves para el contenido
+- Plantear una estructura de navegación lógica y clara
+- Uso de etiquetas semánticas meta: títulos, metadescripciones, etiquetas de encabezado
+- UX/performance también influyen en ranking.
+
+---
+
+## 5. Seguridad
+
+- Validar y sanitizar toda la **entrada de datos**.  
+- Usar **HTTPS** y certificados válidos.  
+- Implementar **autenticación y autorización seguras** (JWT, OAuth2).  
+- Mantener dependencias actualizadas y usar análisis de vulnerabilidades.
+
+---
+
+### 6. Arquitectura modular & componentes
+**Beneficios:** mantenibilidad, escalabilidad, paralelismo de equipos.
+- Componentes reutilizables + **design tokens**.
+- Separación de capas (UI ↔ lógica ↔ datos).
+- Estándares de **naming** y estructura por feature.
+- Documentar componentes (Storybook) y contratos (OpenAPI).
+
+---
+
+### 7. Control de versiones & CI/CD
+**Git** como fuente de verdad; pipelines automatizados.
+- Estrategia de ramas (GitFlow/Trunk) + PRs con revisión.
+- Tests **unitarios/integración/e2e** en CI.
+- Deploys reproducibles; feature flags.
+- Calidad: linters/pre-commit, coverage, escaneo de seguridad.
+
+---
+
+### 8. Estrategia de contenido & Arquitectura de la información
+**Meta:** que el usuario **encuentre** y **entienda**.
+- Definir audiencias, tareas y vocabulario.
+- Navegación clara, etiquetas y taxonomías consistentes.
+- Plantillas y patrones editoriales.
+- Medir búsquedas internas y rutas de usuario.
+
+---
+
+### 9. Mejora progresiva (progressive enhancement)
+**Base robusta para todos**, mejoras para navegadores capaces.
+- Contenido y navegación **funcionales sin JS** crítico.
+- Cargar progresivamente funcionalidades ricas.
+- *Graceful degradation* para entornos limitados.
+
+---
+
+### 10. Monitorización & análisis
+**Ciclo de mejora continua.**
+- Logs, métricas, alertas; tableros por **SLO/SLI**.
+- Medir **Core Web Vitals** en producción.
+- Analítica con privacidad (consentimiento/retención).
+
+---
+
+## Recursos recomendados
+
+- [web.dev](https://web.dev/) — Guías de buenas prácticas, rendimiento y accesibilidad.  
+- OWASP — [Top 10 vulnerabilidades web](https://owasp.org/www-project-top-ten/).  
+- MDN Web Docs — [Prácticas de desarrollo web](https://developer.mozilla.org/).  
+- [Frontend Checklist](https://frontendchecklist.io/)
+
+---
+
+## Conclusiones
+
+- Las buenas prácticas mejoran la **calidad**, **mantenibilidad** y **seguridad** del software.  
+- Seguridad, rendimiento y accesibilidad son **pilares esenciales** del desarrollo web moderno.  
+- Adoptar guías y checklists garantiza un desarrollo profesional y sostenible.
+
+---
+
 ## Consejos
 Algunos consejos de 
 [Google WebMasters](http://www.google.es/webmasters/learn/)
