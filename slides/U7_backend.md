@@ -220,6 +220,45 @@ export default PostList;
 
 ---
 
+### Mock Backend
+"Mockear" el backend es una técnica de prueba que consiste en simular las respuestas del servidor (backend) para poder desarrollar y probar otras partes de la aplicación (como el frontend) de forma aislada y sin depender del servidor real. 
+
+Esto se logra creando un objeto o servicio simulado que imita el comportamiento de los componentes reales, como APIs o bases de datos, proporcionando respuestas predefinidas y predecibles para las pruebas. 
+
+
+----
+
+### Mock Backend: Ventajas
+- **Aislamiento:** Permite probar un componente sin que dependa de otros sistemas externos, lo que facilita la depuración. 
+- **Desarrollo paralelo:** Los equipos de frontend pueden trabajar independientemente del backend, incluso si este no está terminado, agilizando el proceso de desarrollo. 
+- **Ahorro de tiempo:** Evita la espera de que el backend esté listo o de que los datos de prueba estén disponibles. 
+- **Control de casos de prueba:** Permite simular fácilmente escenarios específicos o casos de error que son difíciles de replicar en un entorno real. 
+
+---
+
+### Ejercicio: Mock del Backend
+1. En la carpeta donde se encuentre el **package.json** ejecutar:
+```bash
+npm i -D json-server
+```
+2. Crear el archivo **src/data/activities.json** con la información necesaria para mockear el servicio.
+3. Emplear una terminal para levantar el servidor:
+```bash
+npx json-server --watch src/data/activities.json --port 4000
+```
+4. Modificar el código para que en lugar de leer los datos del **js** se realice un **fetch**
+
+---
+
+### ¿Qué es [OpenAPI](https://www.openapis.org/) ([Swagger](https://swagger.io/))? 
+
+- Es un formato estándar para documentar APIs REST.
+- Permite describir endpoints, parámetros, respuestas, y generar documentación automática.
+- Ejemplo: https://petstore.swagger.io
+- [Swagger UI](https://editor.swagger.io/) / Editor te permite probar endpoints igual que Postman.
+
+---
+
 ### PokeApi
 
 Para los siguientes ejercicios vamos a usar la [pokeApi](https://pokeapi.co/)
