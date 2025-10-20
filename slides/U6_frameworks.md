@@ -742,16 +742,9 @@ Las imágenes pueden colocarse en:
 
 ---
 
-### ¿Cómo re-armarías el carrito de compras usando Vite-React?
-
-----
-
-### Carrito
-1. Crear un **Store.jsx** en */pages* que contenga .map para iterar y generar las cards
-2. Colocar los datos en **src/data** para separar datos de lógica.
-3. Agregar un componente para la ventana con detalle del producto.
-4. Crear función **formatPrice** en **src/utils**
-5. Modificar la tienda para que el boton de agregar al carrito solo esté disponible cuando el usuario inicio sesión.
+### Ejercicio: Children
+1. Cree un componente **Card** que permita mostrar las actividades del gym El mismo debe recibir: título, subtítulo e información en un **children**.
+2. Separe la "data" en un archivo separado para mantener el orden de los componentes.
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
