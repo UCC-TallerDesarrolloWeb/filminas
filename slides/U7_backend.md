@@ -330,11 +330,34 @@ Es una herramienta que permite:
 ----
 
 ### Carrito
-1. Crear un **Store.jsx** en */pages* que contenga .map para iterar y generar las cards
-2. Colocar los datos en **src/data** para separar datos de lógica.
-3. Agregar un componente para la ventana con detalle del producto.
-4. Crear función **formatPrice** en **src/utils**
-5. Modificar la tienda para que el boton de agregar al carrito solo esté disponible cuando el usuario inicio sesión.
+
+1. Si aún no tenemos instalado **json-server** en el **package.json** ejecutar:
+```bash
+npm i -D json-server
+```
+2. Crear **product.json** con los datos en **src/data** para separar datos de lógica, y mockear
+el servicio **get**.
+3. Crear un **Store.jsx** en */pages* que contenga .map para iterar y generar las cards
+4. Emplear una terminal para levantar el servidor:
+```bash
+npx json-server --watch src/data/productos.json --port 4000
+```
+Y otra terminal para levantar el proyecto:
+```bash
+npm run dev
+```
+
+----
+
+
+4. Agregar un componente para la ventana con detalle del producto.
+5. Crear función **formatPrice** en **src/utils**
+6. Modificar la tienda para que el boton de agregar al carrito solo esté disponible cuando el usuario inicio sesión.
+
+
+
+
+4. Modificar el código para que en lugar de leer los datos del **js** se realice un **fetch**
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?

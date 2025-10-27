@@ -218,6 +218,7 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 - [ ] Una función que calcule/muestre algo en base a los valores ingresados por el usuario en los inputs.
 - [ ] El código Js debe estar en un archivo externo
 - [ ] Se debe emplear var, let o const según corresponda para mayor eficiencia
+- [ ] Los event listener deben ser colocados en el HTML
 
 ---
 ### Requisitos del Segundo Parcial
@@ -309,10 +310,10 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 ### Requisitos del Segundo Parcial
 #### Sobre React (1)
 - [ ] Se debe emplear **Vite** para instalar **React**
-- [ ] Se debe emplear **Hooks**, useState, useEffect, useContext, useNavigate
+- [ ] Se debe emplear **Hooks**, useState, useEffect, useNavigate
 - [ ] Se debe emplear **react-router-dom** para el enrutamiento a otras páginas
 - [ ] Se debe emplear **outlet** para que un componente principal renderice componentes de rutas hijas.
-- [ ] La estructura del proyecto (carpetas) debe ser el correcto: components, pages, styles
+- [ ] La estructura del proyecto (carpetas) debe ser el correcto: components, pages, styles, api
 - [ ] Los **imports** deben ser usando con **alias**
 
 ---
@@ -326,8 +327,9 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 ---
 
 #### Sobre React (3)
-- [ ] En caso de tener backend, emplear **fetch**
-- [ ] En caso de no contar con un servicio que nos provea la información necesaria, la misma debe ser leída en formato tipo Json local y renderizar listas dinámicas. Ejemplo:
+- [ ] Emplear mock de al menos un servicio y permitir: get/read, post/add, patch/update, delete
+- [ ] Emplear **fetch** y funciones **async**/**await** (en lugar del .then)
+- [ ] El formato de la información debería ser similar al siguiente:
 ````javascript
 const activities = [
   {
@@ -391,4 +393,3 @@ const activities = [
 - [ ] No debe haber errores JavaScript presentes (F12 > Consola)
 - [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar, si hay nuevos inputs de html deben contener su label, etc)
 - [ ] El proyecto debe visualizarse correctamente en Desktop y Mobile
-- [ ] Incluir al menos 5 tests con Jest + React Testing Library (ejemplo: que un botón renderice un texto esperado).
