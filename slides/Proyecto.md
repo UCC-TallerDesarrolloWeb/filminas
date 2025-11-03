@@ -309,6 +309,13 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 ---
 
 ### Requisitos del Segundo Parcial
+#### Sobre Readme.md
+- [ ] Actualizar el readme.md para incluir pasos de ejecución del proyecto: (2026)
+- [ ] Actuaizar tecnologías usadas (2026)
+
+---
+
+### Requisitos del Segundo Parcial
 #### Sobre React (1)
 - [ ] Se debe emplear **Vite** para instalar **React**
 - [ ] Se debe emplear **Hooks**, useState, useEffect, useNavigate
@@ -333,23 +340,27 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 - [ ] Emplear **fetch** y funciones **async**/**await** (en lugar del .then)
 - [ ] El formato de la información debería ser similar al siguiente:
 ````javascript
-const activities = [
-  {
-    nombre: "taekwondo",
-    descripcion: "Arte marcial coreana",
-    horarios: [
-      { dia: 2, "hora-inicio": "18:30", "hora-fin": "20:00" },
-      { dia: 4, "hora-inicio": "18:30", "hora-fin": "20:00" }
-    ]
-  },
-  {
-    nombre: "zumba",
-    descripcion: "ritmos latinos",
-    horarios: [
-      { dia: 1, "hora-inicio": "19:30", "hora-fin": "20:30" },
-      { dia: 3, "hora-inicio": "19:30", "hora-fin": "20:30" }
-    ]
-  }
+"productos": [
+    {
+      "id": 1,
+      "nombre": "Cabezal Sparring",
+      "description": "Cabezal de Sparring.",
+      "categoria": "Protectores",
+      "marca": "Gran Marc",
+      "precio": 35000,
+      "web": "https://www.granmarctiendaonline.com.ar/productos/cabezal-cerrado/",
+      "imagen": "cabezal-cerrado.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Dobok Dan",
+      "description": "Bobok aprobado para torneos internacionales.",
+      "categoria": "Dobok",
+      "marca": "Daedo",
+      "precio": 115000.345,
+      "web": "https://www.daedo.com/products/taitf-10813",
+      "imagen": "dobok.webp"
+    }
 ];
 ````
 
