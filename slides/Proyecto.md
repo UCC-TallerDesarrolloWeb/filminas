@@ -142,6 +142,7 @@ Tener en cuenta
 - [ ] Debe haber navegación entre todas las páginas
 - [ ] No debe haber errores de ortografía en el contenido visual
 - [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
+- [ ] No debe existir código comentado
 
 ---
 ### Requisitos del Primer Parcial
@@ -320,6 +321,7 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 
 ### Requisitos del Segundo Parcial
 #### Sobre React (2)
+- [ ] Emplear al menos una imagen en **/public** y una en **assets**
 - [ ] Validaciones en tiempo real con onChange + mensajes de error accesibles.
 - [ ] Crear al menos un componente genérico (ej: Button, Card, Input) y reutilizarlo en varias páginas.
 - [ ] Guardar algún dato en localStorage (ej: preferencias de tema o un carrito de compras).
@@ -327,7 +329,7 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 ---
 
 #### Sobre React (3)
-- [ ] Emplear mock de al menos un servicio y permitir: get/read, post/add, patch/update, delete
+- [ ] Emplear mock de al menos un servicio y permitir al menos una de estas acciones: get/read, post/add, patch/update, delete
 - [ ] Emplear **fetch** y funciones **async**/**await** (en lugar del .then)
 - [ ] El formato de la información debería ser similar al siguiente:
 ````javascript
@@ -399,4 +401,3 @@ const activities = [
 - [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] No debe haber errores JavaScript presentes (F12 > Consola)
 - [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar, si hay nuevos inputs de html deben contener su label, etc)
-- [ ] El proyecto debe visualizarse correctamente en Desktop y Mobile
