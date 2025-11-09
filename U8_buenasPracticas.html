@@ -45,14 +45,25 @@ Created by <i class="fab fa-telegram"></i>
 <div class="grid-container2">
 <div class="grid-item">
 
-(en desarrollo)
+1. Diseño Web Adaptable
+2. Optimización de rendimiento
+3. Accesibilidad (A11y)
+4. SEO
+5. Seguridad
 
 </div>
 <div class="grid-item">
 
+6. Arquitectura modular & componentes
+7. Control de versiones & CI/CD
+8. Estrategia de contenido & Arquitectura de la información
+9. Mejora progresiva
+10. Supervisión y análisis del rendimiento
 
 </div>
 </div>
+
+Fuente: [Mejores Prácticas](https://onenine.com/es/website-development-best-practices-2/)
 
 ---
 <!--https://onenine.com/es/website-development-best-practices-2/-->
@@ -72,31 +83,57 @@ Created by <i class="fab fa-telegram"></i>
 ---
 
 ### 1. Diseño Web Adaptable
-- Enfocarse en el desarrollo movil primero
+
+![Web Adaptable](images/css/img-dispositius.png)
+
+----
+
+### 1. Diseño Web Adaptable
+- Enfocarse en el desarrollo móvil primero
 - Emplear unidades relativas (%, rem, vw/vh) y contenidos fluídos 
 - Probar en dispositivos reales
 - Verificar que el sitio sea responsivo
+
+----
+
+### 1. Diseño Web Adaptable
+- Si bien es complicado de adoptar en etapas de tempranas de desarrollo, 
+trae aparejada gran cantidad de ventajas y evita modificaciones a futuro
+que podrían ser complejas de implementar.
 
 ---
 
 ## 2. Optimización de rendimiento
 
+- Eliminar código innecesario: HTML, CSS, Js
+- Optimización de imágenes (comprimirlas intentando no perder calidad, implementar carga diferida)
 - Minimizar archivos **CSS, JS e imágenes**.  
 - Usar **lazy loading** para recursos pesados.  
 - Implementar **caché** (HTTP, CDN, Service Workers).  
 - Optimizar consultas a base de datos.  
 - Analizar con herramientas:
-  - **Lighthouse**
-  - **PageSpeed Insights**
+  - **[Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es)**
+  - **[PageSpeed Insights](https://pagespeed.web.dev/)**
   - **Web Vitals**
 
 ---
 
 ## 3. Accesibilidad (A11y)
 
+Descuidar la accesibilidad puede alejar a una parte significativa de su público objetivo. 
+Además, no cumplir con los estándares de accesibilidad puede conllevar repercusiones legales 
+bajo leyes como la Ley de Estadounidenses con Discapacidades (ADA) en EE. UU., la Sección 508 y 
+la Ley Europea de Accesibilidad (EAA).
+
+----
+
+## 3. Accesibilidad (A11y)
+
+- Cumplir con los estándares [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/es) 2.1 AA
 - Diseñar para **todos los usuarios**, incluyendo personas con discapacidad.  
 - Usar etiquetas **semánticas HTML** correctamente.  
 - Incluir **textos alternativos** (`alt`) en imágenes.  
+- Utilizar herramientas de pruebas de accesibilidad
 - Asegurar **contraste de color** adecuado.  
 - Permitir navegación con **teclado y lectores de pantalla**.
 
@@ -104,12 +141,28 @@ Created by <i class="fab fa-telegram"></i>
 
 ## Herramientas de accesibilidad
 
-- **Lighthouse Accessibility Audit**  
-- **axe DevTools**  
+- **[Lighthouse Accessibility Audit](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es)**  
+- **[axe DevTools](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)**  
 - **WAVE Evaluation Tool**  
 - **Chrome DevTools → Accessibility panel**
 
 ---
+
+### 4. Search Engine Optimization (SEO)
+<!-- .slide: style="font-size: 0.80em" -->
+La optimización para motores de búsqueda (SEO) consiste en optimizar el sitio web para aumentar su 
+visibilidad en buscadores como Google. 
+
+Al optimizar el contenido y configuración técnica se atrae más tráfico orgánico (gratuito) de personas 
+que buscan información relacionada con el negocio. 
+
+Esto implica comprender qué busca el público objetivo (investigación de palabras clave) y adaptar el 
+contenido del sitio web para satisfacer esas necesidades. 
+
+El SEO consiste en hacer que el sitio web sea fácilmente detectable tanto por los motores de búsqueda 
+como por los usuarios.
+
+----
 
 ### 4. Search Engine Optimization (SEO)
 - Emplea palabras claves para el contenido
@@ -119,23 +172,35 @@ Created by <i class="fab fa-telegram"></i>
 
 ---
 
+### 5. Seguridad
+Una brecha de seguridad puede tener incurrir en pérdidas financieras o en daños a la reputación de la empresa.
+
+----
+
 ## 5. Seguridad
 
 - Validar y sanitizar toda la **entrada de datos**.  
 - Usar **HTTPS** y certificados válidos.  
 - Implementar **autenticación y autorización seguras** (JWT, OAuth2).  
-- Mantener dependencias actualizadas y usar análisis de vulnerabilidades.
+- Mantener dependencias actualizadas y usar análisis de vulnerabilidades ([Snyk](https://snyk.io/)).
+- Realizar auditorías de seguridad periódicas
 
 ---
 
 ### 6. Arquitectura modular & componentes
 **Beneficios:** mantenibilidad, escalabilidad, paralelismo de equipos.
-- Componentes reutilizables + **design tokens**.
+- Componentes reutilizables que reciban parámetros de entrada y salida claros.
 - Separación de capas (UI ↔ lógica ↔ datos).
 - Estándares de **naming** y estructura por feature.
 - Documentar componentes (Storybook) y contratos (OpenAPI).
 
 ---
+
+### 7. Control de versiones & CI/CD
+Mejoran y agilizan todo el proceso de desarrollo, introduciendo un mayor nivel de automatización,
+mejorando la fiabilidad y la colaboración.
+
+----
 
 ### 7. Control de versiones & CI/CD
 **Git** como fuente de verdad; pipelines automatizados.
@@ -147,7 +212,17 @@ Created by <i class="fab fa-telegram"></i>
 ---
 
 ### 8. Estrategia de contenido & Arquitectura de la información
-**Meta:** que el usuario **encuentre** y **entienda**.
+
+El contenido debe estar correctamente estructurado y presentado para que el usuario
+**encuentre** y **entienda**.
+
+Se debe establecer un sistema de navegación intuitivo y garantizar que el contenido 
+satisfaga las necesidades de los usuarios.
+
+----
+
+### 8. Estrategia de contenido & Arquitectura de la información
+
 - Definir audiencias, tareas y vocabulario.
 - Navegación clara, etiquetas y taxonomías consistentes.
 - Plantillas y patrones editoriales.
@@ -156,6 +231,13 @@ Created by <i class="fab fa-telegram"></i>
 ---
 
 ### 9. Mejora progresiva (progressive enhancement)
+Este enfoque se centra en construir una base sólida que funcione para todos, 
+y luego implementar mejoras adicionales para quienes tengan navegadores y dispositivos más potentes.
+
+----
+
+### 9. Mejora progresiva (progressive enhancement)
+
 **Base robusta para todos**, mejoras para navegadores capaces.
 - Contenido y navegación **funcionales sin JS** crítico.
 - Cargar progresivamente funcionalidades ricas.
@@ -163,11 +245,75 @@ Created by <i class="fab fa-telegram"></i>
 
 ---
 
-### 10. Monitorización & análisis
+### 10. Supervisión y análisis del rendimiento
+Implica implementar herramientas y procesos para monitorizar diversos aspectos del rendimiento, 
+el comportamiento del usuario y las tasas de conversión de su sitio web.
+
+Permite obtener información valiosa para identificar cuellos de botella, optimizar la experiencia del usuario y 
+tomar decisiones informadas sobre las futuras prioridades de desarrollo.
+
+----
+
+### 10. Supervisión y análisis del rendimiento
 **Ciclo de mejora continua.**
-- Logs, métricas, alertas; tableros por **SLO/SLI**.
+- Logs, métricas, alertas; tableros por **SLO/SLI**. (Objetivo/Indicador de Nivel de Servicio)
 - Medir **Core Web Vitals** en producción.
 - Analítica con privacidad (consentimiento/retención).
+
+<!--
+### Resumen
+
+<table>
+  <thead>
+    <tr>
+      <th>Práctica</th>
+      <th>🔄 Complejidad</th>
+      <th>⚡ Recursos</th>
+      <th>📊 Resultados</th>
+      <th>⭐ Ventajas</th>
+      <th>💡 Casos de uso</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td> 1. Diseño Web Sensible</td>
+    <td>Medio: utiliza rejillas y medios fluidos</td>
+    <td>Moderado: requiere pruebas en múltiples dispositivos</td>
+    <td>Experiencia fluida y SEO mejorado</td>
+    <td>Base de código única, a prueba de futuro frente a nuevos dispositivos</td>
+    <td>Sitios web multidispositivo, diseño adaptativo</td>
+  </tr>
+  <tr>
+    <td>2. Optimización del rendimiento del sitio web</td>
+    <td>Implementaciones técnicas avanzadas	Alto: necesita herramientas especializadas y mantenimiento.	Tiempos de carga más rápidos, tasas de rebote reducidas	Mayor eficiencia, mejor participación del usuario	Sitios de alto tráfico donde la velocidad es fundamental
+  </tr>
+  <tr>
+  Implementación de Accesibilidad (a11y)	Medio-alto: adherencia a los estándares	Moderado: esfuerzo adicional de diseño y pruebas	Experiencia inclusiva con cumplimiento legal	Mejora la experiencia de usuario, amplía la audiencia y potencia el SEO.	Sitios gubernamentales, educativos y públicos
+  </tr>
+  <tr>
+  (Search Engine Optimization - SEO)	Medium: contenido en evolución y tácticas técnicas	Moderado: inversiones continuas en contenido y herramientas	Mayor visibilidad orgánica y tráfico a largo plazo	Genera credibilidad y autoridad	Sitios ricos en contenido y comercio electrónico competitivo
+  </tr>
+  <tr>
+  Implementación de seguridad	Alto: requiere prácticas de seguridad rigurosas	Alto – auditorías continuas y herramientas especializadas	Protección de datos, confianza y cumplimiento	Mitiga los riesgos y genera confianza en el cliente	Sitios que manejan datos y transacciones confidenciales
+  </tr>
+  <tr>
+  Arquitectura modular y basada en componentes	Medio: necesita planificación y diseño inicial	Moderado: beneficios de los marcos modernos	Mantenimiento más sencillo y arquitectura de interfaz de usuario escalable	Promueve la reutilización y el desarrollo paralelo	Aplicaciones a gran escala y proyectos colaborativos
+  </tr>
+  <tr>
+  Implementación de control de versiones y CI/CD	Medio: la configuración y la integración son clave	Moderado: requiere herramientas de automatización y servidores	Implementaciones confiables y calidad de código mejorada	Mejora la colaboración y reduce los errores de implementación.	Entornos de desarrollo colaborativo, DevOps
+  </tr>
+  <tr>
+  Estrategia de contenidos y arquitectura de la información	Alto: planificación exhaustiva y trabajo en equipo	Alto: tiempo significativo en investigación y auditorías	Navegación mejorada, SEO y capacidad de búsqueda de contenido	Contenido optimizado, estructura lógica	Sitios con mucho contenido e información compleja
+  </tr>
+  <tr>
+  Mejora progresiva y degradación elegante	Medio: línea base esencial con funciones adicionales	Moderado: desarrollo en capas y pruebas exhaustivas	Funcionalidad básica robusta en todos los navegadores	Garantiza resiliencia y mejoras graduales.	Sitios web dirigidos a diversos navegadores y dispositivos
+  </tr>
+  <tr>
+  Monitoreo y análisis del desempeño	Medio: configuración e integración de herramientas	Moderado: requiere herramientas de análisis y medidas de privacidad.	Información basada en datos que conduce a la optimización	Detección de problemas en tiempo real y métricas procesables	Sitios centrados en la mejora continua del rendimiento
+  </tr>
+  </tbody>
+</table>
+-->
 
 ---
 
