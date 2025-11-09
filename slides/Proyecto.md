@@ -332,11 +332,12 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 - [ ] Validaciones en tiempo real con onChange + mensajes de error accesibles.
 - [ ] Crear al menos un componente genérico (ej: Button, Card, Input) y reutilizarlo en varias páginas.
 - [ ] Guardar algún dato en localStorage (ej: preferencias de tema o un carrito de compras).
+- [ ] NO se deben declarar atributos que NO son usados en ningún sitio
 
 ---
 
 #### Sobre React (3)
-- [ ] Emplear mock de al menos un servicio y permitir al menos una de estas acciones: get/read, post/add, patch/update, delete
+- [ ] Emplear mock de al menos un servicio (db.json) y permitir al menos una de estas acciones: get/read, post/add, patch/update, delete
 - [ ] Emplear **fetch** y funciones **async**/**await** (en lugar del .then)
 - [ ] El formato de la información debería ser similar al siguiente:
 ````javascript
@@ -376,6 +377,7 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 #### Sobre el proyecto general
 - [ ] Todas las correcciones y mejoras (sugerencias) solicitadas durante el primer parcial deben estar corregidas.
 - [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
+- [ ] No deben existir imports innecesarios
 
 
 ---
