@@ -211,7 +211,7 @@ Tener en cuenta
 - [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
 
 ---
-### Requisitos del Segundo Parcial
+### Requisitos del Primer Parcial
 #### Sobre la funcionalidad JavaScript (1)
 <!-- .slide: style="font-size: 0.75em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
@@ -222,7 +222,7 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 - [ ] Los event listener deben ser colocados en el HTML
 
 ---
-### Requisitos del Segundo Parcial
+### Requisitos del Primer Parcial
 #### Sobre la funcionalidad JavaScript (2)
 - [ ] No deben existir funciones innecesarias que no se llamen en ninguna sección del código
 - [ ] Las funciones deben estar escritas cómo **función flecha**
@@ -230,7 +230,7 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 - [ ] El funcionamiento de la página debe ser consistente.
 
 ---
-### Requisitos del Segundo Parcial
+### Requisitos del Primer Parcial
 #### Sobre la documentación
 - [ ] **TODAS** las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
 ````javascript
