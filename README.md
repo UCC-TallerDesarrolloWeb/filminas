@@ -13,5 +13,10 @@ Steps:
 4. Run reveal-md slides/ --static to generate all html files in _static
 
 ### TODO LIST
-* Borrar archivos del repositorio
-* Configurar remote URL en Github
+* Mejorar teorico y ejercicio de React
+* Grabar videos de los últimos ejercicios (API)
+* Hacer checklist de ejercicios
+* Completar GTP
+* Agregar ejercicios de GitHubActions
+* mostrar como crear script para "levantar" el servidor
+
