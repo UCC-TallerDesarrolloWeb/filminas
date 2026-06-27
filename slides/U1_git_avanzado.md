@@ -55,11 +55,11 @@ Created by <i class="fab fa-telegram"></i>
 
 * .gitignore
 
-[Ejercicio: .gitignore](U2_git_avanzado.html#/24)
+[Ejercicio: .gitignore](U1_git_avanzado.html#/24)
 
 * configuraciones de github
 
-[Ejercicio: Configuración GitHub](U2_git_avanzado.html#/26)
+[Ejercicio: Configuración GitHub](U1_git_avanzado.html#/26)
 
 * cursos de git
 

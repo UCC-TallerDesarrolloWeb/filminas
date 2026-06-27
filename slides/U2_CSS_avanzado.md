@@ -31,7 +31,7 @@ Created by <i class="fab fa-telegram"></i>
 ### CSS
 * Backgrounds
 
-[Ejercicio: Backgrounds](U4_CSS_avanzado.html#/5)
+[Ejercicio: Backgrounds](U2_CSS_avanzado.html#/5)
 
 * Position
 * Z-index
@@ -41,7 +41,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 <div class="grid-item">
 
-[Ejercicio: 2 columnas](U4_CSS_avanzado.html#/16)
+[Ejercicio: 2 columnas](U2_CSS_avanzado.html#/16)
 
 * Por qué funciona diferente? 
 * Transiciones

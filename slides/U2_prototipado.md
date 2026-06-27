@@ -52,12 +52,12 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 <div class="grid-item">
 
-[Ejercicio: Sketch](U3_prototipado.html#/23)
+[Ejercicio: Sketch](U2_prototipado.html#/23)
 
 - Ventajas de las técnicas de diseño
-  [Ejercicio: Wireframe](U3_prototipado.html#/45)
+  [Ejercicio: Wireframe](U2_prototipado.html#/45)
 - Errores comunes
-[Ejercicio: Evaluación](U3_prototipado.html#/47)
+[Ejercicio: Evaluación](U2_prototipado.html#/47)
 </div>
 </div>
 

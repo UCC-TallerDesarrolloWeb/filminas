@@ -33,15 +33,15 @@ Created by <i class="fab fa-telegram"></i>
 - Métodos para Arrays
   - Push
   - Splice
-- [Ejercicio: Vaciar Carrito](U5_javaScript3.html#/8)
+- [Ejercicio: Vaciar Carrito](U3_javaScript3.html#/8)
 
 
 </div>
 <div class="grid-item">
 
-- [Ejercicio: Filter](U5_javaScript3.html#/10)
-- [Ejercicio: Formateo de Precio](U5_javaScript3.html#/11)
-- [Ejercicio: Total y Cantidad](U5_javaScript3.html#/12)
+- [Ejercicio: Filter](U3_javaScript3.html#/10)
+- [Ejercicio: Formateo de Precio](U3_javaScript3.html#/11)
+- [Ejercicio: Total y Cantidad](U3_javaScript3.html#/12)
 
 </div>
 </div>

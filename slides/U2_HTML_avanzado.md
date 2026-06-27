@@ -38,7 +38,7 @@ Created by <i class="fab fa-telegram"></i>
 * Caption
 * Consejos de accesibilidad
 
-[Ejercicio: Accesibilidad](U4_HTML_avanzado.html#/24)
+[Ejercicio: Accesibilidad](U2_HTML_avanzado.html#/24)
 
 ### Otras etiquetas
 
@@ -46,7 +46,7 @@ Created by <i class="fab fa-telegram"></i>
 * Canvas
 * Multimedia (video, audio)
 
-[Ejercicio: Multimedia](U4_HTML_avanzado.html#/32)
+[Ejercicio: Multimedia](U2_HTML_avanzado.html#/32)
 
 * Buenas Prácticas
 

@@ -39,27 +39,27 @@ Created by <i class="fab fa-telegram"></i>
 * Colores
 * Estilo: Tag, #ID, .clase
 
-[Ejercicio: Propiedades tipográficas](U4_CSS.html#/16)
+[Ejercicio: Propiedades tipográficas](U2_CSS.html#/16)
 
-[Ejercicio: CSS incrustado](U4_CSS.html#/17)
+[Ejercicio: CSS incrustado](U2_CSS.html#/17)
 
 </div>
 <div class="grid-item">
 
 * Descendientes
 
-[Ejercicio: Estilos con descendientes](U4_CSS.html#/21)
+[Ejercicio: Estilos con descendientes](U2_CSS.html#/21)
 
 * Pseudo clases
 
-[Ejercicio: Pseudo Clases](U4_CSS.html#/25)
+[Ejercicio: Pseudo Clases](U2_CSS.html#/25)
 
 * Modelo de cajas: Margin, border, padding
 * Unidades de medida
 * Fondos y Gradientes
 * Favicon
 
-[Ejercicio: CV](U4_CSS.html#/35)
+[Ejercicio: CV](U2_CSS.html#/35)
 
 * Comentarios
 * Buenas prácticas

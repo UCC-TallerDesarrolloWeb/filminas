@@ -49,19 +49,19 @@ Created by <i class="fab fa-telegram"></i>
 * Eventos y Objetos
 * Eventos de formularios
 
-[Ejercicio: Hola Mundo!](U5_javaScript.html#/24)
+[Ejercicio: Hola Mundo!](U3_javaScript.html#/24)
 
-[Ejercicio: Conversor de Unidades](U5_javaScript.html#/26)
+[Ejercicio: Conversor de Unidades](U3_javaScript.html#/26)
 
 * Documentar
 
-[Ejercicio: Documentación](U5_javaScript.html#/35)
+[Ejercicio: Documentación](U3_javaScript.html#/35)
 
 * getElementBy
 * Obtener valores
 * Objeto Math
 
-[Ejercicio: Grados a Radianes](U5_javaScript.html#/43)
+[Ejercicio: Grados a Radianes](U3_javaScript.html#/43)
 
 </div>
 </div>

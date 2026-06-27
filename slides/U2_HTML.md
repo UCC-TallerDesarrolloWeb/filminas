@@ -35,31 +35,31 @@ Created by <i class="fab fa-telegram"></i>
 * Sintaxis
 * Etiquetas head
 
-[Ejercicio: Primer HTML](U4_HTML.html#/9)
+[Ejercicio: Primer HTML](U2_HTML.html#/9)
 
 * Etiquetas semánticas
 * Etiquetas body
 * Tipos de texto
 
-[Ejercicio: Secciones](U4_HTML.html#/17)
+[Ejercicio: Secciones](U2_HTML.html#/17)
 
-[Ejercicio: Títulos](U4_HTML.html#/18)
+[Ejercicio: Títulos](U2_HTML.html#/18)
 
 * Tipos de listas
 * Hipervínculos
 
-[Ejercicio: Listas](U4_HTML.html#/24)
+[Ejercicio: Listas](U2_HTML.html#/24)
 
 </div>
 <div class="grid-item">
 
-[Ejercicio: Link](U4_HTML.html#/25)
+[Ejercicio: Link](U2_HTML.html#/25)
 
 * Tablas
 
-[Ejercicio: Tablas 1,2,3,4](U4_HTML.html#/31)
+[Ejercicio: Tablas 1,2,3,4](U2_HTML.html#/31)
 
-[Ejercicio: Comentarios](U4_HTML.html#/35)
+[Ejercicio: Comentarios](U2_HTML.html#/35)
 
 * Div
 
