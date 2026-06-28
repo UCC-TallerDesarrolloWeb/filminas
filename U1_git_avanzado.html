@@ -71,11 +71,11 @@ Created by <i class="fab fa-telegram"></i>
 
 * .gitignore
 
-[Ejercicio: .gitignore](U2_git_avanzado.html#/24)
+[Ejercicio: .gitignore](U1_git_avanzado.html#/24)
 
 * configuraciones de github
 
-[Ejercicio: Configuración GitHub](U2_git_avanzado.html#/26)
+[Ejercicio: Configuración GitHub](U1_git_avanzado.html#/26)
 
 * cursos de git
 
@@ -559,7 +559,10 @@ Existen muchos comandos de git, y parámetros que se pueden agregar a comandos y
       const mermaidOptions = extend({ startOnLoad: false }, {});
       mermaid.startOnLoad = false;
       mermaid.initialize(mermaidOptions);
-      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      const cb = function (event) {
+        mermaid.init(mermaidOptions, '.stack.present > .present pre code.mermaid');
+        mermaid.init(mermaidOptions, '.slides > .present:not(.stack) pre code.mermaid');
+      }
       Reveal.addEventListener('ready', cb);
       Reveal.addEventListener('slidetransitionend', cb);
     </script>

@@ -47,7 +47,7 @@ Created by <i class="fab fa-telegram"></i>
 ### CSS
 * Backgrounds
 
-[Ejercicio: Backgrounds](U4_CSS_avanzado.html#/5)
+[Ejercicio: Backgrounds](U2_CSS_avanzado.html#/5)
 
 * Position
 * Z-index
@@ -57,7 +57,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 <div class="grid-item">
 
-[Ejercicio: 2 columnas](U4_CSS_avanzado.html#/16)
+[Ejercicio: 2 columnas](U2_CSS_avanzado.html#/16)
 
 * Por qué funciona diferente? 
 * Transiciones
@@ -882,7 +882,10 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
       const mermaidOptions = extend({ startOnLoad: false }, {});
       mermaid.startOnLoad = false;
       mermaid.initialize(mermaidOptions);
-      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      const cb = function (event) {
+        mermaid.init(mermaidOptions, '.stack.present > .present pre code.mermaid');
+        mermaid.init(mermaidOptions, '.slides > .present:not(.stack) pre code.mermaid');
+      }
       Reveal.addEventListener('ready', cb);
       Reveal.addEventListener('slidetransitionend', cb);
     </script>

@@ -46,13 +46,13 @@ Created by <i class="fab fa-telegram"></i>
 
 * Refactorización de Código
 
-[Ejercicio: Refactorización de Conversión de Unidades](U5_javaScript2.html#/3)
+[Ejercicio: Refactorización de Conversión de Unidades](U3_javaScript2.html#/3)
 
 * Modificar CSS mediante Js
 
-[Ejercicio: Mostrar/Ocultar div](U5_javaScript2.html#/9)
+[Ejercicio: Mostrar/Ocultar div](U3_javaScript2.html#/9)
 
-[Ejercicio: Operaciones Mateáticas](U5_javaScript2.html#/11)
+[Ejercicio: Operaciones Mateáticas](U3_javaScript2.html#/11)
 
 * Math Round
 * Math Random
@@ -65,15 +65,15 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 <div class="grid-item">
 
-[Ejercicio: Conversor de Unidades 2](U5_javaScript2.html#/23)
+[Ejercicio: Conversor de Unidades 2](U3_javaScript2.html#/23)
 
-[Ejercicio: Operaciones Mateáticas 2](U5_javaScript2.html#/26)
+[Ejercicio: Operaciones Mateáticas 2](U3_javaScript2.html#/26)
 
-[Ejercicio: Primera a Segunda web](U5_javaScript2.html#/29)
+[Ejercicio: Primera a Segunda web](U3_javaScript2.html#/29)
 
 * LocalStorage
 
-[Ejercicio: Primera a Segunda web empleando LocalStorage](U5_javaScript2.html#/34)
+[Ejercicio: Primera a Segunda web empleando LocalStorage](U3_javaScript2.html#/34)
 
 * Métodos para Strings
 
@@ -596,7 +596,10 @@ a un array. (guardar este array en un localstorage)
       const mermaidOptions = extend({ startOnLoad: false }, {});
       mermaid.startOnLoad = false;
       mermaid.initialize(mermaidOptions);
-      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      const cb = function (event) {
+        mermaid.init(mermaidOptions, '.stack.present > .present pre code.mermaid');
+        mermaid.init(mermaidOptions, '.slides > .present:not(.stack) pre code.mermaid');
+      }
       Reveal.addEventListener('ready', cb);
       Reveal.addEventListener('slidetransitionend', cb);
     </script>
