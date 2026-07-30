@@ -28,7 +28,7 @@ La página debe tener:
 * HTML + CSS + Js
 * Imágenes
 * Campos de formulario
-* Uso de etiquetas semásnticas
+* Uso de etiquetas semánticas
 
 ---
 ## PROYECTO Web: Ideas
