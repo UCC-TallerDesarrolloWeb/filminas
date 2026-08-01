@@ -504,8 +504,6 @@ a un array. (guardar este array en un localstorage)
 ## Cursos Online
 [![CodeCademy](images/Eventos/codecademy.png)](https://www.codecademy.com/)
 
-[![Acamica](images/Eventos/acamica.jpg)](https://www.acamica.com/)
-
 ---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
