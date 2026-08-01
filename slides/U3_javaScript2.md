@@ -6,7 +6,7 @@ slideNumber: true
 
 # JavaScript: 2da Parte
 Created by <i class="fab fa-telegram"></i> 
-[edme88]("https://t.me/edme88")
+edme88
 
 ---
 <style>

@@ -4,28 +4,28 @@ theme: league
 slideNumber: true
 ---
 
-# Taller de Desarrollo Web (Práctica)
+# Taller de 
+# Desarrollo Web
+## Práctica
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88")
+edme88
 
 ---
 ## ¿PROYECTO?
     
-Relizar un proyecto Web
-
-<span style="font-size: 0.4em">(de cualquier temática apta para la facultad)</span>
+<p>Relizar un proyecto Web
+<span style="font-size: 0.4em">(de cualquier temática apta para la facultad)</span></p>
 
 * User Interface (HTML5 y CSS3)
 * Funcionalidad (Javascript)
 * Framework: React
-
 
 ![HTML5](images/presentacion/HTML5.png)
 
 ---
 ## PROYECTO: Requisitos básicos
 La página debe tener:
-* HTML + CSS + Js
+* HTML + CSS + JS
 * Imágenes
 * Campos de formulario
 * Uso de etiquetas semánticas
@@ -33,6 +33,8 @@ La página debe tener:
 ---
 ## PROYECTO Web: Ideas
 * Venta de productos
+* Trekking
+* Experiencias de Vacaciones
 * Gym
 * Hotel
 * Etc, etc, etc

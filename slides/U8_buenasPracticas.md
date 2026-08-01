@@ -7,7 +7,7 @@ slideNumber: true
 # Buenas Prácticas
 ## en el Desarrollo Web
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88")
+edme88
 
 ---
 <!-- .slide: style="font-size: 0.60em" -->

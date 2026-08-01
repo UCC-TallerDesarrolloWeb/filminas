@@ -6,7 +6,7 @@ slideNumber: true
 
 # Git (parte II)
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88")
+edme88
 
 ---
 <!-- .slide: style="font-size: 0.60em" -->

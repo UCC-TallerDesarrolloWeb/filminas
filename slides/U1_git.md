@@ -6,7 +6,7 @@ slideNumber: true
 
 # Git: Sistema de Control de Versiones
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88")
+edme88
 
 ---
 ## Bibliografia

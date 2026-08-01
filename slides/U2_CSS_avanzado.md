@@ -6,7 +6,7 @@ slideNumber: true
 
 # CSS: 2da parte
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88")
+edme88
 
 ---
 <style>
