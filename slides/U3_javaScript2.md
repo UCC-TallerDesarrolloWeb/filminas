@@ -57,7 +57,7 @@ Created by <i class="fab fa-telegram"></i>
 
 * LocalStorage
 
-[Ejercicio: Primera a Segunda web empleando LocalStorage](U3_javaScript2.html#/34)
+[Ejercicio: Carrito de Compras con localstorage](U3_javaScript2.html#/34)
 
 * Métodos para Strings
 
