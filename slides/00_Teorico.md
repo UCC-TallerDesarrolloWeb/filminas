@@ -126,8 +126,8 @@ deividazulay@gmail.com
 
 ---
 ## Forma de Evaluación: Cursado
-* Proyecto Web: Primera Entrega (HTML+CSS)
-* Proyecto Web: Segunda Entrega (React+Js)
+* Proyecto Web: Primera Entrega (HTML+CSS+JS)
+* Proyecto Web: Segunda Entrega (React+SASS)
 * Nota del promedio de 8 parcialitos teóricos multiple opción
 
 ---
@@ -135,8 +135,8 @@ deividazulay@gmail.com
 FINAL:
 
 *    Entrega a tiempo del proyecto
-*    HTML+CSS
-*    React+Js
+*    HTML+CSS+JS
+*    React+SASS
 *    Preguntas sobre el código
 *    Preguntas del teórico visto en Clase
 *    Promoción de la parte Teórica <br> <span style="font-size: 0.5em">Promedio >= 8 y nota mínima 7</span>
@@ -164,8 +164,8 @@ FINAL:
 ### Sobre las diapositivas...
 - Algunas se pueden recorren en vertical ⬇️ (para profundizar en un tema) 
 o en horizontal ➡️ (para ir al tema siguiente)
-- Con [ESC] puedes ver todas las diapositivas
-- Con [Ctrol + P] puedes imprimirlas en **PDF**
+- Con **[ESC]** puedes ver todas las diapositivas
+- Con **[Ctrol + P]** puedes imprimirlas en **PDF**
 - Están desarrolladas con [Reveal.js](https://revealjs.com/)
 - Se escriben empleando **Markdown**
 - Se convierten a **HTML** y se suben al servidor empleando un pipeline de **Integración Continua** con **GitHub Actions**
