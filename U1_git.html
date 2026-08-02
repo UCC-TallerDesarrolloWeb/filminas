@@ -116,6 +116,13 @@ edme88
 ![No git](images/herramientas/NoGit.jpeg)
 
 ---
+
+## Quién lo creó?
+Git fue creado por el ingeniero de software finlandés Linus Torvalds en abril de 2005. Lo desarrolló para el control de versiones del código fuente del núcleo de Linux
+
+![Linus Torvals](images/herramientas/Linus-torvalds.webp)
+
+---
 ### Instalar git en Windows
 1. Ingresar a [https://git-scm.com/download/win](https://git-scm.com/download/win)
 2. Descargar la versión **Standalone**
@@ -186,11 +193,18 @@ La palabra **global** puede ser reemplazada por local, worktree, portable o syst
 * Abre la consola de windows **cmd** (símbolo del sistema) o el Bash de Git (depende como lo instalaste)
 * Configura tu usuario de git de manera global (Recuerda tu nombre de usuario e email usados. Posteriormente lo usaras para tu cuenta de GitHub)
 
----
+----
+
 ## Ejercicio: Configurar Usuario
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R1DgidQBjgc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+## Git: Servidores
+Los servidores permiten tener almacenamiento virtual de tu proyecto. 
+Puedes guardar versiones del código y accederlas cuando lo necesites. 
+
+----
+
 <!-- .slide: data-background="images/herramientas/servidoresGIT.png" -->
 ## Git: Servidores
 * [Github](https://github.com/)
@@ -200,11 +214,6 @@ La palabra **global** puede ser reemplazada por local, worktree, portable o syst
 * [GitBucket](https://github.com/gitbucket/gitbucket)
 * [GitPrep](https://github.com/yuki-kimoto/gitprep)
 * [GNU Savannah](https://savannah.nongnu.org/projects/administration)
-
----
-## Git: Servidores
-Los servidores permiten tener almacenamiento virtual de tu proyecto. 
-Puedes guardar versiones del código y accederlas cuando lo necesites. 
 
 ---
 ## Ejercicio: Creación de Cuenta en GitHub
@@ -220,17 +229,20 @@ Una vez creada tu cuenta, envia el nombre de  usuario al Profe completando la pl
 
 ![QR](images/qr.png)
 
----
+----
+
 ## Ejercicio: Creación de Cuenta en GitHub
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2xr8dkuMb_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+
 ## Los 3 estados + Untraking
 * **Unmodified** los datos estan almacenados de manera segura en el repositorio
 * **Modified** Se ha modificado el archivo pero todavía no se ha confirmado
 * **Untrack** el archivo no lleva seguimiento de versionado
 
----
+----
+
 ## Los 3 estados + Untraking
 ![3 Estados](images/herramientas/three-stages-01.svg)
 
@@ -295,7 +307,8 @@ Permite guardar los cambios (versionar) en el repositorio local
 git commit -m "Se agrego un elemento a la pagina"
 ````
 
----
+----
+
 ## Commit
 * Identificadores numéricos de 40bytes
 * Identificación de la persona que realizo el commit (nombre y mail)
@@ -304,7 +317,7 @@ git commit -m "Se agrego un elemento a la pagina"
 
 ![Git Commit](images/herramientas/git_commit.png)
 
----
+----
 
 ![Commit significativo](images/herramientas/mensaje_significativo.jpg)
 
@@ -410,7 +423,8 @@ git diff
 * En el navegador, visualizar los commits realizados
 <!--(No te preocupes, hay un [PDF](https://drive.google.com/open?id=15WiD8tBJ1rZtosfbDFEaoFBBAbN8oJh5) con el paso a paso y capturas de pantalla)-->
 
----
+----
+
 ## Ejercicio: Github Básico
 ````html
 <!DOCTYPE html>
@@ -426,11 +440,14 @@ git diff
 </body>
 </html>
 ````
----
+
+----
+
 ## Ejercicio: Github Básico
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IxlMd1Mu_40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
----
+----
+
 ## Ejercicio: Github Básico
 Con este ejercicio aprendimos los comandos para:
 * Clonar un respositorio remoto
@@ -442,7 +459,8 @@ git clone https://github.com/mi_usuario/nombre_repositorio.git
 git status
 ````
 
----
+----
+
 ## Ejercicio: Github Básico
 Con este ejercicio aprendimos los comandos para:
 * Añadir el cambio al siguiente commit
@@ -470,24 +488,29 @@ Los siguientes comandos
 
 ---
 ## Y si no me gusta emplear lineas de comando?
-Hay otras alternativas, como emplear softwares de VCS.
+Hay otras alternativas, como emplear softwares de VCS, o herramientas inlcuidas dentro del mismo IDE (WebStorm, Visual Studio Code, etc).
 
+<small>
 Sin embargo...la mayoría de interfaces gráficas de usuario solo implementan una parte de las características de Git por motivos de simplicidad.
 Muchas veces cuando se presentan conflictos en estos softwares, por problemas de configuración o acciones mal realizadas, hay que solucionarlas por linea de comandos.
+</small>
 
----
+----
+
 ## por que debo emplear lineas de comando?
 <!-- .slide: data-background="images/herramientas/hackerman.jpg" -->
 Para sentirse como **Hackerman** xD
 
 Aprendiendo **Git** por linea de comandos no dependeras de ningun software, y podras realizar TODAS las acciones.
 
----
+----
+
 ## Esto de la linea de comandos sigue sin convencerme...
 En la siguiente diapositiva tienes algunas opciones de software para VCS. Puedes probar y usar cualquiera :D
 Depende de ti! (pero en clase solo veremos linea de comandos)
 
----
+----
+
 <!-- .slide: data-background="images/herramientas/SOFTsubversionado.png" -->
 ## Software para VCS
 * Linea de Comandos
@@ -528,7 +551,8 @@ Depende de ti! (pero en clase solo veremos linea de comandos)
 * Traer los cambios del repositorio remoto al local
 <!--(No te preocupes, hay un [PDF](https://drive.google.com/open?id=1fImvKA6bvFDLyq0-17OHXUeUGhJmJLBK) con el paso a paso y capturas de pantalla)-->
 
----
+----
+
 ## Ejercicio: Github Básico II
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eqEVgp98qcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -542,26 +566,8 @@ Usa Git sabiamente pequeño padawan.
 
 ---
 ## Github
-https://gitexplorer.com/
+https://git.gaozih.com/
 ![Git Explorer](images/herramientas/git_explorer.png)
-
----
-## GitHub Classroom
-Plataforma que facilita el intercambio de código entre alumnos y docentes, manteniendolo versionado.
-
-Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc.
-
----
-## Ejercicio: GitHub Classroom
-* Crear un repositorio para los ejercicios de la materia, empleando el código base de los ejercicios (servira para avanzar con html, css, js más adelante).
-
-[Link Classroom 2026](https://classroom.github.com/a/06Rmc9s1)
-
-<!--Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFkEgE8TjqSJbV8)-->
-
----
-## Ejercicio: GitHub Classroom
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BH2V4aBNkYk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ![Fire](images/herramientas/Fire-commit-push.jpg)
@@ -575,7 +581,8 @@ Las **branch** permiten que nuestro proyecto pueda tener diversos estados y que 
 
 El **branching** permite el desarrollo en paralelo sin interferencia entre las diferentes ramas. 
 
----
+----
+
 ## Git Brach
 Cuando se crea un repositorio, por defecto se emplea la rama principal **master** (en local) o **main** (en remoto). 
 
@@ -584,7 +591,8 @@ Podemos verificar esto entrando a nuestro repositorio (ejercicio1), y escribiend
 git branch
 ```
 
----
+----
+
 ![Branches](images/herramientas/branches.png)
 
 ---
@@ -594,7 +602,8 @@ git branch
 * En equipos de trabajo, Se puede crear una rama para cada desarrollar o **developer**
 * Se pueden crear ramas para trabajar en soluciones a los defectos o errores encontrados, **hotfix**
 
----
+----
+
 ## Comandos de Branch
 * branch
 * checkout
@@ -641,9 +650,15 @@ Empleando el repositorio ejercicio 1:
 * Merge de la nueva rama con Master
 * Borrar una branch
 
----
+----
+
 ## Ejercicio: Github Branchs
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2KXSZtjzgkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+Los ejercicios que venimos realizando de **Github Básico I**, **Github Básico II** y **Github Branchs** son de práctica,
+puedes ingresar al **Settings**, y eliminar los respositorios que creaste solo para practicar.
 
 ---
 ## Fork
@@ -655,14 +670,16 @@ O un proyecto que era interesante y querias hacer tus propias pruebas?
 
 Esto se soluciona con un **fork**!!!
 
----
+----
+
 ## Fork
 Hacerle **fork** a un repositorio significa copiarlo. Así podemos modificar el código sin afectar al proyecto original.
 
 Se utiliza para proponer cambios en el proyecto de otra persona u organización ó para utilizar el proyecto de otra 
 persona como punto de partida para nuevas ideas.
 
----
+----
+
 ## Fork: Ejemplo
 Si quisieras investigar como hacer filminas con tecnología markdown, podrías emplear este [repositorio](https://github.com/UCC-LabCompu2/filminas)
 ![fork](images/herramientas/fork.png)
@@ -688,13 +705,49 @@ Ayuda a detectar errores en el código (lógicos, ortografía, funcionalidad), p
 
 El revisor puede aprobar el código y mergearlo, o solicitar al dev que realice correcciones. Todo push que se realice, se agregará al PR mientras este esté abierto.
 
----
+----
+
 ## Code Review
 ![Code Review](images/herramientas/wtf_perSecond.png)
 
----
+----
+
 ## Code Review
 ![Code Review](images/herramientas/codereview_friendly.jpg)
+
+---
+
+## GitHub Classroom
+Plataforma que facilita el intercambio de código entre alumnos y docentes, manteniendolo versionado.
+
+Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc.
+
+----
+
+## Ejercicio: GitHub Classroom
+* Crear un repositorio para los ejercicios de la materia, empleando el código base de los ejercicios (servira para avanzar con html, css, js más adelante).
+
+[Link Classroom 2026](https://classroom.github.com/a/06Rmc9s1)
+
+<!--Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFkEgE8TjqSJbV8)-->
+
+----
+
+### Recomendación
+Una vez que hayas creado tu repositorio a partir del repositorio de clase, usa ⭐ para dejarlo en tus favoritos.
+
+El repositorio pertenece a **Github Classroom** y NO a tu espacio personal de github, por lo que puede resultarte complicado encontrarlo.
+
+----
+
+Para el docente es más sencillo hacer seguimiento de los respositorios de sus estudiantes.
+
+![Classroom](images/herramientas/classroom.png)
+
+----
+
+## Ejercicio: GitHub Classroom
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BH2V4aBNkYk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
