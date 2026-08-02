@@ -53,7 +53,7 @@ edme88
 
 ### Herramientas de Desarrollo
 * Definición
-* Tipos de herramientas
+* Categoría de herramientas
 </div>
 <div class="grid-item">
 
@@ -109,24 +109,49 @@ Acompañan al desarrollador desde la escritura del código hasta su despliegue y
 Una aplicación o programa puede contar con múltiples herramientas que se encarguen de funciones específicas y afines para realizar una tarea.
 
 ---
-## Tipos de Herramientas
-* IDE
-* Control de Versiones
-* Bug Tracker
-* Pruebas de desempeño, carga, stress
-* Documentación
-* Integración Continuo
+## Categoría de Herramientas
 
-![Herramientas](images/herramientas/herramientas.png)
+<div class="grid-container2">
+<div class="grid-item">
+
+1. IDE
+2. Control de Versiones
+3. Repositorios de Código
+4. Gestión de Incidencias
+5. Gestión de proyectos
+6. Documentación
+7. Integración Continua
+8. Despliegue Continuo
+9. Automatización de pruebas
+10. Pruebas de desempeño, carga, stress
+11. Análisis estático de código
+12. Depuración (Debugging)
+
+</div>
+<div class="grid-item">
+
+13. Administración de dependencias
+14. Automatización de compilación
+15. Contenedores y virtualización
+16. Orquestación de contenedores
+17. Monitoreo y observabilidad
+18. Registro de eventos
+19. Gestión de API
+20. Comunicación
+21. Diseño y prototipado
+
+</div>
+</div>
 
 ---
-## Ambiente de Desarrollo Integrado o IDE
+## 1. Ambiente de Desarrollo Integrado o IDE
 Es un software que proporciona servicios integrales para facilitarle al programador el desarrollo de software.
 
 Un IDE combina varias herramientas en una sola interfaz: editor, compilador, depurador y más. Esto mejora la productividad y reduce errores al centralizar el desarrollo.
 
----
-## Ambiente de Desarrollo Integrado o IDE
+----
+
+## 1. Ambiente de Desarrollo Integrado o IDE
 Normalmente, un IDE consiste de:
 * Editor de código fuente
 * Herramientas de construcción automáticas
@@ -134,36 +159,41 @@ Normalmente, un IDE consiste de:
 * Compilador
 * Intérprete
 
----
-## Editor de código fuente
+----
+
+## 1. Editor de código fuente
 Es un "editor especializado" orientado para escribir código fuente de aplicaciones en general en lenguajes de programación.
 
 Generalmente los editores de código soportan varios lenguajes y son capaces de abrir varios archivos a la vez, resaltar su sintaxis y ofrecer ayudas contextuales a la hora de escribir o visualizar el código de las aplicaciones.
 
----
-## Depurador o Debugger
+----
+
+## 1.Depurador o Debugger
 Permite probar y eliminar los errores del programa.
 
 El depurador permite detener el programa en un punto determinado o en un momento determinado para que el usuario pueda 
 examinar y modificar la memoria y las variables del programa, cambiar punto de ejecución, ejecutar una instrucción o 
 partes determinadas de código.
 
----
-## Depurador o Debugger
+----
+
 ![Debuggin](images/herramientas/debugging.png)
 
----
-## Compilador
+----
+
+## 1. Compilador
 Traduce del lenguaje de programación al lenguaje máquina, código intermedio o texto.
 
 * **Lenguajes compilados:** C, C++, Go, Rust, Fortran, Pascal, Visual Basic.
 * **Lenguajes interpretados:** Python, JavaScript, Ruby, PHP.
 
----
+----
+
 ![Time Compilation](images/herramientas/time_compilation.jpg)
 
----
-## Interprete
+----
+
+## 1. Intérprete
 Realiza la traducción a medida que sea necesaria, instrucción por instrucción y no guardan el resultado de la traducción.
 
 Los programas interpretados suelen ser más lentos que los compilados debido a la necesidad de traducir el programa 
@@ -171,9 +201,10 @@ mientras se ejecuta, pero son más flexibles permitiendo reemplazar partes del p
 
 Uno de los entornos más comunes de uso de los intérpretes es en los navegadores web, debido a que se ejecutan independientemente de la plataforma.
 
----
+----
+
 <!-- .slide: data-background="images/herramientas/IDES.png" -->
-## IDE's
+## 1. IDE's
 Ejemplos de IDE's para desarrollo Web:
 * [Cursor (The AI Code Editor)](https://cursor.com/)
 * [JetBrains Web Storm](https://www.jetbrains.com/es-es/webstorm/download/#section=windows)
@@ -181,20 +212,19 @@ Ejemplos de IDE's para desarrollo Web:
 * [Sublime Text](https://www.sublimetext.com/)
 * [Eclipse](https://www.eclipse.org/downloads/)
 * [Net Beans](https://netbeans.apache.org/download/index.html)
-* [Aptana](http://www.aptana.com/)
-* [NotePad ++](https://notepad-plus-plus.org/downloads/)
 
----
+----
 
-### Extensiones o plugins
+### 1. IDE: Extensiones o plugins
 
 Los IDEs modernos permiten instalar extensiones que agregan soporte para nuevos lenguajes, linters, herramientas de testing, snippets, etc.
 
 Ejemplos: Prettier, ESLint, Live Server (en VSCode)
 
----
+----
+
 <!-- .slide: data-background="images/herramientas/Busydesk-desarrollo.png" -->
-## IDE's
+## 1. IDE's
 No existe un IDE perfecto. El mejor será el que se adapte a tu flujo de trabajo, tus herramientas y tu nivel de experiencia.
 
 ---
@@ -206,12 +236,44 @@ No existe un IDE perfecto. El mejor será el que se adapte a tu flujo de trabajo
 3. Instálalo!
 4. Abrí VSCode y explorá brevemente la interfaz: barra lateral, explorador, terminal y sección de extensiones.
 
+
+----
+
+### Actividad 1.2: Instalación de Extensiones
+
+1. Abre el **Visual Studio Code**
+2. Ingresa a la sección de **Extensiones** (puedes presionar Ctrl+Shift+X)
+3. Busca e instala las siguientes extensiones:
+   * Color the tag name
+   * ESLint
+   * GitLens
+   * HTML CSS Support
+   * Material Icon Theme
+   * Prettier
+
+----
+
+### Linter
+Es un analizador de código estático, es una herramienta de software que verifica y analiza el código fuente de un programa en busca de posibles errores, problemas de estilo y faltas de las convenciones de codificación.
+
+Su propósito es mejorar la calidad y legibilidad del código.
+
+En **JavaScript** la herramienta más empleada es **ESLint**
+
+----
+
+### Prettier
+Es un formateador de código, que permite que todo el equipo de desarrollo cumpla con los estándares de codificación definidos sin necesidad de acciones manuales.
+
+Prettier es compatible con múltiples frameworks de JavaScript (Angular, React, Vue y Svelte) y también funciona con TypeScript.
+
 ----
 
 ### ¿Por qué usar VSCode?
 
-* Directo y fácil de seguir.
-* Ideal para comenzar con un IDE liviano y muy popular.
+* Es un IDE liviano que consume pocos recursos.
+* Es **gratis** y ampliamente usado en el desarrollo profesional
+* Posee muchos pluggins o extensiones que amplian su uso
 
 ---
 
@@ -234,120 +296,16 @@ No existe un IDE perfecto. El mejor será el que se adapte a tu flujo de trabajo
 * Refactorización más robusta.
 
 ---
-
-### Actividad 2.1: Instalación de Extensiones
-
-1. Abre el **Visual Studio Code**
-2. Ingresa a la sección de **Extensiones** (puedes presionar Ctrl+Shift+X)
-3. Busca e instala las siguientes extensiones:
-   * Color the tag name
-   * ESLint
-   * GitLens
-   * HTML CSS Support
-   * Material Icon Theme
-   * Prettier
-
----
-
-### Linter
-Es un analizador de código estático, es una herramienta de software que verifica y analiza el código fuente de un programa en busca de posibles errores, problemas de estilo y faltas de las convenciones de codificación.
-
-Su propósito es mejorar la calidad y legibilidad del código.
-
-En **JavaScript** la herramienta más empleada es **ESLint**
-
-----
-
-### ESLint: características
-<!-- .slide: style="font-size: 0.75em" -->
-- **Análisis estático de código:** Busca de errores, problemas de estilo, inconsistencias y patrones sospechosos. Mejora la calidad y la mantenibilidad del software.
-- **Reglas configurables** según las necesidades del proyecto y las preferencias del equipo de desarrollo. Proporciona reglas predefinidas y permite crear reglas personalizadas.
-- **Integración flexible** con diferentes CI y diversos IDEs.
-- **Mensajes de error y advertencias descriptivos** que ayudan a los desarrolladores a comprender y solucionar los problemas de código de manera eficiente. 
-- **Configuración basada en archivos**, el **.eslintrc.js** ó **eslint.config.js**, esto permite mantener configuraciones diferentes para proyectos individuales y compartir configuraciones entre equipos de desarrollo.
-- **Compatibilidad con plugins y extensiones**, lo que amplía su funcionalidad y permite agregar reglas adicionales.
-
-----
-
-### ESLint: Reglas
-<!-- .slide: style="font-size: 0.80em" -->
-- *no-unused-vars*: Detecta variables declaradas pero no utilizadas en el código.
-- *no-undef*: Detecta el uso de variables no declaradas.
-- *no-console*: Advierte sobre el uso de sentencias console.log()
-- *no-extra-semi*: Detecta puntos y comas innecesarios en el código.
-- *eqeqeq*: Exige el uso de operadores de igualdad estricta (=== y !==) en lugar de igualdad débil (== y !=).
-- *camelcase*: Requiere el uso de convenciones de nomenclatura en estilo camelCase para variables y propiedades.
-- *semi*: Exige el uso de punto y coma al final de las declaraciones.
-- *quotes*: Establece el uso consistente de comillas simples o dobles para delimitar cadenas de texto.
-- *indent*: Establece la regla de indentación para el código.
-- *comma-dangle*: Establece si se debe permitir o exigir una coma final en listas y objetos.
-
----
-
-### Ejercicio: ESLint
-1. Crear una carpeta para un proyecto de código nuevo
-2. Crear un archivo **.eslintrc**
-3. En el archivo configurar las siguientes reglas:
-```js
-{
-  "rules": {
-    "no-unused-vars": "warn",
-    "no-undef": "error",
-    "no-console": "warn",
-    "no-extra-semi": "error",
-    "eqeqeq": ["error", "always"],
-    "camelcase": ["warn", { "properties": "always" }],
-    "semi": ["error", "always"],
-    "quotes": ["error", "single", { "avoidEscape": true }],
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "comma-dangle": ["error", "only-multiline"]
-  }
-}
-```
-
-----
-
-### Ejercicio: ESLint
-4. Crear un archivo js de ejemplo como el siguiente
-```js
-function hola() {
-  nombre='Agus'
-  console.log('Hola'+nombre)
-}
-```
-5. Guardar. ¿Qué ocurrio con el archivo? ¿Algo cambió?
-
----
-
-### Prettier
-Es un formateador de código, que permite que todo el equipo de desarrollo cumpla con los estándares de codificación definidos sin necesidad de acciones manuales.s
-
-Prettier es compatible con múltiples frameworks de JavaScript (Angular, React, Vue y Svelte) y también funciona con TypeScript.
-
----
-
-### Prettier: Configuración
-1. Instalar la extensión **Prettier** en el VSC.
-2. En el archivo de configuración del **.eslintrc**
-```json
-"extends": ["plugin:prettier/recommended"],
-"plugins": ["prettier"],
-```
-3. En el menú de la izquierda presionar la rueda e ir a **Settings**
-4. Buscar **formatter**
-5. Seleccionar **ESLint**
-6. Se recomienda checkear **Format on save**
-
----
 ![CommitStrip](images/herramientas/CommitStrip-IDE.jpg)
 
 ---
-## Gestión de Versiones o VCS
+## 2. Gestión de Versiones o VCS
 Permiten gestionar los cambios en los archivos de un proyecto a lo largo del tiempo, facilitando el trabajo colaborativo
 y el acceso remoto al código fuente.
 
----
-## Gestión de Versiones o VCS
+----
+
+## 2. Gestión de Versiones o VCS
 Los usuarios pueden:
 * Clonar o descargar archivos del repositorio
 * Editar y guardar cambios localmente
@@ -356,30 +314,126 @@ Los usuarios pueden:
 * Crear ramas (branches) para desarrollar nuevas funcionalidades
 * Unificar cambios provenientes de diferentes ramas
 
----
+----
 
 ### Un VCS funciona como una máquina del tiempo para tus archivos. Podés ver, comparar o volver a cualquier momento del proyecto.
 
----
+----
+
 <!-- .slide: data-background="images/herramientas/subversionado.png" -->
-## Ventajas de VCS:
+## 2. Ventajas de VCS:
 * Permite llevar cuenta de los cambios de un conjunto de archivos digitales en el tiempo.
 * Cada conjunto de cambios registrados en un momento específico se denomina revisión o commit.
 * Permite tanto a un desarrollador como a un grupo de desarrolladores, gestionar el código del proyecto.
 * Facilita la colaboración sin sobrescribir el trabajo de otros/as, gracias al control de ramas.
 
----
-## Herramientas de VCS
-* Git
-* SVN
-* Mercurial
-* Bazaar
+----
 
----
+## 2. Herramientas de VCS
+* Git
+* ~~SVN~~
+* ~~Mercurial~~
+* ~~Bazaar~~
+
+----
+
 ![Historieta Versionado](images/herramientas/comicVersionado.png)
 
 ---
-## Documentación de Código
+
+## 3. Repositorios de Código
+Sitio de almacenamiento digital donde se guardan, organizan y administran los archivos de un software.
+
+----
+
+## 3. Repositorios de Código: Ejemplos
+* GitHub
+* GitLab
+* Bitbucket
+* Azure Repos
+
+---
+
+## 4. Gestión de Incidencias o Bug Tracker
+Es una herramienta de seguimiento de errores, que permite registrar, clasificar, asignar y resolver defectos detectados durante el desarrollo o prueba del software.
+
+Un buen BTS no solo organiza errores, también ayuda a establecer prioridades, gestionar tiempos de resolución y comunicar avances.
+
+----
+
+## 4. Ejemplos de Bug Tracker
+* Jira
+* Azure
+* Bugzilla
+* Flyspray
+* Trac
+* The bug Genie
+* MantisBT
+ 
+----
+
+![Bug Tracker](images/herramientas/bug-tracker_jira.png)
+
+----
+
+![Bugzilla](images/herramientas/bug-tracker_bugzilla.png)
+
+----
+
+![FlySpray](images/herramientas/bug-tracker_flyspray.png)
+
+----
+
+![Strip](images/herramientas/Strip-Depart-en-weekend-650-finalenglish.jpg)
+
+---
+
+### Ejercicio: Jira 1
+1. El docente ingresará a la página de [Jira](https://www.atlassian.com/es/software/jira) 
+y creará un espacio de trabajo/proyecto
+2. El docente invitará a los alumnos al proyecto
+3. Los alumnos se dividirán en grupos de 5, donde cada uno tome un rol: 
+frontend dev, backend dev, base de datos, qa, full stack, y crearán tareas para el desarrollo de un software
+de venta de productos.
+
+----
+
+### Ejercicio: Jira 2
+1.  Crea **Story** por cada tarea que se desea desarrollar: Título, descripción
+2. Asignale un **responsable**
+3. Coloca **tags** relacionados
+4. Asegurate de que la tarea esté en la columna correspondiente
+
+---
+
+## 5. Gestión de proyectos
+Ayuda a planificar, organizar y seguir el trabajo en equipo.
+
+----
+
+## 5. Gestión de proyectos
+* Jira
+* Trello
+* Asana
+* Azure Boards
+
+---
+## 6. Documentación
+
+Puede ser del **proyecto** o del **código**, cada uno tiene un objetivo diferente y se emplean herramientas diferentes.
+
+----
+
+## 6. Documentación del Proyecto
+
+- Confluence
+- MkDocs
+- Docusaurus
+- Notion
+
+----
+
+## 6. Documentación de Código
    
 Permite:
 * Entender **qué** se está haciendo y por qué
@@ -389,16 +443,18 @@ Permite:
 
 ![JsDoc](images/html/jsdoc.png)
 
----
-## Niveles de Documentación
+----
+
+## 6. Niveles de Documentación
 * **Por clase:** incluir una descripción general, autor, fecha y última modificación.
 * **Por método:** detallar su función, parámetros y lo que retorna.
 * **Variables importantes:** especialmente si son complejas o no evidentes.
 * **Limitaciones del código:** advertencias o restricciones relevantes.
 * **Algoritmos implementados:** describir la lógica general si no es trivial.
 
----
-## Formato de Documentación (JSDoc)
+----
+
+## 6. Formato de Documentación (JSDoc)
 ```javascript
 /**
 * @fileoverview Librería con funciones de utilidad
@@ -417,25 +473,29 @@ Permite:
    }
 ```
 
----
+----
+
 ![SPJS](images/herramientas/spjs_3301.jpg)
 
----
-## Documentación...A tener en cuenta
+----
+
+## 6. Documentación...A tener en cuenta
 * No uses solo una línea, divídela en párrafos para que sea mas legible
 * Tabular los comentarios de líneas consecutivas
 * No comentar obviedades
 * Se profesional (No insultes o coloques frases fuera de contexto)
 * Revisa la ortografía
 
----
-## Documentación...A tener en cuenta
+----
+
+## 6. Documentación...A tener en cuenta
 * No comentes si no es necesario
 * Comentarios simple y directo
 * Documenta mientras desarrollas
 * Manten los comentarios actualizados
 
----
+----
+
 ````javascript
 return 1; # returns 1
 stop(); // Hammertime!
@@ -450,131 +510,118 @@ x = -x;
 
 [más ejemplos](http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered%3E)
 
----
+----
 
-### Ejercicio: JsDoc
-1. Asegúrate de tener [nodeJs](https://nodejs.org/es/) instalado. Para eso puedes ejecutar en el cmd:
-```shell
-node --version
-```
-2. Instala la dependencia [jsdoc](https://www.npmjs.com/package/jsdoc)
-```shell
-npm install -g jsdoc
-```
+Si empleas **VSC** es recomendable tener la extensión **Better Comments** para visualizar los comentarios con el highlight adecuado.
 
 ----
 
-### Ejercicio: JsDoc
-3. Crea un archivo .js básico con algunas funciones. Ejemplo:
-```js
-/**
- * Calcula el área de un rectángulo.
- * @param {number} ancho - El ancho del rectángulo
- * @param {number} alto - El alto del rectángulo
- * @returns {number} El área del rectángulo
- */
-function calcularArea(ancho, alto) {
-  return ancho * alto;
-}
-
-/**
- * @param {string} nombre - Nombre del usuario
- * @param {number} [edad] - Edad del usuario (opcional)
- * @param {Object} opciones - Opciones de configuración
- * @param {boolean} opciones.activo - Estado del usuario
- * @param {string} opciones.rol - Rol del usuario
- */
-function crearUsuario(nombre, edad, opciones) {
-  // Implementación
-}
-```
-
-----
-
-4. En la terminal ejecutar:
-```shell
-jsdoc ejemplo-doc.js
-```
-
-5. Verificar el contenido de la carpeta **out**
-
-
-* Recomendación: Si empleas **VSC** es recomendable tener la extensión **Better Comments** para visualizar los comentarios con el highlight adecuado.
-
----
-
-Si durante la ejecución de JsDoc tienes algún problema, puede que tu terminal no posea 
-los permisos necesarios. Para habilitar los permisos:
-```shell
-```
-
----
 ![Comenario de Gatito](images/herramientas/coment_code.jpg)
 
----
+----
+
 ![Comentarios Actualizados](images/herramientas/comentarios_actualizados.jpg)
 
 ---
-## Bug Tracker o BTS
-En proyectos de cierta complejidad o trabajo colaborativo, es fundamental usar una herramienta de seguimiento de errores 
-**Bug Tracker o BTS** para registrar, clasificar, asignar y resolver defectos detectados durante el desarrollo o prueba del software.
 
-Un buen BTS no solo organiza errores, también ayuda a establecer prioridades, gestionar tiempos de resolución y comunicar avances.
-
----
-## Ejemplos de Bug Tracker
-* Jira
-* Bugzilla
-* Flyspray
-* Trac
-* The bug Genie
-* MantisBT
- 
----
-![Bug Tracker](images/herramientas/bug-tracker_jira.png)
-
----
-![Bugzilla](images/herramientas/bug-tracker_bugzilla.png)
-
----
-![FlySpray](images/herramientas/bug-tracker_flyspray.png)
-
----
-![Strip](images/herramientas/Strip-Depart-en-weekend-650-finalenglish.jpg)
-
----
-
-### Ejercicio: Jira 1
-1. Ingresar a la página de [Jira](https://www.atlassian.com/es/software/jira)
-2. Click en "Ingresar"
-3. Colocar el email y password
-4. Crear un espacio de trabajo/proyecto
+## 7. Integración Continua
+Es una práctica del desarrollo de software en la que los cambios de código se integran frecuentemente en un repositorio 
+compartido y luego se verifican automáticamente mediante pruebas, builds u otros procesos.
 
 ----
 
-### Ejercicio: Jira 2
-1.  Crea **Story** por cada tarea que se desea desarrollar: Título, descripción
-2. Asignale un **responsable**
-3. Coloca **tags** relacionados
-4. Asegurate de que la tarea esté en la columna correspondiente
+## 7. Integración Continua
+
+<div class="grid-container2">
+<div class="grid-item">
+
+### Servidor Propio
+* GitLab CI
+* Jenkins
+* Drone.io
+
+</div>
+<div class="grid-item">
+
+### Cloud
+* Github Actions
+* Azure Pipelines
+* Travis CI
+* Codeship
+* CircleCI
+
+</div></div>
+
+----
+
+![ci-flujo](images/herramientas/ci-flujo.png)
+
+----
+
+![Git-ci](images/herramientas/Git-CI.png)
+
+----
+
+![ci-laba](images/herramientas/ci-laba.jpg)
+
+----
+
+[![ci-build](images/herramientas/ci-build.jpg)](https://en.wikipedia.org/wiki/Build_light_indicator)
 
 ---
-## Prueba de Desempeño o Performance
+
+## 8. Entrega Continua
+Es un enfoque en que los equipos de desarrollo producen software en ciclos cortos, asegurando que el software puede ser liberado de forma confiable en cualquier momento.
+
+Apunta a la construcción, prueba, y liberación del software de forma más rápida y más frecuente.
+
+----
+
+![Entrega Continua](images/herramientas/continuos-delivery.png)
+
+---
+
+## 9. Automatización de pruebas
+Utiliza software especial y scripts para ejecutar validaciones y comparar resultados reales con los esperados sin intervención humana. Los componentes clave son pruebas unitarias, de integración y de extremo a extremo.
+
+----
+
+## 9. Automatización de pruebas: Beneficios
+- Velocidad: Ejecución masiva en segundos o minutos.
+- Precisión: Menos errores humanos en tareas repetitivas.
+- Mejora en la calidad percibida
+
+----
+
+## 9. Automatización de pruebas
+- Selenium
+- Cypress
+- Playwright
+- Robot Framework
+- JUnit 
+- TestNG
+- Jest
+- Etc...
+
+---
+## 10. Herramientas para prueba de Desempeño o Performance
 Tipos principales:
 
 - **Load Test:** Evalúa cómo responde el sistema ante una carga esperada, simulando condiciones reales de producción.
 - **Stress Test:** Aplica una carga mayor a la esperada para detectar el punto de ruptura del sistema.
 - **Endurance (Resistencia):** Analiza el rendimiento cuando el sistema está bajo carga continua durante un período prolongado.
 
----
-## Prueba de Desempeño o Performance
+----
+
+## 10. Prueba de Desempeño o Performance
 Estas pruebas ayudan a:
 - Identificar cuellos de botella.
 - Medir el consumo de recursos.
 - Garantizar estabilidad bajo presión.
 
----
-## Herramienta para Stress Test
+----
+
+## 10. Herramienta para Stress Test
 * Apache JMeter
 * SmartMeter.io
 * LoadUI
@@ -584,14 +631,49 @@ Estas pruebas ayudan a:
 * NeoLoad
 * LoadComplete
 
----
+----
+
 ![JM16](images/herramientas/jm16.png)
 
----
+----
+
 ![JMeter](images/herramientas/jmetertestvso-progress.png)
 
----
+----
+
 ![Response Graph](images/herramientas/response_time_graph.png)
+
+---
+
+## 11. Análisis estático de código
+Es la revisión del código fuente sin ejecutar el programa, utilizando herramientas automáticas para detectar fallos, vulnerabilidades de seguridad y malas prácticas desde las primeras etapas del desarrollo
+
+----
+
+## 11. Análisis estático de código: Ventajas
+- **Detección temprana:** Encuentra errores antes de ejecutar el programa o llevarlo a producción.
+- **Seguridad:** Identifica vulnerabilidades críticas como inyecciones SQL o fallos de tipo XSS.
+- **Calidad y estilo:** Mantiene un estilo de código uniforme y evita duplicaciones.
+
+----
+
+
+### 11. SonarQube 
+Es una plataforma de análisis de código estático de código abierto que ayuda a los desarrolladores a identificar y corregir problemas de calidad y seguridad en su código. Se integra con herramientas de desarrollo y pipelines.
+
+----
+
+### 11. SonarQube: Beneficios
+<!-- .slide: style="font-size: 0.80em" -->
+- **Análisis de calidad de código:** Detecta errores, vulnerabilidades, code smells, duplicaciones, cobertura de pruebas y complejidad. 
+- **Seguridad del código:** Identifica vulnerabilidades de seguridad en el código. 
+- **Integración con herramientas:** Se integra con IDEs, sistemas de construcción y plataformas CI/CD. 
+- **Informes y paneles de control:** Genera informes detallados sobre la calidad del código y permite la creación de paneles personalizados. 
+- **Mejora continua:** Permite a los equipos de desarrollo mejorar continuamente la calidad de su código con retroalimentación en tiempo real. 
+
+----
+
+![SonarQube](images/herramientas/SonarQube.png)
 
 ---
 
@@ -607,67 +689,6 @@ Empleando **Lighthouse** se pueden encontrar errores de:
 - Accesibilidad
 - Buenas Prácticas
 - SEO (Search Engine Optimization)
-
----
-## Integración Continua
-Es una práctica del desarrollo de software en la que los cambios de código se integran frecuentemente en un repositorio 
-compartido y luego se verifican automáticamente mediante pruebas, builds u otros procesos.
-
----
-## Integración Continua
-
-<div class="grid-container2">
-<div class="grid-item">
-
-### Servidor Propio
-* GitLab CI
-* Jenkins
-* Drone.io
-
-</div>
-<div class="grid-item">
-
-### Cloud
-* Github Actions
-* Travis CI
-* Codeship
-* CircleCI
-
-</div></div>
-
----
-[Ejemplo de Construcción con GitHub Actions de las filminas](https://github.com/UCC-LabCompu2/filminas/actions)
-
----
-![ci-flujo](images/herramientas/ci-flujo.png)
-
----
-![Git-ci](images/herramientas/Git-CI.png)
-
----
-![ci-laba](images/herramientas/ci-laba.jpg)
-
----
-[![ci-build](images/herramientas/ci-build.jpg)](https://en.wikipedia.org/wiki/Build_light_indicator)
-
----
-
-### SonarQube 
-Es una plataforma de análisis de código estático de código abierto que ayuda a los desarrolladores a identificar y corregir problemas de calidad y seguridad en su código. Se integra con herramientas de desarrollo y pipelines.
-
----
-
-### SonarQube: Beneficios
-<!-- .slide: style="font-size: 0.80em" -->
-- **Análisis de calidad de código:** Detecta errores, vulnerabilidades, code smells, duplicaciones, cobertura de pruebas y complejidad. 
-- **Seguridad del código:** Identifica vulnerabilidades de seguridad en el código. 
-- **Integración con herramientas:** Se integra con IDEs, sistemas de construcción y plataformas CI/CD. 
-- **Informes y paneles de control:** Genera informes detallados sobre la calidad del código y permite la creación de paneles personalizados. 
-- **Mejora continua:** Permite a los equipos de desarrollo mejorar continuamente la calidad de su código con retroalimentación en tiempo real. 
-
----
-
-![SonarQube](images/herramientas/SonarQube.png)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
