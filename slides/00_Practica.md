@@ -33,11 +33,14 @@ La página debe tener:
 ---
 ## PROYECTO Web: Ideas
 * Venta de productos
-* Trekking
+* Trekking y senderismo
 * Experiencias de Vacaciones
-* Gym
+* Recomendador de series/películas/anime
+* Gym y rutinas
 * Hotel
 * Etc, etc, etc
+
+Busquen una temática que amen ❤️ ...Para que más que cumplir con un trabajo de una materia, sientan que están construyendo algo propio!
 
 <!--
 ## Ejemplos de Proyectos

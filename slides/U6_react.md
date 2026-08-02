@@ -1,5 +1,5 @@
 ---
-title: javaScript
+title: React
 theme: league
 slideNumber: true
 ---

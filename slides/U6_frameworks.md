@@ -1,5 +1,5 @@
 ---
-title: javaScript
+title: FrameworksJs
 theme: league
 slideNumber: true
 ---
