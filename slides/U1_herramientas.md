@@ -41,45 +41,41 @@ edme88
 </div>
 <div class="grid-item">
 
-### IDE
-* Definición 
-* Editor de código
-* Construcción aut.
-* Debugger
-* Compilador
-* Intérprete
-* Ejemplos de IDEs
+1. IDE
+2. Control de Versiones
+3. Repositorios de Código
+4. Gestión de Incidencias
+5. Gestión de proyectos
+6. Documentación
+
 </div>
 <div class="grid-item">
 
-### VSC
-* Definición
-* Función
-* Ventajas
-* Ejemplo de herramientas
+7. Integración Continua
+8. Despliegue Continuo
+9. Automatización de pruebas
+10. Pruebas de desempeño, carga, stress
+11. Análisis estático de código
+
 </div>
 <div class="grid-item">
 
-### Documentación
-* Funcionalidad
-* Nivel de documentación
-* Recomendaciones
+12. Depuración (Debugging)
+13. Administración de dependencias
+14. Automatización de compilación
+15. Contenedores y virtualización
+16. Orquestación de contenedores
 
-
-### Bug Tracker
-* Definición
-* Ejemplo de herramientas
-* Recomendaciones
 </div>
 <div class="grid-item">
 
-### Testing
-* Pruebas de desempeño
-* Ejemplo de herramientas
+17. Monitoreo y observabilidad
+18. Registro de eventos
+19. Gestión de API
+20. Comunicación
+21. Diseño y prototipado
+- Otras herramientas
 
-### Integración Continua
-* Definición
-* Ejemplo de herramientas
 </div>
 </div>
 
@@ -658,6 +654,81 @@ Es una plataforma de análisis de código estático de código abierto que ayuda
 ----
 
 ![SonarQube](images/herramientas/SonarQube.png)
+
+---
+
+## 12. Depuración o Debugging
+- GDB
+- Chrome DevTools
+- Visual Studio Debugger
+
+---
+
+## 13. Administración de dependencias
+- npm
+- Maven
+- Gradle
+- NuGet
+- pip
+- Composer
+
+---
+
+## 14. Automatización de compilación (Build Tools)
+- Maven
+- Gradle
+- Ant
+- Webpack
+- Vite
+- Rollup
+
+---
+
+## 15. Contenedores y virtualización
+- Docker
+- Docker Compose
+- Podman
+
+---
+
+## 16. Orquestación de contenedores
+- Kubernetes
+- OpenShift
+
+---
+## 17. Monitoreo y observabilidad
+- Prometheus
+- Grafana
+- Datadog
+- New Relic
+
+---
+
+## 18. Registro de eventos o Logging
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+- Splunk
+
+---
+
+## 19. Gestión de API
+- Postman
+- Insomnia
+- Swagger/OpenAPI
+- Bruno
+
+---
+
+## 20. Colaboración y comunicación
+- Slack
+- Microsoft Teams
+- Discord
+
+---
+
+## 21. Diseño y prototipado
+- Figma
+- Adobe XD
+- Balsamiq
 
 ---
 
