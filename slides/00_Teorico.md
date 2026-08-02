@@ -174,6 +174,7 @@ El objetivo es que desarrolles tu capacidad de análisis, pensamiento crítico y
 ### Sobre las diapositivas...
 - Algunas se pueden recorren en vertical ⬇️ (para profundizar en un tema) 
 o en horizontal ➡️ (para ir al tema siguiente)
+- Con **[Espacio]** se visualiza la siguiente diapositiva. Por defecto, ⬇️, y si no hay más, ➡️.
 - Con **[ESC]** puedes ver todas las diapositivas
 - Con **[Ctrol + P]** puedes imprimirlas en **PDF**
 - Están desarrolladas con [Reveal.js](https://revealjs.com/)

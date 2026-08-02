@@ -113,13 +113,21 @@ Repositorio base para realizar todos los ejercicios que veremos en clase:
 
 [Github Classroom 2026](https://classroom.github.com/a/06Rmc9s1)
 
+----
+
+## Ejercicios
+Se debe crear una **branch** para los ejercicios de cada unidad.
+
+Una vez realizados todos los ejercicios de una unidad, se debe realizar un **pull request** y **mergearlo**.
+
 ---
 ## Ejercicio: Primer HTML
 * Crear un archivo HTML
 * Incluir la etiqueta &lt;head&gt;
 * Incluir datos del autor, descripción y palabras principales
 
----
+----
+
 ## Ejercicio: Primer HTML
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k3nX5AdX54s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -140,11 +148,13 @@ Los errores típicos son: olvidarse de cerrar etiquetas y cerrar etiquetas en un
 ## Etiquetas Semántica
 Etiquetas que dan un significado a las partes del documento, indican qué contenido engloban y cuál es su relación con el conjunto de elementos del documento HTML.
 
----
+----
+
 ## Estructura Semántica
 ![Estructura HTML5](images/html/etiquetas_semanticas.png)
 
----
+----
+
 ## Estructura Semántica
 <!-- .slide: style="font-size: 0.80em" -->
 * [**Header:**](https://www.w3schools.com/tags/tag_header.asp) Especifica un encabezado de un documento o sección.
@@ -222,7 +232,8 @@ Empleando el template “ej_noticia”, incluir diferentes tipos de título:
 * h6 para la fecha de publicación
 * h5 para el sub-titulo de la noticia
 
----
+----
+
 ## Ejercicio: Secciones y Títulos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FzZEdH5xJzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -232,7 +243,8 @@ Empleando el template “ej_noticia”, incluir diferentes tipos de título:
 * [Ordenadas](https://www.w3schools.com/tags/tag_ol.asp)
 * [No Ordenadas](https://www.w3schools.com/tags/tag_ul.asp)
 
----
+----
+
 ## Listas Ordenadas
 ````html
 <ol>
@@ -245,7 +257,8 @@ Empleando el template “ej_noticia”, incluir diferentes tipos de título:
 2. Item dos
 3. Item 3
 
----
+----
+
 ## Listas No Ordenadas
 ````html
 <ul>
@@ -298,7 +311,8 @@ Empleando el template “ej_listas” donde hay una receta, emplear:
 Empleando el template “ej_noticia”, incluir la etiqueta semántica **nav** debajo de la cabecera de la página,y agregar 
 un link a la web de la receta (como si fuera un diario con diferentes secciones).
 
----
+----
+
 ## Ejercicio: Listas y Link
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DEd52yU1CHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -328,7 +342,9 @@ un link a la web de la receta (como si fuera un diario con diferentes secciones)
     </tbody>
 </table>
 ````
----
+
+----
+
 ## Tablas
 <table style="border: 2px solid white">
     <thead>
@@ -353,7 +369,8 @@ un link a la web de la receta (como si fuera un diario con diferentes secciones)
     </tbody>
 </table>
 
----
+----
+
 ## Ejemplos de Tablas y bordes
 [Tablas y CSS](https://mosaic.uoc.edu/ac/le/es/m6/ud7/index.html)
 
@@ -406,7 +423,9 @@ Agrege comentarios a la página web de tablas.
 ````html
 <!--Esto es un comentario-->
 ````
----
+
+----
+
 ## Ejercicio: Tablas y Comentarios
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C-_ZWqhN5YU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -422,7 +441,8 @@ Agrege comentarios a la página web de tablas.
     Contenido de la Caja
 </div>
 
----
+----
+
 ## DIV
 * [div:](https://www.w3schools.com/tags/tag_div.asp) Define un bloque de contenido o sección de la página, para poder aplicarle diferentes estilos o para realizar operaciones sobre ese bloque específico.
         
@@ -435,7 +455,8 @@ Es un documento que nos permite rellenar información de forma ordenada y estruc
 
 Algunos ejemplos podrían ser escribir nuestro nombre y apellidos, dirección, cuenta de email, etc.
 
----
+----
+
 ## Formularios
 Los elementos y atributos para formularios en HTML5 proveen un mayor grado de marcado semántico que en HTML4 y eliminan 
 gran parte del tedioso trabajo de programar y diseñar que se necesitaba en HTML4. 
@@ -482,23 +503,28 @@ Campo de texto en una línea
 <input type="url" name="pagina_web"/>
 <input type="color" name="color"/>
 
----
+----
+
 ## Input
 ![Inputs](images/html/inputs1.jpg)
 
----
+----
+
 ## Input
 ![Inputs](images/html/inputs2.jpg)
 
----
+----
+
 ## Input
 ![Inputs](images/html/inputs3.jpg)
 
----
+----
+
 ## Input
 ![Inputs](images/html/inputs4.jpg)
 
----
+----
+
 ## Input Radio
 Permiten elegir una sola opción entre un grupo 
 
@@ -510,7 +536,8 @@ Permiten elegir una sola opción entre un grupo
 <input type="radio" name="gender" value="male" checked> Male<br>
 <input type="radio" name="gender" value="female"> Female
 
----
+----
+
 ## Input Range
 Permite que el usuario especifique un valor numérico comprendido entre un valor mínimo y máximo
 ````html
@@ -545,7 +572,8 @@ Casilla de verificación asociada a una opción que puede ser marcado o desmarca
 <input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
 <input type="checkbox" name="materia2" value="Lengua"> Lengua
 
----
+----
+
 ## Input Number
 Campo para la entrada de un número.
 ````html
@@ -553,7 +581,8 @@ Campo para la entrada de un número.
 ````
 <input type="number" name="points" min="0" max="100" step="10" value="30">
 
----
+----
+
 ## Input: Atributos
 <!-- .slide: style="font-size: 0.90em" -->
 Algunos atributos son:
@@ -634,7 +663,8 @@ Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
 
 ![Formulario](images/html/formulario_ej.png)
 
----
+----
+
 ## Ejercicio: Formulario
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zSbEPLMhBh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

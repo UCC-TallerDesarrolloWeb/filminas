@@ -290,7 +290,8 @@ more id_rsa.pub
 5. Copiar el texto que dice "ssh-rsa BLA BLA"
 6. Ingresar a gitHub, Setting, SSH and GPG Keys, New SSH Key, pegar la clave
 
----
+----
+
 ## SSH en GitHub
 ![SSH en GitHub](images/herramientas/sshKey.png)
 
@@ -304,7 +305,8 @@ Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone
 
 <!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
 
----
+----
+
 ## Ejemplos de Readmes
 [RevealJS](https://github.com/hakimel/reveal.js)
 
@@ -318,8 +320,8 @@ las palabras en negrita o cursiva, agregar imágenes y crear listas.
 En su mayoría, Markdown es solo texto normal con algunos caracteres no alfabéticos, como # o * que permiten formatear el 
 texto.
 
+----
 
----
 ## Readme.md
 ![Markdown](images/herramientas/markdown.png)
 
@@ -327,6 +329,7 @@ texto.
 
 ---
 ## Ejercicio Readme.md
+Emplear el repositorio de ejercicios [template](https://classroom.github.com/a/06Rmc9s1)
 * Agregar títulos secundarios:
  * Autor
  * Contenido/Descripción
@@ -335,6 +338,13 @@ texto.
 * Agregar un link del aula virtual
 * Agregar info de contacto en una tabla
 * Agregar [emoji](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+
+----
+
+## Ejercicios
+Se debe crear una **branch** para los ejercicios de cada unidad.
+
+Una vez realizados todos los ejercicios de una unidad, se debe realizar un **pull request** y **mergearlo**.
 
 ----
 
@@ -442,16 +452,18 @@ jobs:
 * pull
 * merge
 
-No te preocupes, te lo explicamos con gatitos (si, nada que tenga gatitos puede fallar!)
+No te preocupes, te lo explicamos con gatitos 😺 (si, nada que tenga gatitos puede fallar!)
 
+----
 
----   
 ![Git Puss](images/herramientas/git-puss.jpg)
 
----
+----
+
 ![Git Purr](images/herramientas/git-purr.jpg)
 
----
+----
+
 ![Git Merge-Rebase](images/herramientas/git-merge-rebase.jpg)
  
 ---

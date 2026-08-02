@@ -73,7 +73,8 @@ Normalmente posee 3 capas:
 
 ![3 Capas](images/fundamentosHTML/modelo3capas.png)
 
----
+----
+
 ## Estructura
 * Capa de Presentación, de Usuario/Cliente
 <p class="fragment"> <small> 
@@ -103,7 +104,8 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 * **Web Dinámica:** Contiene elementos que permiten la comunicación activa entre el usuario y la
   aplicación, y cuyo contenido se genera a partir de lo que el usuario introduce.
 
----
+----
+
 ## Procesamiento Web Estática
 
 ![Web Estatica](images/fundamentosHTML/procesamiento_webEstatica.png)
@@ -114,7 +116,8 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 <p class="fragment"> 3. El servidor Web envía la página al navegador solicitante. </p>
 </small>
 
----
+----
+
 ## Procesamiento Web Dinámica
 <!-- .slide: style="font-size: 0.9em" -->
 
@@ -128,13 +131,14 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 5. El servidor web envía la página finalizada al navegador solicitante.  
 </small>
 
----
+----
 
 ## Procesamiento Web Dinámica+DB
 
 ![Web Completo](images/fundamentosHTML/procesamiento_webCompleto.png)
 
----
+----
+
 ## Procesamiento Web Dinámica+DB
 <!-- .slide: style="font-size: 0.7em" -->
 1. El navegador web solicita la página dinámica. 
@@ -159,7 +163,8 @@ Cuando se solicita al servidor una página de este tipo, el servidor Web pasa la
 * Web 3.0
 * Web 4.0
 
----
+----
+
 ## Web 1.0
 El comienzo de la web data de los años 90, donde el usuario es un mero consumidor del contenido que es subido a 
 servidores por parte de expertos informáticos. Los navegadores eran solo de texto.
@@ -167,11 +172,13 @@ servidores por parte de expertos informáticos. Los navegadores eran solo de tex
 La web 1.0 mejora con la aparición del lenguaje HTML, que proporciona contenido con mejor estructuras y más atractivos 
 para leer. Aun así, el usuario aún no podía interactuar y la web era como una especie de libro donde buscar y leer información.
 
----
+----
+
 ## Web 1.0
 ![Web 1.0](images/fundamentosHTML/web1_0.webp)
 
----
+----
+
 ## Web 2.0
 A partir del año 2001, surge un cambio importante: el usuario empieza a interactuar con las webs. 
 Se siguen tres principios:
@@ -182,22 +189,26 @@ Se siguen tres principios:
 Aparecen grupos de usuarios, redes sociales, blogs y wikis entre otras. Se fomenta la colaboración entre usuarios. 
 El usuario ahora no solo accede a la información, sino que la crea.
 
----
+----
+
 ## Web 2.0
 ![Web 2.0](images/fundamentosHTML/web2_0.webp)
 
----
+----
+
 ## Web 3.0
 Surge en 2006 para relacionar las webs de forma semántica, lo que permite que la información pueda ser encontrada de 
 forma más rápida y eficiente debido a su estructuración.
 
 Además de navegadores, se accede desde otros dispositivos y tecnologías.
 
----
+----
+
 ## Web 3.0
 ![Web 3.0](images/fundamentosHTML/web3_0.webp)
 
----
+----
+
 ## Web 4.0
 En esta etapa la inteligencia artificial aparece como principal tecnología.
  
@@ -224,7 +235,8 @@ Algunas de las características de la web 4.0 son:
 * JSP (Java Server Pages)
 * Ruby
 
----
+----
+
 ## Elige tu Propia Aventura xD
 <!-- .slide: style="font-size: 0.75em" -->
 * **Programador de Servidores o Back-end:** Go, NodeJs, Python, Ruby, PHP, Java, .Net.
@@ -252,7 +264,8 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 ## Características
 ![HTML5 Areas](images/fundamentosHTML/html5-areas.png)
 
----
+----
+
 ## Características
 <!-- .slide: style="font-size: 0.90em" -->
 * ***Semántica:***
@@ -267,7 +280,8 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 * ***Multimedia:***
   permite hacer vídeo y audio en la Web abierta.
 
----
+----
+
 ## Características
 <!-- .slide: style="font-size: 0.90em" -->
 * ***Gráficos y efectos 2D/3D:***
@@ -319,9 +333,10 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 * HTML 3.2
 * HTML 4
 * HTML 5
-* HTML 6 ???
+* ~~HTML 6 ???~~
 
----
+----
+
 ## HTML 1
 La primera versión del HTML nace en 1989 como un subconjunto de SGML (lenguaje de marcado generalizado estándar) y es
 especificada mediante un documento que se denomina HTML Tags.
@@ -330,7 +345,8 @@ HTML1 intenta contemplar estructura, formato y semántica, los cuales han ido de
 
 También aparece el primer navegador para poder visualizar las páginas: WorldWideWeb.
 
----
+----
+
 ## HTML 2
 Aparece en noviembre de 1995, HTML 2.0, desarrollada por el IETF (Internet Engineering Task Force). Fue más estándar,
 ya que fue definida por un organismo oficial.
@@ -338,21 +354,24 @@ ya que fue definida por un organismo oficial.
 Entre las novedades podíamos encontrar cosas como imágenes, mapas de imágenes, formularios, barras separadoras… así como
 una definición inicial del DTD HTML (Definición de tipo de documento).
 
----
+----
+
 ## HTML 3.0
 Se plantea en noviembre de 1995 el borrador de HTML 3.0 por parte de el consorcio W3C (World Wide Web Consortium),
 con la idea de definir estándares para Internet.
 
 Se empieza a hablar de elementos como tablas, textos alrededor de las imágenes, y un elemento llamado MATH que permite crear fórmulas dentro del documento HTML.
 
----
+----
+
 ## HTML 3.2
 En enero de 1997 aparece HTML 3.2.  Aparecen elementos definidos por los fabricantes de navegadores: Netscape e Internet Explorer.
 
 Así podemos encontrar en HTML 3.2 la capacidad de crear código script, capas, formularios, posibilidad de meter Applets
 de Java, entre otros.
 
----
+----
+
 ## HTML 4
 HTML 4 y HTML 4.01 surge en 1998 y 1999, siendo esta última la versión más longeva del estándar.
 
@@ -362,7 +381,8 @@ Se crea un nuevo lenguaje llamado CSS.
 Los elementos nuevos que aparecen son las hojas de estilo (CSS), los objetos (para poder insertar elementos externos
 como vídeo y música) y los frameset para dividir la pantalla en partes.
 
----
+----
+
 ## HTML 5
 <!-- .slide: style="font-size: 0.70em" -->
 Empieza su definición apoyándose en dos puntos:
@@ -376,6 +396,11 @@ Además alrededor de HTML5 nacen una gran cantidad de especificaciones para la m
 Se publicada oficialmente el 28 de octubre de 2014.
 
 ---
+
+![Etiquetas](images/html/tags.png)
+
+----
+
 ### [HTML 6](https://programacion.net/articulo/9_caracteristicas_que_deseamos_que_esten_en_html6_1189)
 Algunos cambios que se vienen:
 * Librerías dedicadas (como un jQuery integrado)
