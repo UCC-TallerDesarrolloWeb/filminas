@@ -658,11 +658,35 @@ Es una plataforma de análisis de código estático de código abierto que ayuda
 ---
 
 ## 12. Depuración o Debugging
+Es el proceso de encontrar, analizar y corregir fallos o errores en el código fuente de un programa.
+Cuenta con:
+- **Puntos de ruptura (breakpoints):** marcas para pausar el código en una línea específica y revisar qué pasa allí.
+- **Consola o registros (logs):** textos impresos en pantalla para ver el valor de los datos mientras corre el programa.
+
+----
+
+## 12. Depuración o Debugging
 - GDB
 - Chrome DevTools
 - Visual Studio Debugger
 
+----
+
+![Chrome Dev Tools](images/herramientas/chrome-dev-tools.png)
+
 ---
+
+## 13. Administración de dependencias
+Es el proceso de identificar, instalar, actualizar y rastrear sistemáticamente las bibliotecas, módulos o paquetes externos de terceros que una aplicación requiere para su correcto funcionamiento.
+
+----
+
+## 13. Administración de dependencias
+- **Gestores de paquetes:** Herramientas que automatizan la descarga e instalación (ej. npm, pip, Maven).
+- **Archivos de manifiesto:** Documentos de configuración donde se listan los módulos requeridos y sus rangos de versión tolerados (ej. package.json, requirements.txt, pom.xml).
+- **Archivos de bloqueo (Lockfiles):** Archivos que congelan las versiones exactas instaladas en un momento dado para garantizar la replicabilidad del entorno (ej. package-lock.json, poetry.lock).
+
+----
 
 ## 13. Administración de dependencias
 - npm
@@ -675,14 +699,49 @@ Es una plataforma de análisis de código estático de código abierto que ayuda
 ---
 
 ## 14. Automatización de compilación (Build Tools)
-- Maven
-- Gradle
-- Ant
-- Webpack
-- Vite
-- Rollup
+Es el proceso de usar programas para convertir el código fuente en aplicaciones listas para usar sin intervención manual
+
+----
+
+## 14. Automatización de compilación (Build Tools)
+Las funciones principales son:
+- **Gestión de dependencias:** Descarga y organiza librerías externas de forma automática.
+- **Compilación:** Transforma el código fuente legible por humanos en código binario o ejecutable.
+- **Pruebas y empaquetado:** Ejecuta tests unitarios y agrupa los archivos en paquetes listos para enviar a producción.
+
+----
+
+## 14. Automatización de compilación (Build Tools)
+- **Java:** Maven y Gradle
+- **JavaScript / Frontend:** Webpack, Vite y Gulp.
+- **C / C++:** Make, CMake y MSBuild
 
 ---
+
+## 15. Contenedores y virtualización
+Son formas de aislar programas.
+- **Virtualización** emula hardware físico completo con su propio sistema operativo.
+- **Contenedores** comparten el núcleo del sistema operativo del servidor anfitrión
+
+----
+
+![Maquinas Virtuales vs Contenedores](images/herramientas/virtual-machine-container.png)
+
+----
+
+## 15. Virtualización con Máquinas Virtuales
+- Usan un programa llamado hipervisor para crear computadoras falsas sobre una máquina real, dividiendo la memoria, el disco y la potencia.
+- Cada máquina virtual lleva instalado su propio sistema operativo completo (por ejemplo, Windows o Linux), lo que consume muchos recursos.
+- Ejecutar sistemas pesados y distintos entre sí que necesitan un aislamiento total y seguro.
+
+----
+
+## 15. Contenedores
+- Empaquetan únicamente una aplicación junto con sus archivos de código y herramientas necesarias, usando un motor de contenedores como Docker.
+- No necesitan un sistema operativo propio; aprovechan y comparten el núcleo del sistema operativo principal, ocupando poco espacio y arrancando en segundos.
+- Crear aplicaciones rápidas, livianas y fáciles de mover de una computadora a otra sin que fallen.
+
+----
 
 ## 15. Contenedores y virtualización
 - Docker
@@ -692,23 +751,74 @@ Es una plataforma de análisis de código estático de código abierto que ayuda
 ---
 
 ## 16. Orquestación de contenedores
+Es el proceso de automatizar la implementación, el escalado, la red y la administración de aplicaciones en contenedores.
+
+----
+
+## 16. Orquestación de contenedores
+Las funciones principales:
+- **Despliegue automático:** Pone en marcha las aplicaciones en los servidores sin intervención manual.
+- **Escalabilidad:** Aumenta o reduce el número de contenedores según la cantidad de trabajo o tráfico.
+- **Autorreparación:** Reinicia o reemplaza los contenedores que fallan de manera imprevista.
+- **Balance de carga:** Reparte el tráfico de datos de forma equilibrada entre los diferentes contenedores activos.
+
+----
+
+## 16. Orquestación de contenedores
 - Kubernetes
 - OpenShift
+- Docker Swarm
+- Amazon ECS
 
 ---
+## 17. Monitoreo y observabilidad
+Sirve para evaluar el funcioamiento de un sistema. El **monitoreo** avisa *qué* y *cuándo* falla mediante métricas predefinidas, 
+mientras que la **observabilidad** explica el *por qué* y el *cómo*.
+
+----
+
+### Monitorio
+- Mide variables conocidas y avisa cuando un límite se supera.
+- Paneles de control (dashboards) de CPU, memoria y tasas de error básicas.
+
+### Observabilidad
+- Permite investigar problemas nuevos o no previstos en el diseño original.
+- Permite consultar el sistema sobre fallas que no se conocían de antemano.
+- 3 pilares: métricas, registros (logs) y rastreos (traces).
+
+----
+
 ## 17. Monitoreo y observabilidad
 - Prometheus
 - Grafana
 - Datadog
 - New Relic
+- OpenTelemetry
 
 ---
+
+## 18. Registro de eventos o Logging
+Es el proceso de recolectar, indexar y analizar datos generados por máquinas, como actividades del sistema operativo, registros de red y aplicaciones, para facilitar la observación y la seguridad.
+
+----
 
 ## 18. Registro de eventos o Logging
 - ELK Stack (Elasticsearch, Logstash, Kibana)
 - Splunk
 
 ---
+
+## 19. Gestión de API
+Es el proceso de crear, publicar y proteger interfaces de programación.
+
+----
+
+## 19. Gestión de API
+- **Diseño y documentación:** crear reglas claras y manuales de uso para los desarrolladores.
+- **Seguridad y acceso:** controlar quién entra mediante contraseñas y permisos.
+- **Análisis:** medir el rendimiento y la cantidad de llamadas que recibe la interfaz.
+
+----
 
 ## 19. Gestión de API
 - Postman
@@ -719,11 +829,21 @@ Es una plataforma de análisis de código estático de código abierto que ayuda
 ---
 
 ## 20. Colaboración y comunicación
+Permiten a los equipos trabajar juntos, compartir datos y hablar en tiempo real.
+
+----
+
+## 20. Colaboración y comunicación
 - Slack
 - Microsoft Teams
 - Discord
 
 ---
+
+## 21. Diseño y prototipado
+Permiten crear modelos visuales e interactivos de aplicaciones o sitios web antes de programarlos.
+
+----
 
 ## 21. Diseño y prototipado
 - Figma
@@ -732,11 +852,18 @@ Es una plataforma de análisis de código estático de código abierto que ayuda
 
 ---
 
+## Otras herramientas
+Y la lista podría continuar:
+- IA
+- Pruebas de accesibilidad
+
+---
+
 ### Otras herramientas de pruebas...
 Una herramienta de prueba sumamente sencilla de usar el **Axe**, que permite encontrar defectos
 relacionados con accesibilidad.
 
----
+----
 
 ### Otras herramienta de pruebas...
 Empleando **Lighthouse** se pueden encontrar errores de:

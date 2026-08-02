@@ -165,6 +165,12 @@ FINAL:
 
 ---
 
+Los ejercicios de clase están pensados para ser resueltos **SIN** el uso de herramientas de IA, utilizando el material teórico visto en clase.
+
+El objetivo es que desarrolles tu capacidad de análisis, pensamiento crítico y resolución de problemas. Si recurres a la IA para resolver los ejercicios desde el inicio, es probable que esas habilidades no se ejerciten adecuadamente.
+
+---
+
 ### Sobre las diapositivas...
 - Algunas se pueden recorren en vertical ⬇️ (para profundizar en un tema) 
 o en horizontal ➡️ (para ir al tema siguiente)
