@@ -33,6 +33,8 @@ La página debe tener:
 ---
 ## PROYECTO Web: Ideas
 * Venta de productos
+* Adopción de Animales
+* CV interactivo
 * Trekking y senderismo
 * Experiencias de Vacaciones
 * Recomendador de series/películas/anime
