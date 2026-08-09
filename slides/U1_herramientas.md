@@ -573,15 +573,29 @@ Utiliza software especial y scripts para ejecutar validaciones y comparar result
 
 ----
 
-## 9. Automatización de pruebas
+## [9. Automatización de pruebas](https://testautomationu.applitools.com/#courses)
+
+<div class="grid-container2">
+<div class="grid-item">
+
+### Tests Unitarios
+- JUnit 
+- TestNG
+- Jest
+- etc
+
+</div>
+<div class="grid-item">
+
+### Tests E2E
 - Selenium
 - Cypress
 - Playwright
 - Robot Framework
-- JUnit 
-- TestNG
-- Jest
-- Etc...
+- Pytest
+- etc
+
+</div></div>
 
 ---
 ## 10. Herramientas para prueba de Desempeño o Performance
@@ -601,7 +615,7 @@ Estas pruebas ayudan a:
 
 ----
 
-## 10. Herramienta para Stress Test
+## 10. Herramientas para prueba de Desempeño o Performance
 * Apache JMeter
 * SmartMeter.io
 * LoadUI
@@ -636,7 +650,6 @@ Es la revisión del código fuente sin ejecutar el programa, utilizando herramie
 - **Calidad y estilo:** Mantiene un estilo de código uniforme y evita duplicaciones.
 
 ----
-
 
 ### 11. SonarQube 
 Es una plataforma de análisis de código estático de código abierto que ayuda a los desarrolladores a identificar y corregir problemas de calidad y seguridad en su código. Se integra con herramientas de desarrollo y pipelines.
@@ -699,7 +712,7 @@ Es el proceso de identificar, instalar, actualizar y rastrear sistemáticamente 
 ---
 
 ## 14. Automatización de compilación (Build Tools)
-Es el proceso de usar programas para convertir el código fuente en aplicaciones listas para usar sin intervención manual
+Es el proceso de usar programas para convertir el código fuente en aplicaciones listas para usar sin intervención manual.
 
 ----
 
@@ -708,6 +721,10 @@ Las funciones principales son:
 - **Gestión de dependencias:** Descarga y organiza librerías externas de forma automática.
 - **Compilación:** Transforma el código fuente legible por humanos en código binario o ejecutable.
 - **Pruebas y empaquetado:** Ejecuta tests unitarios y agrupa los archivos en paquetes listos para enviar a producción.
+
+----
+
+![Automatizacion de Compilacion](images/herramientas/importance_of_build_tools.webp)
 
 ----
 
@@ -744,9 +761,43 @@ Son formas de aislar programas.
 ----
 
 ## 15. Contenedores y virtualización
+
+<div class="grid-container2">
+<div class="grid-item">
+
+### Contenedores
 - Docker
 - Docker Compose
 - Podman
+
+</div>
+<div class="grid-item">
+
+### Máquinas Virtuales
+- VMWare
+- Virtual Box
+- Qemu
+- Parallels
+- Citrix Hipervisor
+
+</div></div>
+
+----
+
+## 15. Contenedores y virtualización
+
+![Contenedores y virtualización](images/herramientas/virtualizacion-vs-contenedores.png)
+
+----
+
+## 15. Contenedores y virtualización
+
+|Máquinas Virtuales|Contenedores|
+|------------------|------------|
+| Alojar cargas de trabajo tradicionales, monolíticas y heredadas | Diseñar aplicaciones en la nube |
+| Aislar ciclos de desarrollo riesgosos | Empaquetar microservicios |
+| Implementar recursos de infraestructura (como redes, servidores y datos) | Implantar gradualmente las prácticas de DevOps o CI
+| Ejecutar un sistema operativo diferente dentro de otro sistema operativo (por ejemplo, ejecutar Unix en Linux) | Trasladar proyectos de TI escalables con el mismo sistema operativo |
 
 ---
 
@@ -769,6 +820,12 @@ Las funciones principales:
 - OpenShift
 - Docker Swarm
 - Amazon ECS
+
+----
+
+## 16. Orquestación de contenedores
+
+![Orquestación de contenedores](images/herramientas/multi-container-cluster-with-orchestrator.png)
 
 ---
 ## 17. Monitoreo y observabilidad
@@ -806,6 +863,10 @@ Es el proceso de recolectar, indexar y analizar datos generados por máquinas, c
 - ELK Stack (Elasticsearch, Logstash, Kibana)
 - Splunk
 
+----
+
+![Splunk](images/herramientas/splunk.png)
+
 ---
 
 ## 19. Gestión de API
@@ -826,6 +887,12 @@ Es el proceso de crear, publicar y proteger interfaces de programación.
 - Swagger/OpenAPI
 - Bruno
 
+----
+
+## [19. Gestión de API](https://petstore.swagger.io/#/)
+
+![Swagger](images/herramientas/swagger.jpg)
+
 ---
 
 ## 20. Colaboración y comunicación
@@ -837,6 +904,12 @@ Permiten a los equipos trabajar juntos, compartir datos y hablar en tiempo real.
 - Slack
 - Microsoft Teams
 - Discord
+
+----
+
+## 20. Slack
+
+![Slack](images/herramientas/slack.webp)
 
 ---
 
@@ -850,18 +923,49 @@ Permiten crear modelos visuales e interactivos de aplicaciones o sitios web ante
 - Adobe XD
 - Balsamiq
 
+----
+
+## 21. Figma
+
+![Figma](images/herramientas/figma-prototype.png)
+
 ---
 
 ## Otras herramientas
 Y la lista podría continuar:
-- IA
-- Pruebas de accesibilidad
+
+22. IA
+23. Pruebas de accesibilidad
+24. Seguridad
+25. Gestión de secretos y credenciales
+26. Gestión de artefactos
+27. Bases de datos
+28. Infraestructura como código
+29. Gestión de configuración
+30. Feature Flags
 
 ---
 
-### Otras herramientas de pruebas...
-Una herramienta de prueba sumamente sencilla de usar el **Axe**, que permite encontrar defectos
-relacionados con accesibilidad.
+## 22. Inteligencia Artificial
+
+Herramientas de IA aplicadas al desarrollo de software.
+- GitHub Copilot
+- ChatGPT
+- Claude
+- Gemini
+- Cursor
+- Amazon Q Developer
+
+---
+
+### 23. Testing de accesibilidad
+
+Herramientas para verificar que una aplicación pueda ser utilizada por personas con distintas capacidades.
+- axe
+- Lighthouse
+- WAVE
+- Accessibility Insights
+- Pa11y
 
 ----
 
@@ -871,6 +975,78 @@ Empleando **Lighthouse** se pueden encontrar errores de:
 - Accesibilidad
 - Buenas Prácticas
 - SEO (Search Engine Optimization)
+
+---
+
+## 24. Seguridad
+
+Herramientas para detectar vulnerabilidades en código, dependencias, contenedores y aplicaciones.
+- SonarQube
+- Snyk
+- OWASP ZAP
+- Trivy
+- Dependabot
+- Semgrep
+
+---
+
+## 25. Gestión de secretos y credenciales
+
+Para almacenar y administrar contraseñas, API keys, tokens, certificados, etc.
+- HashiCorp Vault
+- Azure Key Vault
+- AWS Secrets Manager
+- GitHub Secrets
+
+---
+
+## 26. Gestión de artefactos
+
+Para almacenar versiones de paquetes, librerías, imágenes Docker y otros artefactos generados durante el desarrollo.
+- JFrog Artifactory
+- Sonatype Nexus
+- GitHub Packages
+- GitLab Package Registry
+
+---
+
+## 27. Bases de datos
+
+Herramientas para administrar, consultar y desarrollar sobre bases de datos.
+- DBeaver
+- pgAdmin
+- MySQL Workbench
+- MongoDB Compass
+
+---
+
+## 28. Infraestructura como código
+
+Permiten definir infraestructura mediante código.
+- Terraform
+- OpenTofu
+- Ansible
+- Pulumi
+- AWS CloudFormation
+
+---
+
+## 29. Gestión de configuración
+
+Herramientas para administrar configuraciones de servidores y aplicaciones.
+- Ansible
+- Puppet
+- Chef
+- Salt
+
+---
+
+## 30. Feature Flags
+
+Permiten activar/desactivar funcionalidades sin necesidad de volver a desplegar toda la aplicación.
+- LaunchDarkly
+- Unleash
+- Flagsmith
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
