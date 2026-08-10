@@ -171,6 +171,20 @@ git revert 74a1092
 
 ---
 
+### Git: Ejercicio revertir cambios
+<!-- .slide: style="font-size: 0.90em" -->
+(Emplea **clear** para limpiar la consola entre pasos)
+1. Emplea el **add** para añadir un archivo nuevo y verifica que su **status** está en verde.
+2. Usando **reset** quita el archivo del área de **staging**.
+3. Para perder los cambios aplicados emplea **stash**
+4. Usar **stash apply** para recuperar esos cambios.
+5. Usa **log** para visualizar el historial de commits. Emplea el **checkout** para volver a un commit especifico.
+6. Usa **checkeot** para volver a la rama principal
+7. Realiza un commit local y reviertelo empleando el **reset --soft HEAD~1**
+8. Modifica el mensaje del último commit con un **--amend**
+
+---
+
 ### git rebase
 Permite modificar el "punto de partida" de una rama. Sirve para mantener un historial del proyecto lineal. 
 
@@ -205,12 +219,16 @@ git rebase --continue
 git push origin feature-windows --force
 ```
 
+----
+
+![Hablando de git](images/herramientas/hablando-de-git.png)
+
 ---
 ### Git: Autenticación Segura
 A partir de agosto/2021 github solicita un método seguro de autenticación, como:
-1. PAT: Token de Acceso Personal
-2. Autenticación de Dos Factores
-3. **SSH**
+1. **PAT:** Token de Acceso Personal
+2. **2FA:** Autenticación de Dos Factores (2023)
+3. **SSH:** Secure Shell
 
 ---
 ### Pasos para generar el PAT
@@ -312,6 +330,8 @@ Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone
 
 [MelonJS](https://github.com/melonjs/melonjs)
 
+[nvm-sh](https://github.com/nvm-sh/nvm)
+
 ---
 ## Markdown
 Markdown es una forma de estilo de texto en la web, que permite controlar la visualización del documento; dar formato a 
@@ -326,6 +346,12 @@ texto.
 ![Markdown](images/herramientas/markdown.png)
 
 [Visualizador de Markdown](https://dillinger.io/)
+
+----
+
+## Readme.md
+
+En VSC puedes visualizar un archivo Markdonwn empleando **Ctrl + K V** en Windows/Linux o **Cmd + K V** en Mac.
 
 ---
 ## Ejercicio Readme.md

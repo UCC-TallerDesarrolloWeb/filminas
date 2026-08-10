@@ -8,12 +8,6 @@ slideNumber: true
 Created by <i class="fab fa-telegram"></i>
 edme88
 
----
-## Bibliografía
-[![Pro Git](images/herramientas/book_git.png)](https://git-scm.com/book/en/v2)
-
----
-<!-- .slide: style="font-size: 0.60em" -->
 <style>
 .grid-container4 {
     display: grid;
@@ -22,12 +16,31 @@ edme88
     text-align: left !important;
 }
 
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+    border: 0px
+}
+
 .grid-item {
     border: 3px solid rgba(121, 177, 217, 0.8);
     padding: 20px;
     text-align: left !important;
 }
 </style>
+
+---
+### Bibliografía
+
+[![Pro Git](images/herramientas/book_git.png)](https://git-scm.com/book/en/v2)
+
+<small>(No hace falta que lo leas todo...Pero si deseas profundizar es una fuente confiable)</small>
+
+---
+<!-- .slide: style="font-size: 0.60em" -->
+
 ## Temario
 <div class="grid-container4">
 <div class="grid-item">
