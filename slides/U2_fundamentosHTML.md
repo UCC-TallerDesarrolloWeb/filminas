@@ -242,17 +242,17 @@ Algunas de las características de la web 4.0 son:
 * **Programador de Servidores o Back-end:** Go, NodeJs, Python, Ruby, PHP, Java, .Net.
     Conocimientos de bases de datos y de administración de sistemas.
 
-* **Programador de clientes o Front-end:** HTML, CSS, Javascript. Conocimientos de diseño.
-* **Programador móvil:** Objective C, Swift, Java (para Android). HTML/CSS para sitios web móviles.
+* **Programador de clientes o Front-end:** HTML, CSS, Javascript, React, VueJs, Angular, BootStrap, SASS, LESS, Tailwind. Conocimientos de diseño.
+* **Programador móvil:** React Native, Objective C, Swift, Java (para Android). HTML/CSS para sitios web móviles.
     Conocimientos sobre servidores.
-* **Programador 3D o de videojuegos:** C/C++, OpenGL, Animación. Conocimientos de diseño y artísticos.
+* **Programador 3D o de videojuegos:** C/C++, Python, OpenGL, Animación. Conocimientos de diseño y artísticos.
 * **Programador de alto rendimiento:** C/ C++, Java, conocimientos en matemáticas y análisis cuantitativo.
 
 ---
 ##  El mejor lenguaje de programación para empezar depende del tipo de proyectos que se quiera hacer.
 
 ---
-## Para programación web recomendamos...
+#### Para programación web recomendamos...
 
 ![HTML5 JS CSS](images/fundamentosHTML/html5jscss.png)
 
@@ -298,6 +298,7 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
   
 ---
 ## SEMÁNTICA
+Las etiquetas semánticas en HTML explican el significado exacto de su contenido.
 ````html
 <section>
 <article>
@@ -384,7 +385,7 @@ como vídeo y música) y los frameset para dividir la pantalla en partes.
 ----
 
 ## HTML 5
-<!-- .slide: style="font-size: 0.70em" -->
+<!-- .slide: style="font-size: 0.80em" -->
 Empieza su definición apoyándose en dos puntos:
 * Compatibilidad hacía atrás de todo lo que hay creado
 * Capacidad de absorber todas las funcionalidades que los nuevos fabricantes de la web habían ido construyendo (Google, Apple u Opera).
@@ -394,6 +395,10 @@ Nuevas funcionalidades: simplicidad para reproducir audio y vídeo, el disponer 
 Además alrededor de HTML5 nacen una gran cantidad de especificaciones para la mejora de las Webapps como son Websockets, Geolocalización, Webstorage.
 
 Se publicada oficialmente el 28 de octubre de 2014.
+
+----
+
+![Timeline](images/fundamentosHTML/timeline.jpeg)
 
 ---
 

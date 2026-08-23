@@ -99,6 +99,11 @@ comandos más empleados.
 
 ---
 ## ¿Cómo Comenzar?
+
+<small>
+Si bien el contenido puede estar en español, el name debe estar en ingles.
+</small>
+
 ![Code1](images/html/code1.png)
 
 ---
