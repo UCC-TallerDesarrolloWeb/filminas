@@ -24,21 +24,15 @@ edme88
     text-align: left !important;
 }
 </style>
-<!-- .slide: style="font-size: 0.80em" -->
+
 ## Temario
-<div class="grid-container2">
-<div class="grid-item">
-
-
-</div>
-<div class="grid-item">
-
+<!-- .slide: style="font-size: 0.80em" -->
 ### Accesibilidad
 * Fieldset, legend, label
 * Caption
 * Consejos de accesibilidad
 
-[Ejercicio: Accesibilidad](U2_HTML_avanzado.html#/24)
+[Ejercicio: Accesibilidad](U2_HTML_avanzado.html#/11/1)
 
 ### Otras etiquetas
 
@@ -46,12 +40,9 @@ edme88
 * Canvas
 * Multimedia (video, audio)
 
-[Ejercicio: Multimedia](U2_HTML_avanzado.html#/32)
+[Ejercicio: Multimedia](U2_HTML_avanzado.html#/19/1)
 
 * Buenas Prácticas
-
-</div>
-</div>
 
 ----
 
@@ -225,7 +216,8 @@ Lo navegadores mostrarán normalmente un marco alrededor de los controles agrupa
 * **Legend**: Crea un título para un grupo de campos (**fieldset**) de un formulario.
 * **label**: representa una etiqueta que puede ser asociada a un campo de formulario.
 
----
+----
+
 ## Fieldset, Legend y Label
 <!-- .slide: style="font-size: 0.85em" -->
 ````html
@@ -269,18 +261,19 @@ Es el encargado de darle un título descriptivo a las tablas.
 ## Accesibilidad: Consejos
 ![Consejos de Accesibilidad](images/html/claves_accesibilidad.png)
 
----
+----
+
 ## Accesibilidad: Consejos
 <!-- .slide: style="font-size: 0.75em" -->
 * Use el atributo **alt** en las **imágenes** para describir la función del elemento visual.
 *  Emplee el tag **caption** para los titulos de las tablas
 *  Emplee la etiqueta **label** y el atributo **for** en los input 
 *  Use el elemento map para las zonas activas.
-*  Emplee programas **lector de pantalla** (JAWS, NVDA, ETC) para comprobar el correcto funcionamiento de la web. (Fangs Screenenders muestra una version de texto de la pagina web)
-*  Utilice correctamente los hipervinculos (deben tener sentido por si mismo. No emplear 'Click Aqui')
+*  Emplee programas **lector de pantalla** (JAWS, NVDA, ETC) para comprobar el correcto funcionamiento de la web. (Fangs Screenenders muestra una version de texto de la página web)
+*  Utilice correctamente los hipervinculos (deben tener sentido por si mismo. No emplear 'Click Aquí')
 *  Utilice encabezados, listas y estructura de manera consistente
 *  Describir figuras, diagramas o animaciones con el atributo longdesc
-*  Utilice herramientas o servicios como [Accesibility Validator W3](https://validator.w3.org/) para comprobar el adecuado funcionamiento de la página
+*  Utilice herramientas o servicios como [Accesibility Validator W3](https://validator.w3.org/) o [Axe Chrome](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=es-419) para comprobar el adecuado funcionamiento de la página
 
 ---
 ## Ejercicios: Accesibilidad
@@ -288,15 +281,15 @@ Es el encargado de darle un título descriptivo a las tablas.
 * Agregue el atributo **alt** con el texto alternativo a todas las imágenes de su sitio web.
 * Emplee el tag **caption** para agregar títulos a todas las tablas del sitio web.
 
----
+----
+
 ## Ejercicios: Accesibilidad
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdyJMznlgJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
-### Ejercicios: Axe
-1. Instala el plugin de [Axe](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=es-419) en Chrome.
-2. Ejecuta las validaciones de accesibilidad en tu página
+### Ejercicios: Fieldset & Legend 
+1. Incluye 3 fielset y legend para agrupar: "Datos Personales", "Datos de la Cuenta" y "Tipo de Suscripción"
 
 ---
 ## Lienzo Canvas
@@ -306,7 +299,8 @@ El lienzo es un contenedor de gráficos y se debe utilizar un script para dibuja
 
 Cada pixel dentro del lienzo(canvas) puede ser controlado.
 
----
+----
+
 ## Lienzo Canvas
 ````html
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
@@ -390,7 +384,8 @@ Empleando el template “ej_animales”, agregue las etiquetas necesarias para:
 * Agregar un video (el mismo se encuentra en la carpeta “resources”)
 * Agregar un video de youtube
 
----
+----
+
 ## Ejercicio 7: Multimedia
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AFtAFhgGDE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

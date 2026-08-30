@@ -5,6 +5,7 @@ slideNumber: true
 ---
 
 # CSS
+### Cascading Style Sheet
 Created by <i class="fab fa-telegram"></i>
 edme88
 
@@ -39,27 +40,27 @@ edme88
 * Colores
 * Estilo: Tag, #ID, .clase
 
-[Ejercicio: Propiedades tipográficas](U2_CSS.html#/16)
+[Ejercicio: Propiedades tipográficas](U2_CSS.html#/20/1)
 
-[Ejercicio: CSS incrustado](U2_CSS.html#/17)
+[Ejercicio: CSS incrustado](U2_CSS.html#/24/1)
 
 </div>
 <div class="grid-item">
 
 * Descendientes
 
-[Ejercicio: Estilos con descendientes](U2_CSS.html#/21)
+[Ejercicio: Estilos con descendientes](U2_CSS.html#/22/1)
 
 * Pseudo clases
 
-[Ejercicio: Pseudo Clases](U2_CSS.html#/25)
+[Ejercicio: Pseudo Clases](U2_CSS.html#/24/1)
 
 * Modelo de cajas: Margin, border, padding
 * Unidades de medida
 * Fondos y Gradientes
 * Favicon
 
-[Ejercicio: CV](U2_CSS.html#/35)
+[Ejercicio: CV](U2_CSS.html#/33/2)
 
 * Comentarios
 * Buenas prácticas
@@ -75,7 +76,7 @@ Implementarlo requería mucho tiempo, actualizarlo era molesto y no resultaba pr
 
 ---
 ### CSS
-Con la llegada del HTML 4 se quitaron los estilos, pero se crearon las hojas de estilo en cascada, Cascading Style Sheet o CSS.
+Con la llegada del HTML 4 se quitaron los estilos, pero se crearon las hojas de estilo en cascada, **Cascading Style Sheet** o CSS.
 
 La primera versión data del 17 de diciembre de 1996, cuando salio HTML 3.2
 
@@ -83,7 +84,7 @@ La primera versión data del 17 de diciembre de 1996, cuando salio HTML 3.2
 ### CSS 2
 Aparece el 12 de mayo de 1998. Se trataba de una versión con demasiadas novedades, y los navegadores no pudieron adaptarse bien.
 
-El W3C volvió a retrabajarlo, y entre 2004-2006, lanzó la versión level 2 revisión 1, que se conoce como CSS 2.1.
+El W3C (World Wide Web Consortium  ) volvió a retrabajarlo, y entre 2004-2006, lanzó la versión level 2 revisión 1, que se conoce como CSS 2.1.
 La versión 2.1 de las CSS fue publicada como Recommendation el 7 de junio de 2011.
 
 ---
@@ -111,7 +112,7 @@ Estilos visual del documento.
 * Efectos de texto
 * Transformaciones 2D/3D
 * Animaciones
-* Multiples columnas
+* Múltiples columnas
 * Interfaz de Usuario
 
 ---
@@ -237,7 +238,7 @@ Ej. .myStl {background-color: rgb(234,55,76);}
 
 ---
 ## Ejercicio: Propiedades tipográficas
-Empleando el template “ej_columnas”, agregue estilo en línea para cambiar:
+Empleando el template “ej_columnas”, agregue **estilo en línea** para cambiar:
 1. Color del texto del título de la página.
 2. Tamaño de la fuente del título de la noticia.
 3. Tipo de fuente o letra de toda la página.
@@ -251,7 +252,7 @@ Una vez realizados todos los ejercicios de una unidad, se debe realizar un **pul
 
 ---
 ## Ejercicio: Incrustado
-Empleando el template “ej_columnas”, cambie los estilos en línea por estilos incrustados.
+Empleando el template “ej_columnas”, duplique su contenido, cambie los estilos en línea por **estilos incrustados**.
 1. El título de la página debe estar definido por ID
 2. El título de la noticia debe estar definido por clase
 3. El tipo de fuente para toda la página debe estar definido por Tag
@@ -269,7 +270,8 @@ Un elemento HTML es descendiente de otro cuando se encuentra contenido dentro de
     <span>En este ejemplo, "span"</span>  es descendiente de div
 </div>
 ````
----
+
+----
 
 ##  Descendientes
 * **selectores:** 
@@ -291,25 +293,27 @@ ul li{nombreEstilo: valor;}
 Empleando el template “ej_leyes” y hoja de estilo incrustada, agregue los estilos necesarios para cambiar: 
 1. La  primera  lista  ordenada  para  visualizarla  con  números  romanos  y  una  tipografía  de mayor tamaño (upper-roman). 
 2. La segunda lista ordenada para visualizarla con letras (lower-alpha).
-   
----
+
+----
+
 ## Ejercicio: Estilo con Descendientes
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u9wBB3DoAyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    
 ---
-## Pseudo Clases
+## [Pseudo Clases](https://developer.mozilla.org/es/docs/Web/CSS/Reference/Selectors/Pseudo-classes)
 <!-- .slide: style="font-size: 0.75em" -->
 Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.
 
 Ejemplos:
-* hover: se activa cuando pasa el mouse por encima de un elemento
-* active: se activa cuando el usuario activa un elemento (haciendo click)
-* focus: se activa cuando el elemento tiene el foco del navegador (está seleccionado)
-* link: enlaces que todavía no han sido visitados por el usuario
-* visited: enlaces que han sido visitados al menos una vez por el usuario
-* first-child: selecciona el primer elemento hijo de un elemento
+* **hover:** se activa cuando pasa el mouse por encima de un elemento
+* **active:** se activa cuando el usuario activa un elemento (haciendo click)
+* **focus:** se activa cuando el elemento tiene el foco del navegador (está seleccionado)
+* **link:** enlaces que todavía no han sido visitados por el usuario
+* **visited:** enlaces que han sido visitados al menos una vez por el usuario
+* **first-child:** selecciona el primer elemento hijo de un elemento
 
----
+----
+
 ## Pseudo Clases
 ````css
 /* unvisited link */
@@ -340,7 +344,8 @@ Al hipervinculo de la página de ej_columnas, empleando Pseudo clases modifique:
 * Al posicionar el mouse arriba del link, modificar el tamaño de la fuente
 * Al seleccionar el link, seleccionar BOLD
 
----
+----
+
 ## Ejercicio: Pseudo Clases
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LUuAI1UFd30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -472,11 +477,13 @@ Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:
 * Agregar sombras a los divs
 * Asegúrese de por lo menos incluir un estilo por Tag, por ID y por clase
 
----
+----
+
 ## Ejercicio: CV
 ![CV Imagen](images/html/cv_imagen.png)
 
----
+----
+
 ## Ejercicio: CV
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9aJKvSPW5GA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
