@@ -23,7 +23,7 @@ edme88
     text-align: left !important;
 }
 </style>
-<!-- .slide: style="font-size: 0.90em" -->
+<!-- .slide: style="font-size: 0.80em" -->
 ## Temario
 <div class="grid-container2">
 <div class="grid-item">
@@ -31,23 +31,43 @@ edme88
 ### CSS
 * Backgrounds
 
-[Ejercicio: Backgrounds](U2_CSS_avanzado.html#/5)
+[Ejercicio: Backgrounds](U2_CSS_avanzado.html#/5/1)
 
 * Position
 * Z-index
 * Float
 * Clear
+* Transiciones
+* Grid básico
+
+[Grid Básico](U2_CSS_avanzado.html#/18/2)
+
+* Grid Complejo
+
+[Grid Complejo](U2_CSS_avanzado.html#/20/2)
 
 </div>
 <div class="grid-item">
 
-[Ejercicio: 2 columnas](U2_CSS_avanzado.html#/16)
 
-* Por qué funciona diferente? 
-* Transiciones
-* Grid (NEW)
+
+[Filtros](U2_CSS_avanzado.html#/21/1)
+
+* Transitions
+* Variables
+
+[Transitions](U2_CSS_avanzado.html#/21/1)
+
 * Recomendaciones
 * Media Queries
+* Funcionamiento x navegador
+* Buenas Prácticas
+* Diseño responsivo
+* Media Query
+* Media Types
+* Viewport
+
+[Responsive](U2_CSS_avanzado.html#/42/1)
 
 </div>
 </div>
@@ -97,13 +117,14 @@ Puedes ver más documentación en:
 Cree una página nueva, emplee de fondo la imagen “fondo_mario.jpg” ubicada en la carpeta de  “imagenes”. 
 Pruebe  los  diferentes  atributos  de  background:  image, color, origin, position, repeat, size, etc.
 
----
+----
+
 ## Ejercicio: Backgrounds
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1h4RYPkQ4qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Position
-Como posicionar elementos dentro de la pagina.
+Como posicionar elementos dentro de la página.
 * static
 * relative
 * fixed
@@ -188,7 +209,8 @@ Pruebe
 * Forma 1 (CSS2): Float (left, right) y Width (50%) - (para div columna1 y div columna2)
 * Forma 2 (CSS3): Column-count y column-gap (para el article)
 
----
+----
+
 ## Ejercicio: 2 Columnas
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4BEX3s6ucDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -203,7 +225,8 @@ Es un sistema de rejilla en 2 dimensiones, creado dentro standard del lenguaje C
 ## Grid Básico
 ![Grid Basico](images/css/grid1.png)
 
----
+----
+
 ## Grid Básico
 ````html
 <style>
@@ -244,7 +267,8 @@ Las líneas verticales de los elementos de grid se denominan columnas.
 
 ![Grid Columns](images/css/grid_columns.png)
 
----
+----
+
 ## Grid: Columnas
 ````html
 <style>
@@ -316,10 +340,10 @@ El espacio entre cada columna/fila se denomina gap.
 
 ### Ejercicio: Grid
 - Crea un archivo: **productos.html**
-- Puedes usar estilos incrustados u hoja de estilos enlazada
+- Puedes usar una hoja de estilos **enlazada**
 - Debes crear un contenedor **main** y dentro tarjetas **div**
 - Cada tarjeta debe contener una imagen y un título
-- Las imágenes pueden obtenerse de **Ejercicios-JavaScript**
+- Las imágenes pueden obtenerse combinando **https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/** con **3-Js/tienda.js -> imagen**
 
 ----
 
@@ -337,7 +361,8 @@ El espacio entre cada columna/fila se denomina gap.
 ## Grid: Complejo
 ![Grid Complejo](images/css/grid_complex.png)
 
----
+----
+
 ## Grid: Complejo
 ````html
 <style>
@@ -447,7 +472,8 @@ a {
 * **trasition-timing-function**: define la curva de velocidad a la que se produce el efecto. Puede ser: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier, initial, inherit
 * **transition-delay**: retraso en el comienzo de la transición. Puede ser en segundos (s) o milisegundos (ms).
 
----
+----
+
 ## Transitions
 
 Por ejemplo:
@@ -462,7 +488,8 @@ a:hover {
 }
 ````
 
----
+----
+
 ## Transitions
 ````css
 div {
@@ -480,7 +507,8 @@ div:hover {
 
 <div class="divTran"></div>
 
----
+----
+
 ## Transitions 2
 <!-- .slide: style="font-size: 0.90em" -->
 ````css
@@ -604,20 +632,22 @@ Buenas Prácticas:
 ## Diseño Responsivo
 ![Diseño Responsive](images/css/responsive-viewport.png)
 
----
+----
 
 ## Diseño Responsivo
 Diseño web adaptable, donde la apariencia de las páginas web se adapta al dispositivo que se esté utilizando para visualizarla.
 
 ![Dispositivos](images/css/img-dispositius.png)
 
----
+----
+
 ## Diseño Responsivo
 Se trata de redimensionar y colocar los elementos de la web de forma que se adapten al ancho de cada dispositivo permitiendo una correcta visualización y una mejor experiencia de usuario.
     
 Se caracteriza porque los layouts (contenidos) e imágenes son fluidos y se usa código media-queries de CSS3.
 
----
+----
+
 ## Diseño Responsivo
 ![Diseño Responsivo](images/css/disenio_responsivo.png)
 
@@ -705,7 +735,8 @@ Describen la categoría general de un dispositivo.
 Fueron deprecados los Medios: tty, tv, projection, handheld, braille, embossed y aural
 </small>
 
----
+----
+
 ### Media Types
 ````css
 @media print {
@@ -722,34 +753,39 @@ Fueron deprecados los Medios: tty, tv, projection, handheld, braille, embossed y
 ### Media Queries
 ![Sintaxis de Rango](images/css/sintaxis_rango.jpg)
 
-
 ---
+
 ## HTML5: Viewport
 ![Ejemplo Viewport](images/css/viewport2.jpg)
 
----
+----
+
 ## [HTML5: Viewport](https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag)
 Es el área de la ventana en donde el contenido web está visible. Generalmente no es del mismo tamaño que la página 
 renderizada, en donde se brindan barras de desplazamiento para que el usuario pueda acceder a todo el contenido.
 
----
+----
+
 ## HTML5: Viewport
 Dispositivos con pantallas angostas muestran la página en una ventana virtual o viewport, que es usualmente más ancho 
 que la pantalla y la comprimen de manera que pueda verse completa. El usuario podrá recorrerla y hacer zoom para ver 
 diferentes áreas de la página. Por ejemplo, si una pantalla móvil tiene un ancho 640px, las páginas pueden ser procesadas 
 con un viewport de 980px, y después comprimidas para que entren en 640px.
 
----
+----
+
 ## HTML5: Viewport
 ![ejemplo viewport](images/css/viewport.png)
 
----
+----
+
 ## HTML5: Viewport
 Esto se hace porque muchas páginas no están optimizadas para dispositivos móviles y se ven mal cuando son procesadas a un 
 ancho de viewport pequeño. El viewport virtual es una forma de resolver el problema de sitios no optimizados para móviles, 
 logrando que se vean mejor.
 
 ---
+
 ## HTML5: Viewport
 <!-- .slide: style="font-size: 0.80em" -->
 La etiqueta viewport permite definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.
@@ -767,7 +803,8 @@ Se le puede configurar
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 ````
 
----
+----
+
 ## HTML5: Viewport
 Prueba como se ve la página Ejercicios-CSS/ej_cv.html con F12 SIN la etiqueta de viewport... Luego agregale la etiqueta y mira que pasa
 ````css
@@ -781,7 +818,8 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 * Se debe mostrar 1 columna si la pantalla tiene como máximo 600px
 * Las imagenes deben ocupar el 100% de su columna
 
----
+----
+
 ## Ejercicio: Responsive
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nLImEsvaP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
