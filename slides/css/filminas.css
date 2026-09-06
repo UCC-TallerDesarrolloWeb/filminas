@@ -48,6 +48,18 @@ table{
     transform: rotate(180deg);
 }
 
+@keyframes miAnimacion {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.divAni {
+  animation: miAnimacion 1s ease-in-out infinite;
+  background-color: blue;
+  width: 600px;
+  height: 120px;
+}
+
 .textBorder {
     text-shadow: -1px 1px black, 1px 1px black, 1px -1px black, -1px -1px black,
     2px 0 black, 0 2px black, 0 -2px black, -2px 0 black !important;

@@ -624,6 +624,17 @@ La propiedad *box-sizing* puede ser usada con:
 ![Box-Sizing](images/css/box-sizing.png)
 
 ---
+##  CSS: Recomendación 
+Revisar documentación:
+[W3 School](http://www.w3schools.com/css/default.asp)
+
+Autogenerar algunos estilos complicados:
+
+http://css3generator.com/
+
+http://westciv.com/tools/shadows/
+
+---
 # Bibliografía xD
 [![W3School](images/html/logo_w3schoolscom.png)](http://www.w3schools.com/css)
 
