@@ -107,13 +107,13 @@ La interfaz tiene que estar bien hecha porque moldea la percepción que el usuar
 
 El diseño de la interfaz de usuario comienza con la identificación de los requerimientos del usuario, la tarea y el ambiente.
 
----
+----
 
 ### Paso 2
 
 Una vez identificadas las tareas del usuario, se crean y analizan los escenarios para éste y se define un conjunto de objetos y acciones de la interfaz.
 
----
+----
 
 ### Paso 3
 
@@ -121,7 +121,7 @@ Esto forma la base para crear una plantilla o prototipo que ilustra el diseño g
 la definición de textos descriptivos, la especificación y títulos de las ventanas, y la especificación de aspectos
 mayores y menores del menú.
 
----
+----
 
 ### Paso 4
 

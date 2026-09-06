@@ -76,7 +76,7 @@ edme88
 La cascada y la especificidad son los mecanismos que determinan qué estilos 
 se aplican a un elemento HTML cuando existen reglas en conflicto.
 
-Tambien se debe considerar la **herencia**, que significa que algunas propiedades CSS heredan 
+También se debe considerar la **herencia**, que significa que algunas propiedades CSS heredan 
 por defecto los valores establecidos en el elemento padre, pero otras no. 
 
 Esto también puede causar una respuesta diferente a la que se espera.
@@ -140,7 +140,9 @@ Por defecto, todos los elementos HTML son Static.
 
 ## Position: relative
 El elemento es posicionado relativo respecto a su posición normal.
+
 Los valores top, left, right, bottom lo mueven respecto a su posición original
+
 Permite que un elemento se desplace respecto a lo que hubiera sido su posición normal; 
 el resto de elementos continúan en su posición ignorando al que se desplaza, 
 lo que puede crear superposiciones; el espacio libre que deja el elemento queda libre.
@@ -148,8 +150,11 @@ lo que puede crear superposiciones; el espacio libre que deja el elemento queda 
 ----
 
 ## Position: fixed
+<!-- .slide: style="font-size: 0.90em" -->
 El elemento "fixed" es posicionado respecto al area visible.
+
 Los valores top, left, right, bottom lo mueven respecto a su posición original
+
 Permite que un elemento se desplace respecto al origen de coordenadas del primer 
 elemento contenedor posicionado ó respecto a la esquina superior izquierda de la ventana de 
 visualización; el resto de elementos actúan como si el desplazado no existiera, por lo que su 
@@ -172,11 +177,6 @@ el usuario se desplace por la web haciendo scroll.
 
 ## position: inherit;
 Se heredan las características del elemento padre.
-
----
-
-### Ejercicio: Position
-Empleando el CV trabajado anteriormente, colocar un position fixed al div principal con el nombre y carrera.
 
 ---
 ## superposición con z-index
