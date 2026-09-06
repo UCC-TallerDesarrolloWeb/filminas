@@ -45,15 +45,14 @@ edme88
 <div class="grid-item">
 
 ### CSS
-* Backgrounds
-
-[Ejercicio: Backgrounds](U2_CSS_avanzado.html#/5/1)
-
+* Cascada y Especificidad
+* Anidación nativa
 * Position
 * Z-index
 * Float
 * Clear
 * Transiciones
+* Flexbox
 * Grid básico
 
 [Grid Básico](U2_CSS_avanzado.html#/18/2)
@@ -64,8 +63,6 @@ edme88
 
 </div>
 <div class="grid-item">
-
-
 
 [Filtros](U2_CSS_avanzado.html#/21/1)
 
@@ -89,54 +86,50 @@ edme88
 </div>
 
 ---
-## Fondos o Backgrounds
-<!-- .slide: style="font-size: 0.70em" -->
-La propiedad compuesta background permite definir simultáneamente todas las propiedades relacionadas con el fondo de 
-cualquier elemento: 
-* **backgroud-color:** color de fondo
-* **background-image:** imagen de fondo
-* **background-position:** posición
-* **background-size:** tamaño de la imagen de fondo (cover, auto, contain, inherit, etc)
-* **background-repeat:** si la imagen se repite o no (repeat, repeat-y, repeat-x)
-* **background-attachment:** si la imagen es fija o tiene scroll con el resto de la página
-* **background-origin:** desde donde la imagen debe empezar a mostrarse (content-box, padding-box, border-box)
-* **background-clip:** hasta donde debe extenderse el fondo dentro de un elemento. (content-box, padding-box, border-box)
 
----
-## Background: Ejemplo
-Estas líneas:
-````css
-div {
-  background-image: url("images/imagen_pequena.png");
-  background-repeat: no-repeat;
-  background-position: 2em 1.5cm;
-  background-attachment: fixed;
-}
-````
-Se pueden colocar todas juntas de la siguiente forma:
-````css
-div {
-  background: url("images/imagen_pequena.png") no-repeat 2em 1.5cm fixed;
-}
-````
+### [Cascada y Especificidad](https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts)
+La cascada y la especificidad son los mecanismos que determinan qué estilos 
+se aplican a un elemento HTML cuando existen reglas en conflicto.
 
----
-## Fondos o Backgrounds
-Puedes ver más documentación en:
+Tambien se debe considerar la **herencia**, que significa que algunas propiedades CSS heredan 
+por defecto los valores establecidos en el elemento padre, pero otras no. 
 
-[Mclibre](https://www.mclibre.org/consultar/htmlcss/css/css-fondos.html)
-
-[W3Shool - Background](https://www.w3schools.com/cssref/css3_pr_background.asp)
-
----
-## Ejercicio: Backgrounds
-Cree una página nueva, emplee de fondo la imagen “fondo_mario.jpg” ubicada en la carpeta de  “imagenes”. 
-Pruebe  los  diferentes  atributos  de  background:  image, color, origin, position, repeat, size, etc.
+Esto también puede causar una respuesta diferente a la que se espera.
 
 ----
 
-## Ejercicio: Backgrounds
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1h4RYPkQ4qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Cascada
+- Es el algoritmo que ordena y prioriza las reglas de estilo.
+- Evalúa el origen del código, la importancia (!important) y el orden de aparición.
+- Si dos reglas tienen el mismo peso, gana la que está escrita más abajo (al final) en el archivo CSS.
+
+----
+
+### Especificidad
+- Es el "peso" o puntuación que se le asigna a un selector CSS.
+- Los selectores más concretos tienen prioridad sobre los generales.
+- Selectores de ID tienen mayor peso que las clases.
+- Clases, pseudo-clases y atributos tienen mayor peso que las etiquetas (elementos).
+- Las etiquetas tienen el peso menor.
+
+---
+
+### Anidación nativa (CSS Nesting)
+Disponible nativamente en los navegadores sin necesidad de preprocesadores como Sass:
+
+```css
+.card {
+  background-color: white;
+
+  & h2 {
+    color: blue;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+}
+```
 
 ---
 ## Position
@@ -229,6 +222,37 @@ Pruebe
 
 ## Ejercicio: 2 Columnas
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4BEX3s6ucDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+### [Flexbox](https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Flexbox)
+Es un método de diseño de página unidimensional para compaginar elementos en filas o columnas. 
+
+Los elementos de contenido se ensanchan para rellenar el espacio adicional y se encogen para caber en espacios más pequeños.
+
+```css
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 200px;
+}
+```
+
+----
+
+### Flexbox
+
+![Flexbox](images/css/flex_terms.png)
+
+----
+
+### Flexbox
+<!-- .slide: style="font-size: 0.80em" -->
+- **Eje principal o main axis:** Es el eje que corre en la dirección en que se colocan los elementos flexibles (por ejemplo, según se disponen las filas en una página o hacia abajo según se disponen las columnas en una página). El inicio y el final de este eje se denominan inicio principal **(main start)** y final principal **(main end)**.
+- **Eje transversal o cross axis:** Es el eje que corre perpendicular a la dirección en la que se colocan los elementos flexibles. El inicio y el final de este eje se denominan inicio transversal (cross start) y extremo cruzado (cross end).
+- El elemento padre que tiene establecido *display: flex* se llama contenedor flexible.
+- Los elementos que se presentan como cajas flexibles dentro del contenedor flexible se denominan elementos flexibles.
 
 ---
 ## Grid
@@ -576,6 +600,24 @@ a {background-color: var(--color-primario);}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QT9Cjx3H3GY?si=sVir4PkJkfqh0KE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
+
+### Animaciones (@keyframes)
+
+Fuera de las transitions, que responden a un cambio de estado como *:hover*, 
+las animaciones permiten secuencias continuas y complejas:
+
+```css
+@keyframes miAnimacion {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.elemento {
+  animation: miAnimacion 1s ease-in-out infinite;
+}
+```
+
+---
 ##  CSS: Recomendación 
 Revisar documentación:
 [W3 School](http://www.w3schools.com/css/default.asp)
@@ -845,6 +887,13 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 * Permite reducir el tiempo de desarrollo.
 * Evita los contenidos duplicados.
 * Permite compartir los contenidos de una forma más rápida y natural.
+
+---
+
+### Evitar el uso de !important
+- Rompe la regla de la cascada y la especificidad, lo que hace que el código sea difícil de mantener y modificar
+- Dificultad para depurar, quita la predictibilidad al código. En lugar de seguir la lógica normal de las clases o IDs, debes buscar manualmente dónde se aplicó esta regla forzada.
+- En proyectos grandes, complica el trabajo con otros desarrolladores que intenten sobrescribir estilos sin éxito.
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
