@@ -35,29 +35,32 @@ edme88
 
 ### Requisitos del Primer Parcial
 * [Sketch](Proyecto.html#/4)
-* [Wireframe/Mockup](Proyecto.html#/8)
-* [Repositorio](Proyecto.html#/9)
-* [Proyecto general](Proyecto.html#/10)
-* [HTML](Proyecto.html#/11)
-* [Imágenes](Proyecto.html#/14)
-* [CSS](Proyecto.html#/15)
-* [Accesibilidad](Proyecto.html#/16)
-* [JavaScript](Proyecto.html#/17)
-* [Documentación](Proyecto.html#/19)
-* [Testing](Proyecto.html#/20)
-* [Correcciones](Proyecto.html#/21)
-* [¿Cómo comenzar?](Proyecto.html#/25)
+* [Wireframe/Mockup](Proyecto.html#/5)
+* [Repositorio](Proyecto.html#/6)
+* [Proyecto general](Proyecto.html#/7)
+* [HTML](Proyecto.html#/8)
+* [Imágenes](Proyecto.html#/9)
+* [CSS](Proyecto.html#/10)
+* [Accesibilidad](Proyecto.html#/11)
+* [JavaScript](Proyecto.html#/12)
+* [Documentación](Proyecto.html#/13)
+* [Testing](Proyecto.html#/14)
+* [Correcciones](Proyecto.html#/15)
+* [¿Cómo comenzar?](Proyecto.html#/17)
 
 </div>
 <div class="grid-item">
 
 ### Requisitos del Segundo Parcial
-* [React](Proyecto.html#/30)
-* [Proyecto General](Proyecto.html#/33)
-* [Correcciones](Proyecto.html#/34)
+* [Readme.md](Proyecto.html#/19)
+* [Package](Proyecto.html#/20)
+* [React](Proyecto.html#/21)
+* [SASS](Proyecto.html#/22)
+* [Proyecto General](Proyecto.html#/23)
+* [Correcciones](Proyecto.html#/24)
 
 ### Requisitos del Final
-* [Proyecto General](Proyecto.html#/37)
+* [Proyecto General](Proyecto.html#/26)
 
 </div>
 </div>
@@ -74,9 +77,12 @@ Relizar un proyecto Web de cualquier temática, que cumpla con los requisitos.
 ---
 
 ## Github Classroom: Proyecto Integrador
-[Primer Parcial 2026](https://classroom.github.com/a/AWxJdAnW)
+1. Una persona por grupo, ingresar al repositorio
+[Primer Parcial 2026](https://github.com/UCC-TallerDesarrolloWeb/proyecto2026)
+2. Click en "Use this template" y seleccionar "Create a new repository"
+3. Colocar de nombre al proyecto **proyecto2026-Apellido1-Apellido2**
 
----
+----
 
 ## Recomendación
 
@@ -94,17 +100,20 @@ agregar a tu compañero de equipo por su usuario de github.
 - [ ] Tener en cuenta los mensajes de error para el usuario
 - [ ] Debe ser realizado como el template (siguiente diapositiva)
 
----
+----
+
 ### Requisitos del Primer Parcial
 #### Sobre el Sketch
 ![Sketch Móvil](images/proyecto/GTP_sketchMovil.jpg)
 
----
+----
+
 ### Requisitos del Primer Parcial
 #### Sobre el Sketch
 ![Sketch Móvil](images/proyecto/GTP_sketchDesktop.jpg)
 
----
+----
+
 ### Requisitos del Primer Parcial
 #### Sobre el Sketch
 Tener en cuenta
@@ -128,7 +137,7 @@ Tener en cuenta
 ### Requisitos del Primer Parcial
 #### Sobre el repositorio
 <!-- .slide: style="font-size: 0.60em" -->
-- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2026-ApellidoAlumno1-ApellidoAlumno2" (en gitHub Classroom)
+- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2026-ApellidoAlumno1-ApellidoAlumno2" (creado a partir del repositorio template)
 - [ ] Crear un Readme.MD en la base del proyecto y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
 - [ ] En el **readme.md** se debe emplear [Markdown](U1_git_avanzado.html#/13) y aplicar negrita, titulo de orden 1, 2 y 3, link, items, tabla, index a cada sección
 - [ ] El código debe estar en **gitHubPages** (emplear gh-pages o configurar github para que se tome a la main como la [página a visualizar](Proyecto.html#/24))
@@ -165,7 +174,8 @@ Tener en cuenta
 - [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [ ] La estructura de la página debe estar definida con ```<div></div>```
 
----
+----
+
 ### Requisitos del Primer Parcial
 #### Sobre el HTML (2)
 <!-- .slide: style="font-size: 0.80em" -->
@@ -174,7 +184,7 @@ Tener en cuenta
 - [ ] Emplear el atributo **size** para que el tamaño de los inputs sea prolijo
 - [ ] Emplear el atributo **maxlength** para que el usurario no pueda ingresar valores "muy grandes"
 
----
+----
 
 ### Requisitos del Primer Parcial
 #### Sobre el HTML (3)
@@ -230,7 +240,8 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 - [ ] Se debe emplear var, let o const según corresponda para mayor eficiencia
 - [ ] Los event listener deben ser colocados en el HTML
 
----
+----
+
 ### Requisitos del Primer Parcial
 #### Sobre la funcionalidad JavaScript (2)
 - [ ] No deben existir funciones innecesarias que no se llamen en ninguna sección del código
@@ -273,13 +284,15 @@ Prueba todas las situaciones posibles, no te quedes solo con el **happy path**.
 - [ ] Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
 - [ ] Las notas serán de la siguiente manera: (Por ejemplo 55% 4; 59% 5; 67% 6; 75% 7; 82% 8; 89% 9; 97% 10)
 
----
+----
+
 ### Requisitos del Primer Parcial
 #### Sobre las Correcciones
 - [ ] Todas los errores o la falta de cumplimiento de los requisitos serán reportados a través de la plataforma de GitHub, en la pestaña de ISSUES
 ![Issues en GitHub](images/correcciones.jpg)
 
----
+----
+
 ### Requisitos del Primer Parcial
 #### Sobre las Correcciones
 | Items a Evaluar    | %   |
@@ -298,15 +311,18 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 ## Proyecto - Parte 1
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Iay1jxKGqQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
----
+----
+
 ## Proyecto - Parte 2
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p1-5tzJb6CU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
----
+----
+
 ## Proyecto - Parte 3
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nMPTkLKy1gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
----
+----
+
 ### Proyecto: Configuración de Github Pages
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aChzT06VBok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -340,7 +356,7 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 - [ ] La estructura del proyecto (carpetas) debe ser el correcto: components, pages, styles, api
 - [ ] Los **imports** deben ser usando con **alias**
 
----
+----
 
 ### Requisitos del Segundo Parcial
 #### Sobre React (2)
@@ -350,7 +366,7 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 - [ ] Guardar algún dato en localStorage (ej: preferencias de tema o un carrito de compras).
 - [ ] NO se deben declarar atributos que NO son usados en ningún sitio
 
----
+----
 
 #### Sobre React (3)
 - [ ] Emplear mock de al menos un servicio (db.json) y permitir al menos una de estas acciones: get/read, post/add, patch/update, delete
@@ -403,7 +419,8 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 - [ ] Las notas serán de la siguiente manera: (Por ejemplo 55% 4; 59% 5; 67% 6; 75% 7; 82% 8; 89% 9; 97% 10)
 - Las sugerencias sobre el HTML, CSS y Js realizadas en el anterior parcial dejen ser corregidas.
 
----
+----
+
 ### Requisitos del Segundo Parcial
 #### Sobre las Correcciones
 
@@ -430,3 +447,7 @@ Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
 - [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] No debe haber errores JavaScript presentes (F12 > Consola)
 - [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar, si hay nuevos inputs de html deben contener su label, etc)
+
+---
+## ¿Dudas, Preguntas, Comentarios?
+![DUDAS](images/pregunta.gif)
