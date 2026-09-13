@@ -74,7 +74,7 @@ Objetivos:
 * Mejorar la facilidad de comprensión del código
 * Cambiar su estructura y diseño
 * Eliminar código muerto
-  *Facilitar el mantenimiento en el futuro
+* Facilitar el mantenimiento en el futuro
 
 ---
 ### Ejercicio: Conversión de Unidades
@@ -84,7 +84,8 @@ Refactorice el código de manera tal que:
 * Operar todos los valores empleando las variables
 * Al final hacer la asignación de valores a los campos en la UI
 
----
+----
+
 ### Ejercicio: Conversión de Unidades
 ````javascript
 convertirUnidades = (id,valor) => {
@@ -114,7 +115,7 @@ convertirUnidades = (id,valor) => {
     }
     document.lasUnidades.unid_metro.value = Math.round(met*100)/100;
     document.lasUnidades.unid_pulgada.value = Math.round(pul*100)/100;
-    document.lasUnidades.unid_pie.value = Math.round(pie);
+    document.lasUnidades.unid_pie.value = Math.round(pie*100);
     document.lasUnidades.unid_yarda.value = Math.round(yar);
 }
 ````
@@ -144,7 +145,8 @@ Aca hay valores de Velocidad! O mas radios, o algo xD
 Aca hay valores de Distancia! O mas radios, o algo xD
 </div>
 
----
+----
+
 ## HTML: Displayed
 <small>Esto es solo un ejemplo. Las propiedades CSS deben ir en hoja de estilo separada.</small>
 ````html
@@ -163,7 +165,8 @@ Aca hay valores de Distancia! O mas radios, o algo xD
 </div>
 ````
 
----
+----
+
 ## JavaScript: Displayed
 ````javascript
 let seMuestra = (nombre) => {
@@ -178,6 +181,7 @@ let seMuestra = (nombre) => {
 ````
 
 ---
+
 ### Ejercicio: Mostrar/Ocultar div
 Escribir una función JavaScript para mostrar u ocultar el div celeste.
 * Emplear **OnChange** en los radio button
@@ -186,7 +190,8 @@ Escribir una función JavaScript para mostrar u ocultar el div celeste.
 
 ![Mostrar/Ocultar](images/html/mostrarOcultarDiv.png)
 
----
+----
+
 ### Ejercicio: Mostrar/Ocultar div
 Escribir una función JavaScript para mostrar u ocultar el div celeste.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mP-S_eqCPYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -197,7 +202,8 @@ Escribir una función JavaScript para mostrar u ocultar el div celeste.
 - Al presionar el botón se debe visualizar un **dialog**.
 - El dialog debe tener un botón para cerrar.
 
----
+----
+
 ### Ejercicio: Mostrar/Ocultar Dialog
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kyU9drm5ke0?si=uaO_liVIUr4IdK8C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -208,11 +214,13 @@ Escribir funciones JavaScript para resolver las operaciones matemáticas una vez
 * Se debe castear de tipo String a tipo Number
 * Los resultados deben contener el atributo disabled
 
----
+----
+
 ## Ejercicio: Operaciones Matemáticas
 ![Operaciones Matematicas](images/html/operacionesMatematicas.png)
 
----
+----
+
 ## Ejercicio: Operaciones Matemáticas II
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7w3TRLPPIho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -340,26 +348,15 @@ Modificar las funciones para que el resultado de la conversión sólo posea 2 de
 * Emplear **Math.Round** ó **miVar.toFix(2)** antes de asignar el resultado
 * Reemplace ',' por '.' para evitar errores
 
----
+----
+
 ## Ejercicio: Conversor de Unidades II
 ![Conversor Unidades](images/html/conversorUnidades.png)
 
----
+----
+
 ## Ejercicio: Conversor de Unidades II
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a73NqZTeP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-## Ejercicio: Operaciones Matemáticas II
-Modificar el HTML para quitar los inputs de los resultados. Emplear span, p o div, y en JavaScript, emplear innerHTML.
-* Emplear **innerHTML** para asignarle valores a los divs.
-
----
-## Ejercicio: Operaciones Matemáticas II
-![Operaciones Matematicas](images/html/operacionesMatematicas.png)
-
----
-## Ejercicio: Operaciones Matemáticas II
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z2eiHH0qGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -385,14 +382,29 @@ document.getElementById("principal").innerHtml = tarjeta;
 ```
 
 ---
+## Ejercicio: Operaciones Matemáticas II
+Modificar el HTML para quitar los inputs de los resultados. Emplear span, p o div, y en JavaScript, emplear innerHTML.
+* Emplear **innerHTML** para asignarle valores a los divs.
+
+----
+
+## Ejercicio: Operaciones Matemáticas II
+![Operaciones Matematicas](images/html/operacionesMatematicas.png)
+
+----
+
+## Ejercicio: Operaciones Matemáticas II
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z2eiHH0qGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 ### Ejercicio: Renderizado Dinámico
 
-1. Cree una "Base de Datos" de los productos que desea vender definiendo los elementos:
+1. Emplee el array de productos definido en **tienda.js**s:
 ````js
 const productos=[
     {
-        "nombre": "Par de focos redondos",
+        "nombre": "Focos redondos",
         "description": "Par de focos de 25cm x 25cm para hacer entrenamiento.",
         "categoria": "Entrenamiento",
         "marca": "Gran Marc",
@@ -489,7 +501,8 @@ let guardarNombre = (nombreUsu) => {
 a un array. (guardar este array en un localstorage)
 2. Agregar una página **carrito.html** que tenga el mismo header, nav, footer y variar el main para visualizar un listado de productos.
 
----
+----
+
 ### Ejercicio: Carrito de Compras con localstorage
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3W8B_nHYPAM?si=B7c6kJk_ds9eFv_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
