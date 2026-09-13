@@ -123,6 +123,142 @@ Los nombres de las variables deben cumplir ciertas reglas:
 * Distinción entre mayúsculas y minúsculas
 
 ---
+
+### Condicionales
+Permiten representar una toma de decisiones:
+- if/else if/ else
+- ternarios
+- switch
+
+----
+
+## Condicionales: if/else if/else
+<!-- .slide: style="font-size: 0.80em" -->
+````javascript
+if(saludo == "Whatsup!"){
+   console.log("Whatsup!");
+}else if(saludo == "Como va?"){
+    console.log("Como va?");
+}else{
+    console.log("Hola mundo!");
+}
+````
+* **==** iguales
+* **!=** distintos
+* **>** mayor
+* **>=** mayor o igual
+* **<** menor
+* **<=** menor o igual
+* **===** exactamente igual
+
+----
+
+## Condicionales: Ternarios
+Se emplea como atajo de if/else
+````javascript
+condición ? expr1 : expr2;
+````
+
+Un ejemplo aplicado:
+````javascript
+edad >=18 ? console.log('Puede conducir un auto'): console.log('Menor de edad!';
+````
+
+----
+
+## Condicionales: [Switch](https://www.w3schools.com/js/js_switch.asp)
+````javascript
+switch(nombre){
+   case "Juan":
+    console.log("Se llama Juan");
+    break;
+   case "Pedro":
+    console.log("Se llama Pedro");
+    break;
+   case "Pancracio":
+    console.log("Se llama Pancracio");
+    break;
+   default:
+    console.log("Hola forastero!")
+}
+````
+
+---
+
+## [Bucles](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
+Los bucles ofrecen una forma rápida y sencilla de hacer algo repetidamente. 
+
+- for
+- while
+- do / while
+- forEach
+- for ... in
+- for ... of
+
+----
+
+## Bucles
+````javascript
+for(var i=0; i<20;i++){
+   console.log(`El valor es ${i}`);
+}
+````
+
+````javascript
+var i = 0;
+while(i < 20){
+   console.log(`El valor es ${i}`);
+   i++;
+}
+```` 
+
+````javascript
+var i = 0; 
+do { 
+    i += 1; console.log(i); 
+} while(i < 5);
+````
+
+----
+
+## Bucles
+Llama a una función por cada elemento en el array.
+````javascript
+const arrayPalabras = ['Laboratorio', 'Computacion', 'Universidad'];
+
+arrayPalabras.forEach((palabra, index) => {
+    console.log(`La palabra ${index} es: ${palabra}`)
+})
+````
+
+----
+
+## Bucles
+````javascript
+const arr = [3, 5, 7];
+arr.foo = "hola";
+
+for (let i in arr) {
+  console.log(i); // logs "0", "1", "2", "foo"
+}
+
+for (let i of arr) {
+  console.log(i); // logs 3, 5, 7
+}
+````
+
+---
+
+## Funciones
+Las funciones nos permiten agrupar líneas de código en tareas con un nombre, 
+para que posteriormente podamos hacer referencia a ese nombre para realizar todo lo que se agrupe en dicha tarea.
+
+- Funciones Clásicas
+- Funciones Anónimas
+- Funciones Flecha
+
+----
+
 ## Funciones Clásicas
 * Emplea palabra reservada **function** + nombre de la función + los parámetros.
 ````javascript
@@ -136,7 +272,8 @@ console.log(miFuncionSuma(2,3));
 
 * **Hoisting**: la función puede ser llamada desde cualquier parte del código (antes o después de definir la función).
 
----
+----
+
 ## Funciones Anónimas
 * Al no tener nombre es necesario almacenarlas en una variable para poder llamarlas después.
 * No admite **Hoisting**
@@ -148,7 +285,8 @@ let sumar = function(parametro1, parametro2){
 console.log(sumar(2,3));
 ````
 
----
+----
+
 ## Funciones Flecha
 * Es una función **anónima**
 * No necesita de la palabra reservada **function**
@@ -160,7 +298,8 @@ let suma = (parametro1, parametro2) => {
 console.log(suma(2, 3));
 ````
 
----
+----
+
 ## Funciones Flecha
 * Si la función tiene solo un parámetro, pueden omitirse los paréntesis
 * Si el cuerpo de la función es una sola línea, pueden omitirse las llaves y el return
@@ -168,7 +307,8 @@ console.log(suma(2, 3));
 let saludo = nombre =>  'Hola ' + nombre + '!!!' ;
 ````
 
----
+----
+
 ## Funciones Flecha
 
 * Si la función no lleva parámetros, los parentesis vacios son obligatorios.
@@ -177,7 +317,7 @@ let saludo = nombre =>  'Hola ' + nombre + '!!!' ;
 let obj = () =>  ({nombre: 'Agus', edad: 37}) ;
 ````
 
----
+----
 
 <table>
   <thead>
@@ -234,96 +374,15 @@ Hay otros...
 eval(), uneval(), isFinite(), decodeURI(), encodeURI(), encodeURIComponent(), escape(), unescape()...
 
 ---
-## Condicionales
-<!-- .slide: style="font-size: 0.80em" -->
-````javascript
-if(saludo == "Whatsup!"){
-   console.log("Whatsup!");
-}else if(saludo == "Como va?"){
-    console.log("Como va?");
-}else{
-    console.log("Hola mundo!");
-}
-````
-* **==** iguales
-* **!=** distintos
-* **>** mayor
-* **>=** mayor o igual
-* **<** menor
-* **<=** menor o igual
-* **===** exactamente igual
-
----
-## Ternarios
-Se emplea como atajo de if/else
-````javascript
-condición ? expr1 : expr2
-````
-
-Un ejemplo aplicado:
-````javascript
-edad >=18 ? console.log('Puede conducir un auto'): console.log('Menor de edad!';
-````
-
----
-## Switch
-````javascript
-switch(nombre){
-   case "Juan":
-    console.log("Se llama Juan");
-    break;
-   case "Pedro":
-    console.log("Se llama Pedro");
-    break;
-   case "Pancracio":
-    console.log("Se llama Pancracio");
-    break;
-}
-````
-
----
-## Bucles
-````javascript
-for(var i=0; i<20;i++){
-   console.log(`El valor es ${i}`);
-}
-````
-
-````javascript
-var i = 0;
-while(i < 20){
-   console.log(`El valor es ${i}`);
-   i++;
-}
-````
-
-````javascript
-var i = 0; 
-do { 
-    i += 1; console.log(i); 
-} while(i < 5);
-````
-
----
-## Bucles
-Llama a una función por cada elemento en el array.
-````javascript
-const arrayPalabras = ['Laboratorio', 'Computacion', 'Universidad'];
-
-arrayPalabras.forEach((palabra, index) => {
-    console.log(`La palabra ${index} es: ${palabra}`)
-})
-````
-
----
 ## Funciones Callback
 Funciones que se pasan como parámetros de otras funciones y que se ejecutan dentro de éstas.
 ````javascript
    setInterval(function(){ alert("Hello"); }, 3000);
 ````
-El codigo de arriba y abajo hace lo mismo... Abre una ventana de alert que dice Hello cada 3000ms=3seg
+El código de arriba y abajo hace lo mismo... Abre una ventana de alert que dice Hello cada 3000ms=3seg
 
-(lo que volveria loco a un usuario xD )
+<small>(lo que volveria loco a un usuario xD )</small>
+
 ````javascript
 function miFunc(){
    alert("Hello");
@@ -352,13 +411,15 @@ setInterval(miFunc, 3000);
 * Los eventos estan asociados a un objeto.
 * Los eventos se producen porque sobre un objeto se produce alguna acción
 
----
+----
+
 ## Eventos de elementos de Formularios
 Se producen durante el uso de campos de formulario, como cajas de texto, listas desplegables, etc.
 
 Se producen cuando un elemento recibe foco,lo pierde o se cambia el contenido.
 
----
+----
+
 ## Eventos de elementos de Formularios
 * **OnSelect:** Se produce cuando se selecciona texto en un campo
 * **OnChange:** Se produce cuando se cambia algo en un elemento de formulario, y se pierde foco.
@@ -385,15 +446,18 @@ Escribir funciones JavaScript para que, al escribir un número en cualquiera de 
 * Los campos deben contener un nombre o id
 * La función debe enviar el valor y el nombre del campo cambiado
 
----
+----
+
 ## Ejercicio: Conversor de Unidades
 ![conversor de unidades](images/html/conversorUnidades.png)
 
----
+----
+
 ## Ejercicio: Conversor de Unidades
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ETZtCd1sCxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
----
+----
+
 ## Ejemplo Conversion de Unidades
 <script>
 let convertirUnidades = (unidad, valor) => {
@@ -435,7 +499,8 @@ yarda=<input style="font-size: 22px" type="text" name="yarda" onchange="cambioUn
 <br>
 </form>
 
----
+----
+
 ## Ejemplo Conversion de Unidades
 ````javascript
 function cambioUnidades(valor, unidad) {
@@ -488,7 +553,8 @@ Podemos emplear [JsDoc](https://jsdoc.app/) para generar nuestra documentación.
 ````
 Y luego correr el comando `jsdoc misFunciones.js`
 
----
+----
+
 ## Documentar Código
 Ejemplo:
 ````javascript
@@ -500,7 +566,8 @@ Ejemplo:
  */
 ````
 
----
+----
+
 ## Documentar Código
 Ejemplo:
 ![Ejemplo de JsDoc](images/Eventos/jsDocEjemplo.jpg)
@@ -509,7 +576,8 @@ Ejemplo:
 ## Ejercicio: Documentación
 Documentar las funciones del “Conversor de Unidades” adecuadamente,  indicando que hacen las funciones, el nombre del método, que parámetros se le envía y que valor retorna.
 
----
+----
+
 ## Ejercicio: Documentación
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OHcgwdimliE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -549,7 +617,7 @@ let sumaN = () => {
 ````
 
 ---
-## Objeto Math
+## [Objeto Math](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math)
 Math es un objeto incorporado por javascript que posee propiedades y métodos creados por constantes y funciones matemáticas.
 
 Todas las propiedades y métodos de Math son estáticos y no se pueden modificar.
@@ -599,7 +667,7 @@ let senN = () => {
 
 ---
 ## Ejercicio: Grados a Radianes
-Empleando la pagina grados_radianes haga una conversion de grados a radianes.
+Empleando la página grados_radianes haga una conversion de grados a radianes.
 
 * Emplear **OnChange** en los campos
 * Los campos deben contener un id
@@ -607,7 +675,8 @@ Empleando la pagina grados_radianes haga una conversion de grados a radianes.
 
 ![Grados a Radianes](images/html/gradosRadianes.png)
 
----
+----
+
 ## Ejercicio: Grados a Radianes
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UdspGRMvxIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
