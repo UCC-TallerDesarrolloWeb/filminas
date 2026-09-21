@@ -4,7 +4,7 @@ theme: league
 slideNumber: true
 ---
 
-# Diseño de Interface de Usuario
+# Diseño de Interfaz de Usuario
 
 Created by <i class="fab fa-telegram"></i>
 edme88

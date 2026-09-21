@@ -197,6 +197,15 @@ Permite agrupar opciones de un **select** según categorías:
 
 ---
 
+### [Dialog](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/dialog)
+Representa una caja de diálogo u otro componente interactivo, como inspector o ventana.
+
+Fue introducido en html5.1 y es soportado desde 2022.
+
+- [Ejemplo](https://lenguajehtml.com/html/interactivas/etiqueta-html-dialog/)
+
+---
+
 ## Accesibilidad
 La accesibilidad web tiene como objetivo lograr que las páginas web sean utilizables por el máximo número de personas, 
 independientemente de sus conocimientos o capacidades personales.

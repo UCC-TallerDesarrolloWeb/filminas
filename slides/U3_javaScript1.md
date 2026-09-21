@@ -150,6 +150,7 @@ if(saludo == "Whatsup!"){
 * **<** menor
 * **<=** menor o igual
 * **===** exactamente igual
+* **!==** estrictamemnte distintos
 
 ----
 

@@ -98,7 +98,7 @@ Existen MUCHOS métodos de arrays. Los más usados:
 - slice
 - splice
 
----
+----
 
 ### Array: Push
 Agrega un elemento al final del array.
@@ -108,7 +108,7 @@ frutas.push("arandano");
 console.log(["manzana", "banana", "naranja", "arandano"])
 ```
 
----
+----
 
 ### Array: Splice
 Permite añadir o remover elementos de un array.
@@ -125,7 +125,7 @@ console.log(["manzana", "banana"])
 1. Crear un botón para "Vaciar el Carrito" (usar localstorage.removeItem)
 2. Agregar en cada producto un botón para "Eliminar el producto" (usar array.splice)
 
----
+----
 
 ### Ejercicio: Vaciar Carrito y Eliminar Producto
 
