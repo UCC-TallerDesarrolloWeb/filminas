@@ -511,6 +511,42 @@ let guardarNombre = (nombreUsu) => {
 ````
 
 ---
+
+## JS: LocalStorage: Métodos
+````javascript
+//Almacena un valor
+localStorage.setItem("nombre", "Agustinas"); 
+
+//Obtiene un valor almacenado
+var cat = localStorage.getItem("nombre"); 
+
+//Elimina un elemento puntual
+localStorage.removeItem("nombre"); 
+
+//Elimina todos los elementos
+localStorage.clear(); 
+````
+
+---
+
+## JS: LocalStorage
+<!-- .slide: style="font-size: 0.90em" -->
+Solo permite almacenar **strings**, por lo que si se desea guardar otros tipos de datos es necesario **castear** la variable.
+
+Se suele trabajar con **JSON.stringify(variable)** que permite convertir por ejemplo un objeto u array a texto.
+
+````javascript
+localStorage.setItem("producto", JSON.stringify(producto));
+````
+
+Esto también obliga que al obtener un dato, el mismo deba ser transformado en array u objeto nuevamente:
+````javascript
+const productoGuardado = JSON.parse(
+    localStorage.getItem("producto")
+);
+````
+
+---
 ### Ejercicio: Carrito de Compras con localstorage
 
 1. Agregar un botón "Agregar al carrito" en cada tarjeta de producto que permita agregar el producto
