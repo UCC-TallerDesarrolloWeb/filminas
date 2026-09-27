@@ -49,15 +49,16 @@ edme88
 - Métodos para Arrays
   - Push
   - Splice
-- [Ejercicio: Vaciar Carrito](U3_javaScript3.html#/8)
+- [Ejercicio: Vaciar Carrito](U3_javaScript3.html#/6)
 
 
 </div>
 <div class="grid-item">
 
-- [Ejercicio: Filter](U3_javaScript3.html#/10)
-- [Ejercicio: Formateo de Precio](U3_javaScript3.html#/11)
-- [Ejercicio: Total y Cantidad](U3_javaScript3.html#/12)
+- [Ejercicio: Filter](U3_javaScript3.html#/7)
+- [Ejercicio: Formateo de Precio](U3_javaScript3.html#/8)
+- [Ejercicio: Total y Cantidad](U3_javaScript3.html#/9)
+- [Ejercicio: Ordenar catálogo](U3_javaScript3.html#/11)
 
 </div>
 </div>
@@ -132,6 +133,19 @@ Permite añadir o remover elementos de un array.
 let frutas = ["manzana", "banana", "naranja"];
 frutas.splice(2,1); //a partir del elemento 2, borra 1 elemento
 console.log(["manzana", "banana"])
+```
+
+----
+
+### [Array: Filter](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+El método **filter()** crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
+
+```js
+const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+const result = words.filter((word) => word.length > 6);
+
+// Expected output: Array ["exuberant", "destruction", "present"]
 ```
 
 ---

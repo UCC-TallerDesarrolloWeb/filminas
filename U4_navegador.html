@@ -73,6 +73,12 @@ edme88
 
 ----
 
+![Ciclo de Vida](images/navegador/ciclo-de-vida.jpg)
+
+<small>TTFB significa Time to First Byte</small>
+
+----
+
 ### 1. Ingreso de la URL y resolución DNS
 
 El ciclo comienza cuando el usuario escribe una URL en el navegador o hace clic en un enlace.
@@ -82,8 +88,8 @@ El ciclo comienza cuando el usuario escribe una URL en el navegador o hace clic 
 ----
 
 ### 2. Conexión TCP/TLS
-- El navegador abre una conexión TCP con el servidor.
-- Si la conexión es HTTPS, ocurre el handshake TLS:
+- El navegador abre una conexión TCP(Transmission Control Protocol) con el servidor.
+- Si la conexión es HTTPS, ocurre el handshake TLS (Transport Layer Security ):
     - Intercambio de certificados.
     - Negociación de claves de cifrado.
     - Establecimiento de un canal seguro.
@@ -92,7 +98,7 @@ El ciclo comienza cuando el usuario escribe una URL en el navegador o hace clic 
 
 ### 3. Solicitud HTTP/HTTPS
 
-Una vez establecida la conexión, el navegador envía una solicitud HTTP o HTTPS al servidor correspondiente. Esta solicitud puede incluir cabeceras, cookies o tokens que identifican al cliente.
+Una vez establecida la conexión, el navegador envía una solicitud HTTP (Hypertext Transfer Protocol) o HTTPS al servidor correspondiente. Esta solicitud puede incluir cabeceras, cookies o tokens que identifican al cliente.
 
 ----
 
@@ -199,6 +205,10 @@ Son un conjunto de herramientas para desarrolladores web que están integradas d
 - **Security:** verificación de seguridad, certificados, contenido mixto 
 - **Otros paneles:** Lighthouse, Memory, Accessibility, CSS Overview y más
 
+----
+
+![DevTools](images/navegador/devTools.png)
+
 ---
 
 ## [Chrome Dev Tools](https://developer.chrome.com/docs/devtools?hl=es-419)
@@ -219,7 +229,7 @@ Estos temas completan la visión del ciclo de vida de una página web en un ento
 
 ---
 
-### Caché del navegador y CDN
+### [Caché del navegador y CDN](https://www.siteground.es/kb/que-es-la-cache)
 
 El navegador no descarga los recursos cada vez que visitas un sitio, sino que los almacena en caché (archivos temporales en disco o memoria).
 - Objetivo: reducir tiempos de carga y tráfico de red.
@@ -236,8 +246,25 @@ Los CDN (Content Delivery Network) son redes distribuidas de servidores que alma
 
 ----
 
+![CDN](images/navegador/cdn.jpg)
+
+---
+
+### Proceso de carga de una página
+<!-- .slide: style="font-size: 0.90em" -->
+1. Un visitante ingresa la URL de un sitio web en su navegador. El navegador revisa su caché (almacenamiento localmente). Si existe, carga inmediatamente. Si no, el navegador envía una solicitud al servidor del sitio web.
+2. Los archivos del sitio web (HTML, CSS, Js) pueden provenir de una red de entrega de contenido (CDN).
+3. El servidor ensambla el contenido y lo envía al navegador.
+4. Si la página no está en caché, el servidor web procesa la solicitud. Reúne todos los recursos necesarios y puede interactuar con una base de datos para obtener contenido dinámico.
+
+----
+
+![Carga de Pagina](images/navegador/proceso-de-carga-de-pagina.jpeg)
+
+---
+
 ### Critical Rendering Path
-<!-- .slide: style="font-size: 0.70em" -->
+<!-- .slide: style="font-size: 0.80em" -->
 Es la **ruta crítica de renderizado** que el navegador sigue desde recibir el HTML hasta mostrar el primer píxel en pantalla.
 
 - Se consideran críticos los recursos que bloquean la renderización inicial, como CSS o scripts bloqueantes.
@@ -248,10 +275,38 @@ Es la **ruta crítica de renderizado** que el navegador sigue desde recibir el H
 
 Mientras más corto sea este camino, más rápida será la percepción de carga para el usuario.
 
+----
+
+![CRP](images/navegador/CRP.jpg)
+
+----
+
+### CRP: 1. Inyectar CSS crítico
+
+- **El problema:** Por defecto, las hojas de estilo externas (`<link rel="stylesheet">`) son bloqueantes de renderizado. El navegador no mostrará nada hasta que haya descargado y procesado todo el CSS.
+
+- **La solución:** El "CSS crítico" consiste en identificar los estilos necesarios para diseñar la parte superior de la página (lo que se ve sin hacer scroll). Esos estilos se escriben dentro de una etiqueta `<style>` en el propio HTML.
+
+----
+
+### CRP: Cargar scripts con defer o async
+<!-- .slide: style="font-size: 0.90em" -->
+- **El problema:** Cuando el navegador está leyendo el HTML y encuentra una etiqueta `<script>`, detiene completo la construcción del DOM para descargar y ejecutar el JavaScript, bloqueando la carga.
+
+- **Solución:**
+  - **async (asíncrono):** Le indica al navegador que descargue el script en segundo plano mientras sigue leyendo el HTML.
+  - **defer (diferido):** Descarga el script en segundo plano, pero espera a que el HTML termine de parsearse por completo antes de ejecutarlo.
+
+----
+
+### CRP:  Usar lazy loading
+- **El problema:** Por defecto, al entrar a una web, el navegador intenta descargar todos los recursos de la página a la vez. Esto ralentiza la carga principal.
+- **La solución:** El lazy loading le indica al navegador —mediante el atributo loading="lazy" en las etiquetas `<img>` o `<video>`— que no descargue esos recursos multimedia hasta que el usuario esté a punto de hacer scroll y lleguen a visualizarse en la pantalla.
+
 ---
 
 ### Eventos del navegador
-<!-- .slide: style="font-size: 0.70em" -->
+<!-- .slide: style="font-size: 0.90em" -->
 Los navegadores exponen múltiples **eventos globales** que permiten reaccionar a cambios en la ventana o documento:
 - **visibilitychange:** detecta si la pestaña se oculta o vuelve a primer plano.
 - **resize:** se dispara cuando la ventana cambia de tamaño.
@@ -259,6 +314,11 @@ Los navegadores exponen múltiples **eventos globales** que permiten reaccionar 
 - **beforeunload:** permite advertir al usuario antes de abandonar la página.
 
 Además, existe la API **requestAnimationFrame**, pensada para animaciones fluidas porque sincroniza las actualizaciones con la tasa de refresco de la pantalla.
+
+----
+
+### Eventos del navegador
+Conocer los eventos globales del navegador (como DOMContentLoaded, load, beforeunload, resize, o scroll) sirve para controlar el tiempo y las condiciones en las que se ejecuta el código JavaScript, mejorando tanto el rendimiento como la experiencia del usuario.
 
 ---
 
@@ -292,12 +352,25 @@ Los navegadores interpretan estas señales para brindar accesibilidad mediante t
 ---
 
 ### Seguridad en el ciclo de vida de la página
-<!-- .slide: style="font-size: 0.70em" -->
+<!-- .slide: style="font-size: 0.80em" -->
 Durante la carga y ejecución de un sitio, intervienen varios mecanismos de seguridad:
 - **Same-Origin Policy (SOP):** impide que scripts de un origen accedan a recursos de otro origen sin permiso.
 - **CORS (Cross-Origin Resource Sharing):** mecanismo que permite compartir recursos entre orígenes de forma controlada.
 - **Content Security Policy (CSP):** cabecera que limita qué scripts, estilos o recursos pueden cargarse, reduciendo riesgos de XSS (Cross-Site Scripting).
 - **Mixed content:** cuando una página HTTPS carga recursos HTTP inseguros. Esto degrada la seguridad y los navegadores lo bloquean o advierten.
+
+
+----
+
+![CORS](images/navegador/CORS1.png)
+
+----
+
+![CORS](images/navegador/CORS2.png)
+
+----
+
+![CORS](images/navegador/CORS3.png)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
