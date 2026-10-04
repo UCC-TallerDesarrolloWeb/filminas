@@ -53,6 +53,7 @@ edme88
 
 ### [Node.js](https://nodejs.org/es) 
 <!--https://www.freecodecamp.org/espanol/news/que-es-npm/-->
+<!--https://coddy.tech/docs/es/javascript/package-json-->
 Es un entorno de ejecución de JavaScript que permite ejecutar código JS fuera del navegador (por ejemplo, en la terminal o en un servidor).
 Lo usamos porque muchas herramientas modernas de desarrollo frontend están escritas en JavaScript y necesitan un entorno para ejecutarse. 
 
@@ -348,16 +349,27 @@ En **JavaScript** la herramienta más empleada es **ESLint**
 
 ---
 
-### Ejercicio: ESLint
-1. En la carpeta base del proyecto ejecutar
+### Ejercicio: Instalación
+<!-- .slide: style="font-size: 0.80em" -->
+1. Dentro de la carpeta donde está el **package.json** generado recientemente, ejecutar el comando:
 ```bash
-npm install eslint --save-dev
+npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
 ```
-2. Crear un archivo de configuración usando el comando
+- **eslint:** Herramienta principal de linting que analiza tu código en busca de problemas
+- **prettier:** El formateador de código que le da un aspecto coherente
+- **eslint-config-prettier:** Desactiva las reglas de ESLint que podrían entrar en conflicto con Prettier
+- **eslint-plugin-import:** Ayuda a ESLint a verificar las sentencias de importación y exportación
+- **globals:** Proporciona variables globales para diferentes entornos
+
+---
+
+### Ejercicio: ESLint
+<!-- .slide: style="font-size: 0.95em" -->
+1. En la carpeta base del proyecto ejecutar el siguiente comando para crear un archivo de configuración
 ```bash
 npm init @eslint/config
 ```
-3. Al ejecutarlo nos preguntará lo siguiente:
+2. Al ejecutarlo nos preguntará lo siguiente:
 ```bash
 ? What do you want to lint? ... 
 (*) JavaScript
@@ -367,24 +379,29 @@ npm init @eslint/config
 ( ) Markdown
 ( ) CSS
 ```
-4. Que verificaremos?
+
+----
+
+### Ejercicio: ESLint
+3. Que verificaremos?
 ```bash
 ? How would you like to use ESLint? ... 
 > To check syntax only
   To check syntax and find problems
 ```
-
-----
-
-### Ejercicio: ESLint
-5. Posteriormente
+4. Posteriormente
 ```bash
 ? What type of module does your project use?
 > JavaScript modules (import/export)
   CommonJS (require/exports)
   None of these
 ```
-6. Framework
+
+----
+
+### Ejercicio: ESLint
+
+5. Framework
 ```bash
 ? Which framework does your project use?
 > React
@@ -409,7 +426,7 @@ npm init @eslint/config
 ```bash
 Would you like to install them now? · No / Yes
 ```
-8. Sobre que estilo aplicar:
+9. Sobre que estilo aplicar:
 ```bash
 Which package manager do you want to use? ... 
 > npm
@@ -420,8 +437,46 @@ Which package manager do you want to use? ...
 
 ---
 
+### [Ejemplo de eslint.config.mjs](https://eslint.org/docs/latest/use/configure/configuration-files)
+```json
+import globals from "globals";
+import pluginReact from "eslint-plugin-react";
+import { defineConfig } from "eslint/config";
+
+export default defineConfig([
+  {
+    // Directorios y archivos que se deben ignorar globalmente
+    ignores: ['dist/', 'build/', 'node_modules/'],
+  },
+  { 
+     // Aplica la configuración a todos los archivos JavaScript
+    files: ["**/*.{js,mjs,cjs,jsx}"],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+     rules: {
+      // Aquí puedes personalizar tus reglas adicionales
+      'no-unused-vars': 'warn',
+      'no-undef': 'error',
+      'no-console': 'warn',
+      'eqeqeq': 'error',
+      'semi': ['error', 'always'],
+      'quotes': ['error', 'single'],
+    },
+  },
+  pluginReact.configs.flat.recommended,
+]);
+```
+
+---
+
 ### Prettier
-Es un formateador de código, que permite que todo el equipo de desarrollo cumpla con los estándares de codificación definidos sin necesidad de acciones manuales.s
+Es un formateador de código, que permite que todo el equipo de desarrollo cumpla con los estándares de codificación definidos sin necesidad de acciones manuales.
 
 Prettier es compatible con múltiples frameworks de JavaScript (Angular, React, Vue y Svelte) y también funciona con TypeScript.
 
@@ -429,7 +484,7 @@ Prettier es compatible con múltiples frameworks de JavaScript (Angular, React, 
 
 ### Prettier: Configuración
 1. Instalar la extensión **Prettier** en el VSC.
-2. En el archivo de configuración del **.eslintrc**
+2. En el archivo de configuración del **eslint.config.mjs**
 ```json
 "extends": ["plugin:prettier/recommended"],
 "plugins": ["prettier"],
