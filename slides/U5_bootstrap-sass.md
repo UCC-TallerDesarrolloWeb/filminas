@@ -28,18 +28,18 @@ edme88
 <div class="grid-container2">
 <div class="grid-item">
 
-- Framework en CSS
-- Ventajas y Desventajas
-- Bootstrap
-- Ejercicios Bootstrap
-- TailwindCSS
+- Ejercicio: BootStrap & Instagram
+- Ejercicio: Componente para selección de vuelos
+- Ejercicio: Timeline
+- Ejercicio: Componente Perfil
+- Ejercicio: Youtube
 
 </div>
 <div class="grid-item">
 
-- Preprocesadores CSS
-- Ventajas y Desventajas
-- Ejercicios SASS
+- Instalación SASS
+- Ejercicio: Sass básico
+- Ejercicio: Diseño de Interiores
 
 </div>
 </div>

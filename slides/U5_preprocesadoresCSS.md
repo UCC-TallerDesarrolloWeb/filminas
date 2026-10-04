@@ -245,6 +245,246 @@ $segundo-color: nth($colores, 2); // green
 ```
 
 <!--https://www.eniun.com/tutorial-sass/-->
+---
+
+### SASS: Mapas
+Los mapas en Sass son colecciones de pares clave-valor.
+```scss
+$botones: (
+  primary: #3498db,
+  secondary: #e74c3c,
+  success: #2ecc71
+);
+
+$color-primary: map-get($botones, primary); // #3498db
+$color-secondary: map-get($botones, secondary); // #e74c3c
+```
+
+---
+
+### SASS: Estructuras de control
+Permiten desarrollar CSS de una manera más óptima, más organizada y reusable.
+- @if
+- @for
+- @each
+- @while
+
+----
+
+### SASS: Estructuras de control
+@if: Permite aplicar estilos condicionalmente en función de una expresión booleana.
+```scss
+$color: blue;
+.element {
+     @if $color == blue {
+       background-color: $color;
+     } @else {
+       background-color: red;
+     }
+}
+```
+
+----
+
+### SASS: Estructuras de control
+@for: Te permite crear bucles for para generar reglas CSS repetitivas.
+```scss
+@for $i from 1 through 3 {
+     .element-#{$i} {
+       font-size: 10px * $i;
+     }
+}
+```
+Resultado:
+```scss
+.element-1 {
+  font-size: 10px;
+}
+.element-2 {
+  font-size: 20px;
+}
+.element-3 {
+  font-size: 30px;
+}
+```
+
+----
+
+### SASS: Estructuras de control
+@each: Utilizado para iterar sobre listas o mapas y aplicar estilos a cada elemento.
+```scss
+$colors: red, green, blue;
+@each $color in $colors {
+     .element-#{$color} {
+       background-color: $color;
+     }
+}
+```
+Resultado:
+```scss
+.element-red {
+  background-color: red;
+}
+.element-green {
+  background-color: green;
+}
+.element-blue {
+  background-color: blue;
+}
+```
+
+----
+
+### SASS: Estructuras de control
+@while: Permite crear bucles while basados en una condición.
+```scss
+$i: 1;
+@while $i < 4 {
+     .element-#{$i} {
+       width: 100px * $i;
+     }
+     $i: $i + 1;
+}
+```
+Resultado:
+```scss
+.element-1 {
+  width: 100px;
+}
+.element-2 {
+  width: 200px;
+}
+.element-3 {
+  width: 300px;
+}
+```
+
+---
+
+### SASS: Funciones
+
+1. lighten($color, $amount): Aclara un color al aumentar su luminosidad en función de la cantidad especificada.
+```scss
+$color: #3498db;
+$lighter-color: lighten($color, 20%); // Aclara el color un 20%
+h1{ color: $lighter-color;}
+```
+Salida:
+```scss
+h1 {
+  color: #8bc4ea;
+}
+```
+
+----
+
+### SASS: Funciones
+
+2. darken($color, $amount): Oscurece un color al reducir su luminosidad en función de la cantidad especificada.
+```scss
+$color: #e74c3c;
+$darker-color: darken($color, 10%); // Oscurece el color un 10%
+h1{ color: $darker-color;}
+```
+Salida:
+```scss
+h1 {
+  color: #d62c1a;
+}
+```
+
+----
+
+### SASS: Funciones
+3. rgba($color, $alpha): Cambia la opacidad de un color al agregar un valor alfa.
+```scss
+$color: #3498db;
+$semi-transparent: rgba($color, 0.5); // Cambia la opacidad a 50%
+```
+4. round($number): Redondea un número al número entero más cercano.
+```scss
+$value: 3.7;
+$rounded-value: round($value); // Redondea a 4
+```
+
+----
+
+### SASS: Funciones
+5. map-get($map, $key): Obtiene el valor asociado a una clave en un mapa.
+```scss
+$colors: (primary: #3498db, secondary: #e74c3c);
+$primary-color: map-get($colors, primary); // Obtiene el color primario
+```
+
+6. nth($list, $n): Obtiene el elemento en la posición $n de una lista.
+```scss
+$numbers: 1px 2px 3px 4px 5px;
+$third-element: nth($numbers, 3); // Obtiene el tercer elemento (3px)
+```
+
+----
+
+### SASS: Funciones
+
+7. str-length($string): Obtiene la longitud de una cadena de texto.
+```scss
+$text: "¡Hola, mundo!";
+$text-length: str-length($text); // Obtiene la longitud de la cadena (12)
+```
+8. unquote($string): Elimina comillas de una cadena de texto.
+```scss
+$quoted-text: '"Este es un texto entre comillas"';
+$unquoted-text: unquote($quoted-text); // Elimina las comillas ("Este es un texto entre comillas")
+```
+
+---
+
+### SASS: Operadores aritméticos
+Permiten realizar cálculos matemáticos en tiempo de compilación para definir propiedades CSS de manera más dinámica. 
+
+- \+	Suma	$ancho: 100px + 50px;
+- –	Resta	$padding: 20px - 10px;
+- \*	Multiplica	$columnas: 3 * 4;
+- \/	Divide	$ancho-total: 300px / 2;
+- %	Resto	$resto: 9 % 4;
+
+---
+
+### SASS: Compilación
+Si tienes un archivo Sass llamado **estilos.scss** y quieres compilarlo a **estilos.css**
+```bash
+sass estilos.scss estilos.css
+```
+
+Para observar los cambios en tiempo real mientras trabajas en tu archivo Sass:
+```bash
+sass --watch estilos.scss estilos.css
+```
+
+Para compilar todos los ficheros .scss de un directorio:
+```bash
+sass ./
+```
+
+---
+
+### SASS: Buenas Prácticas
+<!-- .slide: style="font-size: 0.80em" -->
+1. **Aprende las bases:** Antes de emplear características avanzadas, asegúrate de entender bien los conceptos básicos como variables, anidación y reglas de estilo.
+2. **Organiza tu estructura de archivos:** Dividir los archivos Sass en módulos separados (por ejemplo, _variables.scss, _botones.scss, _encabezados.scss, etc.) y luego importarlos en un archivo principal. Esto facilitará la gestión y el mantenimiento de tus estilos.
+3. **Usa variables de manera inteligente:** Aprovecha las variables para almacenar valores reutilizables, como colores, tamaños de fuente y márgenes. Mantén un conjunto coherente de variables para mantener la consistencia en todo tu sitio web.
+4. **Evita la anidación excesiva:** Puede generar selectores CSS largos y específicos que son difíciles de mantener. Mantén la anidación a un nivel razonable.
+
+---
+
+### SASS: Buenas Prácticas
+<!-- .slide: style="font-size: 0.80em" -->
+5. **Documenta tu código:** Agrega comentarios descriptivos en Sass para explicar el propósito de las secciones de código.
+6. **Usa funciones con moderación:** reserva su uso para casos donde la reutilización de código es beneficiosa.
+7. **Realiza pruebas:** Realiza pruebas en diferentes navegadores para garantizar la compatibilidad.
+8. **Control de versiones:** Utiliza un sistema de control de versiones como Git para rastrear cambios en tus archivos Sass.
+9. **Mantén actualizadas tus herramientas:** Asegúrate de tener la versión más reciente de Sass y las herramientas de compilación que utilices. Las actualizaciones pueden incluir correcciones de errores y mejoras de rendimiento.
+10. **Explora extensiones y librerías:** La comunidad de Sass ofrece muchas extensiones y librerías que pueden ahorrarte tiempo y mejorar tu flujo de trabajo. Investiga y utiliza las que se adapten a tus necesidades.
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?

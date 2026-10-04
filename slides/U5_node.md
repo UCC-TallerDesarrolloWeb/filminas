@@ -57,6 +57,14 @@ edme88
 Es un entorno de ejecución de JavaScript que permite ejecutar código JS fuera del navegador (por ejemplo, en la terminal o en un servidor).
 Lo usamos porque muchas herramientas modernas de desarrollo frontend están escritas en JavaScript y necesitan un entorno para ejecutarse. 
 
+----
+
+### NodeJS
+- **Versión (LTS):** Tiene soporte prolongado y es más estable. Se recomienda para entornos de producción.
+- **Versión (Current):** Incluye las novedades más recientes, pero tiene un soporte breve de pocos meses.
+
+[NodeJS - Versiones](https://nodejs.org/es/about/previous-releases)
+
 ---
 
 ### npm 
@@ -128,7 +136,17 @@ nvm list
 ```
 6. Para usar una versión de node instalada
 ```bash
-nvm use 24.18.1
+nvm use 24.21.0
+```
+
+----
+
+### Verificar las versiones de node
+1. En una terminal verificar que la instalación se realizó correctamente
+```bash
+node -v
+npm -v
+npx -v
 ```
 
 ---
@@ -486,8 +504,12 @@ Prettier es compatible con múltiples frameworks de JavaScript (Angular, React, 
 1. Instalar la extensión **Prettier** en el VSC.
 2. En el archivo de configuración del **eslint.config.mjs**
 ```json
-"extends": ["plugin:prettier/recommended"],
-"plugins": ["prettier"],
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+
+export default [
+  // ... your other config objects
+  eslintPluginPrettierRecommended,
+];
 ```
 3. En el menú de la izquierda presionar la rueda e ir a **Settings**
 4. Buscar **formatter**
