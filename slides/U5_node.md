@@ -30,18 +30,25 @@ edme88
 
 - NodeJs
 - npm
+- npx
+- nvm
 
 </div>
 <div class="grid-item">
 
-- npx
+- herramientas de desarrollo
+- iniciar proyecto nodeJs
+- Linter
+- ESlint
+- Prettier
+
 
 </div>
 </div>
 
 ---
 
-### Node.js 
+### [Node.js](https://nodejs.org/es) 
 
 Es un entorno de ejecución de JavaScript que permite ejecutar código JS fuera del navegador (por ejemplo, en la terminal o en un servidor).
 Lo usamos porque muchas herramientas modernas de desarrollo frontend están escritas en JavaScript y necesitan un entorno para ejecutarse. 
@@ -102,7 +109,7 @@ nvm help
 ### Instalar node usando nvm
 4. Para instalar node
 ```bash
-nvm install 24.18.1
+nvm install 24.21.0
 ```
 5. Para visualizar todos los node instalados
 ```bash
@@ -115,9 +122,42 @@ nvm use 24.18.1
 
 ---
 
-### Herramientas de desarrollo
+### [End of Life (EOL)](https://endoflife.date/nodejs)
+Es fin de vida útil de una versión de Node.js. Es la fecha en la que una versión deja de recibir:
+- Soporte oficial
+- Actualizaciones de seguridad
+- Correcciones de errores
 
-Quedaron pendientes de instalar y configurar algunas herramientas, pero aún no lo hicimos porque no hemos empezado nuestro proyecto.
+por parte del equipo de desarrollo
+
+----
+
+### End of Life (EOL)
+<!-- .slide: style="font-size: 0.80em" -->
+es importante verificarlo porque:
+- **Evitar brechas de seguridad:** Los atacantes explotan fallos conocidos en versiones sin soporte porque saben que nunca serán reparados.
+- **Cumplimiento normativo:** Muchas normativas y auditorías empresariales exigen usar software con soporte activo para proteger los datos de los usuarios.
+- **Compatibilidad con servicios:** Proveedores de la nube y herramientas externas (como bases de datos o librerías) eliminan la compatibilidad con versiones EOL de forma progresiva.
+- **Migración planificada:** Revisar el calendario permite actualizar la versión de Node.js de manera controlada antes de que represente una emergencia operativa.
+
+---
+
+### Partes de un package.json
+<!-- .slide: style="font-size: 0.90em" -->
+- **package name:** Es el nombre que permite reconocer al proyecto. Es importante que el nombre sea único si el proyecto se desea publicar en el registro de paquetes de npm.
+- **version:** Sigue el formato de **Semantic Versioning**, que contiene MAJOR.MINOR.PATCH
+- **description:** Una breve descripción de tu proyecto.
+- **entry point:** Archivo que se ejecutará cuando se importe este proyecto dentro de otro. Es importante para paquetes de librerías.
+- **test command:** Comandos que se ejecutaran al realizar un `npm run test`
+
+----
+
+### Partes de un package.json
+- **git repository:** Url del repositorio git en donde este proyecto está alojado. 
+- **keywords:** Palabras clave que describan tu proyecto. 
+- **author:** Nombre e email de quien creó el proyecto.
+- **license:** Identifica el tipo de licencia de uso del proyecto.
+- **type:** Define cómo se interpretan los archivos **.js**. Con "module" se usa ESM (import / export). Con "commonjs", se usa CommonJS (require)
 
 ---
 
@@ -146,6 +186,29 @@ package name: primer-node
 11. Type: commonjs o ESmodules
 
 ![nodeJs](images/node/common-esm.png)
+
+---
+
+### Otros campos del package.json
+- **private:** *true/false*, para evitar que se publique el paquete en npm sin querer.
+- **dependencies**: Se listan los paquetes que el código necesita en tiempo de ejecución, como **express** o **react**.
+- **devDependencies:** Se listan los paquetes que solo se usan mientras se hace desarrollo o compilación: test runners, bundlers, linters
+- **engine:** Contiene la versión de node sugerida para este proyecto. Si se emplea otra, muestra una alerta.
+
+---
+
+### Errores habituales al trabajar con nodeJs
+<!-- .slide: style="font-size: 0.85em" -->
+- **Subir node_modules al repo.** La carpeta *node_modules* debe listarse en el **.gitignore**. La misma se autogenera al realizar un `npm install`
+- **No versionar package-lock.json**. Sin el *lockfile* se pierde la trazabilidad de que versión se esta empleando de una dependencia.
+- **Colocar dependencias de runtime en devDependencies**. Localmente va a funcionar, porque todas las dependencias están instaladas, pero en producción seguramente se presenten fallas.
+- **Editar versiones manualmente sin reinstalar.** Si se cambia una versión en package.json, se debe ejecutar `npm install` para que se actualice el **lockfile**, y se debe verificar que la aplicacion sigue funcionando correctamente.
+
+---
+
+### Herramientas de desarrollo
+
+Quedaron pendientes de instalar y configurar algunas herramientas, pero aún no lo hicimos porque no hemos empezado nuestro proyecto.
 
 ---
 
