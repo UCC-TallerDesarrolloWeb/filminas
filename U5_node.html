@@ -48,12 +48,15 @@ edme88
 - npm
 - npx
 - nvm
+- Instalar node usando nvm
+- End of Life (EOL)
+- Partes de un package.json
 
 </div>
 <div class="grid-item">
 
-- herramientas de desarrollo
 - iniciar proyecto nodeJs
+- herramientas de desarrollo
 - Linter
 - ESlint
 - Prettier
@@ -65,11 +68,11 @@ edme88
 ---
 
 ### [Node.js](https://nodejs.org/es) 
-
+<!--https://www.freecodecamp.org/espanol/news/que-es-npm/-->
 Es un entorno de ejecución de JavaScript que permite ejecutar código JS fuera del navegador (por ejemplo, en la terminal o en un servidor).
 Lo usamos porque muchas herramientas modernas de desarrollo frontend están escritas en JavaScript y necesitan un entorno para ejecutarse. 
 
-----
+---
 
 ### npm 
 
@@ -86,6 +89,13 @@ npm install -g sass
 ```
 
 <small>Eso la instala globalmente en tu sistema (queda disponible para todos los proyectos).</small>
+
+----
+
+### npm
+npm se compone de al menos 2 partes principales:
+- Un [repositorio online](https://www.npmjs.com/) para publicar paquetes de software libre para ser utilizados en proyectos Node.js
+- Una herramienta para la terminal (command line utility) para interactuar con dicho repositorio que te ayuda a la instalación de utilidades, manejo de dependencias y la publicación de paquetes.
 
 ----
 
@@ -158,6 +168,13 @@ es importante verificarlo porque:
 
 ---
 
+### package.json
+Es el archivo de manifiesto principal de un proyecto en Node.js, que contiene los metadatos, las dependencias y la configuración básica de la aplicación.
+
+Se ubica en la raíz del proyecto y sirve como la guía que utiliza el gestor de paquetes **npm** para entender e instalar los elementos necesarios para que el software funcione.
+
+----
+
 ### Partes de un package.json
 <!-- .slide: style="font-size: 0.90em" -->
 - **package name:** Es el nombre que permite reconocer al proyecto. Es importante que el nombre sea único si el proyecto se desea publicar en el registro de paquetes de npm.
@@ -206,10 +223,94 @@ package name: primer-node
 ---
 
 ### Otros campos del package.json
+<!-- .slide: style="font-size: 0.90em" -->
 - **private:** *true/false*, para evitar que se publique el paquete en npm sin querer.
 - **dependencies**: Se listan los paquetes que el código necesita en tiempo de ejecución, como **express** o **react**.
 - **devDependencies:** Se listan los paquetes que solo se usan mientras se hace desarrollo o compilación: test runners, bundlers, linters
 - **engine:** Contiene la versión de node sugerida para este proyecto. Si se emplea otra, muestra una alerta.
+- **scripts:** Permite crear atajos para comandos que se usan frecuentemente. Se ejecutan con `npm run nombre-del-script`
+
+---
+
+### mayor.minor.patch
+- **mayor:** Representa una versión mayor que genera cambios en la API del producto.
+- **minor:** Representa un valor que aumenta cuando se hacen cambios retro-compatibles.
+- **patch:** Un valor que aumenta cada vez que se hacen reparaciones de errores o mejoras sutiles.
+
+----
+
+### Sobre las versiones de las dependencias...
+
+<table>
+  <thead>
+    <tr>
+      <th>Símbolo</th>	
+      <th>Nombre</th>
+      <th>¿Qué permite actualizar?</th>
+      <th>Ejemplo</th>
+      <th>Rango permitido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>^	</td>
+      <td>Caret (Acento circunflejo)</td>
+      <td>Versiones Minor y Patch (No cambia el primer número)</td>
+      <td>^1.2.3</td>
+      <td>Desde 1.2.3 hasta <2.0.0</td>
+    </tr>
+    <tr>
+      <td>~
+      <td>Tilde (Virgulilla)</td>
+      <td>Solo versiones Patch (No cambia el segundo número)</td>
+      <td>~1.2.3</td>
+      <td>Desde 1.2.3 hasta <1.3.0</td>
+    </tr>
+    <tr>
+      <td>*
+      <td>Asterisco (Wildcard)</td>
+      <td>Cualquier versión disponible (Instala la más reciente)</td>
+      <td>* o 1.*</td>
+      <td>* (Cualquier versión) <br> 1.* (Desde 1.0.0 hasta <2.0.0)</td>
+    </tr>
+  </tbody>
+</table>
+
+<small>
+
+- `^` Le dice a npm: "Puedes actualizar las funciones y corregir errores, pero no rompas nada"
+- `~` Le dice a npm: "Solo quiero correcciones de errores (bugs), no quiero funciones nuevas".
+- `*` Le dice a npm: "Trae lo último que exista, no me importa si rompe mi código".
+
+</small>
+
+---
+
+### package-lock.json
+Este archivo es auto generado por `npm install` y es una lista descriptiva y exacta de las versiones instaladas durante el proceso. No esta destinado a ser leído ni manipulado por los desarrolladores, si no, para ser un insumo del proceso de manejo de dependencias.
+
+---
+
+### npm install
+
+Este script nativo de npm tiene varias opciones a la hora de hacer la instalación de paquetes.
+
+Por defecto al ejecutar `npm install <pkg>` se instala la última versión disponible en el repositorio agregando el símbolo `^` a la versión. El paquete se instalará dentro del directorio **node_modules** que está dentro del proyecto.
+
+----
+
+### npm install
+
+Se puede emplear algunos parámetros como:
+- `-g` para indicar que quieres que el paquete se instale globalmente
+- `--production` indica que la ejecución de npm install solo instalará las dependencias listadas en el apartado dependencies dejando de lado las dependencias de desarrollo.
+- `--save` para instalar la dependencia como runtime
+- `--save-dev` para instalar la dependencia como desarrollo
+
+---
+
+### npm audit 
+Entrega información de las vulnerabilidades encontradas en tus dependencias junto con una breve descripción de como resolverlo indicando la versión que corrige el defecto.
 
 ---
 
