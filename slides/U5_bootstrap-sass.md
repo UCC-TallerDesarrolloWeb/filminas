@@ -316,7 +316,7 @@ Set-ExecutionPolicy Unrestricted
 
 ---
 
-### Instalación
+### Instalación de SASS
 
 1. Instala sass `npm install -g sass` y verifica `sass --version`
 2. En el VSC instala el plugin necesario **Sass**(.sass only)
@@ -325,6 +325,29 @@ Si tienes problemas de permisos en Mac:
 ```bash
 sudo chown -R $USER /usr/local/lib/node_modules
 ```
+
+---
+
+### Ejercicio: SASS
+<!-- .slide: style="font-size: 0.80em" -->
+1. Crea un html con el siguiente código de base
+```html
+<button class="button primary">Botón Primario</button>
+<button class="button success">Botón de Éxito</button>
+<button class="button danger">Botón de Peligro</button>
+```
+2. Crea un archivo _variables.scss para definir los colores a emplear en cada botón
+3. Crea un archivo styles.scss donde uses esas variables. Debe contar con:
+- Mapa para definición de los estilos de cada botón
+- Estilo generico aplicable a los 3 botones que permita visualizar opacidad al realizar hover
+- Emplear función each para generar por ejemplo:
+```css
+.success {
+  background-color: #27ae60;
+  color: white;
+}
+```
+
 
 ---
 
