@@ -518,6 +518,19 @@ export default [
 
 ---
 
+### VSC no de formatea?
+1. Ingresar a settings
+2. Open setting JSON (arriba a la derecha)
+```json
+"editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+     "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+```
+
+---
+
 ### Ejercicio: JsDoc
 1. Asegúrate de tener [nodeJs](https://nodejs.org/es/) instalado. Para eso puedes ejecutar en el cmd:
 ```shell

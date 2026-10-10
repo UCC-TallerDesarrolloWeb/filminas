@@ -475,7 +475,7 @@ sass ./
 3. **Usa variables de manera inteligente:** Aprovecha las variables para almacenar valores reutilizables, como colores, tamaños de fuente y márgenes. Mantén un conjunto coherente de variables para mantener la consistencia en todo tu sitio web.
 4. **Evita la anidación excesiva:** Puede generar selectores CSS largos y específicos que son difíciles de mantener. Mantén la anidación a un nivel razonable.
 
----
+----
 
 ### SASS: Buenas Prácticas
 <!-- .slide: style="font-size: 0.80em" -->

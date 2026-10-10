@@ -150,12 +150,12 @@ Tener en cuenta
 ### Requisitos del Primer Parcial
 #### Sobre el proyecto general
 <!-- .slide: style="font-size: 0.60em" -->
-- [ ] NO está permitido descargar un TEMPLATE (diseño 100% desde cero)
+- [ ] NO está permitido descargar un TEMPLATE externo (diseño 100% desde cero)
 - [ ] La página principal debe llamarse index
 - [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups). En un segunda etapa, al emplear react, carpetas: components, pages, styles.
 - [ ] Identar correctamente el código (en Webstorm con Ctrol+A se selecciona todo el código y con Ctrl+Alt+L ó menú *Code* > *Reformat Code*)
 - [ ] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
-- [ ] Se debe emplear [favicon](U2_CSS.html#/34)
+- [ ] Se debe emplear [favicon](U2_HTML_avanzado.html#/26)
 - [ ] Emplear alguna fuente de [google fonts](U2_CSS.html#/35) o subir al proyecto alguna fuente externa (aunque sea para un título)
 - [ ] Debe haber navegación entre todas las páginas
 - [ ] No debe haber errores de ortografía en el contenido visual

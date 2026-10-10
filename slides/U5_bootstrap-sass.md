@@ -326,10 +326,9 @@ Si tienes problemas de permisos en Mac:
 sudo chown -R $USER /usr/local/lib/node_modules
 ```
 
----
+<!--
 
 ### Ejercicio: SASS
-<!-- .slide: style="font-size: 0.80em" -->
 1. Crea un html con el siguiente código de base
 ```html
 <button class="button primary">Botón Primario</button>
@@ -347,7 +346,7 @@ sudo chown -R $USER /usr/local/lib/node_modules
   color: white;
 }
 ```
-
+-->
 
 ---
 
