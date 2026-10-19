@@ -117,7 +117,7 @@ como para paneles de control o grandes plataformas web.
 ---
 ### React: Ventajas
 <!-- .slide: style="font-size: 0.90em" -->
-* **DOM virtual:** Genera el DOM de forma dinámica, primero aplica los cambios en un DOM Virtual y luego al DOM real.
+* **DOM virtual:** Genera el DOM de forma dinámica, primero aplica los cambios en un **DOM Virtual** y luego al DOM real.
 * **Isomorfismo:** El código se ejecuta en servidor y cliente, reduciendo así la carga de trabajo.
 * **Componentes:** Permitirá ahorrar en tiempo de desarrollo, crear aplicaciones más escalables y fáciles de mantener.
 * **Flujo de datos unidireccional:** La información se propaga desde los componentes superiores a los inferiores.
@@ -126,9 +126,12 @@ como para paneles de control o grandes plataformas web.
 * **Aprendizaje:** Curva de aprendizaje reducida.
 
 ---
+
 ### React: Desventajas
-* **Documentación deficiente**
-* No hay un patrón de desarrollo
+<!-- .slide: style="font-size: 0.90em" -->
+* **Falta de convenciones estándar:** No existe un método único o recomendado para estructurar un proyecto. Cada equipo define su propia arquitectura, lo que puede generar desorden si se toma una mala decisión inicial.
+- **Ritmo de actualización acelerado:** React evoluciona muy rápido, lanzando versiones con cambios constantes. Esto puede romper la compatibilidad con código anterior y exigir una adaptación continua por parte de los desarrolladores.
+- **Documentación fragmentada:** Parte de la documentación puede quedar desactualizada o carecer de detalles profundos.
 
 ---
 ### [VueJS](https://vuejs.org/)
@@ -139,6 +142,7 @@ Su objetivo es facilitar la creación de interfaces de usuario interactivas y ap
 Vue combina ideas de React (componentes, virtual DOM) y Angular (enlace de datos bidireccional y directivas), ofreciendo un equilibrio entre potencia y facilidad de uso.
 
 ---
+
 ### Vue: Ventajas
 * Fácil de aprender y utilizar.
 * Liviano y flexible
@@ -146,10 +150,13 @@ Vue combina ideas de React (componentes, virtual DOM) y Angular (enlace de datos
 * Es un framework progresivo que permite migrar fácilmente proyectose existentes
 
 ---
+
 ### Vue: Desventajas
-* Mucha documentación útil esta en chino (por ser ampliamente usado por Alibaba y Xiaomi).
-* Complejidad de la reactividad
-* Exceso de flexibilidad
+<!-- .slide: style="font-size: 0.90em" -->
+* **Comunidad y mercado laboral más pequeños:** Su adopción es menor en comparación con React o Angular.
+* **Menor cantidad de complementos y librerías:** Su ecosistema de plugins de terceros es más pequeño que el de React
+- **Complejidad en proyectos muy grandes:** Su gran flexibilidad puede volverse en contra en aplicaciones empresariales masivas o con manejo intensivo de datos
+- **Documentación en otros idiomas:** En sus primeras etapas, gran parte de su documentación y foros destaban en chino.
 
 ---
 
@@ -231,12 +238,12 @@ Genera toda la estructura básica (archivos, carpetas, configuraciones, scripts,
 
 ----
 
-### ¿Por que ya no se usa CRA?
+### ¿Por que ya no se usa create-react-app?
 <!-- .slide: style="font-size: 0.70em" -->
 <table>
   <thead>
     <tr>
-      <th>Limitación de CRA</th>
+      <th>Limitación</th>
       <th>Explicación</th>
     </tr>
   </thead>
