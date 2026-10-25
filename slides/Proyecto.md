@@ -308,7 +308,8 @@ Prueba todas las situaciones posibles, no te quedes solo con el **happy path**.
 | Prototipo Mockup   | 8%  |
 | HTML+CSS+Js        | 85% |
 
-Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
+- Por cada corrección o defecto en el HTML+CSS+Js se descontará un 5% del 85%.
+- Cada 3 sugerencias no implementadas es un 5% menos (2027)
 
 ---
 #### Como quiere sentirse la Profe al corregir el proyecto

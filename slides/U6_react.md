@@ -30,20 +30,24 @@ edme88
 <div class="grid-container2">
 <div class="grid-item">
 
-* Vite
+* Instalar Vite
 * Estructura de Carpetas
 * [Instalación de React Vite](U6_react.html#/4)
 * Jsx
 * Hooks
-  * useState
-  * useEffect
+* Hooks: useState
+* Estado y renderizado en React
+* Manejo de eventos en React
+* Formularios controlados
 
 </div>
 <div class="grid-item">
 
-* [Crear Login](U6_react.html#/9)
+* [Crear Login](U6_react.html#/11)
+* Renderizado de listas en React
 * Enrutamiento o Routing
-* [Redirección de Rutas](U6_react.html#/13)
+* Ventajas de usar React Router
+* [Redirección de Rutas](U6_react.html#/16)
 * Outlet
 * [Outlet](U6_react.html#/18)
 * Estructura del Proyecto
@@ -195,6 +199,87 @@ function Counter() {
 }
 ```
 
+----
+
+### Estado y renderizado en React
+<!-- .slide: style="font-size: 0.88em" -->
+El estado (*state*) permite que un componente almacene información que puede cambiar durante la ejecución de la aplicación.
+
+Cuando el estado cambia mediante su función de actualización, React vuelve a renderizar el componente para reflejar los nuevos valores en la interfaz.
+
+- El estado se declara mediante **hooks** como useState.
+- La función de actualización debe utilizarse para modificar el estado.
+- No se debe modificar directamente una variable de estado.
+- El nuevo renderizado permite que la interfaz se mantenga sincronizada con el estado.
+
+----
+
+### Estado y renderizado en React
+**Ejemplo:** si el estado contiene el nombre ingresado en un formulario, al cambiar ese nombre React puede actualizar la interfaz para mostrar el nuevo valor.
+```js
+const [username, setUsername] = useState("");
+
+<input id='username' type="text" placeholder="Usuario" 
+    onChange={(e) => setUsername(e.target.value)}
+    value={username}
+/>
+```
+
+---
+
+### Manejo de eventos en React
+
+Los **eventos** permiten responder a las acciones del usuario, como hacer clic en un botón, escribir en un campo de texto o enviar un formulario.
+
+- Los eventos se indican mediante propiedades como **onClick**, **onChange** y **onSubmit**.
+- Estas propiedades reciben una función que se ejecutará cuando ocurra el evento correspondiente.
+- La función puede recibir un objeto de evento (event) con información sobre lo sucedido.
+- Es posible utilizar funciones existentes o definir funciones flecha directamente en JSX.
+
+----
+
+### Manejo de eventos en React
+Pasar una función no es lo mismo que ejecutarla.
+
+- `onClick={handleLogin}` pasa la función para que React la ejecute cuando ocurra el clic.
+- `onClick={() => handleInscription(activity.nombre)}` define una función que, al ejecutarse, llama a handleInscription con el nombre de la actividad.
+- `onClick={handleLogin()}` ejecuta la función durante el renderizado, en lugar de esperar al clic.
+
+---
+
+### Formularios controlados
+<!-- .slide: style="font-size: 0.85em" -->
+En React, un campo de formulario puede controlarse mediante el estado de un componente.
+
+Un **componente controlado** es aquel cuyo valor actual está determinado por el estado de React.
+
+Para implementarlo:
+- **value** establece el valor que se muestra en el campo.
+- **onChange** permite detectar los cambios realizados por el usuario.
+- **event.target.value** permite obtener el valor actual del campo.
+- La función de actualización de estado guarda el nuevo valor.
+
+Este mecanismo mantiene sincronizados el campo del formulario y el estado del componente.
+
+----
+
+### Flujo de funcionamiento
+
+1. React muestra el valor almacenado en el estado.
+2. El usuario modifica el campo.
+3. onChange captura el nuevo valor.
+4. Se actualiza el estado.
+5. React vuelve a renderizar el componente con el valor actualizado.
+
+```js
+const [username, setUsername] = useState("");
+
+<input id='username' type="text" placeholder="Usuario" 
+    onChange={(e) => setUsername(e.target.value)}
+    value={username}
+/>
+```
+
 ---
 
 ### React 1: Crear un Login Básico
@@ -221,6 +306,43 @@ function Counter() {
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CgZpHKvEaGg?si=0XKvTBIcz3UPBAxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Nota: Es **async** y no **asyn**. En nuestro caso el css estara en: ./styles/Login.scss
+
+---
+
+### Renderizado de listas en React
+
+Cuando una interfaz debe mostrar varios elementos a partir de una colección de datos, se puede utilizar el método **map()** de JavaScript.
+
+**map()** recorre un array y devuelve un nuevo array con el resultado de aplicar una función a cada elemento. En React, ese resultado puede ser una colección de elementos JSX.
+
+----
+
+### Renderizado de listas en React
+Esto permite generar interfaces dinámicas sin escribir manualmente el mismo marcado para cada elemento.
+
+Ventajas:
+- Reduce la duplicación de código.
+- Facilita la reutilización de componentes.
+- Permite generar la interfaz a partir de datos que pueden cambiar.
+
+Cada elemento de una lista renderizada debe incluir una propiedad key que permita a React identificarlo de manera estable entre renderizados.
+
+----
+
+### Renderizado de listas en React
+Suponiendo que tenemos un array de objetos (array de actividades, con su nombre y descripción)
+```js
+activities.map((actividad, index) => (
+    <div className="activity-card" key={index}>
+        <h3>{actividad.nombre}</h3>
+        <p>{actividad.descripcion}</p>
+    </div>
+  ))
+}
+
+```
+- **map()** genera una tarjeta por cada actividad.
+- **key** ayuda a React a identificar cada elemento de la lista cuando se agregan, eliminan o reordenan elementos.
 
 ---
 
@@ -367,6 +489,34 @@ export default Layout;
 
 ---
 
+### Estructura de Proyectos React
+En React no existe una única estructura o forma de implementar el proyecto. 
+La organización depende del tamaño de la aplicación y de cómo se relacionan sus funcionalidades.
+
+Estructura recomendada dentro de **src**:
+- components
+- pages
+- layouts
+- styles
+- assets
+
+----
+
+### Estructura de Proyectos React
+<!-- .slide: style="font-size: 0.90em" -->
+- **components/**	Componentes de interfaz reutilizables o independientes de una página concreta. Ejemplo: Header.jsx, Footer.jsx, Card.jsx
+- **pages/**	Componentes que representan las distintas páginas o vistas de la aplicación, generalmente asociada a una ruta.
+- **layouts/**	Estructuras compartidas entre páginas, como encabezado, navegación, contenido principal y pie.
+- **styles/**	Estilos globales, variables SCSS, reset CSS y otros estilos compartidos.
+- **assets/**	Imágenes, iconos, fuentes y otros recursos importados desde el código.
+- **public/**	Archivos estáticos que deben servirse directamente, sin importarlos desde JavaScript.
+
+----
+
+![Estructura de Carpetas](images/react/estructura.png)
+
+---
+
 ### React 3: Outlet
 
 1. Crear un componente de **Header**, donde haya un menú de navegación con: Home, Login, Actividades
@@ -483,6 +633,55 @@ Las imágenes pueden colocarse en:
 ### React: Imágenes
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_FJLuPxzPCA?si=swYehpLSH1LI6lla" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+### Properties: comunicación entre componentes
+
+Las **props** permiten que un componente reciba información desde el componente que lo utiliza.
+
+- Se pueden utilizar para enviar datos, funciones y otros valores.
+- El componente hijo recibe las props y puede utilizarlas para construir su interfaz o ejecutar acciones.
+- Las props son de solo lectura: el componente hijo no debe modificarlas.
+- El flujo de datos habitual es unidireccional: desde el componente padre hacia el hijo.
+
+Si un componente hijo necesita solicitar una acción al padre, puede invocar una función recibida mediante props.
+
+Ejemplo: una tarjeta recibe el nombre y la descripción de una actividad, además de una función que permite inscribirse en ella.
+
+---
+
+### React: Children
+
+La *prop* **children** permite que un componente reciba el contenido que se coloca entre sus etiquetas de apertura y cierre.
+
+- Permite crear componentes reutilizables y flexibles.
+- El contenido puede ser texto, elementos JSX u otros componentes.
+- Se accede mediante la prop children, igual que a cualquier otra prop.
+
+----
+
+### React: Children
+Ejemplo de creacion del componente:
+```
+function Card({ title, children }) {
+  return (
+    <article>
+      <h2>{title}</h2>
+      <div>{children}</div>
+    </article>
+  );
+}
+```
+
+Ejemplo de uso del componente:
+```
+<Card title="Taekwondo">
+  <p>Arte marcial coreana.</p>
+  <p>Martes y jueves a las 18:30.</p>
+</Card>
+```
+
 
 ---
 
