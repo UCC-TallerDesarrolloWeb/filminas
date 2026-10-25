@@ -66,7 +66,7 @@ Ventajas:
 - Amplia comunidad y documentación.
 
 Desventajas:
-- Código extra (estilos que no siempre se usan:** CSS bloat).
+- Código extra (estilos que no siempre se usan: **CSS bloat**).
 - Sitios que lucen demasiado similares si no se personalizan.
 - Curva de aprendizaje (en especial en Tailwind).
 
@@ -478,7 +478,7 @@ sass ./
 ----
 
 ### SASS: Buenas Prácticas
-<!-- .slide: style="font-size: 0.80em" -->
+<!-- .slide: style="font-size: 0.75em" -->
 5. **Documenta tu código:** Agrega comentarios descriptivos en Sass para explicar el propósito de las secciones de código.
 6. **Usa funciones con moderación:** reserva su uso para casos donde la reutilización de código es beneficiosa.
 7. **Realiza pruebas:** Realiza pruebas en diferentes navegadores para garantizar la compatibilidad.

@@ -132,7 +132,7 @@ deividazulay@gmail.com
 ## Forma de Evaluación: Cursado
 * Proyecto Web: Primera Entrega (HTML+CSS+JS)
 * Proyecto Web: Segunda Entrega (React+SASS)
-* Nota del promedio de 8 parcialitos teóricos multiple opción
+* Nota del promedio de los parcialitos teóricos multiple opción
 
 ---
 ## Forma de Evaluación: FINAL
@@ -141,27 +141,26 @@ FINAL:
 *    Entrega a tiempo del proyecto
 *    HTML+CSS+JS
 *    React+SASS
-*    Preguntas sobre el código
-*    Preguntas del teórico visto en Clase
-*    Promoción de la parte Teórica <br> <span style="font-size: 0.5em">Promedio >= 8 y nota mínima 7</span>
+*    Preguntas sobre el código (Regulares y Promocionados)
+*    Preguntas del teórico visto en Clase (Regular)
 
 ---
 ## Regularidad
-* Asistencia del 70% en Clases Teórico-Prácticas (en el repositorio **ejercicios2026-Apellido** tener realizados los ejercicios de clase)
+* Asistencia mínima del 80% en Clases Teórico-Prácticas (en el repositorio **ejercicios2026-Apellido** tener realizados los ejercicios de clase)
 * Proyecto primera y segunda etapa aprobados (nota mínima de 4)
-* Promedio de los 8 parcialitos >= 4
+* Promedio de los parcialitos tomados en clase >= 4
+* Final Teórico + Práctico
 
 ---
-## Promoción
-* Asistencia del 70% en Clases Teórico-Prácticas
-* Promedio >= 8 y nota mínima 7 (3 notas: proyecto primera etapa, segunda etapa y promedio de parcialitos)
+## Promoción INDIRECTA
+* Asistencia mínima del 80% en Clases Teórico-Prácticas
+* Promedio >= 7 (3 notas: proyecto primera etapa, segunda etapa y promedio de parcialitos)
+* Final PRÁCTICO (entrega y explicación del proyecto)
 
 ---
-<!-- .slide: data-background-color="grey"-->
+
 ## Notas
-![Notas](images/presentacion/notasFacultad.png)
-
-<small>Tener en cuenta que un 55%=4, 70%=6, 80%=7.5, 90%=9</small>
+![Notas](images/presentacion/notas.png)
 
 ---
 
