@@ -40,6 +40,14 @@ edme88
     padding: 20px;
     text-align: left !important;
 }
+
+table{
+  font-size: 0.6em;
+}
+
+.tableImg{
+  font-size: 0.5em;
+}
 </style>
 <!-- .slide: style="font-size: 0.80em" -->
 ## Temario
@@ -65,9 +73,9 @@ edme88
 * Ventajas de usar React Router
 * [Redirección de Rutas](U6_react.html#/16)
 * Outlet
-* [Outlet](U6_react.html#/18)
+* [Outlet](U6_react.html#/23)
 * Estructura del Proyecto
-* [Estructura del Proyecto](U6_react.html#/21)
+* [Estructura del Proyecto](U6_react.html#/25/1)
 * Imágenes
 * [Imágenes](U6_react.html#/23/2)
 
@@ -135,7 +143,6 @@ Sirve para:
 ---
 
 ### Atributos que cambian de nombre
-<!-- .slide: style="font-size: 0.70em" -->
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
     <tr>
@@ -533,6 +540,66 @@ Estructura recomendada dentro de **src**:
 
 ---
 
+### Renderizado condicional en React
+
+Permite mostrar diferentes elementos de la interfaz según se cumpla o no una condición.
+
+Como JSX admite expresiones JavaScript, podemos utilizar operadores y estructuras de control para decidir qué contenido mostrar.
+
+----
+
+### Renderizado condicional: If
+Permite elegir entre dos alternativas según una condición.
+
+```jsx
+{condicion ? (
+  <p>Se cumple la condición</p>
+) : (
+  <p>No se cumple la condición</p>
+)}
+```
+
+- Si la condición es **verdadera** (true), se muestra la primera alternativa.
+- Si es **falsa** (false), se muestra la segunda.
+
+----
+
+### Renderizado condicional: If
+Ejemplo:
+```jsx
+{isLoggedIn ? (
+  <button onClick={logout}>Cerrar sesión</button>
+) : (
+  <a href="/login">Login</a>
+)}
+```
+
+----
+
+### Renderizado condicional: AND &&
+Permite mostrar un elemento solamente cuando una condición es verdadera.
+
+```jsx
+{condicion && <p>Se cumple la condición</p>}
+```
+
+- Si la condición es **verdadera**, se muestra el elemento.
+- Si es **falsa**, no se muestra ese elemento.
+
+----
+
+### Renderizado condicional: AND &&
+Ejemplo:
+```jsx
+{isLoggedIn && (
+  <button onClick={() => handleInscription(activity.nombre)}>
+    Inscribir
+  </button>
+)}
+```
+
+---
+
 ### React 3: Outlet
 
 1. Crear un componente de **Header**, donde haya un menú de navegación con: Home, Login, Actividades
@@ -578,12 +645,14 @@ En los proyectos de react se recomienda emplear la siguiente estructura:
 
 ### React: Imágenes
 
-<!-- .slide: style="font-size: 0.70em" -->
 Las imágenes pueden colocarse en:
-- **src/assets**
-- **public**
+- **src/assets**: importar la imagen y usar src={nombreImagen}. Vite procesa estos recursos durante la compilación.
+- **public**: referenciar la imagen mediante una ruta absoluta desde la raíz
 
-<table border="1" cellpadding="8" cellspacing="0">
+----
+
+### React: Imágenes
+<table border="1" cellpadding="8" cellspacing="0" class="tableImg">
   <thead>
     <tr>
       <th>Opción</th>
@@ -653,7 +722,7 @@ Las imágenes pueden colocarse en:
 ---
 
 ### Properties: comunicación entre componentes
-
+<!-- .slide: style="font-size: 0.90em" -->
 Las **props** permiten que un componente reciba información desde el componente que lo utiliza.
 
 - Se pueden utilizar para enviar datos, funciones y otros valores.
@@ -662,8 +731,6 @@ Las **props** permiten que un componente reciba información desde el componente
 - El flujo de datos habitual es unidireccional: desde el componente padre hacia el hijo.
 
 Si un componente hijo necesita solicitar una acción al padre, puede invocar una función recibida mediante props.
-
-Ejemplo: una tarjeta recibe el nombre y la descripción de una actividad, además de una función que permite inscribirse en ella.
 
 ---
 
@@ -678,9 +745,15 @@ La *prop* **children** permite que un componente reciba el contenido que se colo
 ----
 
 ### React: Children
+Ejemplo: una tarjeta recibe el nombre y la descripción de una actividad, además de una función que permite inscribirse en ella.
+
+----
+
+### React: Children
+
 Ejemplo de creacion del componente:
 ```
-function Card({ title, children }) {
+  Card({ title, children }) {
   return (
     <article>
       <h2>{title}</h2>
