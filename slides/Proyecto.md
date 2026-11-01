@@ -351,7 +351,7 @@ Prueba todas las situaciones posibles, no te quedes solo con el **happy path**.
 ### Requisitos del Segundo Parcial
 #### Sobre Package
 - Incluir los scripts necesarios para ejecución del proyecto y mock de servicios (2026)
-- Las dependencias NO deben tener vulnerabilidades (2026) 
+- Las dependencias NO deben tener vulnerabilidades criticas o altas - en caso de vulnerabilidades moderadas o bajas, documentarlas en el readme (2026) 
 
 ---
 
