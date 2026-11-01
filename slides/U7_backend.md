@@ -148,6 +148,8 @@ fetch('http://example.com/movies.json')
   .then(data => console.log(data));
 ```
 
+fetch() devuelve un objeto Promise.
+
 ----
 
 ### Fetch
@@ -236,6 +238,27 @@ Sigue ejecutando el resto del código y, cuando la tarea termina, notifica el re
 - **await:** pausa la ejecución de la función async hasta que la promesa se resuelve
 
 Es una alternativa del uso de **.then()**.
+
+---
+
+### Promise
+Es un objeto que representa el resultado futuro de una operación asíncrona.
+
+Permite trabajar con operaciones que pueden tardar un tiempo en completarse, sin bloquear la ejecución del resto del programa.
+
+Por ejemplo:
+- Consultar una API.
+- Leer un archivo.
+- Esperar una respuesta de un servidor.
+
+----
+
+### Promise
+Una promesa puede encontrarse en tres estados:
+
+- **Pending (Pendiente):** La operación todavía no terminó.
+- **Fulfilled (Cumplida):** La operación terminó correctamente y devolvió un resultado.
+- **Rejected (Rechazada):** La operación terminó con un error.
 
 ---
 

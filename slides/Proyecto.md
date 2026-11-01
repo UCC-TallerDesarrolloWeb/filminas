@@ -376,7 +376,8 @@ Prueba todas las situaciones posibles, no te quedes solo con el **happy path**.
 
 ----
 
-#### Sobre React (3)
+#### Sobre Backend/Mock (3)
+- [ ] Instalar json-server
 - [ ] Emplear mock de al menos un servicio (db.json) y permitir al menos una de estas acciones: get/read, post/add, patch/update, delete
 - [ ] Emplear **fetch** y funciones **async**/**await** (en lugar del .then)
 - [ ] El formato de la información debería ser similar al siguiente:
