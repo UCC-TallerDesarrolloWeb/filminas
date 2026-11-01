@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>McckAPI</title>
+    <title>MockAPI</title>
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./dist/reset.css" />
     <link rel="stylesheet" href="./dist/reveal.css" />
@@ -55,6 +55,23 @@ edme88
 
 </div>
 </div>
+
+---
+
+### json-server
+JSON Server es una herramienta de Node.js que permite crear una API REST simulada a partir de un archivo JSON, sin necesidad de desarrollar un backend.
+
+Es muy útil para practicar desarrollo frontend con React, ya que permite simular consultas a un servidor.
+
+---
+
+### .json()
+El método **.json()** se utiliza para leer y convertir el cuerpo de una respuesta HTTP que contiene JSON en un objeto o array de JavaScript.
+
+```js
+const response = await fetch(url); //Obtiene la respuesta del servidor
+const data = await response.json();
+```
 
 ---
 
@@ -118,9 +135,70 @@ Es una herramienta que permite:
 
 ---
 
+### Spread operator
+El operador de propagación o extensión, que se escribe como puntos suspensivos *...* cumple múltiples funciones:
+1. Copiar arrays (copia superficial / shallow copy)
+```js
+const original = [1, 2, 3];
+const copia = [...original];
+// copia es [1, 2, 3] (un array nuevo) 
+```
+2. Concatenar o combinar arrays
+```js
+const frutas = ['manzana', 'pera'];
+const verduras = ['zanahoria', 'lechuga'];
+const comida = [...frutas, ...verduras]; 
+// ['manzana', 'pera', 'zanahoria', 'lechuga']
+```
+
+----
+
+### Spread operator
+
+3. Añadir elementos a un array
+```js
+const numeros = [2, 3, 4];
+const conCero = [1, ...numeros, 5]; 
+// [1, 2, 3, 4, 5]
+```
+4. Pasar elementos como argumentos a una función
+```js
+function sumar(a, b, c) {
+  return a + b + c;
+}
+const numeros = [1, 2, 3];
+console.log(sumar(...numeros)); // 6
+```
+
+----
+
+### Spread operator
+
+5. Copiar y fusionar objetos
+```js
+const usuario = { nombre: 'Ana', edad: 25 };
+const clonUsuario = { ...usuario, ciudad: 'Madrid' };
+// { nombre: 'Ana', edad: 25, ciudad: 'Madrid' }
+```
+
+---
+
+### Actualización de estados con arrays
+```js
+setProductos((prev) => [...prev, data]);
+```
+
+Esta instrucción agrega un nuevo elemento (data) al array almacenado en el estado, sin modificar directamente el array original.
+
+- **prev:** representa el estado anterior (el array actual).
+- **...prev:** copia todos los elementos del array anterior.
+- **data:** es el nuevo elemento que se agrega al final.
+
+---
+
 ### Ejercicio: APIs en React
 
-1. Modificar **Poke** para llamar a la API de 1 a 20
+1. Cree una nueva funcion, **fetchAllPokemons** para llamar a la API de 1 a 20
 
 ---
 
@@ -134,13 +212,113 @@ Es una herramienta que permite:
 ```bash
 npm i -D json-server
 ```
-2. Crear **product.json** con los datos en **src/data** para separar datos de lógica, y mockear
+
+----
+
+### Carrito
+2. Crear **product.json** dentro de **src/data** para separar datos de lógica, y mockear
 el servicio **get**.
-3. Crear un **Store.jsx** en */pages* que contenga .map para iterar y generar las cards
-4. Emplear una terminal para levantar el servidor:
-```bash
-npx json-server --watch src/data/productos.json --port 4000
+```json
+{"products":[
+    {
+        "nombre": "Cabezal Sparring",
+        "description": "Cabezal de Sparring.",
+        "categoria": "Protectores",
+        "marca": "Gran Marc",
+        "talle": [
+            "1",
+            "2",
+            "3"
+        ],
+        "precio": 35000,
+        "web": "https://www.granmarctiendaonline.com.ar/productos/cabezal-cerrado/",
+        "imagen": "cabezal-cerrado.webp"
+    },
+    {
+        "nombre": "Dobok Dan",
+        "description": "Dobok aprobado para torneos internacionales.",
+        "categoria": "Dobok",
+        "marca": "Daedo",
+        "talle": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "precio": 115000,
+        "web": "https://www.daedo.com/products/taitf-10813",
+        "imagen": "dobok.webp"
+    },
+    {
+        "nombre": "Escudo de Potencia",
+        "description": "Escudo de potencia para entrenamientos.",
+        "categoria": "Entrenamiento",
+        "marca": "Gran Marc",
+        "talle": [
+            "s/talle"
+        ],
+        "precio": 51700,
+        "web": "https://www.granmarctiendaonline.com.ar/productos/escudo-de-potencia-grande/",
+        "imagen": "escudo-potencia.webp"
+    },
+    {
+        "nombre": "Par de focos redondos",
+        "description": "Par de focos de 25cm x 25cm para hacer entrenamiento.",
+        "categoria": "Entrenamiento",
+        "marca": "Gran Marc",
+        "talle": [
+            "s/talle"
+        ],
+        "precio": 15000,
+        "web": "https://www.granmarctiendaonline.com.ar/productos/foco-con-dedos/",
+        "imagen": "foco-con-dedos.webp"
+    },
+    {
+        "nombre": "Guantes 10 onzas",
+        "description": "Guantes de Sparring de 10 onzas habilitados para torneos internacionales",
+        "categoria": "Protectores",
+        "marca": "Daedo",
+        "talle": [
+            "s/talle"
+        ],
+        "precio": 35000,
+        "web": "https://www.daedo.com/products/pritf-2020",
+        "imagen": "protectores-manos.webp"
+    },
+    {
+        "nombre": "Protectores Pie",
+        "description": "Protectores de Pie habilitados para torneos internacionales",
+        "categoria": "Protectores",
+        "marca": "Daedo",
+        "talle": [
+            "XXS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "precio": 35000,
+        "web": "https://www.daedo.com/collections/collection-itf-gloves/products/pritf-2022",
+        "imagen": "protectores-pie.webp"
+    }
+]}
 ```
+
+----
+
+### Carrito
+3. En el **package.json** agregar el siguiente **script** para levantar el servidor:
+```bash
+"services-products": "npx json-server src/data/products.json --port 4000"
+```
+4. En la terminal, ejecutar ```npm run services-products```
+5. Crear un **Store.jsx** en */pages* que contenga .map para iterar y generar las cards
+
 Y otra terminal para levantar el proyecto:
 ```bash
 npm run dev
@@ -148,15 +326,10 @@ npm run dev
 
 ----
 
-
-4. Agregar un componente para la ventana con detalle del producto.
-5. Crear función **formatPrice** en **src/utils**
-6. Modificar la tienda para que el boton de agregar al carrito solo esté disponible cuando el usuario inicio sesión.
-
-
-
-
-4. Modificar el código para que en lugar de leer los datos del **js** se realice un **fetch**
+### Carrito
+6. Crear función **formatPrice** en **src/utils**
+7. Agregar un **modal** para la ventana con detalle del producto.
+8. Agregar **cart**, en el mock del servicio para agregar productos al carrito
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
