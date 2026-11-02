@@ -371,8 +371,20 @@ Prueba todas las situaciones posibles, no te quedes solo con el **happy path**.
 - [ ] Emplear al menos una imagen en **/public** y una en **assets**
 - [ ] Validaciones en tiempo real con onChange + mensajes de error accesibles.
 - [ ] Crear al menos un componente genérico (ej: Button, Card, Input) y reutilizarlo en varias páginas.
-- [ ] Guardar algún dato en localStorage (ej: preferencias de tema o un carrito de compras).
+- [ ] Guardar algún dato en localStorage (ej: estado login).
 - [ ] NO se deben declarar atributos que NO son usados en ningún sitio
+
+---
+
+### Requisitos del Segundo Parcial
+#### Sobre la estructura del proyecto
+- [ ] El proyecto debe contar con la siguiente estructura de carpetas en **src**:
+  - api
+  - components
+  - data
+  - pages
+  - styles
+  - utils
 
 ----
 
