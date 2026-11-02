@@ -28,12 +28,16 @@ edme88
 <div class="grid-container2">
 <div class="grid-item">
 
-- mock backend
+- json-server
+- .json()
+- Ejercicio: Mock del Backend
+-
 
 </div>
 <div class="grid-item">
 
-- OpenApi (Swagger)
+- OpenApi
+- Swagger
 - PokeAPI
 - Postman
 
@@ -42,10 +46,8 @@ edme88
 
 ---
 
-### json-server
+### [json-server](https://www.npmjs.com/package/json-server)
 JSON Server es una herramienta de Node.js que permite crear una API REST simulada a partir de un archivo JSON, sin necesidad de desarrollar un backend.
-
-Es muy útil para practicar desarrollo frontend con React, ya que permite simular consultas a un servidor.
 
 ---
 
@@ -73,12 +75,35 @@ npx json-server --watch src/data/activities.json --port 4000
 
 ---
 
-### ¿Qué es [OpenAPI](https://www.openapis.org/) ([Swagger](https://swagger.io/))? 
+### OpenAPI 
+<!-- .slide: style="font-size: 0.90em" -->
+Es una especificación estándar y abierta para describir APIs HTTP, especialmente APIs REST, de forma estructurada y legible tanto por personas como por herramientas.
+- **Documentación estandarizada:** describe endpoints, métodos HTTP, parámetros, esquemas de datos, autenticación y respuestas.
+- **Interoperabilidad:** permite que distintas herramientas interpreten la definición de una API.
+- **Generación automática:** facilita crear documentación, clientes y servidores a partir de la especificación.
+- **Pruebas interactivas:** permite explorar y ejecutar solicitudes a los endpoints desde una interfaz gráfica.
 
-- Es un formato estándar para documentar APIs REST.
-- Permite describir endpoints, parámetros, respuestas, y generar documentación automática.
-- Ejemplo: https://petstore.swagger.io
-- [Swagger UI](https://editor.swagger.io/) / Editor te permite probar endpoints igual que Postman.
+---
+
+### Swagger 
+Es un conjunto de herramientas que utiliza la especificación OpenAPI.
+
+Herramientas y Ejemplos
+- [Swagger Editor](https://editor.swagger.io/): permite escribir, validar y visualizar definiciones OpenAPI.
+- [Swagger UI](https://petstore.swagger.io/): genera documentación interactiva y permite probar los endpoints de una API.
+- [OpenAPI Specification:](https://www.openapis.org/) sitio oficial de la especificación.
+
+---
+
+### Swagger UI
+<!-- .slide: style="font-size: 0.80em" -->
+Es una herramienta que genera automáticamente una interfaz web interactiva a partir de una definición OpenAPI. Permite visualizar, comprender y probar una API sin necesidad de utilizar herramientas externas como Postman.
+
+Principales funcionalidades:
+- **Exploración de endpoints:** muestra los recursos disponibles y los métodos HTTP asociados (GET, POST, PUT, PATCH, DELETE).
+- **Consulta de documentación:** presenta parámetros, tipos de datos, estructuras de las solicitudes y posibles respuestas.
+- **Ejecución de solicitudes:** permite completar parámetros, encabezados y cuerpos de las peticiones, y ejecutarlas directamente desde el navegador mediante Try it out.
+- **Visualización de respuestas:** muestra el código de estado HTTP, los encabezados y el contenido devuelto por el servidor.
 
 ---
 
